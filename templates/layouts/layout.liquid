@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html class="no-js lt-ie9" lang="sk"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="sk"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  {{ "normalize.css" | asset_url | stylesheet_tag }}
+  {{ "app.css" | asset_url | stylesheet_tag }}
+  <script src="{{ "custom.modernizr.js" | asset_url }}"></script>
+  <meta name="keywords" content="lietadlá, letectvo, L-39, albatros, 2.letka, 2nd squadron">
+  <meta name="description" lang="sk" content="Stránka pre priaznivcov vojenského letectva a 2. letky Sliač">
+  <meta name="author" content="2sqn">
+  <meta name="copyright" content="www.2sqn.sk">
+  <meta name="category" content="general"/>
+  <meta name="robots" content="index, follow">
+
+  <title>....:2nd SQN Sliač:....</title>
+</head>
+<body>
+  {% include "menu" %}
+  {% block content %}{% endblock %}
+  {% include "scripts" %}
+</body>
+</html>
