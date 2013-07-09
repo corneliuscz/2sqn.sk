@@ -11,7 +11,7 @@
 var cbpHorizontalMenu = (function() {
 
     var $listItems = $( '#cbp-hrmenu > ul > li' ),
-        $menuItems = $listItems.children( 'a' ),
+        $menuItems = $listItems.children( 'a.dropdown' ),
         $body = $( 'body' ),
         current = -1;
 

@@ -44,104 +44,9 @@
 // @import "foundation/components/tooltips";
 // @import "foundation/components/dropdown";
 
+@import url(http://fonts.googleapis.com/css?family=Roboto:300,400&subset=latin-ext);
+
 @import "menu";
-
-@font-face {
-    font-family: 'verb_regularregular';
-    src: url('../fonts/VerbRegular-webfont.eot');
-    src: url('../fonts/VerbRegular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/VerbRegular-webfont.woff') format('woff'),
-         url('../fonts/VerbRegular-webfont.ttf') format('truetype'),
-         url('../fonts/VerbRegular-webfont.svg#verb_regularregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-@font-face {
-    font-family: 'verb_regularitalic';
-    src: url('../fonts/VerbRegular-Italic-webfont.eot');
-    src: url('../fonts/VerbRegular-Italic-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/VerbRegular-Italic-webfont.woff') format('woff'),
-         url('../fonts/VerbRegular-Italic-webfont.ttf') format('truetype'),
-         url('../fonts/VerbRegular-Italic-webfont.svg#verb_regularitalic') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-@font-face {
-    font-family: 'verb_mediumregular';
-    src: url('../fonts/VerbMedium-webfont.eot');
-    src: url('../fonts/VerbMedium-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/VerbMedium-webfont.woff') format('woff'),
-         url('../fonts/VerbMedium-webfont.ttf') format('truetype'),
-         url('../fonts/VerbMedium-webfont.svg#verb_mediumregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-@font-face {
-    font-family: 'verb_mediumitalic';
-    src: url('../fonts/VerbMedium-Italic-webfont.eot');
-    src: url('../fonts/VerbMedium-Italic-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/VerbMedium-Italic-webfont.woff') format('woff'),
-         url('../fonts/VerbMedium-Italic-webfont.ttf') format('truetype'),
-         url('../fonts/VerbMedium-Italic-webfont.svg#verb_mediumitalic') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-@font-face {
-    font-family: 'verb_lightregular';
-    src: url('../fonts/VerbLight-webfont.eot');
-    src: url('../fonts/VerbLight-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/VerbLight-webfont.woff') format('woff'),
-         url('../fonts/VerbLight-webfont.ttf') format('truetype'),
-         url('../fonts/VerbLight-webfont.svg#verb_lightregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-@font-face {
-    font-family: 'verb_lightitalic';
-    src: url('../fonts/VerbLight-Italic-webfont.eot');
-    src: url('../fonts/VerbLight-Italic-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/VerbLight-Italic-webfont.woff') format('woff'),
-         url('../fonts/VerbLight-Italic-webfont.ttf') format('truetype'),
-         url('../fonts/VerbLight-Italic-webfont.svg#verb_lightitalic') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-@font-face {
-    font-family: 'verb_extralightregular';
-    src: url('../fonts/VerbExtralight-webfont.eot');
-    src: url('../fonts/VerbExtralight-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/VerbExtralight-webfont.woff') format('woff'),
-         url('../fonts/VerbExtralight-webfont.ttf') format('truetype'),
-         url('../fonts/VerbExtralight-webfont.svg#verb_extralightregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-@font-face {
-    font-family: 'verb_extralightitalic';
-    src: url('../fonts/VerbExtralight-Italic-webfont.eot');
-    src: url('../fonts/VerbExtralight-Italic-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/VerbExtralight-Italic-webfont.woff') format('woff'),
-         url('../fonts/VerbExtralight-Italic-webfont.ttf') format('truetype'),
-         url('../fonts/VerbExtralight-Italic-webfont.svg#verb_extralightitalic') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
 
 /* Vlastní proměnné a gradienty */
 .prechod-sedy {
@@ -153,8 +58,6 @@
     background: -ms-linear-gradient(top,  #ecf0f1 0%,#ffffff 100%);
     background: linear-gradient(to bottom,  #ecf0f1 0%,#ffffff 100%);
 }
-
-
 
 /* Main layout */
 
@@ -176,4 +79,13 @@
     position: absolute;
     top: emCalc(20px);
     right: emCalc(20px);
+}
+
+.cbp-hrmenu > ul > li > a.home {
+    color: #34495e;
+    padding: 0;
+    font-size: 1.4em;
+    font-weight: 300;
+    background: url('../img/header-letadlo.png') no-repeat 100% 50%;
+    width: 200px;
 }
