@@ -294,15 +294,15 @@
      borderopacity="1"
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.4142136"
-     inkscape:cx="-2427.67"
-     inkscape:cy="2329.2408"
+     inkscape:zoom="0.5"
+     inkscape:cx="-2220.5602"
+     inkscape:cy="1956.0031"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
      inkscape:showpageshadow="false"
-     inkscape:window-width="1280"
-     inkscape:window-height="972"
+     inkscape:window-width="1600"
+     inkscape:window-height="1148"
      inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
@@ -623,7 +623,7 @@
          sodipodi:role="line">odhlásit</tspan></text>
     <path
        transform="matrix(0.61538462,0,0,0.61538462,221.43596,-2295.3784)"
-       d="m -3,1696 a 26,26 0 1 1 -52,0 26,26 0 1 1 52,0 z"
+       d="m -3,1696 c 0,14.3594 -11.640597,26 -26,26 -14.359403,0 -26,-11.6406 -26,-26 0,-14.3594 11.640597,-26 26,-26 14.359403,0 26,11.6406 26,26 z"
        sodipodi:ry="26"
        sodipodi:rx="26"
        sodipodi:cy="1696"
@@ -1164,16 +1164,17 @@
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90" />
     <image
-       y="-1300.6378"
-       x="-1430"
-       id="image3736"
-       xlink:href="file:///C:/Users/Pepa/Desktop/2sqn/Van-Der-Ende-06.jpg"
-       height="798"
-       width="1200"
-       clip-path="url(#clipPath3739)"
-       inkscape:export-filename="C:\Users\Pepa\Desktop\2sqn\g3699.png"
+       sodipodi:absref="D:\wamp\www\2sqn.sk\_mockups\Van-Der-Ende-06.jpg"
+       xlink:href="Van-Der-Ende-06.jpg"
+       inkscape:export-ydpi="90"
        inkscape:export-xdpi="90"
-       inkscape:export-ydpi="90" />
+       inkscape:export-filename="vanverde1.png"
+       clip-path="url(#clipPath3739)"
+       width="1200"
+       height="798"
+       id="image3736"
+       x="-1430"
+       y="-1300.6378" />
     <rect
        style="color:#000000;fill:url(#linearGradient3705);fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.192;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
        id="rect3321"
@@ -1506,17 +1507,18 @@
        height="132.1375"
        width="155" />
     <image
-       inkscape:export-ydpi="90"
-       inkscape:export-xdpi="90"
-       inkscape:export-filename="C:\Users\Pepa\Desktop\2sqn\g5681.png"
-       clip-path="url(#clipPath5296)"
-       width="465.51404"
-       height="310.34268"
-       xlink:href="file:///D:/Fotky/Chata%20BA%207.-10.7.2011/7.7.2011%20-%20Slia%C4%8D/IMG_6190.JPG"
-       id="image3393"
-       x="-121.6283"
+       sodipodi:absref="D:\wamp\www\2sqn.sk\_mockups\IMG_6190.JPG"
+       xlink:href="IMG_6190.JPG"
+       transform="translate(-2630,0)"
        y="-320.36761"
-       transform="translate(-2630,0)" />
+       x="-121.6283"
+       id="image3393"
+       height="310.34268"
+       width="465.51404"
+       clip-path="url(#clipPath5296)"
+       inkscape:export-filename="C:\Users\Pepa\Desktop\2sqn\g5681.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
     <g
        inkscape:export-ydpi="90"
        inkscape:export-xdpi="90"
@@ -1566,17 +1568,18 @@
          transform="matrix(0.87832817,0,0,0.87832817,715.01688,-1143.2828)" />
     </g>
     <image
-       inkscape:export-ydpi="90"
-       inkscape:export-xdpi="90"
-       inkscape:export-filename="C:\Users\Pepa\Desktop\2sqn\g5681.png"
-       transform="translate(-2620,147)"
-       clip-path="url(#clipPath4721)"
-       width="1200"
-       height="800"
-       xlink:href="file:///C:/Users/Pepa/Desktop/2sqn/Marcel-Bos-11.jpg"
-       id="image3405"
+       sodipodi:absref="D:\wamp\www\2sqn.sk\_mockups\Marcel-Bos-11.jpg"
+       xlink:href="Marcel-Bos-11.jpg"
+       y="-1447.6378"
        x="-130"
-       y="-1447.6378" />
+       id="image3405"
+       height="800"
+       width="1200"
+       clip-path="url(#clipPath4721)"
+       transform="translate(-2620,147)"
+       inkscape:export-filename="vanverde2.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
     <rect
        inkscape:export-ydpi="90"
        inkscape:export-xdpi="90"
@@ -2102,14 +2105,15 @@
        width="940"
        height="2500" />
     <image
-       clip-path="url(#clipPath4828)"
-       width="1216"
-       height="747.84003"
-       xlink:href="file:///C:/Users/Pepa/Desktop/2sqn/sldraha.jpg"
-       id="image3384"
-       x="-128"
+       sodipodi:absref="D:\wamp\www\2sqn.sk\_mockups\sldraha.jpg"
+       xlink:href="sldraha.jpg"
+       transform="translate(-3956,0)"
        y="-1233.7979"
-       transform="translate(-3956,0)" />
+       x="-128"
+       id="image3384"
+       height="747.84003"
+       width="1216"
+       clip-path="url(#clipPath4828)" />
     <rect
        inkscape:export-ydpi="90"
        inkscape:export-xdpi="90"
@@ -2287,7 +2291,7 @@
        sodipodi:cy="1696"
        sodipodi:rx="26"
        sodipodi:ry="26"
-       d="m -3,1696 a 26,26 0 1 1 -52,0 26,26 0 1 1 52,0 z"
+       d="m -3,1696 c 0,14.3594 -11.640597,26 -26,26 -14.359403,0 -26,-11.6406 -26,-26 0,-14.3594 11.640597,-26 26,-26 14.359403,0 26,11.6406 26,26 z"
        transform="matrix(0.61538462,0,0,0.61538462,-3710.564,-2295.3784)" />
     <path
        inkscape:export-ydpi="90"
@@ -2367,18 +2371,18 @@
        inkscape:export-xdpi="90"
        inkscape:export-filename="C:\Users\Pepa\Desktop\2sqn\g5681.png"
        transform="translate(-3598,-1024.6378)"
-       style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:150%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#2c3e50;fill-opacity:1;stroke:none;font-family:Verb Regular;-inkscape-font-specification:'Verb Regular,'"
+       style="font-size:16px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:150%;letter-spacing:0px;word-spacing:0px;writing-mode:lr;text-anchor:start;fill:#2c3e50;fill-opacity:1;stroke:none;font-family:Verb Regular;-inkscape-font-specification:'Verb Regular,'"
        id="flowRoot3663"
        xml:space="preserve"><flowRegion
          id="flowRegion3665"><rect
-           style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:150%;writing-mode:lr-tb;text-anchor:start;fill:#2c3e50;fill-opacity:1;font-family:Verb Regular;-inkscape-font-specification:'Verb Regular,'"
+           style="font-size:16px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:150%;writing-mode:lr-tb;text-anchor:start;fill:#2c3e50;fill-opacity:1;font-family:Verb Regular;-inkscape-font-specification:'Verb Regular,'"
            y="692"
            x="122"
-           height="309.1329"
+           height="385.1329"
            width="460"
            id="rect3667" /></flowRegion><flowPara
          id="flowPara3669"
-         style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:150%;writing-mode:lr-tb;text-anchor:start;font-family:Verb Regular;-inkscape-font-specification:'Verb Regular,'">Prvé záznamy o pristátí vojenských lietadiel v priestoroch letiska Tri Duby sa datujú na 15.7.1935. V máji 1936 sa na letisku Tri Duby vytvorila letecká škola. 1. septembra 1937 sa do priestoru letiska nasťahovala Letecká posádka. O rok neskôr sa začala výstavba kasární pre letcov. Významnú úlohu v histórii tunajšieho letectva zohrala už spomínaná letecká - vtedy pilotná škola, ktorú riadil Československý aeroklub pre stredné Slovensko, so sídlom vo Zvolene. V apríli 1936 dostal z národnej leteckej zbierky 3 školské lietadlá, čo bolo podnetom na vybudovanie prvého vlastného hangáru. V týchto rokoch tu predvádzali svoje akrobatické zručnosti aj najlepší československí piloti týchto čias, major Ambruš a poľný pilot, poručík Trnka. Ešte pred vypuknutím povstania sa v uzavretých hangároch opravovali vyradené stroje a pripravovali sa na bojové použitie.</flowPara></flowRoot>    <flowRoot
+         style="font-size:16px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:150%;writing-mode:lr;text-anchor:start;font-family:Verb Regular;-inkscape-font-specification:'Verb Regular,'">Prvé záznamy o pristátí vojenských lietadiel v priestoroch letiska Tri Duby sa datujú na 15.7.1935. V máji 1936 sa na letisku Tri Duby vytvorila letecká škola. 1. septembra 1937 sa do priestoru letiska nasťahovala Letecká posádka. O rok neskôr sa začala výstavba kasární pre letcov. Významnú úlohu v histórii tunajšieho letectva zohrala už spomínaná letecká - vtedy pilotná škola, ktorú riadil Československý aeroklub pre stredné Slovensko, so sídlom vo Zvolene. V apríli 1936 dostal z národnej leteckej zbierky 3 školské lietadlá, čo bolo podnetom na vybudovanie prvého vlastného hangáru. V týchto rokoch tu predvádzali svoje akrobatické zručnosti aj najlepší československí piloti týchto čias, major Ambruš a poľný pilot, poručík Trnka. Ešte pred vypuknutím povstania sa v uzavretých hangároch opravovali vyradené stroje a pripravovali sa na bojové použitie.</flowPara></flowRoot>    <flowRoot
        inkscape:export-ydpi="90"
        inkscape:export-xdpi="90"
        inkscape:export-filename="C:\Users\Pepa\Desktop\2sqn\g5681.png"
@@ -2398,7 +2402,7 @@
        xml:space="preserve"
        id="flowRoot3679"
        style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:150%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#2c3e50;fill-opacity:1;stroke:none;font-family:Verb Regular;-inkscape-font-specification:'Verb Regular,'"
-       transform="translate(-4078,-669.6378)"
+       transform="translate(-4078,-619.6378)"
        inkscape:export-filename="C:\Users\Pepa\Desktop\2sqn\g5681.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90"><flowRegion
@@ -2414,7 +2418,7 @@
        inkscape:export-ydpi="90"
        inkscape:export-xdpi="90"
        inkscape:export-filename="C:\Users\Pepa\Desktop\2sqn\g5681.png"
-       transform="translate(-4078,-186.6378)"
+       transform="translate(-4078,-136.6378)"
        style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:150%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#2c3e50;fill-opacity:1;stroke:none;font-family:Verb Regular;-inkscape-font-specification:'Verb Regular,'"
        id="flowRoot3687"
        xml:space="preserve"><flowRegion
@@ -2427,28 +2431,31 @@
            id="rect3691" /></flowRegion><flowPara
          id="flowPara3693"
          style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:150%;writing-mode:lr-tb;text-anchor:start;font-family:Verb Regular;-inkscape-font-specification:'Verb Regular,'">Po skončení 2. svetovej vojny sa Československo, dostalo do vplyvu Sovietskeho zväzu. Letectvo prešlo na sovietsku výzbroj a len čiastočne sa zachoval vlastný letecký priemysel. V roku 1968 zabrala Letisko SNP Sliač so všetkými priľahlými priestormi Sovietska armáda, s výnimkou civilného sektora, ktorý zostal pod správou Československých aerolínií. V roku 1989, po tzv. nežnej revolúcii, museli sovietske vojská na základe medzinárodnej dohody v priebehu jedného roka opustiť aj letisko Sliač a jeho priestory. Po odchode sovietskych vojsk sa letisko vrátilo vojenskému letectvu bývalej Československej federatívnej republiky, a po rozdelení ČSFR na letisku ostali zložky letectva Slovenskej republiky. V súčasnosti na letisku pôsobí Zmiešané letecké krídlo Otta Smika, so svojou Bojovou (1.letka) a Výcvikovou letkou (2.letka).</flowPara></flowRoot>    <image
-       width="460"
-       height="315.86664"
-       xlink:href="file:///C:/Users/Pepa/Desktop/2sqn/la-5fn.2cd.jpg"
+       sodipodi:absref="D:\wamp\www\2sqn.sk\_mockups\la-5fn.2cd.jpg"
+       xlink:href="la-5fn.2cd.jpg"
+       y="-331.5498"
+       x="-3956"
        id="image3695"
-       x="-3956"
-       y="-331.5498" />
+       height="315.86664"
+       width="460" />
     <image
-       width="460"
-       height="335.79999"
-       xlink:href="file:///C:/Users/Pepa/Desktop/2sqn/sliac64_004.jpg"
-       id="image3697"
+       sodipodi:absref="D:\wamp\www\2sqn.sk\_mockups\sliac64_004.jpg"
+       xlink:href="sliac64_004.jpg"
+       y="189.03255"
        x="-3476"
-       y="139.03255" />
-    <image
-       width="460"
+       id="image3697"
        height="335.79999"
-       xlink:href="file:///C:/Users/Pepa/Desktop/2sqn/sliac64_002.jpg"
-       id="image3699"
+       width="460" />
+    <image
+       sodipodi:absref="D:\wamp\www\2sqn.sk\_mockups\sliac64_002.jpg"
+       xlink:href="sliac64_002.jpg"
+       y="189.03255"
        x="-3956"
-       y="139.03255" />
+       id="image3699"
+       height="335.79999"
+       width="460" />
     <flowRoot
-       transform="translate(-4078,-13.6378)"
+       transform="translate(-4078,36.3622)"
        style="font-size:24px;font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#296ab9;fill-opacity:1;stroke:none;font-family:Verb Light;-inkscape-font-specification:'Verb Light, Light'"
        id="flowRoot3701"
        xml:space="preserve"
@@ -2467,7 +2474,7 @@
        xml:space="preserve"
        id="flowRoot3709"
        style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:150%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#2c3e50;fill-opacity:1;stroke:none;font-family:Verb Regular;-inkscape-font-specification:'Verb Regular,'"
-       transform="translate(-4078,29.3622)"
+       transform="translate(-4078,79.3622)"
        inkscape:export-filename="C:\Users\Pepa\Desktop\2sqn\g5681.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90"><flowRegion
@@ -2485,21 +2492,21 @@
        xlink:href="file:///C:/Users/Pepa/Desktop/2sqn/sliac_airport.jpg"
        id="image3717"
        x="-3956"
-       y="1533.4623" />
+       y="1583.4623" />
     <image
        width="460"
        height="325.06668"
        xlink:href="file:///C:/Users/Pepa/Desktop/2sqn/sld7.jpg"
        id="image3719"
        x="-3476"
-       y="872.99463" />
+       y="922.99463" />
     <image
        width="460"
        height="326.60001"
        xlink:href="file:///C:/Users/Pepa/Desktop/2sqn/sld21.jpg"
        id="image3721"
        x="-3956"
-       y="872.22797" />
+       y="922.22797" />
     <flowRoot
        inkscape:export-ydpi="90"
        inkscape:export-xdpi="90"
@@ -2507,7 +2514,7 @@
        xml:space="preserve"
        id="flowRoot3723"
        style="font-size:24px;font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#296ab9;fill-opacity:1;stroke:none;font-family:Verb Light;-inkscape-font-specification:'Verb Light, Light'"
-       transform="translate(-4078,554.3622)"><flowRegion
+       transform="translate(-4078,604.3622)"><flowRegion
          id="flowRegion3725"><rect
            id="rect3727"
            width="940"
@@ -2520,7 +2527,7 @@
        inkscape:export-ydpi="90"
        inkscape:export-xdpi="90"
        inkscape:export-filename="C:\Users\Pepa\Desktop\2sqn\g5681.png"
-       transform="translate(-4078,595.3622)"
+       transform="translate(-4078,645.3622)"
        style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:150%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#2c3e50;fill-opacity:1;stroke:none;font-family:Verb Regular;-inkscape-font-specification:'Verb Regular,'"
        id="flowRoot3731"
        xml:space="preserve"><flowRegion
@@ -2571,7 +2578,7 @@
        y="0"
        xlink:href="#g3835"
        id="use4344"
-       transform="translate(-3956,1807)"
+       transform="translate(-3956,1857)"
        width="940"
        height="2500" />
     <use
@@ -2579,7 +2586,7 @@
        y="0"
        xlink:href="#g3776"
        id="use4346"
-       transform="translate(-3956,1807)"
+       transform="translate(-3956,1857)"
        width="940"
        height="2500" />
     <rect
@@ -2636,7 +2643,7 @@
          style="font-size:18px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:150%;writing-mode:lr-tb;text-anchor:start;fill:#ecf0f1;fill-opacity:1;font-family:Verb Medium;-inkscape-font-specification:'Verb Medium,'"
          id="flowPara4356">Len registrovaní užívatelia majú povolenie pre vstup do sekcie Fórum!<flowSpan
    style="font-size:18px;font-weight:bold;fill:#ecf0f1;fill-opacity:1"
-   id="flowSpan4362"></flowSpan></flowPara><flowPara
+   id="flowSpan4362" /></flowPara><flowPara
          style="font-size:18px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:150%;writing-mode:lr-tb;text-anchor:start;fill:#ecf0f1;fill-opacity:1;font-family:Verb Medium;-inkscape-font-specification:'Verb Medium,'"
          id="flowPara5616"><flowSpan
            style="font-size:18px;font-weight:bold;fill:#ecf0f1;fill-opacity:1"

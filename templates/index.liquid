@@ -1,81 +1,30 @@
-{% block content %} 
-	<div class="row">
-        <div class="large-12 columns">
-            <h2>Welcome to Foundation</h2>
-            <p>This is version {{ global.version }}.</p>
-            <hr />
-        </div>
-    </div>
+{% block content %}
+    <section class="podklad">
+        <div class="row">
+            <div class="large-9 columns">
+                <p><strong>2.&nbsp;letka, pôsobiaca v zmiešanom leteckom krídle Sliač, zabezpečuje základný a&nbsp;pokračovací bojový výcvik. Piloti absolvujú cvičenia jednoduchej techniky pilotovania, navigačné lety, lety vyššej techniky pilotovania, lety skupín, lety na&nbsp;ničenie vzdušných cieľov a&nbsp;pozemných cieľov pomocou predsunutých leteckých navádzačov (FAC).</strong></p>
 
-    <div class="row">
-        <div class="large-8 columns">
-            <h3>The Grid</h3>
-
-            <!-- Grid Example -->
-            <div class="row">
-                <div class="large-12 columns">
-                    <div class="panel">
-                        <p>This is a twelve column section in a row. Each of these includes a div.panel element so you can see where the columns are - it's not required at all for the grid.</p>
-                    </div>
-                </div>
+                <p>Letka je zložená z&nbsp;veliteľstva letky, štábu letky a&nbsp;dvoch rojov. Štáb letky tvorí náčelník štábu, výkonný poddôstojník a&nbsp;administratívny pracovník. Zástupcovi veliteľa pre ILS sú podriadení členovia skupín špecialistov pre výzbroj, rádio, elektrické systémy, skupiny opráv, technického zabezpečenia a&nbsp;obsluhy trenažéra. Roje letky tvoria velitelia rojov, kapitáni lietadiel, starší piloti, piloti lietadiel, technici roja, starší technici a&nbsp;technici.</p>
             </div>
-            <div class="row">
-                <div class="large-6 columns">
-                    <div class="panel">
-                        <p>Six columns</p>
-                    </div>
-                </div>
-                <div class="large-6 columns">
-                    <div class="panel">
-                        <p>Six columns</p>
-                    </div>
-                </div>
+            <div class="large-3 columns">
+                {{ "logo-2sqn.png" | asset_url | image_tag }}
             </div>
-            <div class="row">
-                <div class="large-4 columns">
-                    <div class="panel">
-                        <p>Four columns</p>
-                    </div>
-                </div>
-                <div class="large-4 columns">
-                    <div class="panel">
-                        <p>Four columns</p>
-                    </div>
-                </div>
-                <div class="large-4 columns">
-                    <div class="panel">
-                        <p>Four columns</p>
-                    </div>
-                </div>
+        </div>
+    </section>
+    <section class="uvodni-slovo">
+        <div class="row">
+            <div class="large-2 columns">
+                {{ "lolo.jpg" | asset_url | image_tag }}
+                <p class="fig-caption text-center">pplk. Ing. Roman Poláček<br>veliteľ 2. letky</p>
             </div>
+            <div class="large-10 columns">
+                <p>Vážení priaznivci lietania, dovoľte mi privítať Vás na&nbsp;týchto webových stránkach venovaných lietaniu, lietadlám a&nbsp;ľuďom, ktorým vôňa spáleného leteckého paliva natrvalo učarovala. Tieto stránky budú najmä o&nbsp;ľuďoch a&nbsp;pre ľudí, ktorí prepadli vášni zvanej lietanie či už z&nbsp;profesijného, alebo záujmového hľadiska. Ako veliteľ letky zodpovedný za výcvik lietajúceho personálu viem aké dôležité je mať okolo seba ľudí, na&nbsp;ktorých sa dá spoľahnúť a&nbsp;veriť im. Som nesmierne šťastný, že v&nbsp;osobách lietajúceho a&nbsp;technického personálu 2.&nbsp;letky takých ľudí okolo seba mám a&nbsp;som hrdý na&nbsp;to, že môžem byť ich veliteľom. Ďakujem Vám všetkým za Vašu obetavú prácu a&nbsp;prístup k&nbsp;plneniu služobných povinností.</p>
 
-            <h3>Buttons</h3>
+                <p>Vám priaznivci a&nbsp;nadšenci lietania, ďakujem za Váš neutíchajúci záujem a&nbsp;podporu, ktorá Nás všetkých príslušníkov 2.&nbsp;letky veľmi teší a&nbsp;je pre nás zhodnotením našej kvalitnej práce. Pevne verím, že všetci leteckí fanúšikovia si tieto webové stránky obľúbia a&nbsp;budú miestom veľa ich návštev.</p>
 
-      <div class="row">
-        <div class="large-6 columns">
-          <p><a href="#" class="small button">Small Button</a></p>
-          <p><a href="#" class="button">Medium Button</a></p>
-          <p><a href="#" class="large button">Large Button</a></p>
+                <p>Na záver mi dovoľte použiť známu leteckú frázu ako spoločné prianie nám všetkým:</p>
+                <p class="text-center">„Koľko vzletov, toľko šťastných pristátí...“</p>
+            </div>
         </div>
-        <div class="large-6 columns">
-          <p><a href="#" class="small alert button">Small Alert Button</a></p>
-          <p><a href="#" class="success button">Medium Success Button</a></p>
-          <p><a href="#" class="large secondary button">Large Secondary Button</a></p>
-        </div>
-      </div>
-        </div>
-
-        <div class="large-4 columns">
-            <h4>Getting Started</h4>
-            <p>We're stoked you want to try Foundation! To get going, this file (index.liquid) includes some basic styles you can modify, play around with, or totally destroy to get going.</p>
-
-            <h4>Other Resources</h4>
-            <p>Once you've exhausted the fun in this document, you should check out:</p>
-            <ul class="disc">
-                <li><a href="http://foundation.zurb.com/docs">Foundation Documentation</a><br />Everything you need to know about using the framework.</li>
-                <li><a href="http://github.com/zurb/foundation">Foundation on Github</a><br />Latest code, issue reports, feature requests and more.</li>
-                <li><a href="http://twitter.com/foundationzurb">@foundationzurb</a><br />Ping us on Twitter if you have questions. If you build something with this we'd love to see it (and send you a totally boss sticker).</li>
-            </ul>
-        </div>
-    </div>
+    </section>
 {% endblock %}

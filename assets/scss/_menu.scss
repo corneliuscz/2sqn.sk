@@ -4,6 +4,9 @@
 
 .cbp-hrmenu {
     width: 100%;
+
+    font-size: emCalc(18px);
+    font-weight: 300;
 }
 
 /* general ul style */
@@ -11,7 +14,6 @@
     margin: 0;
     padding: 0;
     list-style-type: none;
-    font-weight: 300;
 }
 
 /* first level ul style */
@@ -25,39 +27,42 @@
 }
 
 .cbp-hrmenu > ul > li > a {
-    font-size: 1em;
-    padding: 0em 1em;
-    color: #999;
+    padding: 0.8em 1em 0.7em 1em;
+    color: #7f8c8d;
     display: inline-block;
+    //height: 50px;
+    //line-height: 50px;
+}
+
+
+.cbp-hrmenu > ul > li > a.home {
+    color: #34495e;
+    padding: 0 45px 0 0;
+    margin-right: 50px;
+    font-size: 1.35em;
+    font-weight: 300;
+    background: url('../img/header-letadlo.png') no-repeat 100% 50%;
     line-height: 50px;
     height: 50px;
 }
-/*
-.cbp-hrmenu > ul > li.menu > a {
-    padding: 1em 0em;
-}*/
 
 .cbp-hrmenu > ul > li > a:hover {
-    color: #47a3da;
+    color: #34495e;
 }
 
 .cbp-hrmenu > ul > li.cbp-hropen a,
 .cbp-hrmenu > ul > li.cbp-hropen > a:hover {
     color: #fff;
-    background: #47a3da;
-    font-family: 'Roboto', sans-serif;
+    background: #296ab9;
 }
 
 /* sub-menu */
 .cbp-hrmenu .cbp-hrsub {
-   /* display: none; */
+    display: none;
     position: absolute;
-    background: #47a3da;
+    background: #296ab9;
     width: 100%;
     left: 0;
-
-    max-height: 0;
-    overflow: hidden;
 
     z-index: 10000;
 }
@@ -65,36 +70,33 @@
 .cbp-hropen .cbp-hrsub {
     display: block;
     padding-bottom: 2em;
-
-    max-height: 35em; /* 650 px */
-}
-/*
-.cbp-hrmenu .cbp-hrsub-inner > div {
-    width: 33%;
-    float: left;
-    padding: 0 2em 0;
 }
 
-.cbp-hrmenu .cbp-hrsub-inner:before,
-.cbp-hrmenu .cbp-hrsub-inner:after {
+.cbp-hrmenu .cbp-hrsub .row:before,
+.cbp-hrmenu .cbp-hrsub .row:after {
     content: " ";
     display: table;
 }
 
-.cbp-hrmenu .cbp-hrsub-inner:after {
+.cbp-hrmenu .cbp-hrsub .row:after {
     clear: both;
 }
-*/
-.cbp-hrmenu .cbp-hrsub-inner > div a {
-    line-height: 2em;
+
+.cbp-hrmenu .cbp-hrsub .inner {
+    padding: 0 1.875em;
+}
+
+.cbp-hrmenu .cbp-hrsub .inner > ul > li > a {
+    line-height: 1.875em;
+    font-weight: 100;
 }
 
 .cbp-hrsub h4 {
     color: #afdefa;
     padding: 1em 0 0.6em;
     margin: 0;
-    font-size: 160%;
-    font-weight: 300;
+    font-size: 1.55em;
+    font-weight: 100;
 }
 
 /* Examples for media queries */
