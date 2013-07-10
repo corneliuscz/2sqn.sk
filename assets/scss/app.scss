@@ -44,10 +44,40 @@
 // @import "foundation/components/tooltips";
 // @import "foundation/components/dropdown";
 
-@import url(http://fonts.googleapis.com/css?family=Roboto:100,300,400,500&subset=latin-ext);
+//@import url(http://fonts.googleapis.com/css?family=Roboto:100,300,400,500&subset=latin-ext);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400,600&subset=latin-ext);
+
+/* Barvy */
+
+$lightblue      : #afdefa;
+$menublue       : #296ab9;
+
+$turquoise      : #1abc9c;
+$greensea       : #16a085;
+$emerald        : #2ecc71;
+$nephritis      : #27ae60;
+$peterriver     : #3498db;
+$belizehole     : #2980b9;
+$amethyst       : #9b59b6;
+$wisteria       : #8e44ad;
+
+$wetasphalt     : #34495e;
+$midnightblue   : #2c3e50;
+$midnight       : #263343;
+
+$sunflower      : #f1c40f;
+$orange         : #f39c12;
+$carrot         : #e67e22;
+$pumpkin        : #d35400;
+$alizarin       : #e74c3c;
+$pomegranate    : #c0392b;
+$clouds         : #ecf0f1;
+$silver         : #bdc3c7;
+$concrete       : #95a5a6;
+$asbestos       : #7f8c8d;
 
 strong {
-    font-weight: 500;
+    font-weight: 600;
 }
 
 @import "menu";
@@ -62,6 +92,14 @@ strong {
     background: -ms-linear-gradient(top, #ecf0f1 0%, #ffffff 100%);
     background: linear-gradient(to bottom,#ecf0f1 0%, #ffffff 100%);
 }
+
+/* icons */
+
+.icon {
+    width: 33px;
+    height: 33px;
+}
+
 
 /* Main layout */
 
@@ -97,7 +135,7 @@ strong {
 }
 
 .podklad {
-    background: #ecf0f1;
+    background: $clouds;
 }
 
 .uvodni-slovo p {
@@ -107,5 +145,48 @@ strong {
 p.fig-caption {
     font-size: emCalc(11px);
     font-weight: 400;
+    margin-top: .325em;
+}
+
+footer .novinky, footer .kontakt, footer .copyright {
+    color: #fff;
+    padding: emCalc(30px) 0;
+    width: 100%;
+    line-height: 1.2em;
+}
+
+footer .novinky span, footer .kontakt span, footer .copyright span {
+    font-size: emCalc(12px);
+}
+
+footer .novinky h2, footer .kontakt h2, footer .copyright h2 {
+    font-size: emCalc(24px);
+}
+
+footer .novinky {
+    background-color: $wetasphalt;
+}
+
+footer .novinky h2 {
+    color: $turquoise;
+}
+
+footer .kontakt h2 {
+    color: $lightblue;
+    padding-left: 43px;
+}
+
+footer .kontakt {
+    background-color: $midnightblue;
+}
+
+footer .copyright {
+    background-color: $midnight;
+    font-weight: 300;
+}
+
+footer .copyright a {
+    color: #fff;
+    font-weight: 600;
 }
 

@@ -295,14 +295,14 @@
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
      inkscape:zoom="0.5"
-     inkscape:cx="-2220.5602"
-     inkscape:cy="1956.0031"
+     inkscape:cx="-796.62051"
+     inkscape:cy="1199.1037"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
      inkscape:showpageshadow="false"
-     inkscape:window-width="1600"
-     inkscape:window-height="1148"
+     inkscape:window-width="1280"
+     inkscape:window-height="972"
      inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
@@ -1166,15 +1166,15 @@
     <image
        sodipodi:absref="D:\wamp\www\2sqn.sk\_mockups\Van-Der-Ende-06.jpg"
        xlink:href="Van-Der-Ende-06.jpg"
-       inkscape:export-ydpi="90"
-       inkscape:export-xdpi="90"
-       inkscape:export-filename="vanverde1.png"
-       clip-path="url(#clipPath3739)"
-       width="1200"
-       height="798"
-       id="image3736"
+       y="-1300.6378"
        x="-1430"
-       y="-1300.6378" />
+       id="image3736"
+       height="798"
+       width="1200"
+       clip-path="url(#clipPath3739)"
+       inkscape:export-filename="vanverde1.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
     <rect
        style="color:#000000;fill:url(#linearGradient3705);fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.192;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
        id="rect3321"
@@ -1204,7 +1204,7 @@
        x="-121.6283"
        y="-320.36761"
        transform="translate(-1310,0)"
-       inkscape:export-filename="C:\Users\Pepa\Desktop\2sqn\g3699.png"
+       inkscape:export-filename="D:\wamp\www\2sqn.sk\assets\img\lolo.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90" />
     <rect
@@ -1508,7 +1508,7 @@
        width="155" />
     <image
        sodipodi:absref="D:\wamp\www\2sqn.sk\_mockups\IMG_6190.JPG"
-       xlink:href="IMG_6190.JPG"
+       xlink:href="file:///D:/Fotky/Chata%20BA%207.-10.7.2011/7.7.2011%20-%20Slia%C4%8D/IMG_6190.JPG"
        transform="translate(-2630,0)"
        y="-320.36761"
        x="-121.6283"
@@ -1570,16 +1570,16 @@
     <image
        sodipodi:absref="D:\wamp\www\2sqn.sk\_mockups\Marcel-Bos-11.jpg"
        xlink:href="Marcel-Bos-11.jpg"
-       y="-1447.6378"
-       x="-130"
-       id="image3405"
-       height="800"
-       width="1200"
-       clip-path="url(#clipPath4721)"
-       transform="translate(-2620,147)"
-       inkscape:export-filename="vanverde2.png"
+       inkscape:export-ydpi="90"
        inkscape:export-xdpi="90"
-       inkscape:export-ydpi="90" />
+       inkscape:export-filename="vanverde2.png"
+       transform="translate(-2620,147)"
+       clip-path="url(#clipPath4721)"
+       width="1200"
+       height="800"
+       id="image3405"
+       x="-130"
+       y="-1447.6378" />
     <rect
        inkscape:export-ydpi="90"
        inkscape:export-xdpi="90"
@@ -2107,13 +2107,13 @@
     <image
        sodipodi:absref="D:\wamp\www\2sqn.sk\_mockups\sldraha.jpg"
        xlink:href="sldraha.jpg"
-       transform="translate(-3956,0)"
-       y="-1233.7979"
-       x="-128"
-       id="image3384"
-       height="747.84003"
+       clip-path="url(#clipPath4828)"
        width="1216"
-       clip-path="url(#clipPath4828)" />
+       height="747.84003"
+       id="image3384"
+       x="-128"
+       y="-1233.7979"
+       transform="translate(-3956,0)" />
     <rect
        inkscape:export-ydpi="90"
        inkscape:export-xdpi="90"
@@ -2433,27 +2433,27 @@
          style="font-size:14px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:150%;writing-mode:lr-tb;text-anchor:start;font-family:Verb Regular;-inkscape-font-specification:'Verb Regular,'">Po skončení 2. svetovej vojny sa Československo, dostalo do vplyvu Sovietskeho zväzu. Letectvo prešlo na sovietsku výzbroj a len čiastočne sa zachoval vlastný letecký priemysel. V roku 1968 zabrala Letisko SNP Sliač so všetkými priľahlými priestormi Sovietska armáda, s výnimkou civilného sektora, ktorý zostal pod správou Československých aerolínií. V roku 1989, po tzv. nežnej revolúcii, museli sovietske vojská na základe medzinárodnej dohody v priebehu jedného roka opustiť aj letisko Sliač a jeho priestory. Po odchode sovietskych vojsk sa letisko vrátilo vojenskému letectvu bývalej Československej federatívnej republiky, a po rozdelení ČSFR na letisku ostali zložky letectva Slovenskej republiky. V súčasnosti na letisku pôsobí Zmiešané letecké krídlo Otta Smika, so svojou Bojovou (1.letka) a Výcvikovou letkou (2.letka).</flowPara></flowRoot>    <image
        sodipodi:absref="D:\wamp\www\2sqn.sk\_mockups\la-5fn.2cd.jpg"
        xlink:href="la-5fn.2cd.jpg"
-       y="-331.5498"
-       x="-3956"
-       id="image3695"
+       width="460"
        height="315.86664"
-       width="460" />
+       id="image3695"
+       x="-3956"
+       y="-331.5498" />
     <image
        sodipodi:absref="D:\wamp\www\2sqn.sk\_mockups\sliac64_004.jpg"
        xlink:href="sliac64_004.jpg"
-       y="189.03255"
-       x="-3476"
-       id="image3697"
+       width="460"
        height="335.79999"
-       width="460" />
+       id="image3697"
+       x="-3476"
+       y="189.03255" />
     <image
        sodipodi:absref="D:\wamp\www\2sqn.sk\_mockups\sliac64_002.jpg"
        xlink:href="sliac64_002.jpg"
-       y="189.03255"
-       x="-3956"
-       id="image3699"
+       width="460"
        height="335.79999"
-       width="460" />
+       id="image3699"
+       x="-3956"
+       y="189.03255" />
     <flowRoot
        transform="translate(-4078,36.3622)"
        style="font-size:24px;font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#296ab9;fill-opacity:1;stroke:none;font-family:Verb Light;-inkscape-font-specification:'Verb Light, Light'"

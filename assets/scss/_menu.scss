@@ -1,5 +1,5 @@
 .menu-back {
-    background: #ecf0f1;
+    background: $clouds;
 }
 
 .cbp-hrmenu {
@@ -28,7 +28,7 @@
 
 .cbp-hrmenu > ul > li > a {
     padding: 0.8em 1em 0.7em 1em;
-    color: #7f8c8d;
+    color: $asbestos;
     display: inline-block;
     //height: 50px;
     //line-height: 50px;
@@ -36,7 +36,7 @@
 
 
 .cbp-hrmenu > ul > li > a.home {
-    color: #34495e;
+    color: $wetasphalt;
     padding: 0 45px 0 0;
     margin-right: 125px;
     font-size: 1.35em;
@@ -47,20 +47,20 @@
 }
 
 .cbp-hrmenu > ul > li > a:hover {
-    color: #34495e;
+    color: $wetasphalt;
 }
 
 .cbp-hrmenu > ul > li.cbp-hropen a,
 .cbp-hrmenu > ul > li.cbp-hropen > a:hover {
     color: #fff;
-    background: #296ab9;
+    background: $menublue;
 }
 
 /* sub-menu */
 .cbp-hrmenu .cbp-hrsub {
     display: none;
     position: absolute;
-    background: #296ab9;
+    background: $menublue;
     width: 100%;
     left: 0;
 
@@ -87,12 +87,14 @@
 }
 
 .cbp-hrmenu .cbp-hrsub .inner > ul > li > a {
-    line-height: 1.875em;
-    font-weight: 100;
+    line-height: 1.5em;
+    font-weight: 300;
+    display: inline-block;
+    margin-bottom: 0.375em;
 }
 
 .cbp-hrsub h4 {
-    color: #afdefa;
+    color: $lightblue;
     padding: 1em 0 0.6em;
     margin: 0;
     font-size: 1.55em;
