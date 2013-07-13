@@ -22,6 +22,10 @@
     margin: 0 auto;
 }
 
+.cbp-hrmenu > ul {
+    text-align: right;
+}
+
 .cbp-hrmenu > ul > li {
     display: inline-block;
 }
@@ -38,12 +42,16 @@
 .cbp-hrmenu > ul > li > a.home {
     color: $wetasphalt;
     padding: 0 45px 0 0;
-    margin-right: 125px;
+    //margin-right: 125px;
     font-size: 1.35em;
     font-weight: 300;
     background: url('../img/header-letadlo.png') no-repeat 100% 50%;
     line-height: 50px;
     height: 50px;
+}
+
+.cbp-hrmenu > ul > li.homelink {
+    float: left;
 }
 
 .cbp-hrmenu > ul > li > a:hover {
@@ -63,7 +71,7 @@
     background: $menublue;
     width: 100%;
     left: 0;
-
+    text-align: left;
     z-index: 10000;
 }
 
@@ -101,12 +109,11 @@
     font-weight: 100;
 }
 
-/* Examples for media queries */
+/* Examples for media queries
 
 @media screen and (max-width: 52.75em) {
 
     .cbp-hrmenu > ul > li > a {
-        /*font-size: 80%;*/
         padding: .7em 1.2em;
     }
 
@@ -160,3 +167,4 @@
 
 
 
+*/

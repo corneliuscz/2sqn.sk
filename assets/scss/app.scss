@@ -148,18 +148,18 @@ p.fig-caption {
     margin-top: .325em;
 }
 
-footer .novinky, footer .kontakt, footer .copyright {
+footer .novinky, footer .social, footer .copyright {
     color: #fff;
     padding: emCalc(30px) 0;
     width: 100%;
     line-height: 1.2em;
 }
 
-footer .novinky span, footer .kontakt span, footer .copyright span {
+footer .novinky span, footer .social span, footer .copyright span {
     font-size: emCalc(12px);
 }
 
-footer .novinky h2, footer .kontakt h2, footer .copyright h2 {
+footer .novinky h2, footer .social h2, footer .copyright h2 {
     font-size: emCalc(24px);
 }
 
@@ -171,13 +171,19 @@ footer .novinky h2 {
     color: $turquoise;
 }
 
-footer .kontakt h2 {
+footer .social h2 {
     color: $lightblue;
     padding-left: 43px;
 }
 
-footer .kontakt {
+footer .social {
     background-color: $midnightblue;
+}
+
+footer address {
+    font-style: normal;
+    padding-left: 45px;
+    font-size: emCalc(14px);
 }
 
 footer .copyright {
@@ -188,5 +194,16 @@ footer .copyright {
 footer .copyright a {
     color: #fff;
     font-weight: 600;
+}
+
+
+footer .fb-like-box iframe {
+    max-width: 80% !important;
+    margin-left: 35px;
+}
+
+footer .fb-like-box iframe img {
+  width: 30px !important;
+  height: 30px !important;
 }
 
