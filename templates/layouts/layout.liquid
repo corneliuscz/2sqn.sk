@@ -7,12 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   {{ "normalize.css" | asset_url | stylesheet_tag }}
   {{ "app.css" | asset_url | stylesheet_tag }}
-  <script src="{{ "custom.modernizr.js" | asset_url }}"></script>
+  {{ custom.modernizr.js" | asset_url | script_tag }}
 
-  <!-- Unicode CSS Loader: place this in the head of your page -->
-  <script>
-  /* grunticon Stylesheet Loader | https://github.com/filamentgroup/grunticon | (c) 2012 Scott Jehl, Filament Group, Inc. | MIT license. */
-  window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!!t.document.createElementNS&&!!t.document.createElementNS("http://www.w3.org/2000/svg","svg").createSVGRect&&!!document.implementation.hasFeature("http://www.w3.org/TR/SVG11/feature#Image","1.1"),A=function(A){var o=t.document.createElement("link"),r=t.document.getElementsByTagName("script")[0];o.rel="stylesheet",o.href=e[A&&n?0:A?1:2],r.parentNode.insertBefore(o,r)},o=new t.Image;o.onerror=function(){A(!1)},o.onload=function(){A(1===o.width&&1===o.height)},o.src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="}};
+  <script>window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!!t.document.createElementNS&&!!t.document.createElementNS("http://www.w3.org/2000/svg","svg").createSVGRect&&!!document.implementation.hasFeature("http://www.w3.org/TR/SVG11/feature#Image","1.1"),A=function(A){var o=t.document.createElement("link"),r=t.document.getElementsByTagName("script")[0];o.rel="stylesheet",o.href=e[A&&n?0:A?1:2],r.parentNode.insertBefore(o,r)},o=new t.Image;o.onerror=function(){A(!1)},o.onload=function(){A(1===o.width&&1===o.height)},o.src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="}};
   grunticon( [ "/assets/css/icons.data.svg.css", "/assets/css/icons.data.png.css", "/assets/css/icons.fallback.css" ] );</script>
   <noscript><link href="/assets/css/icons.fallback.css" rel="stylesheet"></noscript>
 
@@ -35,12 +32,17 @@
     }(document, 'script', 'facebook-jssdk'));
   </script>
 
+    <!-- IE Fix for HTML5 Tags -->
+    <!--[if lt IE 9]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
 </head>
 <body>
-  {% include "menu" %}
-    <div class="head-photo"><img src="{{ "marcelboss.jpg" | asset_url }}"></div>
-  {% block content %}{% endblock %}
-  {% include "footer" %}
-  {% include "scripts" %}
+{% include "menu" %}
+{% block headphoto %}{% endblock %}
+{% block content %}{% endblock %}
+{% include "footer" %}
+{% include "scripts" %}
 </body>
 </html>

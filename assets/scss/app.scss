@@ -44,7 +44,6 @@
 // @import "foundation/components/tooltips";
 // @import "foundation/components/dropdown";
 
-//@import url(http://fonts.googleapis.com/css?family=Roboto:100,300,400,500&subset=latin-ext);
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400,600&subset=latin-ext);
 
 /* Barvy */
@@ -93,7 +92,9 @@ strong {
     background: linear-gradient(to bottom,#ecf0f1 0%, #ffffff 100%);
 }
 
-/* icons */
+/* ***************** */
+/* Ikony             */
+/* ***************** */
 
 .icon {
     width: 33px;
@@ -101,7 +102,9 @@ strong {
 }
 
 
-/* Main layout */
+/* ***************** */
+/* Hlavička     */
+/* ***************** */
 
 .header {
     position: relative;
@@ -130,6 +133,10 @@ strong {
     width: 100%;
 }
 
+/* ***************** */
+/* Stylování stránky */
+/* ***************** */
+
 .podklad, .uvodni-slovo {
     padding: 1.6em 0 0.5em 0;
 }
@@ -142,11 +149,19 @@ strong {
     font-size: emCalc(14px);
 }
 
+/* ***************** */
+/* Popiska obrázku   */
+/* ***************** */
+
 p.fig-caption {
     font-size: emCalc(11px);
     font-weight: 400;
     margin-top: .325em;
 }
+
+/* ***************** */
+/* Pruhy patičky     */
+/* ***************** */
 
 footer .novinky, footer .social, footer .copyright {
     color: #fff;
@@ -160,15 +175,7 @@ footer .novinky span, footer .social span, footer .copyright span {
 }
 
 footer .novinky h2, footer .social h2, footer .copyright h2 {
-    font-size: emCalc(24px);
-}
-
-footer .novinky {
-    background-color: $wetasphalt;
-}
-
-footer .novinky h2 {
-    color: $turquoise;
+    font-size: emCalc(26px);
 }
 
 footer .social h2 {
@@ -180,11 +187,62 @@ footer .social {
     background-color: $midnightblue;
 }
 
+/* ***************** */
+/* Novinky v patičce */
+/* ***************** */
+
+footer .novinky {
+    background-color: $wetasphalt;
+}
+
+footer .novinky h2 {
+    color: $turquoise;
+}
+
+footer .novinky article {
+    padding-left: 43px;
+}
+
+footer .novinky h3 {
+    font-size: emCalc(20px);
+    margin-bottom: 0px;
+}
+
+footer .novinky h3, footer .novinky h3 a, footer .novinky h3 a:hover, footer .novinky p a, footer .novinky p a:hover {
+    color: $lightblue;
+}
+
+footer .novinky p a, footer .novinky p a:hover, footer .novinky h3 a:hover {
+    text-decoration: underline;
+}
+
+footer .novinky .datum {
+    font-size: emCalc(11px);
+    color: $silver;
+}
+
+footer .novinky p {
+    font-size: emCalc(13px);
+}
+
+/* ***************** */
+/* Adresa            */
+/* ***************** */
+
 footer address {
     font-style: normal;
     padding-left: 45px;
     font-size: emCalc(14px);
 }
+
+footer address a, footer address a:hover {
+    color: $lightblue;
+    text-decoration: underline;
+}
+
+/* ***************** */
+/* Copyright         */
+/* ***************** */
 
 footer .copyright {
     background-color: $midnight;
@@ -196,6 +254,9 @@ footer .copyright a {
     font-weight: 600;
 }
 
+/* ***************** */
+/* Facebook          */
+/* ***************** */
 
 footer .fb-like-box iframe {
     max-width: 80% !important;
@@ -207,3 +268,35 @@ footer .fb-like-box iframe img {
   height: 30px !important;
 }
 
+/* ***************** */
+/* Ankety            */
+/* ***************** */
+
+footer .anketa form {
+    padding-left: 43px;
+    font-size: emCalc(14px);
+}
+
+footer .anketa form > .otazka {
+    font-weight: 600;
+}
+
+footer .anketa form > dl > dt {
+    font-weight: normal;
+}
+
+footer .anketa form > dl > dd > i {
+    display: block;
+    font-size: .95em;
+    font-style: normal;
+
+    height: 1.5em;
+    line-height: 1.5em;
+
+    padding: 0 emCalc(5px);
+
+
+    background: $turquoise;
+
+    @include radius()
+}

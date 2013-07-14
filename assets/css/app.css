@@ -4668,7 +4668,7 @@ table {
     max-width: 800px; }
 
 /* Barvy */
-/* line 79, D:\wamp\www\2sqn.sk\assets\scss\app.scss */
+/* line 78, D:\wamp\www\2sqn.sk\assets\scss\app.scss */
 strong {
   font-weight: 600; }
 
@@ -4705,12 +4705,12 @@ strong {
 
 /* line 33, /assets/scss/_menu.scss */
 .cbp-hrmenu > ul > li > a {
-  padding: 0.8em 1em 0.7em 1em;
+  padding: 0.8em 0.7em 0.7em 0.7em;
   color: #7f8c8d;
   display: inline-block; }
 
-/* line 42, /assets/scss/_menu.scss */
-.cbp-hrmenu > ul > li > a.home {
+/* line 39, /assets/scss/_menu.scss */
+.cbp-hrmenu > ul > li > a.home, a.home-sec {
   color: #34495e;
   padding: 0 45px 0 0;
   font-size: 1.35em;
@@ -4719,22 +4719,26 @@ strong {
   line-height: 50px;
   height: 50px; }
 
-/* line 53, /assets/scss/_menu.scss */
+/* line 50, /assets/scss/_menu.scss */
+a.home-sec {
+  display: none; }
+
+/* line 54, /assets/scss/_menu.scss */
 .cbp-hrmenu > ul > li.homelink {
   float: left; }
 
-/* line 57, /assets/scss/_menu.scss */
+/* line 58, /assets/scss/_menu.scss */
 .cbp-hrmenu > ul > li > a:hover {
   color: #34495e; }
 
-/* line 62, /assets/scss/_menu.scss */
+/* line 63, /assets/scss/_menu.scss */
 .cbp-hrmenu > ul > li.cbp-hropen a,
 .cbp-hrmenu > ul > li.cbp-hropen > a:hover {
   color: #fff;
   background: #296ab9; }
 
 /* sub-menu */
-/* line 68, /assets/scss/_menu.scss */
+/* line 69, /assets/scss/_menu.scss */
 .cbp-hrmenu .cbp-hrsub {
   display: none;
   position: absolute;
@@ -4744,33 +4748,33 @@ strong {
   text-align: left;
   z-index: 10000; }
 
-/* line 78, /assets/scss/_menu.scss */
+/* line 79, /assets/scss/_menu.scss */
 .cbp-hropen .cbp-hrsub {
   display: block;
   padding-bottom: 2em; }
 
-/* line 84, /assets/scss/_menu.scss */
+/* line 85, /assets/scss/_menu.scss */
 .cbp-hrmenu .cbp-hrsub .row:before,
 .cbp-hrmenu .cbp-hrsub .row:after {
   content: " ";
   display: table; }
 
-/* line 89, /assets/scss/_menu.scss */
+/* line 90, /assets/scss/_menu.scss */
 .cbp-hrmenu .cbp-hrsub .row:after {
   clear: both; }
 
-/* line 93, /assets/scss/_menu.scss */
+/* line 94, /assets/scss/_menu.scss */
 .cbp-hrmenu .cbp-hrsub .inner {
   padding: 0 1.875em; }
 
-/* line 97, /assets/scss/_menu.scss */
+/* line 98, /assets/scss/_menu.scss */
 .cbp-hrmenu .cbp-hrsub .inner > ul > li > a {
   line-height: 1.5em;
   font-weight: 300;
   display: inline-block;
   margin-bottom: 0.375em; }
 
-/* line 104, /assets/scss/_menu.scss */
+/* line 105, /assets/scss/_menu.scss */
 .cbp-hrsub h4 {
   color: #afdefa;
   padding: 1em 0 0.6em;
@@ -4778,67 +4782,128 @@ strong {
   font-size: 1.55em;
   font-weight: 100; }
 
-/* Examples for media queries
+/* line 113, /assets/scss/_menu.scss */
+nav a#pull {
+  display: none; }
 
-@media screen and (max-width: 52.75em) {
+/* Změna menu pro displeje s šířkou menší 900px */
+@media screen and (max-width: 57.5em) {
+  /* line 121, /assets/scss/_menu.scss */
+  .cbp-hrmenu > ul {
+    text-align: center; }
 
-    .cbp-hrmenu > ul > li > a {
-        padding: .7em 1.2em;
-    }
+  /* line 125, /assets/scss/_menu.scss */
+  .cbp-hrmenu > ul > li.homelink {
+    width: 100%; } }
+/* Změna pro displeje s šířkou pod 600px */
+@media screen and (max-width: 37.5em) {
+  /* line 136, /assets/scss/_menu.scss */
+  .cbp-hrmenu {
+    font-size: 100%;
+    border: none; }
 
-}
+  /* line 141, /assets/scss/_menu.scss */
+  .cbp-hrmenu > ul {
+    text-align: left; }
 
-@media screen and (max-width: 43em) {
+  /* line 146, /assets/scss/_menu.scss */
+  .cbp-hrmenu > ul,
+  .cbp-hrmenu .cbp-hrsub-inner {
+    width: 100%;
+    padding: 0; }
 
-    .cbp-hrmenu {
-        font-size: 120%;
-        border: none;
-    }
+  /* line 151, /assets/scss/_menu.scss */
+  .cbp-hrmenu .cbp-hrsub-inner {
+    padding: 0;
+    font-size: 75%; }
 
-    .cbp-hrmenu > ul,
-    .cbp-hrmenu .cbp-hrsub-inner {
-        width: 100%;
-        padding: 0;
-    }
+  /* line 156, /assets/scss/_menu.scss */
+  .cbp-hrmenu > ul > li {
+    display: block; }
 
-    .cbp-hrmenu .cbp-hrsub-inner {
-        padding: 0 2em;
-        font-size: 75%;
-    }
+  /* line 160, /assets/scss/_menu.scss */
+  .cbp-hrmenu > ul > li.homelink {
+    display: none; }
 
-    .cbp-hrmenu > ul > li {
-        display: block;
-        border-bottom: 4px solid #47a3da;
-    }
+  /* line 164, /assets/scss/_menu.scss */
+  a.home-sec {
+    display: inline-block;
+    font-size: 1.2em;
+    padding-left: 0.9375em;
+    background: none; }
 
-    .cbp-hrmenu > ul > li > a {
-        display: block;
-        padding: 1em 3em;
-    }
+  /* line 171, /assets/scss/_menu.scss */
+  .cbp-hrmenu > ul > li > a {
+    display: block; }
 
-    .cbp-hrmenu .cbp-hrsub {
-        position: relative;
-    }
+  /* line 175, /assets/scss/_menu.scss */
+  .cbp-hrmenu .cbp-hrsub {
+    position: relative; }
 
-    .cbp-hrsub h4 {
-        padding-top: 0.6em;
-    }
+  /* line 179, /assets/scss/_menu.scss */
+  .cbp-hrmenu .cbp-hrsub-inner > div {
+    width: 100%;
+    float: none;
+    padding: 0; } }
+/*  */
+/* line 187, /assets/scss/_menu.scss */
+a.menu-link {
+  float: right;
+  display: block;
+  padding: 1em;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 50px;
+  height: 50px;
+  float: right;
+  text-indent: -9999px;
+  overflow: hidden;
+  background: #296ab9 url("../img/hamburger.gif") no-repeat 50% 50%; }
 
-}
+@media screen and (-webkit-min-device-pixel-ratio: 1.3), screen and (min--moz-device-pixel-ratio: 1.3), screen and (-o-min-device-pixel-ratio: 2 / 1), screen and (min-device-pixel-ratio: 1.3), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  /* line 206, /assets/scss/_menu.scss */
+  a.menu-link {
+    background-image: url("../img/hamburger-retina.gif");
+    -webkit-background-size: 100px 100px;
+    -moz-background-size: 100px 100px;
+    -o-background-size: 100px 100px;
+    background-size: 100px 100px; } }
+/* line 215, /assets/scss/_menu.scss */
+nav[role=navigation] {
+  clear: both;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out; }
 
-@media screen and (max-width: 36em) {
-    .cbp-hrmenu .cbp-hrsub-inner > div {
-        width: 100%;
-        float: none;
-        padding: 0 2em;
-    }
-}
+/* line 224, /assets/scss/_menu.scss */
+.js nav[role=navigation] {
+  overflow: hidden;
+  max-height: 0; }
 
+/* line 229, /assets/scss/_menu.scss */
+.js nav[role=navigation].active {
+  overflow: visible; }
 
+/* line 233, /assets/scss/_menu.scss */
+nav[role=navigation].active {
+  max-height: 99em; }
 
-*/
+@media screen and (min-width: 37.6em) {
+  /* line 238, /assets/scss/_menu.scss */
+  a.menu-link {
+    display: none; }
+
+  /* line 242, /assets/scss/_menu.scss */
+  .js nav[role=navigation] {
+    max-height: 99999px;
+    overflow: visible; } }
 /* Vlastní proměnné a gradienty */
-/* line 86, D:\wamp\www\2sqn.sk\assets\scss\app.scss */
+/* line 85, D:\wamp\www\2sqn.sk\assets\scss\app.scss */
 .prechod-sedy {
   background: #FFFFFF;
   /* Old browsers */
@@ -4849,111 +4914,195 @@ strong {
   background: -ms-linear-gradient(top, #ecf0f1 0%, white 100%);
   background: linear-gradient(to bottom, #ecf0f1 0%, white 100%); }
 
-/* icons */
-/* line 98, D:\wamp\www\2sqn.sk\assets\scss\app.scss */
+/* ***************** */
+/* Ikony             */
+/* ***************** */
+/* line 99, D:\wamp\www\2sqn.sk\assets\scss\app.scss */
 .icon {
   width: 33px;
   height: 33px; }
 
-/* Main layout */
-/* line 106, D:\wamp\www\2sqn.sk\assets\scss\app.scss */
+/* ***************** */
+/* Hlavička     */
+/* ***************** */
+/* line 109, D:\wamp\www\2sqn.sk\assets\scss\app.scss */
 .header {
   position: relative;
   height: 10.625em;
   text-align: center;
   padding: 1.25em 0; }
 
-/* line 114, D:\wamp\www\2sqn.sk\assets\scss\app.scss */
+/* line 117, D:\wamp\www\2sqn.sk\assets\scss\app.scss */
 .header img {
   margin: 0 auto; }
 
-/* line 118, D:\wamp\www\2sqn.sk\assets\scss\app.scss */
+/* line 121, D:\wamp\www\2sqn.sk\assets\scss\app.scss */
 .login-box {
   position: absolute;
   top: 1.25em;
   right: 1.25em;
   font-size: 0.75em; }
 
-/* line 125, D:\wamp\www\2sqn.sk\assets\scss\app.scss */
+/* line 128, D:\wamp\www\2sqn.sk\assets\scss\app.scss */
 .head-photo {
   margin-bottom: -2px; }
 
-/* line 129, D:\wamp\www\2sqn.sk\assets\scss\app.scss */
+/* line 132, D:\wamp\www\2sqn.sk\assets\scss\app.scss */
 .head-photo img {
   width: 100%; }
 
-/* line 133, D:\wamp\www\2sqn.sk\assets\scss\app.scss */
+/* ***************** */
+/* Stylování stránky */
+/* ***************** */
+/* line 140, D:\wamp\www\2sqn.sk\assets\scss\app.scss */
 .podklad, .uvodni-slovo {
   padding: 1.6em 0 0.5em 0; }
 
-/* line 137, D:\wamp\www\2sqn.sk\assets\scss\app.scss */
+/* line 144, D:\wamp\www\2sqn.sk\assets\scss\app.scss */
 .podklad {
   background: #ecf0f1; }
 
-/* line 141, D:\wamp\www\2sqn.sk\assets\scss\app.scss */
+/* line 148, D:\wamp\www\2sqn.sk\assets\scss\app.scss */
 .uvodni-slovo p {
   font-size: 0.875em; }
 
-/* line 145, D:\wamp\www\2sqn.sk\assets\scss\app.scss */
+/* ***************** */
+/* Popiska obrázku   */
+/* ***************** */
+/* line 156, D:\wamp\www\2sqn.sk\assets\scss\app.scss */
 p.fig-caption {
   font-size: 0.6875em;
   font-weight: 400;
   margin-top: .325em; }
 
-/* line 151, D:\wamp\www\2sqn.sk\assets\scss\app.scss */
+/* ***************** */
+/* Pruhy patičky     */
+/* ***************** */
+/* line 166, D:\wamp\www\2sqn.sk\assets\scss\app.scss */
 footer .novinky, footer .social, footer .copyright {
   color: #fff;
   padding: 1.875em 0;
   width: 100%;
   line-height: 1.2em; }
 
-/* line 158, D:\wamp\www\2sqn.sk\assets\scss\app.scss */
+/* line 173, D:\wamp\www\2sqn.sk\assets\scss\app.scss */
 footer .novinky span, footer .social span, footer .copyright span {
   font-size: 0.75em; }
 
-/* line 162, D:\wamp\www\2sqn.sk\assets\scss\app.scss */
+/* line 177, D:\wamp\www\2sqn.sk\assets\scss\app.scss */
 footer .novinky h2, footer .social h2, footer .copyright h2 {
-  font-size: 1.5em; }
+  font-size: 1.625em; }
 
-/* line 166, D:\wamp\www\2sqn.sk\assets\scss\app.scss */
-footer .novinky {
-  background-color: #34495e; }
-
-/* line 170, D:\wamp\www\2sqn.sk\assets\scss\app.scss */
-footer .novinky h2 {
-  color: #1abc9c; }
-
-/* line 174, D:\wamp\www\2sqn.sk\assets\scss\app.scss */
+/* line 181, D:\wamp\www\2sqn.sk\assets\scss\app.scss */
 footer .social h2 {
   color: #afdefa;
   padding-left: 43px; }
 
-/* line 179, D:\wamp\www\2sqn.sk\assets\scss\app.scss */
+/* line 186, D:\wamp\www\2sqn.sk\assets\scss\app.scss */
 footer .social {
   background-color: #2c3e50; }
 
-/* line 183, D:\wamp\www\2sqn.sk\assets\scss\app.scss */
+/* ***************** */
+/* Novinky v patičce */
+/* ***************** */
+/* line 194, D:\wamp\www\2sqn.sk\assets\scss\app.scss */
+footer .novinky {
+  background-color: #34495e; }
+
+/* line 198, D:\wamp\www\2sqn.sk\assets\scss\app.scss */
+footer .novinky h2 {
+  color: #1abc9c; }
+
+/* line 202, D:\wamp\www\2sqn.sk\assets\scss\app.scss */
+footer .novinky article {
+  padding-left: 43px; }
+
+/* line 206, D:\wamp\www\2sqn.sk\assets\scss\app.scss */
+footer .novinky h3 {
+  font-size: 1.25em;
+  margin-bottom: 0px; }
+
+/* line 211, D:\wamp\www\2sqn.sk\assets\scss\app.scss */
+footer .novinky h3, footer .novinky h3 a, footer .novinky h3 a:hover, footer .novinky p a, footer .novinky p a:hover {
+  color: #afdefa; }
+
+/* line 215, D:\wamp\www\2sqn.sk\assets\scss\app.scss */
+footer .novinky p a, footer .novinky p a:hover, footer .novinky h3 a:hover {
+  text-decoration: underline; }
+
+/* line 219, D:\wamp\www\2sqn.sk\assets\scss\app.scss */
+footer .novinky .datum {
+  font-size: 0.6875em;
+  color: #bdc3c7; }
+
+/* line 224, D:\wamp\www\2sqn.sk\assets\scss\app.scss */
+footer .novinky p {
+  font-size: 0.8125em; }
+
+/* ***************** */
+/* Adresa            */
+/* ***************** */
+/* line 232, D:\wamp\www\2sqn.sk\assets\scss\app.scss */
 footer address {
   font-style: normal;
   padding-left: 45px;
   font-size: 0.875em; }
 
-/* line 189, D:\wamp\www\2sqn.sk\assets\scss\app.scss */
+/* line 238, D:\wamp\www\2sqn.sk\assets\scss\app.scss */
+footer address a, footer address a:hover {
+  color: #afdefa;
+  text-decoration: underline; }
+
+/* ***************** */
+/* Copyright         */
+/* ***************** */
+/* line 247, D:\wamp\www\2sqn.sk\assets\scss\app.scss */
 footer .copyright {
   background-color: #263343;
   font-weight: 300; }
 
-/* line 194, D:\wamp\www\2sqn.sk\assets\scss\app.scss */
+/* line 252, D:\wamp\www\2sqn.sk\assets\scss\app.scss */
 footer .copyright a {
   color: #fff;
   font-weight: 600; }
 
-/* line 200, D:\wamp\www\2sqn.sk\assets\scss\app.scss */
+/* ***************** */
+/* Facebook          */
+/* ***************** */
+/* line 261, D:\wamp\www\2sqn.sk\assets\scss\app.scss */
 footer .fb-like-box iframe {
   max-width: 80% !important;
   margin-left: 35px; }
 
-/* line 205, D:\wamp\www\2sqn.sk\assets\scss\app.scss */
+/* line 266, D:\wamp\www\2sqn.sk\assets\scss\app.scss */
 footer .fb-like-box iframe img {
   width: 30px !important;
   height: 30px !important; }
+
+/* ***************** */
+/* Ankety            */
+/* ***************** */
+/* line 275, D:\wamp\www\2sqn.sk\assets\scss\app.scss */
+footer .anketa form {
+  padding-left: 43px;
+  font-size: 0.875em; }
+
+/* line 280, D:\wamp\www\2sqn.sk\assets\scss\app.scss */
+footer .anketa form > .otazka {
+  font-weight: 600; }
+
+/* line 284, D:\wamp\www\2sqn.sk\assets\scss\app.scss */
+footer .anketa form > dl > dt {
+  font-weight: normal; }
+
+/* line 288, D:\wamp\www\2sqn.sk\assets\scss\app.scss */
+footer .anketa form > dl > dd > i {
+  display: block;
+  font-size: .95em;
+  font-style: normal;
+  height: 1.5em;
+  line-height: 1.5em;
+  padding: 0 0.3125em;
+  background: #1abc9c;
+  -webkit-border-radius: 3px;
+  border-radius: 3px; }
