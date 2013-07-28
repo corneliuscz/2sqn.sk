@@ -4807,7 +4807,7 @@ nav a#pull {
     left: 0em;
     width: 70px;
     height: 100%;
-    background: url("/assets/img/i-horse-inverted.png") 0 50% no-repeat; }
+    background: url("../img/i-horse-inverted.png") 0 50% no-repeat; }
     /* line 149, /assets/scss/_menu.scss */
     .cbp-hrmenu > ul > li a.home img {
       display: none; } }
