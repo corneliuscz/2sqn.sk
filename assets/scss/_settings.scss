@@ -88,13 +88,13 @@ $font-smoothing: antialiased;
 
 // We use these to control header font styles
 $header-font-family: "Open Sans", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-$header-font-weight: 300;
+$header-font-weight: 100;
 // $header-font-style: normal;
-// $header-font-color: #222;
+$header-font-color: #2980b9;
 // $header-line-height: 1.4;
 // $header-top-margin: .2em;
 // $header-bottom-margin: .5em;
-// $header-text-rendering: optimizeLegibility;
+$header-text-rendering: optimizeLegibility;
 
 // We use these to control header font sizes
 // $h1-font-size: emCalc(44px);
@@ -929,7 +929,7 @@ $header-font-weight: 300;
 // $table-row-padding: emCalc(9px) emCalc(10px);
 // $table-row-font-size: emCalc(14px);
 // $table-row-font-color: #222;
-// $table-line-height: emCalc(18px);
+$table-line-height: emCalc(22px);
 
 // These are for controlling the display and margin of tables
 // $table-display: table-cell;

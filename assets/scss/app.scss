@@ -46,10 +46,16 @@
 
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400,600&subset=latin-ext);
 
+$pidi-screen: emCalc(480px);
+$pidi: "only screen and (min-width:"#{$pidi-screen}")";
+
 /* Barvy */
 
 $lightblue      : #afdefa;
-$menublue       : #296ab9;
+//$menublue       : #296ab9;
+$menublue       : rgba(41, 128, 185, .8);
+
+$grey           : #fafcfc;
 
 $turquoise      : #1abc9c;
 $greensea       : #16a085;
@@ -106,18 +112,6 @@ strong {
 /* Hlavička     */
 /* ***************** */
 
-.header {
-    position: relative;
-
-    height: emCalc(170px);
-    text-align: center;
-    padding: emCalc(20px) 0;
-}
-
-.header img {
-    margin: 0 auto;
-}
-
 .login-box {
     position: absolute;
     top: emCalc(20px);
@@ -126,16 +120,42 @@ strong {
 }
 
 .head-photo {
-    margin-bottom: -2px;
-}
-
-.head-photo img {
-    width: 100%;
+    img {
+        width: 100%;
+        vertical-align: bottom;
+    }
 }
 
 /* ***************** */
 /* Stylování stránky */
 /* ***************** */
+
+@media #{$pidi} {
+    img.left, figure.left {
+        margin-right: 1.3em;
+        margin-bottom: 1.3em;
+    }
+
+    img.right, figure.right {
+        margin-left: 1.3em;
+        margin-bottom: 1.3em;
+    }
+}
+
+article {
+    //margin-bottom: 2em;
+
+    .border {
+            border: 1px solid $clouds;
+            padding: 5px;
+            vertical-align: bottom;
+        }
+
+    .fullw {
+        width: 100%;
+        height: auto;
+    }
+}
 
 .podklad, .uvodni-slovo {
     padding: 1.6em 0 0.5em 0;
@@ -145,18 +165,37 @@ strong {
     background: $clouds;
 }
 
+.obsah {
+    margin-top: 2em;
+}
+
+@media screen and (max-width: 37.5em) {
+    .podklad {
+        padding: 1.6em 0 0.5em 0;
+        font-size: .95em;
+    }
+}
+
 .uvodni-slovo p {
     font-size: emCalc(14px);
+}
+
+table {
+    width: 100%;
 }
 
 /* ***************** */
 /* Popiska obrázku   */
 /* ***************** */
 
-p.fig-caption {
-    font-size: emCalc(11px);
+p.fig-caption, figcaption {
+    font-size: emCalc(13px);
     font-weight: 400;
     margin-top: .325em;
+}
+
+.uvodni-slovo p.fig-caption {
+    font-size: emCalc(11px);
 }
 
 /* ***************** */
