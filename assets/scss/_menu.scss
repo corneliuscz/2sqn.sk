@@ -1,5 +1,8 @@
 .menu-back {
-    background: $wetasphalt; /* was $clouds */
+    background: $wetasphalt url('../img/ticks.png'); /* was $clouds */
+    position: fixed;
+    width: 100%;
+    z-index: 50;
 }
 
 .cbp-hrmenu {
@@ -43,6 +46,7 @@
     top: 1em;
 
     padding: 0;
+    text-align: left;
 }
 
 a.home-sec {
@@ -62,11 +66,12 @@ a.home-sec {
 }
 
 .cbp-hrmenu > ul > li > a:hover {
-    color: $peterriver;
+    color: $clouds;
 }
 
 .cbp-hrmenu > ul > li.cbp-hropen > a,
-.cbp-hrmenu > ul > li.cbp-hropen > a:hover {
+.cbp-hrmenu > ul > li.cbp-hropen > a:hover,
+.cbp-hrmenu > ul > li.cbp-hropen > a:active {
     color: #fff;
     background: $menublue;
 }
@@ -117,8 +122,13 @@ a.home-sec {
     color: $lightblue;
     padding: 1em 0 0.6em;
     margin: 0;
+    font-family: "Open Sans", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
     font-size: 1.55em;
     font-weight: 100;
+
+    a {
+       color: $lightblue;
+    }
 }
 
 nav a#pull {

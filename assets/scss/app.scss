@@ -45,6 +45,7 @@
 // @import "foundation/components/dropdown";
 
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400,600&subset=latin-ext);
+@import url(http://fonts.googleapis.com/css?family=Signika:300&subset=latin,latin-ext);
 
 $pidi-screen: emCalc(480px);
 $pidi: "only screen and (min-width:"#{$pidi-screen}")";
@@ -87,15 +88,17 @@ strong {
 
 @import "menu";
 
-/* Vlastní proměnné a gradienty */
-.prechod-sedy {
-    background: #FFFFFF; /* Old browsers */
-    background: -moz-linear-gradient(top, #ecf0f1 0%, #ffffff 100%);
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ecf0f1), color-stop(100%,#ffffff));
-    background: -webkit-linear-gradient(top, #ecf0f1 0%, #ffffff 100%);
-    background: -o-linear-gradient(top, #ecf0f1 0%, #ffffff 100%);
-    background: -ms-linear-gradient(top, #ecf0f1 0%, #ffffff 100%);
-    background: linear-gradient(to bottom,#ecf0f1 0%, #ffffff 100%);
+/* ***************** */
+/* ScrollUp          */
+/* ***************** */
+
+#scrollUp {
+    bottom: 20px;
+    right: 20px;
+    height: 38px;  /* Height of image */
+    width: 38px; /* Width of image */
+    background: url(../img/top.png) no-repeat;
+    text-indent: -10000000px;
 }
 
 /* ***************** */
@@ -107,9 +110,8 @@ strong {
     height: 33px;
 }
 
-
 /* ***************** */
-/* Hlavička     */
+/* Hlavička          */
 /* ***************** */
 
 .login-box {
@@ -120,9 +122,18 @@ strong {
 }
 
 .head-photo {
+
+    width: 100%;
+    //height: 600px;
+    padding-top: 50px;
+    padding-bottom: 50%;
+    position: relative;
+
     img {
         width: 100%;
         vertical-align: bottom;
+        position: fixed;
+        z-index: -5;
     }
 }
 
@@ -142,6 +153,10 @@ strong {
     }
 }
 
+body > article {
+    background: #fff;
+}
+
 article {
     //margin-bottom: 2em;
 
@@ -157,16 +172,33 @@ article {
     }
 }
 
-.podklad, .uvodni-slovo {
+.podklad, .uvod, .uvodni-slovo {
     padding: 1.6em 0 0.5em 0;
 }
 
-.podklad {
+.uvod {
     background: $clouds;
 }
 
+.podklad {
+    //background: $clouds;
+    //background: rgba(44, 62, 80, 0.7);
+    background: rgba(38, 51, 67, 0.7);
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+
+    h1 {
+        color: #fff;
+    }
+
+    p {
+        color: #fff;
+    }
+}
+
 .obsah {
-    margin-top: 2em;
+    padding-top: 2em;
 }
 
 @media screen and (max-width: 37.5em) {
@@ -334,6 +366,7 @@ footer .anketa form > dl > dd > i {
 
     padding: 0 emCalc(5px);
 
+    overflow: hidden;
 
     background: $turquoise;
 
