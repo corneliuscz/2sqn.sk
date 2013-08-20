@@ -16,6 +16,7 @@ if ($pokracuj == 1)
     require_once "includes/_gb_funkcie.php";
 ?>
 <article class="guestbook">
+    <section class="obsah">
         <div class="row">
             <div class="large-12 columns">
                 <form action="" method="post">
@@ -30,6 +31,7 @@ if ($pokracuj == 1)
             <?php gb_sprava_zobrazit(15,2); ?>
             </div>
         </div>
+    </section>
 </article>
 
 <?php

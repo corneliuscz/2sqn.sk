@@ -1,12 +1,12 @@
 <header>
     <div class="menu-back">
         <div class="row">
-                <a class="home-sec" href="/"><img src="assets/img/i-horse-inverted.png" alt="">2SQN TFW Sliač</a>
+                <a class="home-sec" href="/"><img src="http://<?php echo $_SERVER['HTTP_HOST']; ?>/assets/img/i-horse-inverted.png" alt="">2SQN TFW Sliač</a>
                 <a href="#menu" class="menu-link">Menu</a>
                 <nav id="cbp-hrmenu" class="cbp-hrmenu large-12 columns" role="navigation">
                     <ul>
                         <li class="homelink">
-                            <a class="home" href="/"><img src="assets/img/logo-2sqn.png" alt=""></a>
+                            <a class="home" href="/"><img src="http://<?php echo $_SERVER['HTTP_HOST']; ?>/assets/img/logo-2sqn.png" alt=""></a>
                         </li>
                         <li>
                             <a href="/novinky">novinky</a>

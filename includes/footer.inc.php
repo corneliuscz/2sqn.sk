@@ -13,7 +13,7 @@
         ?>
             <div class="large-4 columns novinka-pata">
                 <article class="novinka icon-l39-m">
-                    <h3><a href="/novinka/<?php echo $riadok["number"]; ?>"><?php echo $riadok ["subject"]; ?></a></h3>
+                    <h3><a href="/novinky/<?php echo $riadok["number"]; ?>"><?php echo $riadok ["subject"]; ?></a></h3>
                     <span class="datum"><?php echo date('d.m.Y', strtotime($riadok['from_date'])); ?></span>
                     <p><?php  echo $riadok ["head"]; ?></p>
                 </article>
@@ -56,19 +56,19 @@
     </section>
 </footer>
 
-<script src="assets/js/vendor/jquery.js"></script>
-<script src="assets/js/app.js"></script>
+<script src="<?php echo $server_url; ?>assets/js/vendor/jquery.js"></script>
+<script src="<?php echo $server_url; ?>assets/js/app.js"></script>
 
 <script>
 $(document).foundation();
 </script>
 
-<script src="assets/js/cbpHorizontalMenu.js"></script>
+<script src="<?php echo $server_url; ?>assets/js/cbpHorizontalMenu.js"></script>
 
-<script src="assets/js/jquery.easing.min.js"></script>
-<script src="assets/js/jquery.scrollUp.js"></script>
+<script src="<?php echo $server_url; ?>assets/js/jquery.easing.min.js"></script>
+<script src="<?php echo $server_url; ?>assets/js/jquery.scrollUp.js"></script>
 
-<script src="assets/js/jquery.equalHeights.min.js"></script>
+<script src="<?php echo $server_url; ?>assets/js/jquery.equalHeights.min.js"></script>
 
 <script>
 /* scrollUp Minimum setup */

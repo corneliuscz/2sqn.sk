@@ -21,7 +21,7 @@ $message = MySQL_Query("SELECT * FROM board ORDER BY number DESC LIMIT $start,$v
 
 while ($riadok = MySQL_Fetch_Array($message)):
  ?>
-        <div class="large-6 columns novinka">
+        <div class="large-12 columns novinka">
             <?php if (!empty($riadok["pict"])) echo '<img src="'.$riadok ['pict'].'" class="novinka">'; ?>
             <h3><?php echo $riadok ["subject"];?></h3>
             <span><?php echo date('d.m.Y', strtotime($riadok['from_date'])); ?></span>

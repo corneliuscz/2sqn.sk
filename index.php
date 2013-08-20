@@ -1,8 +1,16 @@
 <?php
-require_once('glue.php');
-
+//require_once('glue.php');
 session_start();
+require 'Slim/Slim.php';
+\Slim\Slim::registerAutoloader();
 
+$app = new \Slim\Slim();
+
+$req = $app->request;
+
+$server_url = "http://".$_SERVER['HTTP_HOST']."/";
+//$server_url = $req->getRootUri();
+/*
 $urls = array(
                 '/' => 'index',
                 '/login' => 'userlogin',
@@ -11,19 +19,23 @@ $urls = array(
                 '/forum' => 'forum',
                 '/o-letke' => 'letka',
                 '/novinky' => 'novinky',
-                '/novinka/[a-zA-Z0-9]' => 'novinka',
+                '/novinky/(\d+)' => 'novinka',
                 '/lzsl' => 'lzsl',
                 '/albatros' => 'albatros',
                 '/letka' => 'letka'
             );
+*/
 
-class index {
-    function GET() { include ('stranky/index.inc.php'); }
-}
+$app->get('/', function () {
+    include ('stranky/index.php');
+});
 
-class userlogin {
-    function GET() { include ('includes/_loginform.inc.php'); }
-    function POST() {
+$app->get('/login', function () {
+    // přidat kontrolu jestli už náhodou není uživatel přihlášený
+    include ('includes/_loginform.inc.php');
+});
+
+$app->post('/login', function () use ($app, $req) {
         if (isset($_POST['login']) && isset($_POST['heslo'])) { // kontrola jestli se poslaly všechny data
             include "includes/_dba.php";     // připojíme se do databáze
 
@@ -49,7 +61,8 @@ class userlogin {
                     $_SESSION['regcas'] = $cosi['regcas']; /* kdy se registroval */
                     $_SESSION['lastlog'] = $cosi['lastlog']; /* kdy byl naposledy prihlášený */
                     $_SESSION['time'] = $casova_znacka; /* Nečinný uživatel vydrží přihlášený $ttl minut od tohoto času - místo CODE - viz kontrola.php */
-                    header("Location: /"); /* a pošleme přihlášeného uživatele na stránku, na které vyplnil login */
+                    $app->redirect($_POST['origin']);
+                    //header("Location: /"); /* a pošleme přihlášeného uživatele na stránku, na které vyplnil login */
 
                     /* tímhle je uživatel přihlášený a už nemusíš měnit odkazy na stránky aby obsahovaly nebezpečné údaje. Vše je uložené v session na serveru a pomocí $_SESSION["promenna"] si to můžeš vytáhnout a pomocí kontrola.php a proměnné $pokracuj zjistíš jestli je uživatel přihlášený - viz main.php :-) */
                 }
@@ -60,78 +73,111 @@ class userlogin {
                     unset($_SESSION['regcas']);
                     unset($_SESSION['lastlog']);
                     session_destroy();
-                    echo "Zlé heslo. <a href=\"index.php\">Vyskúšaj znova.</a>";  /* Místo vypsání textu můžeme rovnou zobrazit úvodní stránku s hláškou o špatném hesle (header(index.php?hlaska="Zlé heslo, vyskúšaj znova");) pokud tu funkci na zobrazení hlášek do index.php doplníme :-) V takovém případě by pak bylo lepší se na hlášky odkazovat chybovým kódem (header(index.php?chyba=heslo);) než je předávat přes URL a na základě jej je zobrazovat přes switch(). Případně tomu udělat speciální stránku s výpisem chyb... */
+                    echo "Zlé heslo. <a href=\"/login\">Vyskúšaj znova.</a>";  /* Místo vypsání textu můžeme rovnou zobrazit úvodní stránku s hláškou o špatném hesle (header(index.php?hlaska="Zlé heslo, vyskúšaj znova");) pokud tu funkci na zobrazení hlášek do index.php doplníme :-) V takovém případě by pak bylo lepší se na hlášky odkazovat chybovým kódem (header(index.php?chyba=heslo);) než je předávat přes URL a na základě jej je zobrazovat přes switch(). Případně tomu udělat speciální stránku s výpisem chyb... */
                 } // konec IF pokud heslo souhlasi
             }
             else {
-                echo "Užívateľ nebol nájdený. <a href=\"index.php\">Vyskúšaj znova.</a>";
+                echo "Užívateľ nebol nájdený. <a href=\"/login\">Vyskúšaj znova.</a>";
             } // konec IF jestli existuje záznam o uživateli
             mysql_close($db); // zavřeme spojení s databází
         }
+});
+
+$app->get('/logout', function () use ($app) {
+    unset($_SESSION['prihlaseny']); // vyprázdníme proměnné
+    unset($_SESSION['login']);
+    unset($_SESSION['time']);
+    unset($_SESSION['regcas']);
+    unset($_SESSION['lastlog']);
+    session_destroy();                // zrušíme session
+    $app->redirect('/');    // přesměrujeme uživatele na main.php nebo index.php, nebo jinou stránku o tom že byl odhlášený (třeba index.php?kapitola=odhlaseni). Kam přesměrovat uživatele po odhlášení si už nastav, bez toho abych viděl strukturu toho rozhodování co zobrazit se špatně hádá, na to bych potřeboval komplet kód stránek :-)
+});
+
+$app->get('/albatros', function () {
+    include ('stranky/albatros.php');
+});
+
+$app->get('/galeria', function () {
+    include ('stranky/galeria.php');
+});
+
+$app->get('/forum', function () use ($app, $req) {
+    $pokracuj = 0;
+    include ('includes/_kontrola.php');
+    include ('includes/_gb_funkcie.php');
+    include ('stranky/guestbook.php');
+});
+
+$app->post('/forum', function () {
+    $pokracuj = 0;
+    include ('includes/_kontrola.php');
+
+    if ( $pokracuj == 1 ) {
+        include "includes/_dba.php";
+        include "includes/_gb_funkcie.php";
+        $sprava_odoslat = gb_sprava_odoslat($_SESSION['login'], $_POST["sprava"], $_SERVER["REMOTE_ADDR"]);
+        mysql_close($db); // zavřeme spojení s databází
+
+        if(!$sprava_odoslat) {  echo "Vyskytla sa chyba! Pravdepodobne ste nezadali všetky údaje správne.";  }
+        else { $app->redirect('/forum'); }
+    } else {
+        echo "Pro odeslání zprávy musíte být přihlášení";
     }
-}
+});
 
-class userlogout {
-    function GET() {
-        unset($_SESSION['prihlaseny']); // vyprázdníme proměnné
-        unset($_SESSION['login']);
-        unset($_SESSION['time']);
-        unset($_SESSION['regcas']);
-        unset($_SESSION['lastlog']);
-        session_destroy();                // zrušíme session
-        header("Location: /");    // přesměrujeme uživatele na main.php nebo index.php, nebo jinou stránku o tom že byl odhlášený (třeba index.php?kapitola=odhlaseni). Kam přesměrovat uživatele po odhlášení si už nastav, bez toho abych viděl strukturu toho rozhodování co zobrazit se špatně hádá, na to bych potřeboval komplet kód stránek :-)
-    }
-}
+$app->get('/o-letke', function () {
+    include ('stranky/letka.php');
+});
 
-class albatros {
-    function GET() { include ('stranky/albatros.inc.php'); }
-}
+$app->get('/lzsl', function () {
+    include ('stranky/lzsl.php');
+});
 
-class forum {
-    function GET() {
-        $pokracuj = 0;
-        include ('includes/_kontrola.php');
-        include ('includes/_gb_funkcie.php');
-        include ('stranky/guestbook.inc.php');
-    }
+$app->get('/novinky(/:id)', function ($id = 0) {
+    if (!empty($id)) {  // Číslo novinky z URL
+        include "includes/_dba.php";
+        $novinka_query = 'SELECT * FROM board WHERE number LIKE ' .$id;
+        $novinka = mysql_query($novinka_query) or die("Chyba načítání novinek");
 
-    function POST() {
-        $pokracuj = 0;
-        include ('includes/_kontrola.php');
-
-        if ( $pokracuj == 1 ) {
-            include "includes/_dba.php";
-            include "includes/_gb_funkcie.php";
-            $sprava_odoslat = gb_sprava_odoslat($_SESSION['login'], $_POST["sprava"], $_SERVER["REMOTE_ADDR"]);
-            mysql_close($db); // zavřeme spojení s databází
-
-            if(!$sprava_odoslat) {  echo "Vyskytla sa chyba! Pravdepodobne ste nezadali všetky údaje správne.";  }
+        if (mysql_num_rows($novinka)) { // Novinka existuje
+            while ($riadok = MySQL_Fetch_Array($novinka)):
+            ?>
+            <div class="head-photo">
+                <?php if (!empty($riadok["pict"])) echo '<img src="'.$server_url.'assets/img/novinky/'.$riadok ['pict'].'" class="novinka">'; ?>
+                <section class="podklad">
+                    <div class="row">
+                        <div class="large-12 columns">
+                            <h1><?php echo $riadok ["subject"];?></h1>
+                            <span><?php echo date('d.m.Y', strtotime($riadok['from_date'])); ?></span>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <article class="novinky">
+            <div class="row">
+                <div class="large-12 columns novinka">
+                    <?php  echo $riadok ["head"]; ?>
+                    <?php if (!empty($riadok ["body"])) { ?>
+                        <?php  echo $riadok ["body"]; ?>
+                    <?php } ?>
+                </div>
+            </div>
+            </article>
+            <?php
+            endwhile;
         } else {
-            echo "Pro odeslání zprávy musíte být přihlášení";
+            header('Location: /novinky');
         }
+        mysql_close($db);
+    } else {
+        include ('stranky/novinky.php');
     }
-}
-
-class letka {
-    function GET() { include ('stranky/letka.inc.php'); }
-}
-
-class lzsl {
-    function GET() { include ('stranky/lzsl.inc.php'); }
-}
-
-class novinky {
-    function GET() { include ('stranky/novinky.inc.php'); }
-}
-
-class novinka {
-    function GET() { include ('stranky/novinky.inc.php'); }
-}
+});
 
 ?>
 <?php include ('includes/header.inc.php'); ?>
 <?php include ('includes/menu.inc.php'); ?>
-<?php glue::stick($urls); ?>
+<?php $app->run(); ?>
 <?php include ('includes/footer.inc.php');    ?>
 
 <?php

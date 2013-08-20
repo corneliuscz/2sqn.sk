@@ -81,8 +81,8 @@ function gb_sprava_zobrazit ($na_stranu, $rozsah)
         $grav_mail = (mysql_fetch_row($grav_vysledok));
     }
 
-    $default = "http://fakeimg.pl/40/?text=Vymen me";   // Vlastní ikona pro ty kteří gravatar nemají
-    $size = 40;
+    $default = "http://fakeimg.pl/120/?text=Vymen_me";   // Vlastní ikona pro ty kteří gravatar nemají
+    $size = 120;
     $grav_url = "http://www.gravatar.com/avatar/" . md5( strtolower( trim( $grav_mail[0] ) ) ) . "?d=" . urlencode( $default ) . "&s=" . $size;
     // Konec update na gravatary
     ?>
