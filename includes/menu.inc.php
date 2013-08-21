@@ -79,7 +79,7 @@ if ($pokracuj == 1) { ?>
     <div class="userlogout">
         <div class="row">
             <div class="large-12 columns">
-                Prihlásený ako: <?php echo $_SESSION['login']; ?> (<a href="/logout">Odhlásiť</a>)
+                <span>Prihlásený ako: <?php echo $_SESSION['login']; ?> (<a href="/logout">Odhlásiť</a>)</span>
             </div>
         </div>
     </div>

@@ -13,7 +13,7 @@ $sortdir_folders        = "DESC"; // Sort direction of folders: [ASC][DESC]
 $sortdir_files          = "DESC"; // Sort direction of files: [ASC][DESC]
 
 //LANGUAGE STRINGS
-$label_home             = "Galerie"; //Name of home link in breadcrumb navigation
+$label_home             = "Galéria"; //Name of home link in breadcrumb navigation
 $label_new              = "Nové"; //Text to display for new images. Use with $display_new variable
 $label_page             = "Strana"; //Text used for page navigation
 $label_all              = "Všetky"; //Text used for link to display all images in one page

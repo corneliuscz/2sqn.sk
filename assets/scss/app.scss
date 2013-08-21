@@ -98,7 +98,7 @@ strong {
     }
 }
 
-.head-photo.forum, .head-photo.login {
+.head-photo.forum, .head-photo.login, .head-photo.hgaleria {
     height: 100px;
     padding-bottom: 0;
     padding-top: 170px;
@@ -118,8 +118,12 @@ strong {
     }
 }
 
+.head-photo.hgaleria {
+    background: $wetasphalt url(../img/header-photo-forum.png) no-repeat 80% 0;
+}
+
 .head-photo.login {
-    background: $belizehole url(../img/header-photo-forum-zelena.png) no-repeat 80% 0;
+    background: $turquoise url(../img/header-photo-forum-zelena.png) no-repeat 80% 0;
 }
 
 .head-photo.forum {
@@ -135,10 +139,11 @@ strong {
 
     textarea {
         min-height: 10em;
-
+        /*
         @media #{$small} {
-            min-height: 15em;
+            min-height: 10em;
         }
+        */
     }
 
     .gb_post {
@@ -223,7 +228,11 @@ article {
 }
 
 .podklad, .uvod, .uvodni-slovo, .warning, .errors, .loginform {
-    padding: 1.6em 0 0.5em 0;
+    padding: 0.5em 0 0.5em 0;
+
+    @media #{$small} {
+        padding-top: 1.6em;
+    }
 }
 
 .uvod {
@@ -233,7 +242,8 @@ article {
 .podklad {
     //background: $clouds;
     //background: rgba(44, 62, 80, 0.7);
-    background: rgba(38, 51, 67, 0.7);
+    //background: rgba(38, 51, 67, 0.7);
+    background: rgba(0, 0, 0, 0.2);
     bottom: 0;
     position: absolute;
     width: 100%;

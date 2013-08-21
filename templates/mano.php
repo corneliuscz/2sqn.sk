@@ -1,4 +1,4 @@
-<div class="head-photo">
+<div class="head-photo hgaleria">
     <section class="podklad">
         <div class="row">
             <div class="large-12 columns">

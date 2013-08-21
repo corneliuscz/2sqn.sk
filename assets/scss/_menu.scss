@@ -7,27 +7,33 @@
 
 .userlogout {
     color: #fff;
-    font-size: emCalc(12px);
     line-height: 1.5em;
+    text-align: right;
 
-    background: rgba(52, 73, 94, 0.4);  position: fixed;  width: 100%;
+    background: $loginbar;
+    position: fixed;
+    width: 100%;
     z-index: 20;
     top: 50px;
-    text-align: right;
-    padding: 1em 0;
+
+    padding: 0.5em 0;
 
     @media #{$small} {
         margin-top: 3px;
     }
 
     span {
-        margin-left: 0.5em;
-        display: block;
-    }
+        display: inline-block;
+        font-size: emCalc(12px);
 
-    a, a:hover, a:visited, a:focus {
-        color: #fff;
-        text-decoration: underline;
+        @media #{$small} {
+            padding-right: 1.2em;
+        }
+
+        a, a:hover, a:visited, a:focus {
+            color: #fff;
+            text-decoration: underline;
+        }
     }
 }
 
@@ -187,7 +193,6 @@ nav a#pull {
             display: none;
         }
     }
-
 }
 
 
@@ -259,6 +264,18 @@ nav a#pull {
         border-bottom: 1px dashed $silver;
     }
 
+    .cbp-hrmenu > ul > li a:hover {
+        color: $belizehole;
+    }
+
+    .cbp-hrmenu .cbp-hrsub .inner > ul > li > a:hover {
+        color: $clouds;
+    }
+
+    .cbp-hrmenu > ul > li h4 a:hover , .cbp-hrsub h4 a:hover {
+        color: $lightblue;
+    }
+
     .cbp-hrmenu > ul > li.cbp-hropen > a {
         border-bottom: 1px dashed $lightblue;
     }
@@ -280,6 +297,13 @@ nav a#pull {
             font-size: 1.3em;
         }
     }
+
+    /* Oprava scrolování menu na malých displejích */
+    .menu-back, .userlogout {
+        position: absolute;
+    }
+
+
 }
 
 /*  */

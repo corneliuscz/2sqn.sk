@@ -18,14 +18,14 @@ if ($pokracuj == 1)
 <div class="forum-vypis">
     <section class="obsah">
         <div class="row">
-            <div class="large-4 columns">
+            <div class="large-12 columns">
                 <h3>Vaša správa</h3>
                 <form action="" method="post">
                     <textarea name="sprava"></textarea>
                     <input type="submit" value="Odoslať" class="button success medium radius">
                 </form>
             </div>
-            <div class="large-8 columns">
+            <div class="large-12 columns">
                 <?php gb_sprava_zobrazit(15,2); ?>
             </div>
         </div>
