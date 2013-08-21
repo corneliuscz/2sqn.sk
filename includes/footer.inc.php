@@ -60,22 +60,33 @@
 <script src="<?php echo $server_url; ?>assets/js/app.js"></script>
 
 <script>
-$(document).foundation();
+    $(document).foundation();
 </script>
 
-<script src="<?php echo $server_url; ?>assets/js/cbpHorizontalMenu.js"></script>
+<script src="<?php echo $server_url; ?>assets/js/jquery.equalHeights.min.js"></script>
+
+<script>
+/* Stejná výška všech novinek */
+var mq = window.matchMedia( "(min-width: 48em)" );
+/* Skript spouštíme pouze pro desktop, na mobilech a tabletech ne */
+if (mq.matches) {
+    $('.novinka-pata').equalHeights();
+}
+</script>
 
 <script src="<?php echo $server_url; ?>assets/js/jquery.easing.min.js"></script>
 <script src="<?php echo $server_url; ?>assets/js/jquery.scrollUp.js"></script>
-
-<script src="<?php echo $server_url; ?>assets/js/jquery.equalHeights.min.js"></script>
 
 <script>
 /* scrollUp Minimum setup */
 $(function () {
     $.scrollUp();
 });
+</script>
 
+<script src="<?php echo $server_url; ?>assets/js/cbpHorizontalMenu.js"></script>
+
+<script>
 /* Nahodíme menu */
 $(function() {
     cbpHorizontalMenu.init();
@@ -107,9 +118,19 @@ $(document).ready(function($){
     }
     $(window).scroll(function(){ showHomeLink(); })
 });
-
-/* Stejná výška všech novinek */
-$('.novinka-pata').equalHeights();
 </script>
+
+<!-- Fancybox na obrázky -->
+<script src="<?php echo $server_url; ?>assets/fancybox/lib/jquery.mousewheel-3.0.6.min.js"></script>
+
+<link rel="stylesheet" href="<?php echo $server_url; ?>assets/fancybox/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+<script src="<?php echo $server_url; ?>assets/fancybox/jquery.fancybox.min.js?v=2.1.5"></script>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        $(".fancybox").fancybox();
+    });
+</script>
+
 </body>
 </html>

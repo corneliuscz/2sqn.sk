@@ -5,6 +5,32 @@
     z-index: 50;
 }
 
+.userlogout {
+    color: #fff;
+    font-size: emCalc(12px);
+    line-height: 1.5em;
+
+    background: rgba(52, 73, 94, 0.4);  position: fixed;  width: 100%;
+    z-index: 20;
+    top: 50px;
+    text-align: right;
+    padding: 1em 0;
+
+    @media #{$small} {
+        margin-top: 3px;
+    }
+
+    span {
+        margin-left: 0.5em;
+        display: block;
+    }
+
+    a, a:hover, a:visited, a:focus {
+        color: #fff;
+        text-decoration: underline;
+    }
+}
+
 .cbp-hrmenu {
     width: 100%;
 
@@ -44,6 +70,7 @@
 .cbp-hrmenu > ul > li > a.home {
     position: absolute;
     top: 1em;
+    left: -1em;
 
     padding: 0;
     text-align: left;

@@ -32,12 +32,12 @@ Please enjoy this free script!
 
 $version = "0.3.5";
 ini_set("memory_limit","256M");
-include("includes/_gal_config.php");
+include("gallery_config.php");
 //-----------------------
 // DEFINE VARIABLES
 //-----------------------
 $page_navigation = "";
-$breadcrumb_navigation = "";
+$breadcrumb_navigation = '<ul class="breadcrumbs">';
 $thumbnails = "";
 $new = "";
 $images = "";
@@ -123,6 +123,7 @@ function checkpermissions($file) {
 //-----------------------
 // CHECK FOR NEW VERSION
 //-----------------------
+/*
 if (ini_get('allow_url_fopen') == "1") {
     $file = @fopen ("http://www.minigal.dk/minigalnano_version.php", "r");
     $server_version = fgets ($file, 1024);
@@ -131,7 +132,7 @@ if (ini_get('allow_url_fopen') == "1") {
     }
     fclose($file);
 }
-
+*/
 if (!defined("GALLERY_ROOT")) define("GALLERY_ROOT", "");
 $thumbdir = rtrim('photos' . "/" .$_REQUEST["dir"],"/");
 $thumbdir = str_replace("/..", "", $thumbdir); // Prevent looking at any up-level folders
@@ -158,7 +159,7 @@ $dirs = array();
                         $dirs[] = array(
                             "name" => $file,
                             "date" => filemtime($currentdir . "/" . $file . "/folder.jpg"),
-                            "html" => "<li><a href='/galeria&dir=" .ltrim($_GET['dir'] . "/" . $file, "/") . "'><img src='" . GALLERY_ROOT . "createthumb.php?filename=$currentdir/" . $file . "/folder.jpg&amp;size=$thumb_size'  alt='$label_loading' /><em>" . padstring($file, $label_max_length) . "</em></a></li>");
+                            "html" => "<div class=\"large-3 columns\"><div class=\"img-container\"><a href='/galeria?dir=" .ltrim($_GET['dir'] . "/" . $file, "/") . "'><img src='" . GALLERY_ROOT . "createthumb.php?filename=$currentdir/" . $file . "/folder.jpg&amp;size=$thumb_size'  alt='$label_loading' /><em>" . padstring($file, $label_max_length) . "</em></a></div></div>");
                     }  else
                     {
                     // Set thumbnail to first image found (if any):
@@ -168,13 +169,13 @@ $dirs = array();
                         $dirs[] = array(
                             "name" => $file,
                             "date" => filemtime($currentdir . "/" . $file),
-                            "html" => "<li><a href='/galeria&dir=" . ltrim($_GET['dir'] . "/" . $file, "/") . "'><img src='" . GALLERY_ROOT . "createthumb.php?filename=$thumbdir/" . $file . "/" . $firstimage . "&amp;size=$thumb_size'  alt='$label_loading' /><em>" . padstring($file, $label_max_length) . "</em></a></li>");
+                            "html" => "<div class=\"large-3 columns\"><div class=\"img-container\"><a href='/galeria?dir=" . ltrim($_GET['dir'] . "/" . $file, "/") . "'><img src='" . GALLERY_ROOT . "createthumb.php?filename=$thumbdir/" . $file . "/" . $firstimage . "&amp;size=$thumb_size'  alt='$label_loading' /><em>" . padstring($file, $label_max_length) . "</em></a></div></div>");
                         } else {
                         // If no folder.jpg or image is found, then display default icon:
                             $dirs[] = array(
                                 "name" => $file,
                                 "date" => filemtime($currentdir . "/" . $file),
-                                "html" => "<li><a href='/galeria&dir=" . ltrim($_GET['dir'] . "/" . $file, "/") . "'><img src='" . GALLERY_ROOT . "images/folder_" . strtolower($folder_color) . ".png' width='$thumb_size' height='$thumb_size' alt='$label_loading' /><em>" . padstring($file) . "</em></a></li>");
+                                "html" => "<div class=\"large-3 columns\"><div class=\"img-container\"><a href='/galeria?dir=" . ltrim($_GET['dir'] . "/" . $file, "/") . "'><img src='" . GALLERY_ROOT . "assets/img/folder_" . strtolower($folder_color) . ".png' width='$thumb_size' height='$thumb_size' alt='$label_loading' /><em>" . padstring($file) . "</em></a></div></div>");
                         }
                     }
                 }
@@ -208,10 +209,10 @@ if (file_exists($currentdir ."/captions.txt"))
 
                         checkpermissions($currentdir . "/" . $file);
                           $files[] = array (
-                              "name" => $file,
+                            "name" => $file,
                             "date" => filemtime($currentdir . "/" . $file),
                             "size" => filesize($currentdir . "/" . $file),
-                              "html" => "<li><a href='" . $currentdir . "/" . $file . "' rel='lightbox[billeder]' title='$img_captions[$file]'><img src='" . GALLERY_ROOT . "createthumb.php?filename=" . $thumbdir . "/" . $file . "&amp;size=$thumb_size' alt='$label_loading' /></a></li>");
+                            "html" => "<div class=\"large-3 columns\"><div class=\"img-container\"><a href='" . $currentdir . "/" . $file . "'  class='fancybox' rel='group' title='$img_captions[$file]'><img src='" . GALLERY_ROOT . "createthumb.php?filename=" . $thumbdir . "/" . $file . "&amp;size=$thumb_size' alt='$label_loading' /></a></div></div>");
                       }
                     // Other filetypes
                     $extension = "";
@@ -230,7 +231,7 @@ if (file_exists($currentdir ."/captions.txt"))
                               "name" => $file,
                             "date" => filemtime($currentdir . "/" . $file),
                             "size" => filesize($currentdir . "/" . $file),
-                              "html" => "<li><a href='" . $currentdir . "/" . $file . "' title='$file'><em-pdf>" . padstring($file, 20) . "</em-pdf><img src='" . GALLERY_ROOT . "images/filetype_" . $extension . ".png' width='$thumb_size' height='$thumb_size' alt='$file' /></a></li>");
+                              "html" => "<div class=\"img-container\"><div class=\"large-3 columns\"><a href='" . $currentdir . "/" . $file . "' title='$file'><em-pdf>" . padstring($file, 20) . "</em-pdf><img src='" . GALLERY_ROOT . "images/filetype_" . $extension . ".png' width='$thumb_size' height='$thumb_size' alt='$file' /></a></div></div>");
                     }
                  }
     }
@@ -290,12 +291,12 @@ if (sizeof($dirs) + sizeof($files) > $thumbs_pr_page)
         if ($_GET["page"] == $i)
             $page_navigation .= "$i";
             else
-                $page_navigation .= "<a href='index.php?kapitola=galeria&dir=" . $_GET["dir"] . "&amp;page=" . ($i) . "'>" . $i . "</a>";
+                $page_navigation .= "<a href='/galeria?dir=" . $_GET["dir"] . "&amp;page=" . ($i) . "'>" . $i . "</a>";
         if ($i != ceil((sizeof($files) + sizeof($dirs)) / $thumbs_pr_page)) $page_navigation .= " | ";
     }
     //Insert link to view all images
     if ($_GET["page"] == "all") $page_navigation .= " | $label_all";
-    else $page_navigation .= " | <a href='index.php?kapitola=galeria&dir=" . $_GET["dir"] . "&amp;page=all'>$label_all</a>";
+    else $page_navigation .= " | <a href='/galeria?dir=" . $_GET["dir"] . "&amp;page=all'>$label_all</a>";
 }
 
 //-----------------------
@@ -303,35 +304,39 @@ if (sizeof($dirs) + sizeof($files) > $thumbs_pr_page)
 //-----------------------
 if ($_GET['dir'] != "")
 {
-    $breadcrumb_navigation .= "<a href='index.php?kapitola=galeria&dir='>" . $label_home . "</a> &gt; ";
+    $breadcrumb_navigation .= "<li><a href='/galeria?dir='>" . $label_home . "</a></li>";
     $navitems = explode("/", $_REQUEST['dir']);
-    for($i = 0; $i < sizeof($navitems); $i++)
+    $navitems_size = sizeof($navitems);
+
+    for($i = 0; $i < $navitems_size; $i++)
     {
-        if ($i == sizeof($navitems)-1) $breadcrumb_navigation .= $navitems[$i];
+        if ($i == $navitems_size-1) $breadcrumb_navigation .= '<li class="current"><a href="">'.$navitems[$i].'</a></li>';
         else
         {
-            $breadcrumb_navigation .= "<a href='index.php?kapitola=galeria&dir=";
+            $breadcrumb_navigation .= "<li><a href='/galeria?dir=";
             for ($x = 0; $x <= $i; $x++)
             {
                 $breadcrumb_navigation .= $navitems[$x];
                 if ($x < $i) $breadcrumb_navigation .= "/";
             }
-            $breadcrumb_navigation .= "'>" . $navitems[$i] . "</a> > ";
+            $breadcrumb_navigation .= "'>" . $navitems[$i] . "</a></li>";
         }
     }
-} else $breadcrumb_navigation .= $label_home;
+} else $breadcrumb_navigation .= '<li><a href="">'.$label_home.'</a></li>';
 
 //Include hidden links for all images BEFORE current page so lightbox is able to browse images on different pages
 for ($y = 0; $y < $offset_start - sizeof($dirs); $y++)
 {
-    $breadcrumb_navigation .= "<a href='" . $currentdir . "/" . $files[$y]["name"] . "' rel='lightbox[billeder]' class='hidden' title='" . $img_captions[$files[$y]["name"]] . "'></a>";
+    $breadcrumb_navigation .= "<li><a href='" . $currentdir . "/" . $files[$y]["name"] . "' class='hidden fancybox' rel='group' title='" . $img_captions[$files[$y]["name"]] . "'></a></li>";
 }
+
+$breadcrumb_navigation .= "</ul>";
 
 //-----------------------
 // DISPLAY FOLDERS
 //-----------------------
 if (count($dirs) + count($files) == 0) {
-    $thumbnails .= "<li>$label_noimages</li>"; //Display 'no images' text
+    $thumbnails .= "<div class=\"large-3 columns\">$label_noimages</div>"; //Display 'no images' text
     if($currentdir == "photos") $messages = "It looks like you have just installed MiniGal Nano. Please run the <a href='system_check.php'>system check tool</a>";
 }
 $offset_current = $offset_start;
@@ -356,7 +361,7 @@ for ($i = $offset_start - sizeof($dirs); $i < $offset_end && $offset_current < $
 //Include hidden links for all images AFTER current page so lightbox is able to browse images on different pages
 for ($y = $i; $y < sizeof($files); $y++)
 {
-    $page_navigation .= "<a href='" . $currentdir . "/" . $files[$y]["name"] . "' rel='lightbox[billeder]'  class='hidden' title='" . $img_captions[$files[$y]["name"]] . "'></a>";
+    $page_navigation .= "<a href='" . $currentdir . "/" . $files[$y]["name"] . "' class='fancybox hidden' rel='group' title='" . $img_captions[$files[$y]["name"]] . "'></a>";
 }
 
 //-----------------------
@@ -365,6 +370,8 @@ for ($y = $i; $y < sizeof($files); $y++)
 if ($messages != "") {
 $messages = "<div id=\"topbar\">" . $messages . " <a href=\"#\" onclick=\"document.getElementById('topbar').style.display = 'none';\";><img src=\"images/close.png\" /></a></div>";
 }
+
+$galleryname = trim($_GET['dir']);
 
 //PROCESS TEMPLATE FILE
     if(GALLERY_ROOT != "") $templatefile = GALLERY_ROOT . "templates/integrate.html";
@@ -380,6 +387,7 @@ $messages = "<div id=\"topbar\">" . $messages . " <a href=\"#\" onclick=\"docume
         fclose ($fd);
         $template = stripslashes($template);
         $template = preg_replace("/<% title %>/", $title, $template);
+        $template = preg_replace("/<% galleryname %>/", $galleryname, $template);
         $template = preg_replace("/<% messages %>/", $messages, $template);
         $template = preg_replace("/<% author %>/", $author, $template);
         $template = preg_replace("/<% gallery_root %>/", GALLERY_ROOT, $template);
@@ -405,8 +413,8 @@ $messages = "<div id=\"topbar\">" . $messages . " <a href=\"#\" onclick=\"docume
 */
 
     if ($pokracuj == 1) { // uživatel je přihlášený tak mu dovolíme nahrát fotky
-        echo( '<p><a href="index.php?&kapitola=upload_picture"><strong>Upload obrázku</strong></a> - obrázok bude nahratý do albumu podľa Vášho výberu...</p>' );
+        echo( '<div class="row"><div class="large-12 columns"><p><a href="index.php?&kapitola=upload_picture"><strong>Upload obrázku</strong></a> - obrázok bude nahratý do albumu podľa Vášho výberu...</p></div></div>' );
     }
-    else echo "<p>Zaregistrujte sa, a môžete pridávať fotky do albumu \"Váše fotky\".</p>";
+    else echo '<div class="row"><div class="large-12 columns"><p>Zaregistrujte sa, a môžete pridávať fotky do albumu "Váše fotky".</p></div></div>';
 
 ?>

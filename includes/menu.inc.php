@@ -71,4 +71,17 @@
                 </nav>
         </div>
     </div>
+<?php
+$pokracuj = 0;
+include ('includes/_kontrola.php');
+
+if ($pokracuj == 1) { ?>
+    <div class="userlogout">
+        <div class="row">
+            <div class="large-12 columns">
+                Prihlásený ako: <?php echo $_SESSION['login']; ?> (<a href="/logout">Odhlásiť</a>)
+            </div>
+        </div>
+    </div>
+<?php } ?>
 </header>

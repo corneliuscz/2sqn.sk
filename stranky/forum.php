@@ -1,4 +1,4 @@
-<div class="head-photo">
+<div class="head-photo forum">
     <section class="podklad">
         <div class="row">
             <div class="large-12 columns">
@@ -15,36 +15,34 @@ if ($pokracuj == 1)
     // vložíme funkcie
     require_once "includes/_gb_funkcie.php";
 ?>
-<article class="guestbook">
+<div class="forum-vypis">
     <section class="obsah">
         <div class="row">
-            <div class="large-12 columns">
+            <div class="large-4 columns">
+                <h3>Vaša správa</h3>
                 <form action="" method="post">
-                    <textarea rows="5" cols="80" name="sprava"></textarea>
-                    <br>
-                    <input type="submit" value="Odoslat">
+                    <textarea name="sprava"></textarea>
+                    <input type="submit" value="Odoslať" class="button success medium radius">
                 </form>
             </div>
-        </div>
-        <div class="row">
-            <div class="large-12 columns">
-            <?php gb_sprava_zobrazit(15,2); ?>
+            <div class="large-8 columns">
+                <?php gb_sprava_zobrazit(15,2); ?>
             </div>
         </div>
     </section>
-</article>
+</div>
 
 <?php
     mysql_close($db); // zavřeme spojení s databází
 }
 else { ?>
-<article class="loginform">
+    <div class="warning">
         <div class="row">
             <div class="large-12 columns">
-                <p>Len registrovaní užívatelia majú povolenie pre vstup do sekcie Fórum! <br />Zaregistrujte sa a môžete pridávať príspevky v časti Fórum.</p>
-                <?php include ('includes/_loginform.inc.php'); ?>
+                <p>Len registrovaní užívatelia majú povolenie pre vstup do sekcie Fórum!</p>
             </div>
         </div>
-</article>
+    </div>
+    <?php include ('includes/_loginform.inc.php'); ?>
 <?php } ?>
 

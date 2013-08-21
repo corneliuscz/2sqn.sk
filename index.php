@@ -30,20 +30,37 @@ $app->get('/', function () {
     include ('stranky/index.php');
 });
 
-$app->get('/login', function () {
-    // přidat kontrolu jestli už náhodou není uživatel přihlášený
-    include ('includes/_loginform.inc.php');
+$app->get('/login', function () use ($app, $req) {
+    $pokracuj = 0;
+    include ('includes/_kontrola.php');
+
+    if (!$pokracuj) {
+        include ('includes/_loginheader.inc.php');
+        include ('includes/_loginform.inc.php');
+    } else {
+        $app->redirect('/');    // pokud je uživatel přihlášený přesměrujeme ho na homepage
+    }
 });
 
 $app->post('/login', function () use ($app, $req) {
+        include ('includes/_loginheader.inc.php');
+
+        $errors = "";
+        $login_success = false;
+
         if (isset($_POST['login']) && isset($_POST['heslo'])) { // kontrola jestli se poslaly všechny data
             include "includes/_dba.php";     // připojíme se do databáze
 
             $query = "SELECT * FROM users WHERE login=\"".$_POST['login']."\"";
-            if (!$query) { echo "Spojenie z databázou sa nepodarilo"; }
+            if (!$query) {
+                $errors .= '<div data-alert="" class="alert-box alert">Spojenie z databázou sa nepodarilo. Skúste to prosím neskôr.</div>';
+            }
 
             $result = mysql_query($query, $db);
-            if (!$query) { echo "Vyber z databázi sa nepodaril"; }
+            if (!$query) {
+                echo "Vyber z databázi sa nepodaril";
+                $errors .= '<div data-alert="" class="alert-box alert">Vyber z databázi sa nepodaril. Skúste to prosím neskôr.</div>';
+            }
 
             if ( mysql_num_rows($result) != 0 ) { // V případě že uživatel existuje tak si jeho data načteme
                 $cosi = mysql_fetch_array($result);
@@ -61,9 +78,13 @@ $app->post('/login', function () use ($app, $req) {
                     $_SESSION['regcas'] = $cosi['regcas']; /* kdy se registroval */
                     $_SESSION['lastlog'] = $cosi['lastlog']; /* kdy byl naposledy prihlášený */
                     $_SESSION['time'] = $casova_znacka; /* Nečinný uživatel vydrží přihlášený $ttl minut od tohoto času - místo CODE - viz kontrola.php */
-                    $app->redirect($_POST['origin']);
-                    //header("Location: /"); /* a pošleme přihlášeného uživatele na stránku, na které vyplnil login */
 
+                    if ($_POST['origin'] == '/login') {
+                        $errors .= '<div data-alert="" class="alert-box success">Prihlásenie bolo úspešné :-)</div>';
+                        $login_success = true;
+                    } else {
+                        $app->redirect($_POST['origin']); /* a pošleme přihlášeného uživatele na původní stránku */
+                    }
                     /* tímhle je uživatel přihlášený a už nemusíš měnit odkazy na stránky aby obsahovaly nebezpečné údaje. Vše je uložené v session na serveru a pomocí $_SESSION["promenna"] si to můžeš vytáhnout a pomocí kontrola.php a proměnné $pokracuj zjistíš jestli je uživatel přihlášený - viz main.php :-) */
                 }
                 else {    // Heslo uživatele nesouhlasí nebo uživatel neexistuje
@@ -73,13 +94,27 @@ $app->post('/login', function () use ($app, $req) {
                     unset($_SESSION['regcas']);
                     unset($_SESSION['lastlog']);
                     session_destroy();
-                    echo "Zlé heslo. <a href=\"/login\">Vyskúšaj znova.</a>";  /* Místo vypsání textu můžeme rovnou zobrazit úvodní stránku s hláškou o špatném hesle (header(index.php?hlaska="Zlé heslo, vyskúšaj znova");) pokud tu funkci na zobrazení hlášek do index.php doplníme :-) V takovém případě by pak bylo lepší se na hlášky odkazovat chybovým kódem (header(index.php?chyba=heslo);) než je předávat přes URL a na základě jej je zobrazovat přes switch(). Případně tomu udělat speciální stránku s výpisem chyb... */
+                    $errors .= '<div data-alert="" class="alert-box alert">Použili ste zlé heslo!</div>'; /* Místo vypsání textu můžeme rovnou zobrazit úvodní stránku s hláškou o špatném hesle (header(index.php?hlaska="Zlé heslo, vyskúšaj znova");) pokud tu funkci na zobrazení hlášek do index.php doplníme :-) V takovém případě by pak bylo lepší se na hlášky odkazovat chybovým kódem (header(index.php?chyba=heslo);) než je předávat přes URL a na základě jej je zobrazovat přes switch(). Případně tomu udělat speciální stránku s výpisem chyb... */
                 } // konec IF pokud heslo souhlasi
             }
             else {
-                echo "Užívateľ nebol nájdený. <a href=\"/login\">Vyskúšaj znova.</a>";
+                $errors .= '<div data-alert="" class="alert-box alert">Je mi ľúto, takého užívateľa nepoznám!</div>';
             } // konec IF jestli existuje záznam o uživateli
             mysql_close($db); // zavřeme spojení s databází
+            ?>
+            <div class="errors">
+                <div class="row">
+                    <div class="large-12 columns">
+                        <?php echo $errors; ?>
+                    </div>
+                </div>
+            </div>
+            <?php
+            if ( $login_success ) {
+                include ('includes/_loginsuccess.inc.php');
+            } else {
+                include ('includes/_loginform.inc.php');
+            }
         }
 });
 
@@ -93,19 +128,110 @@ $app->get('/logout', function () use ($app) {
     $app->redirect('/');    // přesměrujeme uživatele na main.php nebo index.php, nebo jinou stránku o tom že byl odhlášený (třeba index.php?kapitola=odhlaseni). Kam přesměrovat uživatele po odhlášení si už nastav, bez toho abych viděl strukturu toho rozhodování co zobrazit se špatně hádá, na to bych potřeboval komplet kód stránek :-)
 });
 
+$app->get('/registracia', function () use ($app, $req) {
+    $pokracuj = 0;
+    include ('includes/_kontrola.php');
+
+    if (!$pokracuj) {
+        include ('includes/_regheader.inc.php');
+        include ('includes/_loginform.inc.php');
+    } else {
+        $app->redirect('/');    // pokud je uživatel přihlášený přesměrujeme ho na homepage
+    }
+});
+
+
+$app->post('/registracia', function () use ($app, $req) {
+    include ('includes/_regheader.inc.php');
+
+    $errors = "";
+    $errors_count = 0;
+
+    if (isset($_POST['login']) && isset($_POST['heslo']) && isset($_POST['hesloover'])){
+        // skontroluje ?~Mi su všetky poli?~Mka vyplnené
+        if ($_POST['login'] == "" || $_POST['heslo'] == "" || $_POST['email'] == "" || $_POST['hesloover']== "") {
+            $errors .= '<div data-alert="" class="alert-box alert">Nevyplnili ste všetky povinné údaje!</div>';
+            $errors_count++;
+        }
+
+        // skontroluje ?~Mi je heslo a overenie hesla rovnake
+        if ($_POST['heslo'] != $_POST['hesloover']){
+            $errors .= '<div data-alert="" class="alert-box alert">Vložená hesla nesúhlasí!</div>';
+            $errors_count++;
+        }
+
+        // kontrola ?~Mi už neexistuje rovnaký login
+        include "includes/_dba.php";
+
+        $newlogin = HTMLSpecialChars($_POST['login']);
+        $query = "SELECT * FROM users WHERE login=\"".$newlogin."\"";
+        $result = mysql_query($query, $db) or die ("Chyba!");
+        $num = mysql_num_rows($result);
+
+        if ($num != 0){
+            $errors .= '<div data-alert="" class="alert-box alert">Takéto užívateľské meno už existuje, zvoľte iné.</div>';
+            $errors_count++;
+            unset($_POST['login']);
+        }
+        // koniec kontrola
+
+        if ( !$errors_count ) {
+            // ošetrenie html tagov
+            $_POST['meno'] = HTMLSpecialChars($_POST['meno']);
+            $_POST['priezvisko'] = HTMLSpecialChars($_POST['priezvisko']);
+            $_POST['login'] = HTMLSpecialChars($_POST['login']);
+            $_POST['email'] = HTMLSpecialChars($_POST['email']);
+            $_POST['heslo'] = HTMLSpecialChars($_POST['heslo']);
+
+            $regcas = date("Y-m-d H:i:s", time());
+            $ip = $_SERVER["REMOTE_ADDR"];
+            $heslo = md5($_POST['heslo']);
+
+            $oprava = "INSERT INTO users (meno,priezvisko,login,heslo,code,email,regcas,ip )VALUES ('".$_POST['meno']."','".$_POST['priezvisko']."','".$_POST['login']."','".$heslo."','123456','".$_POST['email']."','".$regcas."','".$ip."')";$dooprava = mysql_query($oprava, $db) or die ("Registracia sa nepodarila.");
+
+            // Zrušíme nastavená data z formuláře ať se nám nepletou do formuláře
+            unset($_POST['meno']);
+            unset($_POST['priezvisko']);
+            unset($_POST['email']);
+            unset($_POST['heslo']);
+            unset($_POST['hesloover']);
+
+            // Vypíšeme zprávu o úspěšné registraci
+            $errors .= '<div data-alert="" class="alert-box success">Registrácia bola úspešna! Prihláste sa :-)</div>';
+        }
+        mysql_close($db); // zavřeme spojení s databází
+        ?>
+        <div class="errors">
+            <div class="row">
+                <div class="large-12 columns">
+                    <?php echo $errors; ?>
+                </div>
+            </div>
+        </div>
+    <?php
+    include ('includes/_loginform.inc.php');
+    }
+});
+
+
+
+
+
+
 $app->get('/albatros', function () {
     include ('stranky/albatros.php');
 });
 
 $app->get('/galeria', function () {
-    include ('stranky/galeria.php');
+    //echo opendir('photos/');
+    include ('galeria.php');
 });
 
 $app->get('/forum', function () use ($app, $req) {
     $pokracuj = 0;
     include ('includes/_kontrola.php');
     include ('includes/_gb_funkcie.php');
-    include ('stranky/guestbook.php');
+    include ('stranky/forum.php');
 });
 
 $app->post('/forum', function () {

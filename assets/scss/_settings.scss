@@ -7,6 +7,38 @@
 // doc page. We tried to name them to where they'd make sense just by reading them.
 // Go to http://foundation.zurb.com/docs/ to find what you need.
 
+/* Barvy */
+
+$lightblue      : #afdefa;
+//$menublue       : #296ab9;
+$menublue       : rgba(41, 128, 185, .8);
+
+$grey           : #fafcfc;
+
+$turquoise      : #1abc9c;
+$greensea       : #16a085;
+$emerald        : #2ecc71;
+$nephritis      : #27ae60;
+$peterriver     : #3498db;
+$belizehole     : #2980b9;
+$amethyst       : #9b59b6;
+$wisteria       : #8e44ad;
+
+$wetasphalt     : #34495e;
+$midnightblue   : #2c3e50;
+$midnight       : #263343;
+
+$sunflower      : #f1c40f;
+$orange         : #f39c12;
+$carrot         : #e67e22;
+$pumpkin        : #d35400;
+$alizarin       : #e74c3c;
+$pomegranate    : #c0392b;
+$clouds         : #ecf0f1;
+$silver         : #bdc3c7;
+$concrete       : #95a5a6;
+$asbestos       : #7f8c8d;
+
 //
 // Foundation Global Variables
 //
@@ -669,7 +701,7 @@ $header-text-rendering: optimizeLegibility;
 // $pagination-link-unavailable-bg-active: transparent;
 
 // We use these for currently selected anchor links
-// $pagination-link-current-background: $primary-color;
+   $pagination-link-current-background: $peterriver;
 // $pagination-link-current-font-color: #fff;
 // $pagination-link-current-font-weight: bold;
 // $pagination-link-current-cursor: default;

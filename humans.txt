@@ -1,22 +1,24 @@
-S finalizáciou webu, úpravami html a php kódu nám pomohol Josef Vybíral
-
 Texty
 =====
 
-Použité texty: L+K, 5/2011 str.30-33
-www.l-39.cz
-www.airportsliac.sk
-Vyčerpávajúce info o Slovenských albatrosoch poskytol  Mišo "Bolter" Hlaváč
+* Použité texty: L+K, 5/2011 str.30-33
+* www.l-39.cz
+* www.airportsliac.sk
+* Vyčerpávajúce info o Slovenských albatrosoch poskytol  Mišo "Bolter" Hlaváč
 
-Obrázky:
+Obrázky
+=======
 
-archív 2.letky
-Ondrej Maliniak - fotky v galérii "Desert Thunder"
-Martin Šusta - fotky v galérii "L-39 5301 Otto Smik"
-Alfonz Liška - fotky v sekcii L-39
-Miroslav Gyürösi - fotky v albume "Slovak Hawk"
-pilotialetadla.cz - fotky v časti "Nehody L-39" prípad  Havner/Vajda
-http://www.leteckemotory.cz - fotky v sekcii "LZSL" časť História
+* archív 2.letky
+* Ondrej Maliniak - fotky v galérii "Desert Thunder"
+* Martin Šusta - fotky v galérii "L-39 5301 Otto Smik"
+* Alfonz Liška - fotky v sekcii L-39
+* Miroslav Gyürösi - fotky v albume "Slovak Hawk"
+* pilotialetadla.cz - fotky v časti "Nehody L-39" prípad Havner/Vajda
+* http://www.leteckemotory.cz - fotky v sekcii "LZSL" časť História
 
+Grafika a kód
+=============
+* Josef Vybíral (www.josefvybiral.cz)
 
 Všetkým ďakujeme!

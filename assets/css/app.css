@@ -1,6 +1,7 @@
 @charset "UTF-8";
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400,600&subset=latin-ext);
 @import url(http://fonts.googleapis.com/css?family=Signika:300&subset=latin,latin-ext);
+/* Barvy */
 *,
 *:before,
 *:after {
@@ -4008,7 +4009,7 @@ kbd {
   background: transparent;
 }
 .pagination li.current a {
-  background: #2ba6cb;
+  background: #3498db;
   color: white;
   font-weight: bold;
   cursor: default;
@@ -4692,7 +4693,6 @@ table tfoot tr td {
   max-width: 800px;
 }
 
-/* Barvy */
 strong {
   font-weight: 600;
 }
@@ -4703,6 +4703,32 @@ strong {
   position: fixed;
   width: 100%;
   z-index: 50;
+}
+
+.userlogout {
+  color: #fff;
+  font-size: 0.75em;
+  line-height: 1.5em;
+  background: rgba(52, 73, 94, 0.4);
+  position: fixed;
+  width: 100%;
+  z-index: 20;
+  top: 50px;
+  text-align: right;
+  padding: 1em 0;
+}
+@media only screen and (min-width: 48em) {
+  .userlogout {
+    margin-top: 3px;
+  }
+}
+.userlogout span {
+  margin-left: 0.5em;
+  display: block;
+}
+.userlogout a, .userlogout a:hover, .userlogout a:visited, .userlogout a:focus {
+  color: #fff;
+  text-decoration: underline;
 }
 
 .cbp-hrmenu {
@@ -4742,6 +4768,7 @@ strong {
 .cbp-hrmenu > ul > li > a.home {
   position: absolute;
   top: 1em;
+  left: -1em;
   padding: 0;
   text-align: left;
 }
@@ -5016,13 +5043,6 @@ nav[role=navigation].active {
 /* ***************** */
 /* Hlavička          */
 /* ***************** */
-.login-box {
-  position: absolute;
-  top: 1.25em;
-  right: 1.25em;
-  font-size: 0.75em;
-}
-
 .head-photo {
   width: 100%;
   padding-top: 50px;
@@ -5034,6 +5054,88 @@ nav[role=navigation].active {
   vertical-align: bottom;
   position: fixed;
   z-index: -5;
+}
+
+.head-photo.forum, .head-photo.login {
+  height: 100px;
+  padding-bottom: 0;
+  padding-top: 170px;
+}
+@media only screen and (min-width: 48em) {
+  .head-photo.forum, .head-photo.login {
+    height: 175px;
+    padding-top: 270px;
+    background-position: 50% 0;
+  }
+}
+.head-photo.forum .podklad, .head-photo.login .podklad {
+  background: none;
+}
+.head-photo.forum h1, .head-photo.login h1 {
+  margin-bottom: 0.3em;
+}
+
+.head-photo.login {
+  background: #2980b9 url(../img/header-photo-forum-zelena.png) no-repeat 80% 0;
+}
+
+.head-photo.forum {
+  background: #2980b9 url(../img/header-photo-forum-modra.png) no-repeat 80% 0;
+}
+
+.forum-vypis {
+  padding-bottom: 2em;
+}
+@media only screen and (min-width: 48em) {
+  .forum-vypis {
+    padding-bottom: 3em;
+  }
+}
+.forum-vypis textarea {
+  min-height: 10em;
+}
+@media only screen and (min-width: 48em) {
+  .forum-vypis textarea {
+    min-height: 15em;
+  }
+}
+.forum-vypis .gb_post {
+  font-size: 0.8em;
+  margin-bottom: 2em;
+}
+@media only screen and (min-width: 48em) {
+  .forum-vypis .gb_post {
+    font-size: 0.9em;
+  }
+}
+.forum-vypis .gb_post .avatar {
+  text-align: center;
+}
+.forum-vypis .gb_post .avatar img {
+  margin-bottom: 0.5em;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+}
+.forum-vypis .gb_post .avatar .meno {
+  display: block;
+  font-size: 0.8em;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+.forum-vypis .gb_post .avatar .datum {
+  display: block;
+  font-size: 0.7em;
+  color: #95a5a6;
+}
+.forum-vypis .gb_post p {
+  margin-bottom: 0;
+}
+.forum-vypis .pagination {
+  float: right;
+  margin: 2em auto 0 auto;
 }
 
 /* ***************** */
@@ -5064,7 +5166,7 @@ article .fullw {
   height: auto;
 }
 
-.podklad, .uvod, .uvodni-slovo {
+.podklad, .uvod, .uvodni-slovo, .warning, .errors, .loginform {
   padding: 1.6em 0 0.5em 0;
 }
 
@@ -5085,7 +5187,22 @@ article .fullw {
   color: #fff;
 }
 
-.obsah {
+.errors {
+  background: #fafcfc;
+  padding-bottom: 0;
+  color: #fff;
+}
+
+.warning {
+  background: #e74c3c;
+  color: #fff;
+}
+
+.loginform {
+  background: #fafcfc;
+}
+
+.obsah, .galeria {
   padding-top: 2em;
 }
 

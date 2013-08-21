@@ -8,6 +8,11 @@
 +-----------------------+
 */
 
+function make_clickable($text)
+{
+    return preg_replace('!(((f|ht)tp(s)?://)[-a-zA-Zа-яА-Я()0-9@:%_+.~#?&;//=]+)!i', '<a href="$1">$1</a>', $text);
+}
+
 function gb_sprava_odoslat ($login, $sprava, $ip)
 {
  // nastavíme globálnu premennú $db, ktorá bude obsahovať funkciu pripojenia
@@ -27,6 +32,31 @@ function gb_sprava_odoslat ($login, $sprava, $ip)
         $vysledok = mysql_query($sql) or die ('Vyskytla sa chyba: '.mysql_error());
         return $vysledok;
     }
+}
+
+/**
+ * Get either a Gravatar URL or complete image tag for a specified email address.
+ *
+ * @param string $email The email address
+ * @param string $s Size in pixels, defaults to 80px [ 1 - 2048 ]
+ * @param string $d Default imageset to use [ 404 | mm | identicon | monsterid | wavatar ]
+ * @param string $r Maximum rating (inclusive) [ g | pg | r | x ]
+ * @param boole $img True to return a complete IMG tag False for just the URL
+ * @param array $atts Optional, additional key/value attributes to include in the IMG tag
+ * @return String containing either just a URL or a complete image tag
+ * @source http://gravatar.com/site/implement/images/php/
+ */
+function get_gravatar( $email, $s = 80, $d = 'mm', $r = 'g', $img = false, $atts = array() ) {
+    $url = 'http://www.gravatar.com/avatar/';
+    $url .= md5( strtolower( trim( $email ) ) );
+    $url .= "?s=$s&d=$d&r=$r";
+    if ( $img ) {
+        $url = '<img src="' . $url . '"';
+        foreach ( $atts as $key => $val )
+            $url .= ' ' . $key . '="' . $val . '"';
+        $url .= ' />';
+    }
+    return $url;
 }
 
 /*
@@ -81,24 +111,29 @@ function gb_sprava_zobrazit ($na_stranu, $rozsah)
         $grav_mail = (mysql_fetch_row($grav_vysledok));
     }
 
-    $default = "http://fakeimg.pl/120/?text=Vymen_me";   // Vlastní ikona pro ty kteří gravatar nemají
-    $size = 120;
-    $grav_url = "http://www.gravatar.com/avatar/" . md5( strtolower( trim( $grav_mail[0] ) ) ) . "?d=" . urlencode( $default ) . "&s=" . $size;
+    $server_url = "http://".$_SERVER['HTTP_HOST']."/";
+    $default = $server_url."assets/img/avatar-default.png";   // Vlastní ikona pro ty kteří gravatar nemají
+    $size = 80;
+    //$grav_url = "http://www.gravatar.com/avatar/" . md5( strtolower( trim( $grav_mail[0] ) ) ) . "?d=" . urlencode( $default ) . "&s=" . $size;
+
+    $avatar = get_gravatar( $grav_mail[0], $size, $default, 'g', false );
     // Konec update na gravatary
     ?>
-    <div class="gb_post">
-        <img src="<?php echo $grav_url; ?>" alt="" />
-        <?php echo $riadok ["login"]; ?>
-        <?php echo $datum; ?>
-        <?php echo "$obsah"; ?>
+    <div class="gb_post row clearfix">
+        <div class="large-2 small-3 columns avatar">
+            <img src="<?php echo $avatar; ?>" alt="" />
+            <span class="meno"><?php echo $riadok ["login"]; ?></span> <span class="datum"><?php echo $datum; ?></span>
+        </div>
+        <div class="large-10 small-9 columns">
+            <p><?php echo make_clickable($obsah); ?></p>
+        </div>
     </div>
+
 <?php
- }
-
+    }
 // a nakoniec stránkovanie :)
+echo '<div class="row"><div class="large-12 columns"><ul class="pagination">';
 
-echo 'Stránky
-        <br />';
  $pocet_riadkov = mysql_num_rows($vysledok2);
  if($pocet_riadkov == 0) {
   $pocet_riadkov = 1;
@@ -109,15 +144,14 @@ echo 'Stránky
 $stranky = ceil($pocet_riadkov / $na_stranu);
 
 // lavy navigator
-    $spat = '&laquo; Predchadzajúce';
+    $spat = '&laquo;';
     if ($pocet > 1) {
-        $spat = '<a href=\'index.php?kapitola=guestbook&str='.($pocet - 1).'\' title=\'Predchadzajúce\'>'.$spat.'</a>';
-
+        $spat = '<li class="arrow"><a href="/forum?str='.($pocet - 1).'" title="Predchadzajúce">'.$spat.'</a></li>';
     } else
     {
-    $spat = '';
+        $spat = '<li class="arrow unavailable"><a href="" title="Predchadzajúce">'.$spat.'</a></li>';
     }
-    echo $spat.' | ';
+    echo $spat;
 
     // jednotlive strany
     for ($i = 1; $i <= $stranky; $i++) {
@@ -125,26 +159,31 @@ $stranky = ceil($pocet_riadkov / $na_stranu);
             // nahrada cisel skrytych stranok za bodky
             $bodky_l = '';
             $bodky_p = '';
-            if (($i == 1) && ($pocet > $rozsah)) $bodky_l = '.. ';
-            if (($i == $stranky) && ($pocet < $stranky - $rozsah)) $bodky_p = '.. ';
+            /*
+            if (($i == 1) && ($pocet > $rozsah)) $bodky_l = '... ';
+            if (($i == $stranky) && ($pocet < $stranky - $rozsah)) $bodky_p = '... ';
+            */
+
+            if (($i == 1) && ($pocet > $rozsah)) echo '<li>...</li>';
+            if (($i == $stranky) && ($pocet < $stranky - $rozsah)) echo '<li>...</li>';
 
             if ($i == $pocet) {
-                echo '<strong>'.($i).'</strong> | '; // aktualnu stranku zvyrazni inou farbou
+                echo '<li class="current">'.$bodky_p.'<a href=\'/forum?str='.($i).'\' title=\'Strana '.($i).'\'>'.($i).'</a>'.$bodky_l.'</li>'; // aktualnu stranku zvyrazni inou farbou
             } else {
-                echo $bodky_p.'<a href=\'index.php?kapitola=guestbook&str='.($i).'\' title=\'Strana '.($i).'\'>'.($i).'</a> | '.$bodky_l;
+                echo '<li>'.$bodky_p.'<a href=\'/forum?str='.($i).'\' title=\'Strana '.($i).'\'>'.($i).'</a>'.$bodky_l.'</li>';
             }
         }
     }
 
     // pravy navigator
-    $dalsie = 'Ďalšie &raquo';
+    $dalsie = '&raquo';
     if ($pocet < $stranky) {
-        $dalsie = '<a href=\'index.php?kapitola=guestbook&str='.($pocet + 1).'\' title=\'Ďalšie\'>'.$dalsie.'</a>';
+        $dalsie = '<li class="arrow"><a href=\'/forum?str='.($pocet + 1).'\' title=\'Ďalšie\'>'.$dalsie.'</a></li>';
     } else
     {
-    $dalsie = '';
+    $dalsie = '<li class="arrow unavailable"><a href="" title="Predchadzajúce">'.$dalsie.'</a></li>';
     }
-    echo ''.$dalsie;
+    echo $dalsie;
+    echo '</ul></div></div>';
 }
-
 ?>
