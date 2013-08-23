@@ -217,7 +217,8 @@ $app->get('/albatros', function () {
 });
 
 $app->get('/galeria', function () {
-    //echo opendir('photos/');
+    $pokracuj = 0;
+    include ('includes/_kontrola.php');
     include ('galeria.php');
 });
 
@@ -257,6 +258,10 @@ $app->get('/na-stiahnutie', function () use ($app, $req) {
     include ('includes/_kontrola.php');
 
     include ('stranky/na-stiahnutie.php');
+});
+
+$app->get('/walkaround', function () {
+    include ('stranky/walkaround.php');
 });
 
 $app->get('/lzsl', function () {

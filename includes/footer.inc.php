@@ -146,5 +146,17 @@ $(function(){
 });
 </script>
 
+<!-- Walkaround -->
+<script src="<?php echo $server_url; ?>assets/js/jquery.threesixty.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+    $('.threesixty').threeSixty({
+        dragDirection: 'horizontal',
+        useKeys: true
+    });
+});
+</script>
+
 </body>
 </html>

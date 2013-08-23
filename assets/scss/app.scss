@@ -113,7 +113,7 @@ article {
     }
 }
 
-.odsad, .podklad, .uvod, .uvodni-slovo, .warning, .errors, .loginform {
+.odsad, .podklad, .uvod, .uvodni-slovo, .warning, .errors, .tips, .loginform {
     padding: 0.5em 0 0.5em 0;
 
     @media #{$small} {
@@ -151,6 +151,12 @@ article {
 
 .warning {
     background: $alizarin;
+    color: #fff;
+}
+
+.tips {
+    margin-top: 2em;
+    background: $turquoise;
     color: #fff;
 }
 
@@ -198,7 +204,7 @@ table {
 }
 
 .head-photo.no-pic {
-    background-color: $concrete;
+    background-color: $belizehole;
 
     height: 100px;
     padding-bottom: 0;
@@ -343,6 +349,22 @@ table {
 
         display: inline-block;
         margin-bottom: 1em;
+    }
+}
+
+
+/* ***************** */
+/* Ke stažení        */
+/* ***************** */
+
+.dwnld {
+
+    margin-bottom: 2em;
+
+    a {
+        font-size: 0.9em;
+        line-height: 1.3em;
+        text-decoration: underline;
     }
 }
 
