@@ -12,9 +12,15 @@ $req = $app->request;
 
 $server_url = "http://".$_SERVER['HTTP_HOST']."/";
 
-function make_clickable($text)
-{
+function make_clickable($text) {
     return preg_replace('!(((f|ht)tp(s)?://)[-a-zA-Zа-яА-Я()0-9@:%_+.~#?&;//=]+)!i', '<a href="$1">$1</a>', $text);
+}
+
+function predlozky($text) {
+    $text = preg_replace('/[ ][svzkuoiaSVZKAUOI][ ]/', '$0&nbsp;', $text);
+    $text = preg_replace('/[&nbsp;][svzkuoiaSVZKAUOI][ ]/', '$0&nbsp;', $text);
+    $text = str_replace(" &nbsp;", "&nbsp;", $text);
+    return $text;
 }
 
 /* Router URL */

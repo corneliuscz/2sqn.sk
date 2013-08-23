@@ -15,7 +15,7 @@
                 <article class="novinka icon-l39-m">
                     <h3><a href="/novinky/<?php echo $riadok["number"]; ?>"><?php echo $riadok ["subject"]; ?></a></h3>
                     <span class="datum"><?php echo date('d.m.Y', strtotime($riadok['from_date'])); ?></span>
-                    <p><?php  echo $riadok ["head"]; ?></p>
+                    <p><?php echo predlozky($riadok ["head"]); ?></p>
                 </article>
             </div>
         <?php

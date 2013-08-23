@@ -13,7 +13,7 @@ if (mysql_num_rows($novinka)) { // Novinka existuje
         <section class="podklad">
             <div class="row">
                 <div class="large-12 columns">
-                    <h1><?php echo $riadok ["subject"];?></h1>
+                    <h1><?php echo predlozky($riadok ["subject"]);?></h1>
                     <span class="datum"><?php echo date('d.m.Y', strtotime($riadok['from_date'])); ?></span>
                 </div>
             </div>
@@ -22,9 +22,9 @@ if (mysql_num_rows($novinka)) { // Novinka existuje
     <article class="novinka-text">
         <div class="row">
             <div class="large-12 columns">
-                <?php  echo $riadok ["head"]; ?>
+                <?php  echo predlozky($riadok ["head"]); ?>
                 <?php if (!empty($riadok ["body"])) { ?>
-                    <?php  echo $riadok ["body"]; ?>
+                    <?php echo predlozky($riadok ["body"]); ?>
                 <?php } ?>
             </div>
         </div>

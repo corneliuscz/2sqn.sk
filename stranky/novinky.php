@@ -29,7 +29,7 @@ while ($riadok = MySQL_Fetch_Array($message)):
         <div class="large-6 columns novinka-text">
         <?php } ?>
             <span class="datum"><?php echo date('d.m.Y', strtotime($riadok['from_date'])); ?></span>
-            <h2><a href="/novinky/<?php echo $riadok["number"]; ?>"><?php echo $riadok ["subject"]; ?></a></h2>
+            <h2><a href="/novinky/<?php echo $riadok["number"]; ?>"><?php echo predlozky($riadok ["subject"]); ?></a></h2>
         <?php if (!empty($riadok["pict"])) { ?>
             <div class="row">
                 <div class="large-6 columns">
@@ -37,9 +37,9 @@ while ($riadok = MySQL_Fetch_Array($message)):
                 </div>
                 <div class="large-6 columns">
         <?php } ?>
-            <?php  echo $riadok ["head"]; ?>
+            <?php  echo predlozky($riadok ["head"]); ?>
             <?php if (!empty($riadok ["body"])) { ?>
-                <?php  echo $riadok ["body"]; ?>
+                <?php  echo predlozky($riadok ["body"]); ?>
             <?php } ?>
         <?php if (!empty($riadok["pict"])) { ?>
             </div></div>
