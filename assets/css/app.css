@@ -5312,6 +5312,15 @@ table {
 }
 
 /* ***************** */
+/* Walkaround        */
+/* ***************** */
+.walkaround p {
+  min-height: 4em;
+  text-align: center;
+  padding: 2em 0 0 0;
+}
+
+/* ***************** */
 /* Popiska obrázku   */
 /* ***************** */
 p.fig-caption, figcaption {

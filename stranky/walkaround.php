@@ -12,6 +12,6 @@
 
 <article>
     <section class="walkaround">
-        <div class="threesixty" data-path="<?php echo $server_url; ?>assets/img/walkaround/zam{index}.png" data-count="36">Načítám data pro walkaround. Čekejte prosím.</div>
+        <div class="threesixty" data-path="<?php echo $server_url; ?>assets/img/walkaround/zam{index}.png" data-count="36"><p>Načítám data pro walkaround. Čekejte prosím.<br><br> <img src="<?php echo $server_url; ?>assets/img/loading.gif"></p></div>
     </section>
 <article>
