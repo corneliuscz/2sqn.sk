@@ -126,4 +126,4 @@
             </div>
         </div>
     </section>
-<article>
+</article>
