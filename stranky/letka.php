@@ -1,5 +1,5 @@
 <div class="head-photo">
-    <img src="assets/img/letka.jpg" alt="Piloti 2. SQN">
+    <img src="assets/img/slides/letka.jpg" alt="Piloti 2. SQN">
     <section class="podklad">
         <div class="row">
             <div class="large-12 columns">

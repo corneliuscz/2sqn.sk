@@ -1,4 +1,4 @@
-<div class="head-photo">
+<div class="head-photo no-pic novinky">
     <section class="podklad">
         <div class="row">
             <div class="large-12 columns">
@@ -8,27 +8,42 @@
     </section>
 </div>
 
-<article class="novinky">
+<article id="masonry" class="novinky-vypis">
     <div class="row">
 <?php
 $query_error = 'chyba SQL';
 require "includes/_dba.php";
 
 $page = 0;
-$view_number = 10;
+$view_number = 30;
 $start = $page*$view_number;
 $message = MySQL_Query("SELECT * FROM board ORDER BY number DESC LIMIT $start,$view_number") or die($query_error);
 
+global $server_url;
+
 while ($riadok = MySQL_Fetch_Array($message)):
  ?>
-        <div class="large-12 columns novinka">
-            <?php if (!empty($riadok["pict"])) echo '<img src="'.$riadok ['pict'].'" class="novinka">'; ?>
-            <h3><?php echo $riadok ["subject"];?></h3>
-            <span><?php echo date('d.m.Y', strtotime($riadok['from_date'])); ?></span>
+        <?php if (!empty($riadok["pict"])) { ?>
+        <div class="large-12 columns novinka-text">
+        <?php } else { ?>
+        <div class="large-6 columns novinka-text">
+        <?php } ?>
+            <span class="datum"><?php echo date('d.m.Y', strtotime($riadok['from_date'])); ?></span>
+            <h2><a href="/novinky/<?php echo $riadok["number"]; ?>"><?php echo $riadok ["subject"]; ?></a></h2>
+        <?php if (!empty($riadok["pict"])) { ?>
+            <div class="row">
+                <div class="large-6 columns">
+                    <img src="<?php echo $server_url; ?>assets/img/novinky/<?php echo $riadok['pict']; ?>" class="novinka">
+                </div>
+                <div class="large-6 columns">
+        <?php } ?>
             <?php  echo $riadok ["head"]; ?>
             <?php if (!empty($riadok ["body"])) { ?>
                 <?php  echo $riadok ["body"]; ?>
             <?php } ?>
+        <?php if (!empty($riadok["pict"])) { ?>
+            </div></div>
+        <?php } ?>
        </div>
 <?php
 endwhile;

@@ -8,11 +8,6 @@
 +-----------------------+
 */
 
-function make_clickable($text)
-{
-    return preg_replace('!(((f|ht)tp(s)?://)[-a-zA-Zа-яА-Я()0-9@:%_+.~#?&;//=]+)!i', '<a href="$1">$1</a>', $text);
-}
-
 function gb_sprava_odoslat ($login, $sprava, $ip)
 {
  // nastavíme globálnu premennú $db, ktorá bude obsahovať funkciu pripojenia
@@ -111,7 +106,7 @@ function gb_sprava_zobrazit ($na_stranu, $rozsah)
         $grav_mail = (mysql_fetch_row($grav_vysledok));
     }
 
-    $server_url = "http://".$_SERVER['HTTP_HOST']."/";
+    global $server_url;
     $default = $server_url."assets/img/avatar-default.png";   // Vlastní ikona pro ty kteří gravatar nemají
     $size = 80;
     //$grav_url = "http://www.gravatar.com/avatar/" . md5( strtolower( trim( $grav_mail[0] ) ) ) . "?d=" . urlencode( $default ) . "&s=" . $size;

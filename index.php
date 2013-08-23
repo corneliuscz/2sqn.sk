@@ -8,23 +8,16 @@ $app = new \Slim\Slim();
 
 $req = $app->request;
 
+/* Vlastní funkce a proměnné */
+
 $server_url = "http://".$_SERVER['HTTP_HOST']."/";
-//$server_url = $req->getRootUri();
-/*
-$urls = array(
-                '/' => 'index',
-                '/login' => 'userlogin',
-                '/logout' => 'userlogout',
-                '/registracia' => 'userreg',
-                '/forum' => 'forum',
-                '/o-letke' => 'letka',
-                '/novinky' => 'novinky',
-                '/novinky/(\d+)' => 'novinka',
-                '/lzsl' => 'lzsl',
-                '/albatros' => 'albatros',
-                '/letka' => 'letka'
-            );
-*/
+
+function make_clickable($text)
+{
+    return preg_replace('!(((f|ht)tp(s)?://)[-a-zA-Zа-яА-Я()0-9@:%_+.~#?&;//=]+)!i', '<a href="$1">$1</a>', $text);
+}
+
+/* Router URL */
 
 $app->get('/', function () {
     include ('stranky/index.php');
@@ -213,11 +206,6 @@ $app->post('/registracia', function () use ($app, $req) {
     }
 });
 
-
-
-
-
-
 $app->get('/albatros', function () {
     include ('stranky/albatros.php');
 });
@@ -261,40 +249,7 @@ $app->get('/lzsl', function () {
 
 $app->get('/novinky(/:id)', function ($id = 0) {
     if (!empty($id)) {  // Číslo novinky z URL
-        include "includes/_dba.php";
-        $novinka_query = 'SELECT * FROM board WHERE number LIKE ' .$id;
-        $novinka = mysql_query($novinka_query) or die("Chyba načítání novinek");
-
-        if (mysql_num_rows($novinka)) { // Novinka existuje
-            while ($riadok = MySQL_Fetch_Array($novinka)):
-            ?>
-            <div class="head-photo">
-                <?php if (!empty($riadok["pict"])) echo '<img src="'.$server_url.'assets/img/novinky/'.$riadok ['pict'].'" class="novinka">'; ?>
-                <section class="podklad">
-                    <div class="row">
-                        <div class="large-12 columns">
-                            <h1><?php echo $riadok ["subject"];?></h1>
-                            <span><?php echo date('d.m.Y', strtotime($riadok['from_date'])); ?></span>
-                        </div>
-                    </div>
-                </section>
-            </div>
-            <article class="novinky">
-            <div class="row">
-                <div class="large-12 columns novinka">
-                    <?php  echo $riadok ["head"]; ?>
-                    <?php if (!empty($riadok ["body"])) { ?>
-                        <?php  echo $riadok ["body"]; ?>
-                    <?php } ?>
-                </div>
-            </div>
-            </article>
-            <?php
-            endwhile;
-        } else {
-            header('Location: /novinky');
-        }
-        mysql_close($db);
+        include ('stranky/novinka.php');
     } else {
         include ('stranky/novinky.php');
     }

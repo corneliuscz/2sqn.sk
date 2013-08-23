@@ -219,8 +219,8 @@ nav a#pull {
     .cbp-hrmenu {
         font-size: 100%;
         border: none;
-        background-color: $grey;
-        color: $wetasphalt;
+        background-color: $belizehole;
+        color: $grey;
     }
 
     .cbp-hrmenu > ul {
@@ -260,12 +260,12 @@ nav a#pull {
         display: block;
         font-size: 1.1em;
         padding: 0.5em 1em 0.5em 1em;
-        color: $wetasphalt;
+        color: $clouds;
         border-bottom: 1px dashed $silver;
     }
 
     .cbp-hrmenu > ul > li a:hover {
-        color: $belizehole;
+        color: $grey;
     }
 
     .cbp-hrmenu .cbp-hrsub .inner > ul > li > a:hover {
@@ -326,7 +326,7 @@ a.menu-link {
 }
 
 a.menu-link.active {
-    background: $wetasphalt url("../img/hamburger.gif") no-repeat 50% 50%;
+    background: $belizehole url("../img/hamburger-invert.gif") no-repeat 50% 50%;
 }
 
 @media screen and (-webkit-min-device-pixel-ratio: 1.3), screen and (min--moz-device-pixel-ratio: 1.3), screen and (-o-min-device-pixel-ratio: 2 / 1), screen and (min-device-pixel-ratio: 1.3), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
@@ -339,7 +339,7 @@ a.menu-link.active {
   }
 
   a.menu-link.active {
-    background: $wetasphalt url("../img/hamburger-retina.gif") no-repeat 50% 50%;
+    background: $belizehole url("../img/hamburger-retina-invert.gif") no-repeat 50% 50%;
   }
 }
 

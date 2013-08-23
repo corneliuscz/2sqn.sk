@@ -1,4 +1,4 @@
-<div class="head-photo forum">
+<div class="head-photo no-pic forum">
     <section class="podklad">
         <div class="row">
             <div class="large-12 columns">

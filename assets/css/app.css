@@ -4894,8 +4894,8 @@ nav a#pull {
   .cbp-hrmenu {
     font-size: 100%;
     border: none;
-    background-color: #fafcfc;
-    color: #34495e;
+    background-color: #2980b9;
+    color: #fafcfc;
   }
 
   .cbp-hrmenu > ul {
@@ -4931,12 +4931,12 @@ nav a#pull {
     display: block;
     font-size: 1.1em;
     padding: 0.5em 1em 0.5em 1em;
-    color: #34495e;
+    color: #ecf0f1;
     border-bottom: 1px dashed #bdc3c7;
   }
 
   .cbp-hrmenu > ul > li a:hover {
-    color: #2980b9;
+    color: #fafcfc;
   }
 
   .cbp-hrmenu .cbp-hrsub .inner > ul > li > a:hover {
@@ -4991,7 +4991,7 @@ a.menu-link {
 }
 
 a.menu-link.active {
-  background: #34495e url("../img/hamburger.gif") no-repeat 50% 50%;
+  background: #2980b9 url("../img/hamburger-invert.gif") no-repeat 50% 50%;
 }
 
 @media screen and (-webkit-min-device-pixel-ratio: 1.3), screen and (min--moz-device-pixel-ratio: 1.3), screen and (-o-min-device-pixel-ratio: 2 / 1), screen and (min-device-pixel-ratio: 1.3), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
@@ -5004,7 +5004,7 @@ a.menu-link.active {
   }
 
   a.menu-link.active {
-    background: #34495e url("../img/hamburger-retina.gif") no-repeat 50% 50%;
+    background: #2980b9 url("../img/hamburger-retina-invert.gif") no-repeat 50% 50%;
   }
 }
 nav[role=navigation] {
@@ -5062,6 +5062,93 @@ nav[role=navigation].active {
 }
 
 /* ***************** */
+/* Stylování stránky */
+/* ***************** */
+@media only screen and (min-width: 30em) {
+  img.left, figure.left {
+    margin-right: 1.3em;
+    margin-bottom: 1.3em;
+  }
+
+  img.right, figure.right {
+    margin-left: 1.3em;
+    margin-bottom: 1.3em;
+  }
+}
+body > article {
+  background: #fff;
+}
+
+article .border {
+  border: 1px solid #ecf0f1;
+  padding: 5px;
+  vertical-align: bottom;
+}
+article .fullw {
+  width: 100%;
+  height: auto;
+}
+
+.odsad, .podklad, .uvod, .uvodni-slovo, .warning, .errors, .loginform {
+  padding: 0.5em 0 0.5em 0;
+}
+@media only screen and (min-width: 48em) {
+  .odsad, .podklad, .uvod, .uvodni-slovo, .warning, .errors, .loginform {
+    padding-top: 1.6em;
+  }
+}
+
+.uvod {
+  background: #ecf0f1;
+}
+
+.podklad {
+  background: rgba(0, 0, 0, 0.2);
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+}
+.podklad h1 {
+  color: #fff;
+}
+.podklad p {
+  color: #fff;
+}
+
+.errors {
+  background: #fafcfc;
+  padding-bottom: 0;
+  color: #fff;
+}
+
+.warning {
+  background: #e74c3c;
+  color: #fff;
+}
+
+.loginform {
+  background: #fafcfc;
+}
+
+.obsah, .galeria, .novinka-text {
+  padding-top: 2em;
+}
+
+@media screen and (max-width: 37.5em) {
+  .podklad {
+    padding: 1.6em 0 0.5em 0;
+    font-size: .95em;
+  }
+}
+.uvodni-slovo p {
+  font-size: 0.875em;
+}
+
+table {
+  width: 100%;
+}
+
+/* ***************** */
 /* Hlavička          */
 /* ***************** */
 .head-photo {
@@ -5069,30 +5156,31 @@ nav[role=navigation].active {
   padding-top: 50px;
   padding-bottom: 50%;
   position: relative;
+  z-index: -5;
 }
 .head-photo img {
   width: 100%;
   vertical-align: bottom;
   position: fixed;
-  z-index: -5;
 }
 
-.head-photo.forum, .head-photo.login, .head-photo.hgaleria {
+.head-photo.no-pic {
+  background-color: #95a5a6;
   height: 100px;
   padding-bottom: 0;
   padding-top: 170px;
 }
 @media only screen and (min-width: 48em) {
-  .head-photo.forum, .head-photo.login, .head-photo.hgaleria {
+  .head-photo.no-pic {
     height: 175px;
     padding-top: 270px;
     background-position: 50% 0;
   }
 }
-.head-photo.forum .podklad, .head-photo.login .podklad, .head-photo.hgaleria .podklad {
+.head-photo.no-pic .podklad {
   background: none;
 }
-.head-photo.forum h1, .head-photo.login h1, .head-photo.hgaleria h1 {
+.head-photo.no-pic h1 {
   margin-bottom: 0.3em;
 }
 
@@ -5108,6 +5196,17 @@ nav[role=navigation].active {
   background: #2980b9 url(../img/header-photo-forum-modra.png) no-repeat 80% 0;
 }
 
+.head-photo.novinka-detail {
+  background: #2980b9 url(../img/header-photo-forum-modra.png) no-repeat 80% 0;
+}
+
+.head-photo.novinky {
+  background: #2980b9 url(../img/header-photo-forum-modra.png) no-repeat 80% 0;
+}
+
+/* ***************** */
+/* Výpis fóra        */
+/* ***************** */
 .forum-vypis {
   padding-bottom: 2em;
 }
@@ -5164,90 +5263,34 @@ nav[role=navigation].active {
 }
 
 /* ***************** */
-/* Stylování stránky */
+/* Výpis novinek     */
 /* ***************** */
-@media only screen and (min-width: 30em) {
-  img.left, figure.left {
-    margin-right: 1.3em;
-    margin-bottom: 1.3em;
-  }
-
-  img.right, figure.right {
-    margin-left: 1.3em;
-    margin-bottom: 1.3em;
-  }
-}
-body > article {
-  background: #fff;
+.novinky-vypis {
+  margin-bottom: 2em;
 }
 
-article .border {
-  border: 1px solid #ecf0f1;
-  padding: 5px;
-  vertical-align: bottom;
-}
-article .fullw {
-  width: 100%;
-  height: auto;
+.novinka-text span.datum {
+  color: #95a5a6;
+  display: inline-block;
+  font-size: 0.9em;
 }
 
-.podklad, .uvod, .uvodni-slovo, .warning, .errors, .loginform {
-  padding: 0.5em 0 0.5em 0;
-}
-@media only screen and (min-width: 48em) {
-  .podklad, .uvod, .uvodni-slovo, .warning, .errors, .loginform {
-    padding-top: 1.6em;
-  }
+.novinka-text img.novinka {
+  margin-bottom: 1em;
 }
 
-.uvod {
-  background: #ecf0f1;
+/* ************************ */
+/* Hlavička detailu novinky */
+/* ************************ */
+.head-photo.novinka-detail h1 {
+  padding-bottom: 0em;
+  margin-bottom: 0em;
 }
-
-.podklad {
-  background: rgba(0, 0, 0, 0.2);
-  bottom: 0;
-  position: absolute;
-  width: 100%;
-}
-.podklad h1 {
-  color: #fff;
-}
-.podklad p {
-  color: #fff;
-}
-
-.errors {
-  background: #fafcfc;
-  padding-bottom: 0;
-  color: #fff;
-}
-
-.warning {
-  background: #e74c3c;
-  color: #fff;
-}
-
-.loginform {
-  background: #fafcfc;
-}
-
-.obsah, .galeria {
-  padding-top: 2em;
-}
-
-@media screen and (max-width: 37.5em) {
-  .podklad {
-    padding: 1.6em 0 0.5em 0;
-    font-size: .95em;
-  }
-}
-.uvodni-slovo p {
-  font-size: 0.875em;
-}
-
-table {
-  width: 100%;
+.head-photo.novinka-detail span.datum {
+  color: #fafcfc;
+  font-size: smaller;
+  display: inline-block;
+  margin-bottom: 1em;
 }
 
 /* ***************** */
@@ -5310,7 +5353,11 @@ footer .novinky h3 {
   margin-bottom: 0px;
 }
 
-footer .novinky h3, footer .novinky h3 a, footer .novinky h3 a:hover, footer .novinky p a, footer .novinky p a:hover {
+footer .novinky h3,
+footer .novinky h3 a,
+footer .novinky h3 a:hover,
+footer .novinky p a,
+footer .novinky p a:hover {
   color: #afdefa;
 }
 

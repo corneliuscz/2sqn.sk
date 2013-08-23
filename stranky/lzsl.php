@@ -1,5 +1,5 @@
 <div class="head-photo">
-    <img src="assets/img/lzsl.jpg" alt="Letecký snímok letiska Sliač">
+    <img src="assets/img/slides/lzsl.jpg" alt="Letecký snímok letiska Sliač">
     <section class="podklad">
         <div class="row">
             <div class="large-12 columns">
