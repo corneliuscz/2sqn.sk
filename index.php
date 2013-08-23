@@ -224,7 +224,6 @@ $app->get('/galeria', function () {
 $app->get('/forum', function () use ($app, $req) {
     $pokracuj = 0;
     include ('includes/_kontrola.php');
-    include ('includes/_gb_funkcie.php');
     include ('stranky/forum.php');
 });
 
@@ -247,6 +246,17 @@ $app->post('/forum', function () {
 
 $app->get('/o-letke', function () {
     include ('stranky/letka.php');
+});
+
+$app->get('/odkazy', function () {
+    include ('stranky/odkazy.php');
+});
+
+$app->get('/na-stiahnutie', function () use ($app, $req) {
+    $pokracuj = 0;
+    include ('includes/_kontrola.php');
+
+    include ('stranky/na-stiahnutie.php');
 });
 
 $app->get('/lzsl', function () {
