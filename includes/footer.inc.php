@@ -262,24 +262,24 @@ $(document).ready(function(){
             new Array ( 'z-kabina', 'margin', '23.5% 0 0 43.5%')
         ),
         new Array ( // 26
-            new Array ( 'p-kabina', 'margin', '26% 0 0 36%'),
-            new Array ( 'z-kabina', 'margin', '23.5% 0 0 43.5%')
+            new Array ( 'p-kabina', 'margin', '26% 0 0 61%'),
+            new Array ( 'z-kabina', 'margin', '23.5% 0 0 53.3%')
         ),
         new Array ( // 27
-            new Array ( 'p-kabina', 'margin', '26% 0 0 36%'),
-            new Array ( 'z-kabina', 'margin', '23.5% 0 0 43.5%')
+            new Array ( 'p-kabina', 'margin', '26.5% 0 0 58.5%'),
+            new Array ( 'z-kabina', 'margin', '23.5% 0 0 52.5%')
         ),
         new Array ( // 28
-            new Array ( 'p-kabina', 'margin', '26% 0 0 36%'),
-            new Array ( 'z-kabina', 'margin', '23.5% 0 0 43.5%')
+            new Array ( 'p-kabina', 'margin', '26.5% 0 0 56.2%'),
+            new Array ( 'z-kabina', 'margin', '23.5% 0 0 51.5%')
         ),
         new Array ( // 29
-            new Array ( 'p-kabina', 'margin', '26% 0 0 36%'),
-            new Array ( 'z-kabina', 'margin', '23.5% 0 0 43.5%')
+            new Array ( 'p-kabina', 'margin', '26.5% 0 0 53.5%'),
+            new Array ( 'z-kabina', 'margin', '23.5% 0 0 50.5%')
         ),
         new Array ( // 30
-            new Array ( 'p-kabina', 'margin', '26% 0 0 36%'),
-            new Array ( 'z-kabina', 'margin', '23.5% 0 0 43.5%')
+            new Array ( 'p-kabina', 'margin', '27% 0 0 51.3%'),
+            new Array ( 'z-kabina', 'margin', '23.5% 0 0 49.2%')
         ),
         new Array ( // 31
             new Array ( 'p-kabina', 'margin', '27% 0 0 48.2%'),
