@@ -151,9 +151,163 @@ $(function(){
 
 <script type="text/javascript">
 $(document).ready(function(){
+    var spots = new Array (
+        new Array ( 'p-kabina', 'margin: 26% 0 0 36%', '#pk', 'Přední kabina' ),
+        new Array ( 'z-kabina', 'margin: 23.5% 0 0 43.5%', '#zk', 'Zadní kabina' )
+    );
+
+    var spots_steps = new Array (
+        new Array ( // 0
+            new Array ( 'p-kabina', 'margin', '26% 0 0 36%'),
+            new Array ( 'z-kabina', 'margin', '23.5% 0 0 43.5%')
+        ),
+        new Array ( // 1
+            new Array ( 'p-kabina', 'margin', '26% 0 0 36%'),
+            new Array ( 'z-kabina', 'margin', '23.5% 0 0 43.5%')
+        ),
+        new Array ( // 2
+            new Array ( 'p-kabina', 'margin', '26% 0 0 36%'),
+            new Array ( 'z-kabina', 'margin', '23.5% 0 0 43.5%')
+        ),
+        new Array ( // 3
+            new Array ( 'p-kabina', 'margin', '26% 0 0 36%'),
+            new Array ( 'z-kabina', 'margin', '23.5% 0 0 43.5%')
+        ),
+        new Array ( // 4
+            new Array ( 'p-kabina', 'margin', '26% 0 0 36%'),
+            new Array ( 'z-kabina', 'margin', '23.5% 0 0 43.5%')
+        ),
+        new Array ( // 5
+            new Array ( 'p-kabina', 'margin', '26% 0 0 36%'),
+            new Array ( 'z-kabina', 'margin', '23.5% 0 0 43.5%')
+        ),
+        new Array ( // 6
+            new Array ( 'p-kabina', 'margin', '26% 0 0 36%'),
+            new Array ( 'z-kabina', 'margin', '23.5% 0 0 43.5%')
+        ),
+        new Array ( // 7
+            new Array ( 'p-kabina', 'margin', '26% 0 0 36%'),
+            new Array ( 'z-kabina', 'margin', '23.5% 0 0 43.5%')
+        ),
+        new Array ( // 8
+            new Array ( 'p-kabina', 'margin', '26% 0 0 36%'),
+            new Array ( 'z-kabina', 'margin', '23.5% 0 0 43.5%')
+        ),
+        new Array ( // 9
+            new Array ( 'p-kabina', 'margin', '26% 0 0 36%'),
+            new Array ( 'z-kabina', 'margin', '23.5% 0 0 43.5%')
+        ),
+        new Array ( // 10
+            new Array ( 'p-kabina', 'margin', '26% 0 0 36%'),
+            new Array ( 'z-kabina', 'margin', '23.5% 0 0 43.5%')
+        ),
+        new Array ( // 11
+            new Array ( 'p-kabina', 'margin', '26% 0 0 36%'),
+            new Array ( 'z-kabina', 'margin', '23.5% 0 0 43.5%')
+        ),
+        new Array ( // 12
+            new Array ( 'p-kabina', 'margin', '26% 0 0 36%'),
+            new Array ( 'z-kabina', 'margin', '23.5% 0 0 43.5%')
+        ),
+        new Array ( // 13
+            new Array ( 'p-kabina', 'margin', '26% 0 0 36%'),
+            new Array ( 'z-kabina', 'margin', '23.5% 0 0 43.5%')
+        ),
+        new Array ( // 14
+            new Array ( 'p-kabina', 'margin', '26% 0 0 36%'),
+            new Array ( 'z-kabina', 'margin', '23.5% 0 0 43.5%')
+        ),
+        new Array ( // 15
+            new Array ( 'p-kabina', 'margin', '26% 0 0 36%'),
+            new Array ( 'z-kabina', 'margin', '23.5% 0 0 43.5%')
+        ),
+        new Array ( // 16
+            new Array ( 'p-kabina', 'margin', '26% 0 0 36%'),
+            new Array ( 'z-kabina', 'margin', '23.5% 0 0 43.5%')
+        ),
+        new Array ( // 17
+            new Array ( 'p-kabina', 'margin', '26% 0 0 36%'),
+            new Array ( 'z-kabina', 'margin', '23.5% 0 0 43.5%')
+        ),
+        new Array ( // 18
+            new Array ( 'p-kabina', 'margin', '26% 0 0 36%'),
+            new Array ( 'z-kabina', 'margin', '23.5% 0 0 43.5%')
+        ),
+        new Array ( // 19
+            new Array ( 'p-kabina', 'margin', '26% 0 0 36%'),
+            new Array ( 'z-kabina', 'margin', '23.5% 0 0 43.5%')
+        ),
+        new Array ( // 20
+            new Array ( 'p-kabina', 'margin', '26% 0 0 36%'),
+            new Array ( 'z-kabina', 'margin', '23.5% 0 0 43.5%')
+        ),
+        new Array ( // 21
+            new Array ( 'p-kabina', 'margin', '26% 0 0 36%'),
+            new Array ( 'z-kabina', 'margin', '23.5% 0 0 43.5%')
+        ),
+        new Array ( // 22
+            new Array ( 'p-kabina', 'margin', '26% 0 0 36%'),
+            new Array ( 'z-kabina', 'margin', '23.5% 0 0 43.5%')
+        ),
+        new Array ( // 23
+            new Array ( 'p-kabina', 'margin', '26% 0 0 36%'),
+            new Array ( 'z-kabina', 'margin', '23.5% 0 0 43.5%')
+        ),
+        new Array ( // 24
+            new Array ( 'p-kabina', 'margin', '26% 0 0 36%'),
+            new Array ( 'z-kabina', 'margin', '23.5% 0 0 43.5%')
+        ),
+        new Array ( // 25
+            new Array ( 'p-kabina', 'margin', '26% 0 0 36%'),
+            new Array ( 'z-kabina', 'margin', '23.5% 0 0 43.5%')
+        ),
+        new Array ( // 26
+            new Array ( 'p-kabina', 'margin', '26% 0 0 36%'),
+            new Array ( 'z-kabina', 'margin', '23.5% 0 0 43.5%')
+        ),
+        new Array ( // 27
+            new Array ( 'p-kabina', 'margin', '26% 0 0 36%'),
+            new Array ( 'z-kabina', 'margin', '23.5% 0 0 43.5%')
+        ),
+        new Array ( // 28
+            new Array ( 'p-kabina', 'margin', '26% 0 0 36%'),
+            new Array ( 'z-kabina', 'margin', '23.5% 0 0 43.5%')
+        ),
+        new Array ( // 29
+            new Array ( 'p-kabina', 'margin', '26% 0 0 36%'),
+            new Array ( 'z-kabina', 'margin', '23.5% 0 0 43.5%')
+        ),
+        new Array ( // 30
+            new Array ( 'p-kabina', 'margin', '26% 0 0 36%'),
+            new Array ( 'z-kabina', 'margin', '23.5% 0 0 43.5%')
+        ),
+        new Array ( // 31
+            new Array ( 'p-kabina', 'margin', '27% 0 0 48.2%'),
+            new Array ( 'z-kabina', 'margin', '23.5% 0 0 48.2%')
+        ),
+        new Array ( // 32
+            new Array ( 'p-kabina', 'margin', '27% 0 0 45.5%'),
+            new Array ( 'z-kabina', 'margin', '23.5% 0 0 47%')
+        ),
+        new Array ( // 33
+            new Array ( 'p-kabina', 'margin', '26.5% 0 0 43.5%'),
+            new Array ( 'z-kabina', 'margin', '23.5% 0 0 46.5%')
+        ),
+        new Array ( // 34
+            new Array ( 'p-kabina', 'margin', '26.5% 0 0 41%'),
+            new Array ( 'z-kabina', 'margin', '23.5% 0 0 46%')
+        ),
+        new Array ( // 35
+            new Array ( 'p-kabina', 'margin', '26.5% 0 0 38.5%'),
+            new Array ( 'z-kabina', 'margin', '23.5% 0 0 44.5%')
+        )
+    );
+    
     $('.threesixty').threeSixty({
         dragDirection: 'horizontal',
-        useKeys: true
+        useKeys: true,
+        points: spots,
+        posit: spots_steps
     });
 });
 </script>

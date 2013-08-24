@@ -5314,10 +5314,28 @@ table {
 /* ***************** */
 /* Walkaround        */
 /* ***************** */
-.walkaround p {
+.walkaround {
+  background-color: #eee;
+}
+.walkaround .threesixty {
+  position: relative;
+  max-width: 70em;
+  margin: 0 auto;
+  background-color: #eee;
+}
+.walkaround .threesixty-frame-notes {
+  position: relative;
+  /* Vychozi pozice pro jednotlive body na albikach */
+}
+.walkaround .threesixty-frame-notes a.icon {
+  position: absolute;
+  display: block;
+}
+.walkaround p.loading {
   min-height: 4em;
   text-align: center;
-  padding: 2em 0 0 0;
+  padding: 2em 0 2em 0;
+  margin-bottom: 0;
 }
 
 /* ***************** */

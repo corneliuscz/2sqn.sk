@@ -372,10 +372,63 @@ table {
 /* Walkaround        */
 /* ***************** */
 
-.walkaround p {
-    min-height: 4em;
-    text-align: center;
-    padding: 2em 0 0 0;
+.walkaround {
+    background-color: #eee;
+
+    .threesixty {
+        position: relative;
+        max-width: 70em;
+        margin: 0 auto;
+
+        background-color: #eee;
+    }
+
+    .threesixty-frame-notes {
+        position: relative;
+        //z-index: 5000;
+
+        a.icon {
+            position: absolute;
+            display: block;
+        }
+
+        /* Vychozi pozice pro jednotlive body na albikach */
+        .l-agregaty-spicka {}
+        .snimac-namrazy {}
+        .predni-podvozek-sachta {}
+        .predni-podvozek-noha {}
+        .snimac-nabeh {}
+        .kanon-gs23 {}
+        .stupacky-kabiny {}
+        //.p-kabina { margin: 26% 0 0 36%; }
+        //.z-kabina { margin: 23.5% 0 0 43.5%; }
+        .brzdici-stity {}
+        .vstup-vzduchu {}
+        .hlavni-podvozek-noha {}
+        .zavesnik {}
+        .p-kontrolni-otvory {}
+        .zapisovac {}
+        .smerovka {}
+        .vyskovka {}
+        .tryska {}
+        .signalni-rakety {}
+        .agregat-motora {}
+        .agregat-klimatizace {}
+        .apu {}
+        .klapky {}
+        .hlavni-podvozek-sachta {}
+        .klapky {}
+        .pitotka {}
+        .sedadlo {}
+        .p-agregaty-spicka {}
+    }
+
+    p.loading {
+        min-height: 4em;
+        text-align: center;
+        padding: 2em 0 2em 0;
+        margin-bottom: 0;
+    }
 }
 
 /* ***************** */
