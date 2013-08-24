@@ -76,7 +76,7 @@ var scope,
             $this.find('.threesixty-frame:eq(' + val + ')').css({display: 'block'});
             // posuneme značky
             for(j; j < ln; j++){
-                $('.'+options.posit[val][j][0]).css(options.posit[val][j][1], options.posit[val][j][2]); 
+                $('.'+options.posit[val][j][0]).css('display', 'block').css(options.posit[val][j][1], options.posit[val][j][2]);  
             }
         });
     };
@@ -104,7 +104,7 @@ var scope,
             $this.find('.threesixty-frame:eq(' + val + ')').css({display: 'block'});
             // posuneme značky
             for(j; j < ln; j++){
-                $('.'+options.posit[val][j][0]).css(options.posit[val][j][1], options.posit[val][j][2]); 
+                $('.'+options.posit[val][j][0]).css('display', 'block').css(options.posit[val][j][1], options.posit[val][j][2]); 
             }
         });
     };
@@ -315,8 +315,9 @@ var scope,
             ln = options.posit[0].length,
             j = 0;
             // posuneme značky
+            
             for(j; j < ln; j++){
-                $('.'+options.posit[val][j][0]).css(options.posit[val][j][1], options.posit[val][j][2]); 
+                $('.'+options.posit[val][j][0]).css('display', 'block').css(options.posit[val][j][1], options.posit[val][j][2]); 
             }
         }
     };
