@@ -5327,7 +5327,15 @@ table {
 /* ***************** */
 /* Walkaround        */
 /* ***************** */
+.walkaround--container {
+  position: relative;
+}
+.walkaround--container .podklad {
+  z-index: 500;
+}
+
 .walkaround {
+  padding: 35px 0;
   background-color: #eee;
 }
 .walkaround .threesixty {

@@ -391,7 +391,16 @@ table {
 /* Walkaround        */
 /* ***************** */
 
+.walkaround--container {
+    position: relative;
+
+    .podklad {
+        z-index: 500;
+    }
+}
+
 .walkaround {
+    padding: 35px 0;
     background-color: #eee;
 
     .threesixty {
