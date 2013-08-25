@@ -52,10 +52,48 @@
                             </div><!-- /cbp-hrsub -->
                         </li>
                         <li>
-                            <a href="/galeria">galéria</a>
-                        </li>
-                        <li>
-                            <a href="http://fan2sqn.com/eshop/">fan shop</a>
+                            <a href="#" class="dropdown">foto&amp;video</a>
+                            <div class="cbp-hrsub">
+                                <div class="row">
+                                    <div class="large-4 small-12 columns">
+                                        <div class="inner">
+                                            <h4><a href="/galeria">Fotky</a></h4>
+                                            <ul>
+                                                <li><a href="/galeria?dir=2.SQN%20by%20cjvanderende.com">2.SQN by cjvanderende.com</a></li>
+                                                <li><a href="/galeria?dir=2.SQN%20by%20Ondrej%20Maliniak">2.SQN by Ondrej Maliniak</a></li>
+                                                <li><a href="/galeria?dir=MACE%20XIII">MACE XIII</a></li>
+                                                <li><a href="/galeria?dir=Desert%20Thunder%202011">Desert Thunder 2011</a></li>
+                                                <li><a href="/galeria?dir=Serpentex%202011">Serpentex 2011</a></li>
+                                                <li><a href="/galeria?dir=Slovak%20Hawk%202007">Slovak Hawk 2007</a></li>
+                                                <li><a href="/galeria?dir=SIAF%202012">SIAF 2012</a></li>
+                                                <li><a href="/galeria?dir=SIAF%202011">SIAF 2011</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="large-4 small-12 columns">
+                                        <div class="inner">
+                                            <h4>&nbsp;</h4>
+                                            <ul>
+                                                <li><a href="/galeria?dir=Prvé%20sóla%20L-39">Prvé sóla L-39</a></li>
+                                                <li><a href="/galeria?dir=Posledný%20let%20na%20L-39">Posledný let na L-39</a></li>
+                                                <li><a href="/galeria?dir=L-39%205301%200tto%20Smik">L-39 5301 0tto Smik</a></li>
+                                                <li><a href="/galeria?dir=Rozlúčka%200730">Rozlúčka 0730</a></li>
+                                                <li><a href="/galeria?dir=Virtuálna%20letka">Virtuálna letka</a></li>
+                                                <li><a href="/galeria?dir=Vaše%20fotky">Vaše fotky</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="large-4 small-12 columns">
+                                        <div class="inner">
+                                            <h4><a href="/videa">Videa</a></h4>
+                                            <ul>
+                                                <li><a href="/videa#skupina">Skupinové lietanie</a></li>
+                                                <li><a href="/videa#display2012">Display promo video 2012</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div><!-- /cbp-hrsub row -->
+                            </div><!-- /cbp-hrsub -->
                         </li>
                         <li>
                             <a href="/odkazy">odkazy</a>
@@ -65,6 +103,9 @@
                         </li>
                         <li>
                             <a href="/forum" class="last">fórum</a>
+                        </li>
+                        <li>
+                            <a href="http://fan2sqn.com/eshop/">fan shop</a>
                         </li>
                     </ul>
                     <a href="#" id="pull">Menu</a>

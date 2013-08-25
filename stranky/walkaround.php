@@ -4,7 +4,7 @@
     <section class="podklad">
         <div class="row">
             <div class="large-12 columns">
-                <h1>Walkaround - L-39 ZAM Albatros</h1>
+                <h1>Walkaround L-39 ZAM Albatros</h1>
             </div>
         </div>
     </section>

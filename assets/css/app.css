@@ -5384,7 +5384,6 @@ table {
 .img-container em {
   display: block;
   position: absolute;
-  z-index: 500;
   bottom: 0;
   left: 0;
   padding: 1em;

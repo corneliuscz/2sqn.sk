@@ -340,6 +340,7 @@ if (count($dirs) + count($files) == 0) {
     if($currentdir == "photos") $messages = "It looks like you have just installed MiniGal Nano. Please run the <a href='system_check.php'>system check tool</a>";
 }
 $offset_current = $offset_start;
+
 for ($x = $offset_start; $x < sizeof($dirs) && $x < $offset_end; $x++)
 {
     $offset_current++;
