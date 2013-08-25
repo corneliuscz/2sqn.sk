@@ -4968,8 +4968,8 @@ nav a#pull {
   }
 
   /* Oprava scrolování menu na malých displejích */
-  .menu-back, .userlogout {
-    position: absolute;
+  .menu-back, .userlogout, .head-photo img {
+    position: absolute !important;
   }
 }
 /*  */
@@ -5140,10 +5140,23 @@ article .fullw {
   padding-top: 2em;
 }
 
+.mensi p {
+  font-size: 0.95em;
+}
+
+.albatrosy img {
+  width: 100%;
+  height: auto;
+}
+
 @media screen and (max-width: 37.5em) {
   .podklad {
     padding: 1.6em 0 0.5em 0;
     font-size: .95em;
+  }
+
+  .nehody h1 {
+    font-size: 1.7em;
   }
 }
 .uvodni-slovo p {

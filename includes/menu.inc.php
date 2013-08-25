@@ -31,8 +31,8 @@
                                         <div class="inner">
                                         <h4><a href="/albatros">L-39 albatros</a></h4>
                                         <ul>
-                                            <li><a href="/albatros#">Stručný popis</a></li>
-                                            <li><a href="/slovenske-albatrosy">Slovenské Albatrosy</a></li>
+                                            <li><a href="/albatros#albatros">Stručný popis</a></li>
+                                            <li><a href="/albatros#albatrosy">Slovenské Albatrosy</a></li>
                                             <li><a href="/walkaround">L-39CM/ZAM walkaround</a></li>
                                             <li><a href="/nehody">Nehody L-39</a></li>
                                         </ul>

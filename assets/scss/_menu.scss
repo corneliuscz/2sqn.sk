@@ -299,8 +299,8 @@ nav a#pull {
     }
 
     /* Oprava scrolování menu na malých displejích */
-    .menu-back, .userlogout {
-        position: absolute;
+    .menu-back, .userlogout, .head-photo img {
+        position: absolute !important;
     }
 
 

@@ -4,8 +4,7 @@ session_start();
 require 'Slim/Slim.php';
 \Slim\Slim::registerAutoloader();
 
-
-$app = new \Slim\Slim(array(
+$app = new \Slim\Slim (array(
     'mode' => 'development'
 ));
 /*
@@ -33,7 +32,7 @@ function predlozky($text) {
 
 /* Router URL */
 
-$app->get('/', function () {
+$app->get('/', function () use ($app) {
     include ('stranky/index.php');
 });
 
@@ -222,6 +221,10 @@ $app->post('/registracia', function () use ($app, $req) {
 
 $app->get('/albatros', function () {
     include ('stranky/albatros.php');
+});
+
+$app->get('/nehody', function () {
+    include ('stranky/nehody.php');
 });
 
 $app->get('/galeria', function () {
