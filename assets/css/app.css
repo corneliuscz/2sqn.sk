@@ -5131,6 +5131,10 @@ article .fullw {
   background: #1abc9c;
   color: #fff;
 }
+.tips a {
+  color: #fff;
+  text-decoration: underline;
+}
 
 .loginform {
   background: #fafcfc;
@@ -5203,12 +5207,12 @@ table {
   margin-bottom: 0.3em;
 }
 
-.head-photo.hgaleria {
+.head-photo.hgaleria, .head-photo.odkazy, .head-photo.downloads {
   background: #34495e url(../img/header-photo-forum.png) no-repeat 80% 0;
 }
 
 .head-photo.login {
-  background: #1abc9c url(../img/header-photo-forum-zelena.png) no-repeat 80% 0;
+  background: #16a085 url(../img/header-photo-forum-zelena.png) no-repeat 80% 0;
 }
 
 .head-photo.forum {
@@ -5357,6 +5361,35 @@ table {
   text-align: center;
   padding: 2em 0 2em 0;
   margin-bottom: 0;
+}
+
+/* ***************** */
+/* Galeria           */
+/* ***************** */
+.img-container {
+  text-align: center;
+  position: relative;
+  width: 33%;
+  height: 33%;
+  float: left;
+  overflow: hidden;
+}
+.img-container a {
+  color: white;
+}
+.img-container img {
+  position: relative;
+  vertical-align: bottom;
+}
+.img-container em {
+  display: block;
+  position: absolute;
+  z-index: 500;
+  bottom: 0;
+  left: 0;
+  padding: 1em;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.4);
 }
 
 /* ***************** */

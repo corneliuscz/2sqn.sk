@@ -159,7 +159,7 @@ $dirs = array();
                         $dirs[] = array(
                             "name" => $file,
                             "date" => filemtime($currentdir . "/" . $file . "/folder.jpg"),
-                            "html" => "<div class=\"large-3 columns\"><div class=\"img-container\"><a href='/galeria?dir=" .ltrim($_GET['dir'] . "/" . $file, "/") . "'><img src='" . GALLERY_ROOT . "createthumb.php?filename=$currentdir/" . $file . "/folder.jpg&amp;size=$thumb_size'  alt='$label_loading' /><em>" . padstring($file, $label_max_length) . "</em></a></div></div>");
+                            "html" => "<div class=\"img-container\"><a href='/galeria?dir=" .ltrim($_GET['dir'] . "/" . $file, "/") . "'><img src='" . GALLERY_ROOT . "createthumb.php?filename=$currentdir/" . $file . "/folder.jpg&amp;size=$thumb_size'  alt='$label_loading' /><em>" . padstring($file, $label_max_length) . "</em></a></div>");
                     }  else
                     {
                     // Set thumbnail to first image found (if any):
@@ -169,13 +169,13 @@ $dirs = array();
                         $dirs[] = array(
                             "name" => $file,
                             "date" => filemtime($currentdir . "/" . $file),
-                            "html" => "<div class=\"large-3 columns\"><div class=\"img-container\"><a href='/galeria?dir=" . ltrim($_GET['dir'] . "/" . $file, "/") . "'><img src='" . GALLERY_ROOT . "createthumb.php?filename=$thumbdir/" . $file . "/" . $firstimage . "&amp;size=$thumb_size'  alt='$label_loading' /><em>" . padstring($file, $label_max_length) . "</em></a></div></div>");
+                            "html" => "<div class=\"img-container\"><a href='/galeria?dir=" . ltrim($_GET['dir'] . "/" . $file, "/") . "'><img src='" . GALLERY_ROOT . "createthumb.php?filename=$thumbdir/" . $file . "/" . $firstimage . "&amp;size=$thumb_size'  alt='$label_loading' /><em>" . padstring($file, $label_max_length) . "</em></a></div>");
                         } else {
                         // If no folder.jpg or image is found, then display default icon:
                             $dirs[] = array(
                                 "name" => $file,
                                 "date" => filemtime($currentdir . "/" . $file),
-                                "html" => "<div class=\"large-3 columns\"><div class=\"img-container\"><a href='/galeria?dir=" . ltrim($_GET['dir'] . "/" . $file, "/") . "'><img src='" . GALLERY_ROOT . "assets/img/folder_" . strtolower($folder_color) . ".png' width='$thumb_size' height='$thumb_size' alt='$label_loading' /><em>" . padstring($file) . "</em></a></div></div>");
+                                "html" => "<div class=\"img-container\"><a href='/galeria?dir=" . ltrim($_GET['dir'] . "/" . $file, "/") . "'><img src='" . GALLERY_ROOT . "assets/img/folder_" . strtolower($folder_color) . ".png' width='$thumb_size' height='$thumb_size' alt='$label_loading' /><em>" . padstring($file) . "</em></a></div>");
                         }
                     }
                 }
@@ -212,7 +212,7 @@ if (file_exists($currentdir ."/captions.txt"))
                             "name" => $file,
                             "date" => filemtime($currentdir . "/" . $file),
                             "size" => filesize($currentdir . "/" . $file),
-                            "html" => "<div class=\"large-3 columns\"><div class=\"img-container\"><a href='" . $currentdir . "/" . $file . "'  class='fancybox' rel='group' title='$img_captions[$file]'><img src='" . GALLERY_ROOT . "createthumb.php?filename=" . $thumbdir . "/" . $file . "&amp;size=$thumb_size' alt='$label_loading' /></a></div></div>");
+                            "html" => "<div class=\"img-container\"><a href='" . $currentdir . "/" . $file . "'  class='fancybox' rel='group' title='$img_captions[$file]'><img src='" . GALLERY_ROOT . "createthumb.php?filename=" . $thumbdir . "/" . $file . "&amp;size=$thumb_size' alt='$label_loading' /></a></div>");
                       }
                     // Other filetypes
                     $extension = "";
@@ -231,7 +231,7 @@ if (file_exists($currentdir ."/captions.txt"))
                               "name" => $file,
                             "date" => filemtime($currentdir . "/" . $file),
                             "size" => filesize($currentdir . "/" . $file),
-                              "html" => "<div class=\"img-container\"><div class=\"large-3 columns\"><a href='" . $currentdir . "/" . $file . "' title='$file'><em-pdf>" . padstring($file, 20) . "</em-pdf><img src='" . GALLERY_ROOT . "images/filetype_" . $extension . ".png' width='$thumb_size' height='$thumb_size' alt='$file' /></a></div></div>");
+                              "html" => "<div class=\"img-container\"><a href='" . $currentdir . "/" . $file . "' title='$file'><em-pdf>" . padstring($file, 20) . "</em-pdf><img src='" . GALLERY_ROOT . "images/filetype_" . $extension . ".png' width='$thumb_size' height='$thumb_size' alt='$file' /></a></div>");
                     }
                  }
     }
@@ -336,7 +336,7 @@ $breadcrumb_navigation .= "</ul>";
 // DISPLAY FOLDERS
 //-----------------------
 if (count($dirs) + count($files) == 0) {
-    $thumbnails .= "<div class=\"large-3 columns\">$label_noimages</div>"; //Display 'no images' text
+    $thumbnails .= "<div class=\"img-container\">$label_noimages</div>"; //Display 'no images' text
     if($currentdir == "photos") $messages = "It looks like you have just installed MiniGal Nano. Please run the <a href='system_check.php'>system check tool</a>";
 }
 $offset_current = $offset_start;
@@ -374,8 +374,8 @@ $messages = "<div id=\"topbar\">" . $messages . " <a href=\"#\" onclick=\"docume
 $galleryname = trim($_GET['dir']);
 
 //PROCESS TEMPLATE FILE
-    if(GALLERY_ROOT != "") $templatefile = GALLERY_ROOT . "templates/integrate.html";
-    else $templatefile = "templates/" . $templatefile . ".php";
+    if(GALLERY_ROOT != "") $templatefile = GALLERY_ROOT . "gal_templates/integrate.html";
+    else $templatefile = "gal_templates/" . $templatefile . ".php";
     if(!$fd = fopen($templatefile, "r"))
     {
         echo "Template $templatefile not found!";
@@ -433,7 +433,8 @@ $galleryname = trim($_GET['dir']);
             <p>Maximálna šírka obrázku je 1280 px., väčší obrázok nie je možné uložiť. Uložiť je možné len obrázok vo formáte JPG. Obrázok sa uloží do albumu podľa Vášho výberu.</p>
             <p>V názve obrázku nepoužívajte špeciálne znaky ani medzery!</p>
         </div>
-    <?php } else echo '<div class="large-12 columns"><p>Zaregistrujte sa, a môžete pridávať fotky do albumu "Vaše fotky".</p></div>';
+    <?php } else { echo '<div class="large-12 columns"><p><a href="/login">Zaregistrujte a prihlaste sa</a>, a môžete pridávať fotky do albumu "Vaše fotky".</p></div>';
+                 }
 ?>
 
     </div>
