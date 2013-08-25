@@ -4,7 +4,15 @@ session_start();
 require 'Slim/Slim.php';
 \Slim\Slim::registerAutoloader();
 
-$app = new \Slim\Slim();
+
+$app = new \Slim\Slim(array(
+    'mode' => 'development'
+));
+/*
+$app = new \Slim\Slim(array(
+    'mode' => 'production'
+));
+*/
 
 $req = $app->request;
 
@@ -276,14 +284,46 @@ $app->get('/novinky(/:id)', function ($id = 0) {
     }
 });
 
+// Zpracování hlasu ankety
+$app->post('/hlasuj', function () use ($app) {
+    require "includes/_dba.php";
+    //$_SESSION['anketaError'] = '';
+    // byl odeslan formular ?
+    if(isset($_POST['sent'])) {
+        $presmeruj = $_POST['origin']."#anketa";
+
+        if (!isset($_POST['odp'])) {
+            //$_SESSION['anketaError'] .= 'Nevybrali jste odpověď<br>';
+            $app->redirect($presmeruj);
+        } else {
+            $odp = (int)$_POST['odp']; //postneme si co zadal
+
+            $CisloAnkety=(int)$_POST['anketa'];
+
+            $ip = $_SERVER["REMOTE_ADDR"]; // IP adresa návštěvníka
+            $ip_cele = gethostbyaddr($_SERVER['REMOTE_ADDR']); // cela IP adresa návštěvníka
+
+            $vysledekIP = mysql_query("SELECT COUNT(ip) FROM anketa WHERE `ip`= '$ip' AND `ip_cele`='$ip_cele' AND `anketa`='".$CisloAnkety."'"); //podivame se do databaze jestli uz se z IP navstevnika nehlasovalo
+                if (mysql_result($vysledekIP,0) == 0){ // pokud v db ip neni, navstevnik nehlasoval
+                    mysql_query("INSERT INTO anketa (`odp`,`anketa`,`ip`,`ip_cele`,`cas`) VALUES ('$odp', '$CisloAnkety', '$ip', '$ip_cele', NOW() )");    // vlozime tedy hlas spolecne s IP do db
+                    //$anketaSuccess = 'Děkujeme za váš hlas';
+                    $app->redirect($presmeruj);
+                }else{
+                    //echo "<script language='javascript' type='text/javascript'>alert('Už ste hlasovali.');</script>"; // jinak jestli je v db tak chodime alert ze uz hlasoval
+                    //$_SESSION['anketaError'] .= 'Už jste hlasovali<br>';
+                    $app->redirect($presmeruj);   // pokud už hlasoval tak nic neuděláme a jen přesměrujeme zpět.
+                }
+        }
+    }
+});
 ?>
+
 <?php include ('includes/header.inc.php'); ?>
 <?php include ('includes/menu.inc.php'); ?>
 <?php $app->run(); ?>
 <?php include ('includes/footer.inc.php');    ?>
 
 <?php
-
 /*
         case "uvod": include("prva.htm"); break;
         case "historia": include("historia.htm"); break;

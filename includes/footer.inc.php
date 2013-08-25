@@ -27,7 +27,7 @@
     <section class="social">
         <div class="row">
             <div class="large-4 columns anketa">
-                <h2 class="icon icon-anketa">Anketa</h2>
+                <h2 class="icon icon-anketa">Anketa</h2><a name="anketa"></a>
                 <?php include "includes/_anketa.php"; ?>
             </div>
             <div class="large-4 columns">
@@ -302,7 +302,7 @@ $(document).ready(function(){
             new Array ( 'z-kabina', 'margin', '23.5% 0 0 44.5%')
         )
     );
-    
+
     $('.threesixty').threeSixty({
         dragDirection: 'horizontal',
         useKeys: true,
