@@ -72,7 +72,7 @@
                                     </div>
                                     <div class="large-4 small-12 columns">
                                         <div class="inner">
-                                            <h4>&nbsp;</h4>
+                                            <h4 class="hide-for-small">&nbsp;</h4>
                                             <ul>
                                                 <li><a href="/galeria?dir=Prvé%20sóla%20L-39">Prvé sóla L-39</a></li>
                                                 <li><a href="/galeria?dir=Posledný%20let%20na%20L-39">Posledný let na L-39</a></li>
@@ -102,10 +102,10 @@
                             <a href="/na-stiahnutie">na stiahnutie</a>
                         </li>
                         <li>
-                            <a href="/forum" class="last">fórum</a>
+                            <a href="/forum">fórum</a>
                         </li>
                         <li>
-                            <a href="http://fan2sqn.com/eshop/">fan shop</a>
+                            <a href="http://fan2sqn.com/eshop/" class="last">fan shop</a>
                         </li>
                     </ul>
                     <a href="#" id="pull">Menu</a>
