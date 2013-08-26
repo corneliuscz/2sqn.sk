@@ -236,7 +236,7 @@ table {
 
     @media #{$small} {
         height: 175px;
-        padding-top: 270px;
+        padding-top: 250px;
         background-position: 50% 0;
     }
 
@@ -249,24 +249,28 @@ table {
     }
 }
 
-.head-photo.hgaleria, .head-photo.odkazy, .head-photo.downloads {
+.head-photo.odkazy, .head-photo.downloads {
     background: $wetasphalt url(../img/header-photo-forum.png) no-repeat 80% 0;
 }
 
+.head-photo.hgaleria {
+    background: $belizehole url(../img/header-photo-foto.png) no-repeat 80% 0;
+}
+
 .head-photo.login {
-    background: $greensea url(../img/header-photo-forum-zelena.png) no-repeat 80% 0;
+    background: $greensea url(../img/header-photo-zelena.png) no-repeat 80% 0;
 }
 
 .head-photo.forum {
-    background: $belizehole url(../img/header-photo-forum-modra.png) no-repeat 80% 0;
+    background: $belizehole url(../img/header-photo-forum.png) no-repeat 80% 0;
 }
 
-.head-photo.novinka-detail {
-    background: $belizehole url(../img/header-photo-forum-modra.png) no-repeat 80% 0;
+.head-photo.novinky, .head-photo.novinka-detail {
+    background: $belizehole url(../img/header-photo-modra.png) no-repeat 80% 0;
 }
 
-.head-photo.novinky {
-    background: $belizehole url(../img/header-photo-forum-modra.png) no-repeat 80% 0;
+.head-photo.video {
+    background: $belizehole url(../img/header-photo-video.png) no-repeat 80% 0;
 }
 
 /* ***************** */

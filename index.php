@@ -233,6 +233,10 @@ $app->get('/galeria', function () {
     include ('galeria.php');
 });
 
+$app->get('/videa', function () {
+    include ('stranky/videa.php');
+});
+
 $app->get('/forum', function () use ($app, $req) {
     $pokracuj = 0;
     include ('includes/_kontrola.php');

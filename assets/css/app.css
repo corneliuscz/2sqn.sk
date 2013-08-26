@@ -5196,7 +5196,7 @@ table {
 @media only screen and (min-width: 48em) {
   .head-photo.no-pic {
     height: 175px;
-    padding-top: 270px;
+    padding-top: 250px;
     background-position: 50% 0;
   }
 }
@@ -5207,24 +5207,28 @@ table {
   margin-bottom: 0.3em;
 }
 
-.head-photo.hgaleria, .head-photo.odkazy, .head-photo.downloads {
+.head-photo.odkazy, .head-photo.downloads {
   background: #34495e url(../img/header-photo-forum.png) no-repeat 80% 0;
 }
 
+.head-photo.hgaleria {
+  background: #2980b9 url(../img/header-photo-foto.png) no-repeat 80% 0;
+}
+
 .head-photo.login {
-  background: #16a085 url(../img/header-photo-forum-zelena.png) no-repeat 80% 0;
+  background: #16a085 url(../img/header-photo-zelena.png) no-repeat 80% 0;
 }
 
 .head-photo.forum {
-  background: #2980b9 url(../img/header-photo-forum-modra.png) no-repeat 80% 0;
+  background: #2980b9 url(../img/header-photo-forum.png) no-repeat 80% 0;
 }
 
-.head-photo.novinka-detail {
-  background: #2980b9 url(../img/header-photo-forum-modra.png) no-repeat 80% 0;
+.head-photo.novinky, .head-photo.novinka-detail {
+  background: #2980b9 url(../img/header-photo-modra.png) no-repeat 80% 0;
 }
 
-.head-photo.novinky {
-  background: #2980b9 url(../img/header-photo-forum-modra.png) no-repeat 80% 0;
+.head-photo.video {
+  background: #2980b9 url(../img/header-photo-video.png) no-repeat 80% 0;
 }
 
 /* ***************** */
