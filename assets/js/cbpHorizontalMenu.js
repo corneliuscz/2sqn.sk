@@ -14,10 +14,13 @@ var cbpHorizontalMenu = (function() {
         $menuItems = $listItems.children( 'a.dropdown' ),
         $body = $( 'body' ),
         current = -1;
+        $secondLevelItems = $( '.cbp-hrsub ul > li' ),
+        clicked = -1;
 
     function init() {
         $menuItems.on( 'click', open );
-        $listItems.on( 'click', function( event ) { event.stopPropagation(); } );
+        $secondLevelItems.on ( 'click', close );
+        $listItems.on( 'click', function( event ) { event.stopPropagation();  } );
     }
 
     function open( event ) {

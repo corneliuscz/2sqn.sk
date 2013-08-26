@@ -422,12 +422,12 @@ $galleryname = trim($_GET['dir']);
             <h4>Upload obrázku</h4>
         </div>
         <div class="large-4 columns">
-        <form action='/upload_picture?upload=ok' method='post' enctype='multipart/form-data'>
-            <input type="file" name="file" class="button secondary rounded small"><br>
+        <form action='/upload_picture' method='post' enctype='multipart/form-data'>
+            <input type="file" name="file"><br>
             Album:
                 <input type="radio" name="adresarf" value="vasefoto" checked="checked"> Vaše fotky
                 <input type="radio" name="adresarf" value="siaf"> SIAF 2011<br>
-                <input type="submit" value="Vložit obrázok" class="button secondary rounded small">
+                <input type="submit" value="Vložit obrázok" class="button primary rounded small">
             </form>
         </div>
         <div class="large-8 columns">

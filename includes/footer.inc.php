@@ -108,7 +108,8 @@ $(document).ready(function() {
 /* Zmenšení loga po scrollování */
 $(document).ready(function($){
     var showHomeLink = function() {
-        var homeLink = $('.home img');
+        var homeLink = $('.home img'),
+            header   = $('.menu-back');
 
         if ($(window).scrollTop() < 250) {
             homeLink.css('width', '100%');

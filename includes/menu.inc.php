@@ -87,8 +87,8 @@
                                         <div class="inner">
                                             <h4><a href="/videa">Videa</a></h4>
                                             <ul>
-                                                <li><a href="/videa#skupina">Skupinové lietanie</a></li>
-                                                <li><a href="/videa#display2012">Display promo video 2012</a></li>
+                                                <li><a href="/videa">Skupinové lietanie</a></li>
+                                                <li><a href="/videa">Display promo video 2012</a></li>
                                             </ul>
                                         </div>
                                     </div>

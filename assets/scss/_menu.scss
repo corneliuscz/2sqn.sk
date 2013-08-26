@@ -3,6 +3,7 @@
     position: fixed;
     width: 100%;
     z-index: 50;
+    -webkit-transform: translateZ(0);  /* Fix na mizející menu při scrollování pomocí #anchor v Chrome */
 }
 
 .userlogout {
@@ -15,6 +16,7 @@
     width: 100%;
     z-index: 20;
     top: 50px;
+    -webkit-transform: translateZ(0);  /* Fix na mizející menu při scrollování pomocí #anchor v Chrome */
 
     padding: 0.5em 0;
 
