@@ -4,7 +4,7 @@
         <div class="row">
             <div class="large-12 columns">
                 <h1>Výcviková letka</h1>
-                <a name="historia"></a>
+
             </div>
         </div>
     </section>
@@ -12,6 +12,7 @@
 
 <article>
     <section class="obsah">
+        <a name="historia" id="kotva"></a>
         <div class="row">
             <div class="large-12 columns">
                 <h2>História letky</h2>
@@ -45,9 +46,9 @@
                 </figure>
             </div>
         </div>
-        <a name="velitelia"></a>
     </section>
     <section class="obsah">
+        <a name="velitelia" id="kotva"></a>
         <div class="row">
             <div class="large-12 columns">
                 <h2>Velitelia letky</h2>
@@ -63,18 +64,18 @@
                 </table>
             </div>
         </div>
-        <a name="piloti"></a>
     </section>
     <section class="obsah">
+        <a name="piloti" id="kotva"></a>
         <div class="row">
             <div class="large-12 columns">
                 <h2>Lietajúci personál L-39 Sliač</h2>
                 <p>BLAHÚT Vladimír, BLAŽEK Marián, BORNEMISZA Koloman, BRANDABURA Igor, BUKOVSKÝ Marián, CESNAK Ján, CINGEL Radovan, DVORSKÝ Pavel, EREMIÁŠ Imrich, FERTÁL Ľubomír, FÜLLE Jaroslav, GLOVŇA Kamil, GREGOR Peter, GROŠAFT Miroslav, HAUSNER Josef, HROMNÍK Ján, CHALMOVSKÝ Michal, CHROMÝ Jaroslav, IŠTVÁN Peter, JANKOVIČ Jozef, KANDA Slavomír, KNOPP Peter, KOTERBA Peter, KROPÁČEK Tomáš, KURTÍK Ján, KUTERKA Martin, KYSEL Branislav, LABUDÍK Peter, LACKO Miroslav, LUKÁČIK Peter, MACKO Martin, MACKO Peter, MANO Miroslav, MARKO Ivan, MASÁR Miroslav, MAZÚCH Vladimír, MECHEL Miloš, MOLENT Milan, NEDELKA Mário, OBOŇA Jozef, PAGÁČ Erik, PAĽUV Martin, PAVLÍČEK Dušan, PINTER Ján, POKLEMBA Martin, POLÁČEK Roman, SEMANCO Radoslav, SERBÍN Pavol, SUSÁNYI Ján, SÚDIK Elemír, ŠENIGLA Ľuboš, ŠERÝ Petr, ŠIRKO Martin, ŠKUTA Richard, ŠMIGOVSKÝ Patrik, TICHÝ Dušan, TOVAČOVSKÝ Ivan, TUČEK Václav, VAŠKO Jozef, ŽBIRKA Róbert.</p>
             </div>
         </div>
-        <a name="stab"></a>
     </section>
     <section class="obsah">
+        <a name="stab" id="kotva"></a>
         <div class="row">
             <div class="large-12 columns">
                 <h2>Štábni piloti L-39 Sliač</h2>
@@ -84,9 +85,9 @@
                 <p>BARÁNEK Juraj, BEDNÁR Miroslav, ČELKO Milan, DOBROTKA Jozef, DORČÁK Ivan, GLOS Drahomír, HAŠAN Ján, HRONEC Martin, KRAKOVSKÝ Jozef, LISÝ Vladimír, LOVAS Ľubomír, MIHALUS Igor, MIKULA Štefan, PALÍK Štefan, ŠVACHO Jaroslav, TAKÁCS Jozef.</p>
             </div>
         </div>
-        <a name="technici"></a>
     </section>
     <section class="obsah">
+        <a name="technici" id="kotva"></a>
         <div class="row">
             <div class="large-12 columns">
                 <h2>Technický a&nbsp;zabezpečujúci personál, 2. a bývalej 3. letky na&nbsp;L-39</h2>

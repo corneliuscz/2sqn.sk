@@ -10,7 +10,7 @@
 </div>
 
 <article>
-    <section class="obsah mensi"><a name="albatros"></a>
+    <section class="obsah mensi"><a name="albatros" id="kotva"></a>
         <div class="row">
             <div class="large-12 columns">
                 <h2>Stručný popis lietadla</h2>
@@ -40,7 +40,7 @@
             </div>
         </div>
     </section>
-    <section class="obsah mensi albatrosy"><a name="albatrosy"></a>
+    <section class="obsah mensi albatrosy"><a name="albatrosy" id="kotva"></a>
         <div class="row">
             <div class="large-12 columns">
                 <h2>Slovenské albatrosy</h2>

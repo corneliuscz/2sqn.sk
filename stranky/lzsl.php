@@ -11,7 +11,7 @@
 </div>
 
 <article>
-    <section class="obsah"><a name="historia"></a>
+    <section class="obsah"><a name="historia" id="kotva"></a>
         <div class="row">
             <div class="large-12 columns">
                 <h2>História</h2>
@@ -35,7 +35,7 @@
             </div>
         </div>
     </section>
-    <section class="obsah"><a name="rekonstrukcia"></a>
+    <section class="obsah"><a name="rekonstrukcia" id="kotva"></a>
         <div class="row">
             <div class="large-12 columns">
                 <h2>Rekonštrukcia letiska</h2>
@@ -46,7 +46,7 @@
             </div>
         </div>
     </section>
-    <section class="obsah"><a name="udaje"></a>
+    <section class="obsah"><a name="udaje" id="kotva"></a>
         <div class="row">
             <div class="large-12 columns">
                 <h2>Údaje letiska</h2>
