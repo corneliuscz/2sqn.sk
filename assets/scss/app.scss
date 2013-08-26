@@ -475,6 +475,11 @@ table {
     width: 33%;
     height: 33%;
 
+    @media #{$small} {
+        width: 25%;
+        height: 25%;
+    }
+
     float: left;
     overflow: hidden;
 

@@ -5374,6 +5374,12 @@ table {
   float: left;
   overflow: hidden;
 }
+@media only screen and (min-width: 48em) {
+  .img-container {
+    width: 25%;
+    height: 25%;
+  }
+}
 .img-container a {
   color: white;
 }
