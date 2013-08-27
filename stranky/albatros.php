@@ -40,13 +40,12 @@
             </div>
         </div>
     </section>
+    
     <section class="obsah mensi albatrosy"><a name="albatrosy" id="kotva"></a>
         <div class="row">
             <div class="large-12 columns">
                 <h2>Slovenské albatrosy</h2>
             </div>
-        </div>
-        <div class="row">
             <div class="large-12 columns">
                 <h3>L-39C 0101</h3>
             </div>

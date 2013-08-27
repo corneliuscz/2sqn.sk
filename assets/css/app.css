@@ -5159,6 +5159,10 @@ article .fullw {
   padding-top: 2em;
 }
 
+.obsah .row {
+  padding-bottom: 1em;
+}
+
 .mensi p {
   font-size: 0.95em;
 }
