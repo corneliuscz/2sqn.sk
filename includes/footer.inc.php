@@ -96,8 +96,15 @@ $(function() {
 $(document).ready(function() {
     $('body').addClass('js');
     var $menu = $('#cbp-hrmenu'),
-        $menulink = $('.menu-link');
+        $menulink = $('.menu-link'),
+        $secondLevelItems = $('.cbp-hrsub');
 
+    $secondLevelItems.click(function() {
+        $menulink.toggleClass('active');
+        $menu.toggleClass('active');
+        //return false;
+    });
+    
     $menulink.click(function() {
         $menulink.toggleClass('active');
         $menu.toggleClass('active');
