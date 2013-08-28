@@ -54,11 +54,11 @@ return $fname;
 }
 
 // Make sure the "thumbs" directory exists.
-if (!is_dir('thumbs')) { mkdir('thumbs',0700); }
+if (!is_dir('photos_thumbs')) { mkdir('photos_thumbs',0700); }
 
 // Thumbnail file name and path.
 // (We always put thumbnails in jpg for simplification)
-$thumbname = 'thumbs/'.sanitize($_GET['filename']).'.jpg';
+$thumbname = 'photos_thumbs/'.sanitize($_GET['filename']).'.jpg';
 
 if (file_exists($thumbname))  // If thumbnail exists, serve it.
 {

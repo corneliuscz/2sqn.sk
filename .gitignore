@@ -5,5 +5,4 @@ Session.vim
 *~
 /includes/_db_config.inc.php
 photos
-vsetky
-thumbs
+photos_thumbs
