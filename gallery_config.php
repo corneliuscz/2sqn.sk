@@ -21,7 +21,7 @@ $label_noimages         = "Galeria neobsahuje žiadnu fotku"; //Empty folder tex
 $label_loading          = "Načítam..."; //Thumbnail loading text
 
 //ADVANCED SETTINGS
-$thumb_size             = 240; //Thumbnail height/width (square thumbs). Changing this will most likely require manual altering of the template file to make it look properly!
+$thumb_size             = 320; //Thumbnail height/width (square thumbs). Changing this will most likely require manual altering of the template file to make it look properly!
 $label_max_length       = 30; //Maximum chars of a folder name that will be displayed on the folder thumbnail
 $display_exif           = 0;
 ?>
