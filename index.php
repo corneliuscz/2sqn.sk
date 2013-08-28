@@ -240,7 +240,6 @@ $app->post('/upload_picture', function () use ($app, $req) {
     include ('includes/_uploadheader.inc.php');
 
     $errors         = '';
-    $upload_success = 0;
     $max_resolution = 1280; // pixels, width
     //$slozka       = "vsetky".DIRECTORY_SEPARATOR;
     $photosDir      = "photos".DIRECTORY_SEPARATOR;
@@ -255,15 +254,16 @@ $app->post('/upload_picture', function () use ($app, $req) {
             $vybrany_adresar = 'vasefoto';
         }
 
+        // Detekujeme kam budeme fotky ukládat (SIAF 2011 je úmyslně vypnutý už ve formuláři pro upload)
         switch ($vybrany_adresar) {
             case "vasefoto":
-                $dir = "Vase fotky";    // Vaše fotky
+                $dir = "Vaše fotky";    // Vaše fotky
                 break;
             case "siaf":
                 $dir = "SIAF 2011";     // SIAF 2011
                 break;
             default:
-                $dir = "Vase fotky";    // default
+                $dir = "Vaše fotky";    // default
             }
 
         $cil = $photosDir.$dir.DIRECTORY_SEPARATOR;
@@ -295,7 +295,7 @@ $app->post('/upload_picture', function () use ($app, $req) {
                             $photoLayer->addLayerOnTop($textLayer, 0, 20, 'MB');
                             $photoLayer->save($cil, $rename_foto, false, null, 95);
                             $errors .= '<div data-alert="" class="alert-box success">Obrázok bol úspešne uložený.</div><p><a href="/galeria?dir='.$dir.'"><strong>Pokračujte do albumu</strong></a>';
-                            $upload_success = 1;
+                            // Tady chybí kontrola jeslti se ten obrázek uložil do správného adresáře!!!
                         } else {
                             $errors .= '<div data-alert="" class="alert-box alert">Nahrávanie fotografie zlyhalo, súbor s rovnakým názvom už existuje.</div><p>Premenujte obrázok a skúste to znova.</p>';
                         }
