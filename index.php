@@ -1,7 +1,6 @@
 <?php
-//require_once('glue.php');
 session_start();
-require 'Slim/Slim.php';
+require 'vendor/autoload.php';
 \Slim\Slim::registerAutoloader();
 
 $app = new \Slim\Slim (array(
@@ -13,11 +12,14 @@ $app = new \Slim\Slim(array(
 ));
 */
 
+$app->config(array(
+    'server_url'    => 'http://'.$_SERVER["HTTP_HOST"].'/'
+));
+
+// knihovna pro práci s obrázky
+use PHPImageWorkshop\ImageWorkshop;
+
 $req = $app->request;
-
-/* Vlastní funkce a proměnné */
-
-$server_url = "http://".$_SERVER['HTTP_HOST']."/";
 
 function make_clickable($text) {
     return preg_replace('!(((f|ht)tp(s)?://)[-a-zA-Zа-яА-Я()0-9@:%_+.~#?&;//=]+)!i', '<a href="$1">$1</a>', $text);
@@ -233,6 +235,89 @@ $app->get('/galeria', function () {
     include ('galeria.php');
 });
 
+$app->post('/upload_picture', function () use ($app, $req) {
+    include ('includes/_kontrola.php');
+    include ('includes/_uploadheader.inc.php');
+
+    $errors         = '';
+    $upload_success = 0;
+    $max_resolution = 1280; // pixels, width
+    //$slozka       = "vsetky".DIRECTORY_SEPARATOR;
+    $photosDir      = "photos".DIRECTORY_SEPARATOR;
+    $soubor         = $_FILES["file"]["tmp_name"];
+    $type           = $_FILES["file"]["type"];
+
+    if ($pokracuj == 1) {
+
+        if ( isset ( $_POST['adresarf'] ) ) {
+            $vybrany_adresar = $_POST['adresarf'];
+        } else {
+            $vybrany_adresar = 'vasefoto';
+        }
+
+        switch ($vybrany_adresar) {
+            case "vasefoto":
+                $dir = "Vase fotky";    // Vaše fotky
+                break;
+            case "siaf":
+                $dir = "SIAF 2011";     // SIAF 2011
+                break;
+            default:
+                $dir = "Vase fotky";    // default
+            }
+
+        $cil = $photosDir.$dir.DIRECTORY_SEPARATOR;
+
+        if ($type == "image/jpeg") {
+            if (is_uploaded_file($soubor))  {
+                $user       = $_SESSION['login'];
+                $velikost   = getimagesize($soubor);
+                $sirka      = $velikost[0];
+                $vyska      = $velikost[1];
+
+                if ($sirka <= $max_resolution)
+                    {
+                        $foto = $_FILES["file"]["name"];
+                        $rename_foto = strtr($foto, "äëïöüáčďéěíňóôřšťúůýžľ ÄËÏÖÜÁČĎÉĚÍŇÓÔŘŠŤÚŮÝŽĽ.", "aeiouacdeeinoorstuuyzl_aeiouacdeeinoorstuuyzl-");
+
+                        if ( !file_exists($cil.$rename_foto) ) {
+                            $photoLayer = ImageWorkshop::initFromPath($soubor);
+
+                            if ( $photoLayer->getWidth() < 1024 ) { $fontSize = 10; }
+                                else { $fontSize = 12; }
+
+                            $textLayer  = ImageWorkshop::initTextLayer("upload by: ".$user, // text
+                                                                   "assets/opensans-regular.ttf", // font-file
+                                                                   $fontSize, // font-size
+                                                                   "000000", // font color
+                                                                   0, // rotation
+                                                                   null);
+                            $photoLayer->addLayerOnTop($textLayer, 0, 20, 'MB');
+                            $photoLayer->save($cil, $rename_foto, false, null, 95);
+                            $errors .= '<div data-alert="" class="alert-box success">Obrázok bol úspešne uložený.</div><p><a href="/galeria?dir='.$dir.'"><strong>Pokračujte do albumu</strong></a>';
+                            $upload_success = 1;
+                        } else {
+                            $errors .= '<div data-alert="" class="alert-box alert">Nahrávanie fotografie zlyhalo, súbor s rovnakým názvom už existuje.</div><p>Premenujte obrázok a skúste to znova.</p>';
+                        }
+                    }   // Konotrola veliksoti nahrávaného obrázku
+                else { $errors .= '<div data-alert="" class="alert-box alert">Obrázok je príliš veľký! ('.$sirka.'x'.$vyska.'px)</div><p>Zmenšite ho na 1280px šírku maximálne a skúste to znova.</p>'; }
+            }   // kontrola jestli se jedna o uploadnuty soubor
+        }   // kontrola jestli je to JPG
+        else { '<div data-alert="" class="alert-box alert">Nahrávať môžete len snímky vo formáte JPG!</div><p>Zkonvertujte obrázok a skúste to znova.</p>'; }
+        // Následuje výpis chyb
+        ?>
+        <div class="errors">
+            <div class="row">
+                <div class="large-12 columns">
+                    <?php echo $errors; ?>
+                </div>
+            </div>
+        </div>
+        <?php
+        include ('includes/_uploadform.inc.php');
+    }   // konec kontroly přihlášení uživatele
+});
+
 $app->get('/videa', function () {
     include ('stranky/videa.php');
 });
@@ -243,7 +328,7 @@ $app->get('/forum', function () use ($app, $req) {
     include ('stranky/forum.php');
 });
 
-$app->post('/forum', function () {
+$app->post('/forum', function () use ($app, $req) {
     $pokracuj = 0;
     include ('includes/_kontrola.php');
 
@@ -324,12 +409,10 @@ $app->post('/hlasuj', function () use ($app) {
     }
 });
 ?>
-
 <?php include ('includes/header.inc.php'); ?>
 <?php include ('includes/menu.inc.php'); ?>
 <?php $app->run(); ?>
 <?php include ('includes/footer.inc.php');    ?>
-
 <?php
 /*
         case "uvod": include("prva.htm"); break;
@@ -354,5 +437,4 @@ $app->post('/hlasuj', function () use ($app) {
         case "walkaround": include("walkaround.htm"); break;
         default: include("prva.htm"); break;
 */
-
 ?>

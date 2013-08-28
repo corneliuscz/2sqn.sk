@@ -106,8 +106,8 @@ function gb_sprava_zobrazit ($na_stranu, $rozsah)
         $grav_mail = (mysql_fetch_row($grav_vysledok));
     }
 
-    global $server_url;
-    $default = $server_url."assets/img/avatar-default.png";   // Vlastní ikona pro ty kteří gravatar nemají
+    global $app;
+    $default = $app->config('server_url')."assets/img/avatar-default.png";   // Vlastní ikona pro ty kteří gravatar nemají
     $size = 80;
     //$grav_url = "http://www.gravatar.com/avatar/" . md5( strtolower( trim( $grav_mail[0] ) ) ) . "?d=" . urlencode( $default ) . "&s=" . $size;
 

@@ -5130,7 +5130,6 @@ article .fullw {
 .errors {
   background: #fafcfc;
   padding-bottom: 0;
-  color: #fff;
 }
 
 .warning {
@@ -5139,7 +5138,6 @@ article .fullw {
 }
 
 .tips {
-  margin-top: 2em;
   background: #1abc9c;
   color: #fff;
 }
@@ -5157,6 +5155,10 @@ article .fullw {
 
 .obsah, .galeria, .novinka-text {
   padding-top: 2em;
+}
+
+.galeria {
+  padding-bottom: 2em;
 }
 
 .obsah .row {
@@ -5418,6 +5420,17 @@ table {
   padding: 1em;
   width: 100%;
   background: rgba(0, 0, 0, 0.4);
+}
+
+/* ***************** */
+/* Upload formular   */
+/* ***************** */
+#uploadform div {
+  margin: 1em 0 0.3em 0;
+  font-weight: 600;
+}
+#uploadform input.button {
+  margin-top: 1em;
 }
 
 /* ***************** */

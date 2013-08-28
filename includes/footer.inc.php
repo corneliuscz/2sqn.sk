@@ -56,14 +56,14 @@
     </section>
 </footer>
 
-<script src="<?php echo $server_url; ?>assets/js/vendor/jquery.js"></script>
-<script src="<?php echo $server_url; ?>assets/js/app.js"></script>
+<script src="<?php echo $app->config('server_url'); ?>assets/js/vendor/jquery.js"></script>
+<script src="<?php echo $app->config('server_url'); ?>assets/js/app.js"></script>
 
 <script>
     $(document).foundation();
 </script>
 
-<script src="<?php echo $server_url; ?>assets/js/jquery.equalHeights.min.js"></script>
+<script src="<?php $app->config('server_url'); ?>assets/js/jquery.equalHeights.min.js"></script>
 
 <script>
 /* Stejná výška všech novinek */
@@ -74,8 +74,8 @@ if (mq.matches) {
 }
 </script>
 
-<script src="<?php echo $server_url; ?>assets/js/jquery.easing.min.js"></script>
-<script src="<?php echo $server_url; ?>assets/js/jquery.scrollUp.js"></script>
+<script src="<?php echo $app->config('server_url'); ?>assets/js/jquery.easing.min.js"></script>
+<script src="<?php echo $app->config('server_url'); ?>assets/js/jquery.scrollUp.js"></script>
 
 <script>
 /* scrollUp Minimum setup */
@@ -84,7 +84,7 @@ $(function () {
 });
 </script>
 
-<script src="<?php echo $server_url; ?>assets/js/cbpHorizontalMenu.js"></script>
+<script src="<?php echo $app->config('server_url'); ?>assets/js/cbpHorizontalMenu.js"></script>
 
 <script>
 /* Nahodíme menu */
@@ -104,7 +104,7 @@ $(document).ready(function() {
         $menu.toggleClass('active');
         //return false;
     });
-    
+
     $menulink.click(function() {
         $menulink.toggleClass('active');
         $menu.toggleClass('active');
@@ -129,10 +129,10 @@ $(document).ready(function($){
 </script>
 
 <!-- Fancybox na obrázky -->
-<script src="<?php echo $server_url; ?>assets/fancybox/lib/jquery.mousewheel-3.0.6.min.js"></script>
+<script src="<?php echo $app->config('server_url'); ?>assets/fancybox/lib/jquery.mousewheel-3.0.6.min.js"></script>
 
-<link rel="stylesheet" href="<?php echo $server_url; ?>assets/fancybox/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
-<script src="<?php echo $server_url; ?>assets/fancybox/jquery.fancybox.min.js?v=2.1.5"></script>
+<link rel="stylesheet" href="<?php echo $app->config('server_url'); ?>assets/fancybox/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+<script src="<?php echo $app->config('server_url'); ?>assets/fancybox/jquery.fancybox.min.js?v=2.1.5"></script>
 
 <script type="text/javascript">
     $(document).ready(function() {
@@ -141,7 +141,7 @@ $(document).ready(function($){
 </script>
 
 <!-- Přeskládávání a zarovnání novinek -->
-<script src="<?php echo $server_url; ?>assets/js/masonry.pkgd.min.js"></script>
+<script src="<?php echo $app->config('server_url'); ?>assets/js/masonry.pkgd.min.js"></script>
 
 <script type="text/javascript">
 $(function(){
@@ -155,7 +155,7 @@ $(function(){
 </script>
 
 <!-- Walkaround -->
-<script src="<?php echo $server_url; ?>assets/js/jquery.threesixty.js"></script>
+<script src="<?php echo $app->config('server_url'); ?>assets/js/jquery.threesixty.js"></script>
 
 <script type="text/javascript">
 $(document).ready(function(){

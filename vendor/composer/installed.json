@@ -1,0 +1,99 @@
+[
+    {
+        "name": "slim/slim",
+        "version": "2.3.1",
+        "version_normalized": "2.3.1.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/codeguy/Slim.git",
+            "reference": "2e540cc392644b9b5cdcc57e5576db5a92ca2149"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/codeguy/Slim/zipball/2e540cc392644b9b5cdcc57e5576db5a92ca2149",
+            "reference": "2e540cc392644b9b5cdcc57e5576db5a92ca2149",
+            "shasum": ""
+        },
+        "require": {
+            "ext-mcrypt": "*",
+            "php": ">=5.3.0"
+        },
+        "time": "2013-07-20 18:38:05",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "Slim": "."
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Josh Lockhart",
+                "email": "info@joshlockhart.com",
+                "homepage": "http://www.joshlockhart.com/"
+            }
+        ],
+        "description": "Slim Framework, a PHP micro framework",
+        "homepage": "http://github.com/codeguy/Slim",
+        "keywords": [
+            "microframework",
+            "rest",
+            "router"
+        ]
+    },
+    {
+        "name": "sybio/image-workshop",
+        "version": "2.0.3",
+        "version_normalized": "2.0.3.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/Sybio/ImageWorkshop.git",
+            "reference": "b4d47e075d9d7eee5dc7da210853becc76ca8b8b"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/Sybio/ImageWorkshop/zipball/b4d47e075d9d7eee5dc7da210853becc76ca8b8b",
+            "reference": "b4d47e075d9d7eee5dc7da210853becc76ca8b8b",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.0"
+        },
+        "time": "2013-06-18 08:58:44",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "PHPImageWorkshop": "src"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Clément Guillemain",
+                "homepage": "http://clementguillemain.fr",
+                "role": "Developer / Freelancer"
+            }
+        ],
+        "description": "Powerful PHP class using GD library to work easily with images including layer notion (like Photoshop or GIMP)",
+        "homepage": "http://phpimageworkshop.com",
+        "keywords": [
+            "class",
+            "crop",
+            "gd",
+            "image",
+            "library",
+            "resize",
+            "rotate",
+            "thumbnail",
+            "watermark"
+        ]
+    }
+]

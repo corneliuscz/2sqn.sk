@@ -154,7 +154,7 @@ article {
 .errors {
     background: $grey;
     padding-bottom: 0;
-    color: #fff;
+    // color: #fff;
 }
 
 .warning {
@@ -163,7 +163,7 @@ article {
 }
 
 .tips {
-    margin-top: 2em;
+    //margin-top: 2em;
     background: $turquoise;
     color: #fff;
 
@@ -185,8 +185,12 @@ article {
     padding-top: 2em;
 }
 
+.galeria {
+    padding-bottom: 2em;
+}
+
 .obsah .row {
-    padding-bottom: 1em;   
+    padding-bottom: 1em;
 }
 
 .mensi {
@@ -520,6 +524,21 @@ table {
         padding: 1em;
         width: 100%;
         background: rgba(0, 0, 0, 0.4);
+    }
+}
+
+/* ***************** */
+/* Upload formular   */
+/* ***************** */
+
+#uploadform {
+    div {
+        margin: 1em 0 0.3em 0;
+        font-weight: 600;
+    }
+
+    input.button {
+        margin-top: 1em;
     }
 }
 
