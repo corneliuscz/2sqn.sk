@@ -4693,6 +4693,11 @@ table tfoot tr td {
   max-width: 800px;
 }
 
+/* IE<9 HTML5 fix */
+.lt-ie9 header, .lt-ie9 nav, .lt-ie9 article, .lt-ie9 footer, .lt-ie9 section, .lt-ie9 aside, .lt-ie9 figure, .lt-ie9 figcaption {
+  display: block;
+}
+
 strong {
   font-weight: 600;
 }
@@ -4711,7 +4716,7 @@ strong {
   color: #fff;
   line-height: 1.5em;
   text-align: right;
-  background: rgba(22, 160, 133, 0.6);
+  background: url("../img/loginbar-60-alpha.png") repeat;
   position: fixed;
   width: 100%;
   z-index: 20;
@@ -4803,7 +4808,7 @@ a.home-sec {
 .cbp-hrmenu > ul > li.cbp-hropen > a:hover,
 .cbp-hrmenu > ul > li.cbp-hropen > a:active {
   color: #fff;
-  background: rgba(41, 128, 185, 0.8);
+  background: url("../img/menublue-80-alpha.png") repeat;
 }
 
 .inner a,
@@ -4815,7 +4820,7 @@ a.home-sec {
 .cbp-hrmenu .cbp-hrsub {
   display: none;
   position: absolute;
-  background: rgba(41, 128, 185, 0.8);
+  background: url("../img/menublue-80-alpha.png") repeat;
   width: 100%;
   left: 0;
   text-align: left;
@@ -5127,6 +5132,10 @@ article .fullw {
   color: #fff;
 }
 
+.lt-ie9 .podklad {
+  background: url("../img/black-20-alpha.png") repeat;
+}
+
 .errors {
   background: #fafcfc;
   padding-bottom: 0;
@@ -5420,6 +5429,9 @@ table {
   padding: 1em;
   width: 100%;
   background: rgba(0, 0, 0, 0.4);
+}
+.img-container .lt-ie9 em {
+  backround: url("../img/black-40-alpha.png") repeat;
 }
 
 /* ***************** */

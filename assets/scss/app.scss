@@ -50,6 +50,11 @@
 $pidi-screen: emCalc(480px);
 $pidi: "only screen and (min-width:"#{$pidi-screen}")";
 
+/* IE<9 HTML5 fix */
+.lt-ie9 {
+    header,nav,article,footer,section,aside,figure,figcaption {display:block}
+}
+
 strong {
     font-weight: 600;
 }
@@ -134,9 +139,6 @@ article {
 }
 
 .podklad {
-    //background: $clouds;
-    //background: rgba(44, 62, 80, 0.7);
-    //background: rgba(38, 51, 67, 0.7);
     background: rgba(0, 0, 0, 0.2);
     bottom: 0;
     position: absolute;
@@ -149,6 +151,10 @@ article {
     p {
         color: #fff;
     }
+}
+
+.lt-ie9 .podklad {
+    background: url('../img/black-20-alpha.png') repeat;
 }
 
 .errors {
@@ -524,6 +530,10 @@ table {
         padding: 1em;
         width: 100%;
         background: rgba(0, 0, 0, 0.4);
+    }
+
+    .lt-ie9 em {
+        backround: url('../img/black-40-alpha.png') repeat;
     }
 }
 

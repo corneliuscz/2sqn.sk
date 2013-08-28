@@ -11,7 +11,8 @@
     line-height: 1.5em;
     text-align: right;
 
-    background: $loginbar;
+    //background: $loginbar;
+    background: url('../img/loginbar-60-alpha.png') repeat;
     position: fixed;
     width: 100%;
     z-index: 20;
@@ -108,7 +109,8 @@ a.home-sec {
 .cbp-hrmenu > ul > li.cbp-hropen > a:hover,
 .cbp-hrmenu > ul > li.cbp-hropen > a:active {
     color: #fff;
-    background: $menublue;
+    //background: $menublue;
+    background: url('../img/menublue-80-alpha.png') repeat;
 }
 
 .inner a,
@@ -120,7 +122,8 @@ a.home-sec {
 .cbp-hrmenu .cbp-hrsub {
     display: none;
     position: absolute;
-    background: $menublue;
+    //background: $menublue;
+    background: url('../img/menublue-80-alpha.png') repeat;
     width: 100%;
     left: 0;
     text-align: left;
