@@ -56,8 +56,8 @@
     </section>
 </footer>
 
-<script src="<?php echo $app->config('server_url'); ?>assets/js/vendor/jquery.js"></script>
-<script src="<?php echo $app->config('server_url'); ?>assets/js/app.js"></script>
+<script src="<?php echo $app->config('server_url'); ?>assets/js/vendor/jquery.min.js"></script>
+<script src="<?php echo $app->config('server_url'); ?>assets/js/app.min.js"></script>
 
 <script>
     $(document).foundation();
@@ -75,7 +75,7 @@ if (mq.matches) {
 </script>
 
 <script src="<?php echo $app->config('server_url'); ?>assets/js/jquery.easing.min.js"></script>
-<script src="<?php echo $app->config('server_url'); ?>assets/js/jquery.scrollUp.js"></script>
+<script src="<?php echo $app->config('server_url'); ?>assets/js/jquery.scrollUp.min.js"></script>
 
 <script>
 /* scrollUp Minimum setup */
@@ -84,7 +84,7 @@ $(function () {
 });
 </script>
 
-<script src="<?php echo $app->config('server_url'); ?>assets/js/cbpHorizontalMenu.js"></script>
+<script src="<?php echo $app->config('server_url'); ?>assets/js/cbpHorizontalMenu.min.js"></script>
 
 <script>
 /* Nahodíme menu */
@@ -155,7 +155,7 @@ $(function(){
 </script>
 
 <!-- Walkaround -->
-<script src="<?php echo $app->config('server_url'); ?>assets/js/jquery.threesixty.js"></script>
+<script src="<?php echo $app->config('server_url'); ?>assets/js/jquery.threesixty.min.js"></script>
 
 <script type="text/javascript">
 $(document).ready(function(){
