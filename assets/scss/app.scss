@@ -60,6 +60,7 @@ strong {
 }
 
 @import "menu";
+@import "detekce";
 
 /* ***************** */
 /* ScrollUp          */
@@ -81,6 +82,7 @@ strong {
 .icon {
     width: 33px;
     height: 33px;
+    opacity: 0.8;
 }
 
 /* ***************** */
@@ -438,7 +440,7 @@ table {
     padding: 35px 0;
     background-color: #eee;
 
-    .threesixty {
+    .threesixty, .threesixty-frame-notes {
         position: relative;
         max-width: 70em;
         margin: 0 auto;
@@ -447,8 +449,8 @@ table {
     }
 
     .threesixty-frame-notes {
-        position: relative;
-        //z-index: 5000;
+        z-index: 5000;
+        //position: relative;
 
         a.icon {
             position: absolute;
@@ -463,8 +465,8 @@ table {
         .snimac-nabeh {}
         .kanon-gs23 {}
         .stupacky-kabiny {}
-        //.p-kabina { margin: 26% 0 0 36%; }
-        //.z-kabina { margin: 23.5% 0 0 43.5%; }
+        .p-kabina { margin: 26% 0 0 36%; }
+        .z-kabina { margin: 23.5% 0 0 43.5%; }
         .brzdici-stity {}
         .vstup-vzduchu {}
         .hlavni-podvozek-noha {}

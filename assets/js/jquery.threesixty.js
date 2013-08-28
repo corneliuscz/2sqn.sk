@@ -76,7 +76,7 @@ var scope,
             $this.find('.threesixty-frame:eq(' + val + ')').css({display: 'block'});
             // posuneme značky
             for(j; j < ln; j++){
-                $('.'+options.posit[val][j][0]).css('display', 'block').css(options.posit[val][j][1], options.posit[val][j][2]);  
+                $('.'+options.posit[val][j][0]).css('display', 'block').css(options.posit[val][j][1], options.posit[val][j][2]);
             }
         });
     };
@@ -104,7 +104,7 @@ var scope,
             $this.find('.threesixty-frame:eq(' + val + ')').css({display: 'block'});
             // posuneme značky
             for(j; j < ln; j++){
-                $('.'+options.posit[val][j][0]).css('display', 'block').css(options.posit[val][j][1], options.posit[val][j][2]); 
+                $('.'+options.posit[val][j][0]).css('display', 'block').css(options.posit[val][j][1], options.posit[val][j][2]);
             }
         });
     };
@@ -167,23 +167,12 @@ var scope,
             html = '',
             l = data[objIndex].count,
             pathTemplate = data[objIndex].path,
-            i = 0,
-            sp = options.points.length,
-            j = 0;
-        
+            i = 0;
+
         // remove preloader
         $this.html('');
         $this.removeClass('preloading');
-        
-        // add container with spots    
-        html += '<div class="threesixty-frame-notes">';
-        // render spots into html
-        for(j; j < sp; j++){
-            html += '<a href="' + options.points[j][2] + '" title="' + options.points[j][3] + '" class="icon icon-i-w-spot '+ options.points[j][0] +'" style="' + options.points[j][1] + '"></a>';
-        }
-        
-        html += '</div>'
-        
+
         // add 360 images
         for(i; i < l; i++){
             var display = (i === 0) ? 'block' : 'none';
@@ -310,14 +299,14 @@ var scope,
 
             $downElem.find('.threesixty-frame').css({display: 'none'});
             $downElem.find('.threesixty-frame:eq(' + val + ')').css({display: 'block'});
-            
+
             // počet značek a index
             ln = options.posit[0].length,
             j = 0;
             // posuneme značky
-            
+
             for(j; j < ln; j++){
-                $('.'+options.posit[val][j][0]).css('display', 'block').css(options.posit[val][j][1], options.posit[val][j][2]); 
+                $('.'+options.posit[val][j][0]).css('display', 'block').css(options.posit[val][j][1], options.posit[val][j][2]);
             }
         }
     };
