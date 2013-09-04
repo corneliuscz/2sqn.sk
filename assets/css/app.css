@@ -5407,7 +5407,7 @@ table {
   position: relative;
 }
 .walkaround--container .podklad {
-  z-index: 500;
+  z-index: 35;
 }
 
 .walkaround {
@@ -5421,7 +5421,7 @@ table {
   background-color: #eee;
 }
 .walkaround .threesixty-frame-notes {
-  z-index: 5000;
+  z-index: 30;
   /* Vychozi pozice pro jednotlive body na albikach */
 }
 .walkaround .threesixty-frame-notes a.icon {
