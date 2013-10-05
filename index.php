@@ -430,11 +430,11 @@ $app->get('/walkaround', function () use ($app, $req) {
     include ('stranky/walkaround.php');
 });
 
-$app->get('/lzsl', function () {
+$app->get('/lzsl', function () use ($app, $req) {
     include ('stranky/lzsl.'.$app->lang.'.php');
 });
 
-$app->get('/novinky(/:id)', function ($id = 0) use ($app, $req, $lang) {
+$app->get('/novinky(/:id)', function ($id = 0) use ($app, $req) {
     if (!empty($id)) {  // Číslo novinky z URL
         include ('stranky/novinka.php');
     } else {
