@@ -1,14 +1,17 @@
 <?php
+session_cache_limiter(false);
 session_start();
 require 'vendor/autoload.php';
 \Slim\Slim::registerAutoloader();
 
 $app = new \Slim\Slim (array(
-    'mode' => 'development'
+    'mode' => 'development',
+    'session.handler' => null
 ));
 /*
 $app = new \Slim\Slim(array(
-    'mode' => 'production'
+    'mode' => 'production',
+    'session.handler' => null
 ));
 */
 
@@ -32,13 +35,67 @@ function predlozky($text) {
     return $text;
 }
 
+/* Detekce jazyka zobrazované stránky */
+$availableLangs = array('sk', 'en');
+
+//$app->hook('slim.before', function () use ($app, $availableLangs) {
+    $env = $app->environment();
+
+    // výchozí jazyk je první poli s jazyky
+    $app->defaultLang = $lang = $availableLangs[0];
+
+    // pro homepage zkusíme nadetekovat správný jazyk automaticky
+    if ($env['PATH_INFO'] == '/') {
+        if (isset($env['ACCEPT_LANGUAGE'])) {
+
+            // try and auto-detect, find the language with the lowest offset as they are in order of priority
+            $priority_offset = strlen($env['ACCEPT_LANGUAGE']);
+
+            foreach($availableLangs as $availableLang) {
+                $i = strpos($env['ACCEPT_LANGUAGE'], $availableLang);
+                if ($i !== false && $i < $priority_offset) {
+                    $priority_offset = $i;
+                    $lang = $availableLang;
+                }
+            }
+        }
+    } else {
+
+        $pathInfo = $env['PATH_INFO'] . (substr($env['PATH_INFO'], -1) !== '/' ? '/' : '');
+
+        // nebo vytáhneme jazyk z adresy z PATH_INFO
+        foreach($availableLangs as $availableLang) {
+            $match = '/'.$availableLang;
+            if (strpos($pathInfo, $match.'/') === 0) {
+                $lang = $availableLang;
+                $env['PATH_INFO'] = substr($env['PATH_INFO'], strlen($match));
+
+                if (strlen($env['PATH_INFO']) == 0) {
+                    $env['PATH_INFO'] = '/';
+                }
+            }
+        }
+    }
+
+// Uložíme jazyk do proměnné v aplikaci
+    $app->lang = $lang;
+//});
+
+// Do globálních dat uložíme překlady univerzálních textů (menu, patička, ...)
+include ('includes/lang-common.php');
+include ('includes/lang.'.$app->lang.'.php');
+$app->tr = $tr;
+
 /* Router URL */
 
-$app->get('/', function () use ($app) {
-    include ('stranky/index.php');
+$app->get('/', function () use ($app, $req) {
+    //echo $app->lang;
+    include ('stranky/index.'.$app->lang.'.php');
 });
 
 $app->get('/login', function () use ($app, $req) {
+    include ('includes/header.inc.php');
+    include ('includes/menu.inc.php');
     $pokracuj = 0;
     include ('includes/_kontrola.php');
 
@@ -48,10 +105,13 @@ $app->get('/login', function () use ($app, $req) {
     } else {
         $app->redirect('/');    // pokud je uživatel přihlášený přesměrujeme ho na homepage
     }
+    include ('includes/footer.inc.php');
 });
 
 $app->post('/login', function () use ($app, $req) {
-        include ('includes/_loginheader.inc.php');
+    include ('includes/header.inc.php');
+    include ('includes/menu.inc.php');
+    include ('includes/_loginheader.inc.php');
 
         $errors = "";
         $login_success = false;
@@ -61,13 +121,13 @@ $app->post('/login', function () use ($app, $req) {
 
             $query = "SELECT * FROM users WHERE login=\"".$_POST['login']."\"";
             if (!$query) {
-                $errors .= '<div data-alert="" class="alert-box alert">Spojenie z databázou sa nepodarilo. Skúste to prosím neskôr.</div>';
+                $errors .= '<div data-alert="" class="alert-box alert">'.$app->tr["dberr_connection"].'</div>';
             }
 
             $result = mysql_query($query, $db);
             if (!$query) {
-                echo "Vyber z databázi sa nepodaril";
-                $errors .= '<div data-alert="" class="alert-box alert">Vyber z databázi sa nepodaril. Skúste to prosím neskôr.</div>';
+                //echo "Vyber z databázi sa nepodaril";
+                $errors .= '<div data-alert="" class="alert-box alert">'.$app->tr["dberr_select"].'</div>';
             }
 
             if ( mysql_num_rows($result) != 0 ) { // V případě že uživatel existuje tak si jeho data načteme
@@ -124,20 +184,23 @@ $app->post('/login', function () use ($app, $req) {
                 include ('includes/_loginform.inc.php');
             }
         }
+    include ('includes/footer.inc.php');
 });
 
-$app->get('/logout', function () use ($app) {
+$app->get('/logout', function () use ($app, $req) {
     unset($_SESSION['prihlaseny']); // vyprázdníme proměnné
     unset($_SESSION['login']);
     unset($_SESSION['time']);
     unset($_SESSION['regcas']);
     unset($_SESSION['lastlog']);
-    session_destroy();                // zrušíme session
+    session_destroy();      // zrušíme session
     $app->redirect('/');    // přesměrujeme uživatele na main.php nebo index.php, nebo jinou stránku o tom že byl odhlášený (třeba index.php?kapitola=odhlaseni). Kam přesměrovat uživatele po odhlášení si už nastav, bez toho abych viděl strukturu toho rozhodování co zobrazit se špatně hádá, na to bych potřeboval komplet kód stránek :-)
 });
 
 $app->get('/registracia', function () use ($app, $req) {
     $pokracuj = 0;
+    include ('includes/header.inc.php');
+    include ('includes/menu.inc.php');
     include ('includes/_kontrola.php');
 
     if (!$pokracuj) {
@@ -146,10 +209,13 @@ $app->get('/registracia', function () use ($app, $req) {
     } else {
         $app->redirect('/');    // pokud je uživatel přihlášený přesměrujeme ho na homepage
     }
+    include ('includes/footer.inc.php');
 });
 
 
 $app->post('/registracia', function () use ($app, $req) {
+    include ('includes/header.inc.php');
+    include ('includes/menu.inc.php');
     include ('includes/_regheader.inc.php');
 
     $errors = "";
@@ -219,17 +285,18 @@ $app->post('/registracia', function () use ($app, $req) {
     <?php
     include ('includes/_loginform.inc.php');
     }
+    include ('includes/footer.inc.php');
 });
 
-$app->get('/albatros', function () {
-    include ('stranky/albatros.php');
+$app->get('/albatros', function () use ($app, $req) {
+    include ('stranky/albatros.'.$app->lang.'.php');
 });
 
-$app->get('/nehody', function () {
-    include ('stranky/nehody.php');
+$app->get('/nehody', function () use ($app, $req) {
+    include ('stranky/nehody.'.$app->lang.'.php');
 });
 
-$app->get('/galeria', function () {
+$app->get('/galeria', function () use ($app, $req) {
     $pokracuj = 0;
     include ('includes/_kontrola.php');
     include ('galeria.php');
@@ -318,8 +385,8 @@ $app->post('/upload_picture', function () use ($app, $req) {
     }   // konec kontroly přihlášení uživatele
 });
 
-$app->get('/videa', function () {
-    include ('stranky/videa.php');
+$app->get('/videa', function () use ($app, $req) {
+    include ('stranky/videa.'.$app->lang.'.php');
 });
 
 $app->get('/forum', function () use ($app, $req) {
@@ -345,30 +412,29 @@ $app->post('/forum', function () use ($app, $req) {
     }
 });
 
-$app->get('/o-letke', function () {
-    include ('stranky/letka.php');
+$app->get('/o-letke', function () use ($app, $req) {
+    include ('stranky/letka.'.$app->lang.'.php');
 });
 
-$app->get('/odkazy', function () {
-    include ('stranky/odkazy.php');
+$app->get('/odkazy', function () use ($app, $req) {
+    include ('stranky/odkazy.'.$app->lang.'.php');
 });
 
 $app->get('/na-stiahnutie', function () use ($app, $req) {
     $pokracuj = 0;
     include ('includes/_kontrola.php');
-
     include ('stranky/na-stiahnutie.php');
 });
 
-$app->get('/walkaround', function () {
+$app->get('/walkaround', function () use ($app, $req) {
     include ('stranky/walkaround.php');
 });
 
 $app->get('/lzsl', function () {
-    include ('stranky/lzsl.php');
+    include ('stranky/lzsl.'.$app->lang.'.php');
 });
 
-$app->get('/novinky(/:id)', function ($id = 0) {
+$app->get('/novinky(/:id)', function ($id = 0) use ($app, $req, $lang) {
     if (!empty($id)) {  // Číslo novinky z URL
         include ('stranky/novinka.php');
     } else {
@@ -377,7 +443,7 @@ $app->get('/novinky(/:id)', function ($id = 0) {
 });
 
 // Zpracování hlasu ankety
-$app->post('/hlasuj', function () use ($app) {
+$app->post('/hlasuj', function () use ($app, $req) {
     require "includes/_dba.php";
     //$_SESSION['anketaError'] = '';
     // byl odeslan formular ?
@@ -409,32 +475,4 @@ $app->post('/hlasuj', function () use ($app) {
     }
 });
 ?>
-<?php include ('includes/header.inc.php'); ?>
-<?php include ('includes/menu.inc.php'); ?>
 <?php $app->run(); ?>
-<?php include ('includes/footer.inc.php');    ?>
-<?php
-/*
-        case "uvod": include("prva.htm"); break;
-        case "historia": include("historia.htm"); break;
-        case "allnews": include("news_all.php"); break;
-        case "galeria": include("galeria.php"); break;
-        case "links": include("links.htm"); break;
-        case "nova_registracia": include("registracia.php"); break;
-        case "registracia": include("registracia.htm"); break;
-        case "albatros": include("albatros.htm"); break;
-        case "web_info": include("webinfo.htm"); break;
-        case "download": include("down/download.htm"); break;
-        case "video": include("video/video.html"); break;
-        case "guestbook": include("guestbook.php"); break;
-        case "upload_picture": include("upload.php"); break;
-        case "watermark": include("thumb_800.php"); break;
-        case "siaf_watermark": include("thumb_800_siaf.php"); break;
-        case "letisko_sliac": include("lzsl.htm"); break;
-        case "upload_picture_complete": include("uspesny_upload.php"); break;
-        case "upload_picture_complete_siaf": include("uspesny_upload_siaf.php"); break;
-        case "fotosutaz": include("siaf_page.php"); break;
-        case "walkaround": include("walkaround.htm"); break;
-        default: include("prva.htm"); break;
-*/
-?>

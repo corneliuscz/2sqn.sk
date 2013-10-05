@@ -8,14 +8,15 @@
         <div class="row">
         <?php
         require "includes/_dba.php";
-        $message = MySQL_Query("SELECT * FROM board ORDER BY from_date DESC LIMIT 6") or die("chyba SQL");
+        $query = "SELECT * FROM board WHERE `subject-$app->lang` IS NOT NULL ORDER BY from_date DESC LIMIT 6";
+        $message = MySQL_Query($query) or die("chyba SQL");
         while ($riadok = MySQL_Fetch_Array($message)):
         ?>
             <div class="large-4 columns novinka-pata">
                 <article class="novinka icon-l39-m">
-                    <h3><a href="/novinky/<?php echo $riadok["number"]; ?>"><?php echo $riadok ["subject"]; ?></a></h3>
+                    <h3><a href="/<?php echo $app->lang; ?>/novinky/<?php echo $riadok["number"]; ?>"><?php echo $riadok ["subject-".$app->lang]; ?></a></h3>
                     <span class="datum"><?php echo date('d.m.Y', strtotime($riadok['from_date'])); ?></span>
-                    <p><?php echo predlozky($riadok ["head"]); ?></p>
+                    <p><?php echo predlozky($riadok ["head-".$app->lang]); ?></p>
                 </article>
             </div>
         <?php
@@ -63,7 +64,7 @@
     $(document).foundation();
 </script>
 
-<script src="<?php $app->config('server_url'); ?>assets/js/jquery.equalHeights.min.js"></script>
+<script src="<?php echo $app->config('server_url'); ?>assets/js/jquery.equalHeights.min.js"></script>
 
 <script>
 /* Stejná výška všech novinek */

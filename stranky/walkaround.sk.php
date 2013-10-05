@@ -1,3 +1,5 @@
+<?php include ('includes/header.inc.php'); ?>
+<?php include ('includes/menu.inc.php'); ?>
 <?php global $server_url; ?>
 
 <div class="walkaround--container">
@@ -13,3 +15,4 @@
             <p class="loading">Načítám data pro walkaround. Čekejte prosím.<br><br> <img src="<?php echo $server_url; ?>assets/img/loading.gif"></p></div>
     </section>
 </div>
+<?php include ('includes/footer.inc.php');    ?>

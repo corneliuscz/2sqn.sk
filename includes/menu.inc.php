@@ -1,15 +1,15 @@
 <header>
     <div class="menu-back">
         <div class="row">
-                <a class="home-sec" href="/"><img src="http://<?php echo $_SERVER['HTTP_HOST']; ?>/assets/img/i-horse-inverted.png" alt="">2SQN TFW Sliač</a>
+                <a class="home-sec" href="/"><img src="<?php echo $app->config('server_url'); ?>assets/img/i-horse-inverted.png" alt="">2SQN TFW Sliač</a>
                 <a href="#menu" class="menu-link">Menu</a>
                 <nav id="cbp-hrmenu" class="cbp-hrmenu large-12 columns" role="navigation">
                     <ul>
                         <li class="homelink">
-                            <a class="home" href="/"><img src="http://<?php echo $_SERVER['HTTP_HOST']; ?>/assets/img/logo-2sqn.png" alt=""></a>
+                            <a class="home" href="/"><img src="<?php echo $app->config('server_url'); ?>assets/img/logo-2sqn.png" alt=""></a>
                         </li>
                         <li>
-                            <a href="/novinky">novinky</a>
+                            <a href="/novinky"><?php echo $app->tr['news']; ?></a>
                         </li>
                         <li>
                             <a href="#" class="dropdown">o letke</a>
@@ -17,34 +17,34 @@
                                 <div class="row">
                                     <div class="large-4 small-12 columns">
                                         <div class="inner">
-                                        <h4><a href="/o-letke">Výcviková letka</a></h4>
+                                        <h4><a href="/<?php echo $app->lang; ?>/o-letke">Výcviková letka</a></h4>
                                         <ul>
-                                            <li><a href="/o-letke#historia">História letky</a></li>
-                                            <li><a href="/o-letke#velitelia">Velitelia letky</a></li>
-                                            <li><a href="/o-letke#piloti">Lietajúci personál</a></li>
-                                            <li><a href="/o-letke#stab">Štábni piloti</a></li>
-                                            <li><a href="/o-letke#technici">Technický a&nbsp;zabezpečujúci personál</a></li>
+                                            <li><a href="/<?php echo $app->lang; ?>/o-letke#historia">História letky</a></li>
+                                            <li><a href="/<?php echo $app->lang; ?>/o-letke#velitelia">Velitelia letky</a></li>
+                                            <li><a href="/<?php echo $app->lang; ?>/o-letke#piloti">Lietajúci personál</a></li>
+                                            <li><a href="/<?php echo $app->lang; ?>/o-letke#stab">Štábni piloti</a></li>
+                                            <li><a href="/<?php echo $app->lang; ?>/o-letke#technici">Technický a&nbsp;zabezpečujúci personál</a></li>
                                         </ul>
                                         </div>
                                     </div>
                                     <div class="large-4 small-12 columns">
                                         <div class="inner">
-                                        <h4><a href="/albatros">L-39 albatros</a></h4>
+                                        <h4><a href="/<?php echo $app->lang; ?>/albatros">L-39 albatros</a></h4>
                                         <ul>
-                                            <li><a href="/albatros#albatros">Stručný popis</a></li>
-                                            <li><a href="/albatros#albatrosy">Slovenské Albatrosy</a></li>
-                                            <li><a href="/walkaround">L-39CM/ZAM walkaround</a></li>
-                                            <li><a href="/nehody">Nehody L-39</a></li>
+                                            <li><a href="/<?php echo $app->lang; ?>/albatros#albatros">Stručný popis</a></li>
+                                            <li><a href="/<?php echo $app->lang; ?>/albatros#albatrosy">Slovenské Albatrosy</a></li>
+                                            <li><a href="/<?php echo $app->lang; ?>/walkaround">L-39CM/ZAM walkaround</a></li>
+                                            <li><a href="/<?php echo $app->lang; ?>/nehody">Nehody L-39</a></li>
                                         </ul>
                                         </div>
                                     </div>
                                     <div class="large-4 small-12 columns">
                                         <div class="inner">
-                                        <h4><a href="/lzsl">LZ Sliač</a></h4>
+                                        <h4><a href="/<?php echo $app->lang; ?>/lzsl">LZ Sliač</a></h4>
                                         <ul>
-                                            <li><a href="/lzsl#historia">História</a></li>
-                                            <li><a href="/lzsl#rekonstrukcia">Rekonštrukcia letiska</a></li>
-                                            <li><a href="/lzsl#udaje">Údaje letiska</a></li>
+                                            <li><a href="/<?php echo $app->lang; ?>/lzsl#historia">História</a></li>
+                                            <li><a href="/<?php echo $app->lang; ?>/lzsl#rekonstrukcia">Rekonštrukcia letiska</a></li>
+                                            <li><a href="/<?php echo $app->lang; ?>/lzsl#udaje">Údaje letiska</a></li>
                                         </ul>
                                         </div>
                                     </div>
@@ -65,6 +65,7 @@
                                                 <li><a href="/galeria?dir=Desert%20Thunder%202011">Desert Thunder 2011</a></li>
                                                 <li><a href="/galeria?dir=Serpentex%202011">Serpentex 2011</a></li>
                                                 <li><a href="/galeria?dir=Slovak%20Hawk%202007">Slovak Hawk 2007</a></li>
+                                                <li><a href="/galeria?dir=SIAF%202013">SIAF 2013</a></li>
                                                 <li><a href="/galeria?dir=SIAF%202012">SIAF 2012</a></li>
                                                 <li><a href="/galeria?dir=SIAF%202011">SIAF 2011</a></li>
                                             </ul>
@@ -85,10 +86,10 @@
                                     </div>
                                     <div class="large-4 small-12 columns">
                                         <div class="inner">
-                                            <h4><a href="/videa">Videa</a></h4>
+                                            <h4><a href="/<?php echo $app->lang; ?>/videa">Videa</a></h4>
                                             <ul>
-                                                <li><a href="/videa">Skupinové lietanie</a></li>
-                                                <li><a href="/videa">Display promo video 2012</a></li>
+                                                <li><a href="/<?php echo $app->lang; ?>/videa">Skupinové lietanie</a></li>
+                                                <li><a href="/<?php echo $app->lang; ?>/videa">Display promo video 2012</a></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -96,13 +97,13 @@
                             </div><!-- /cbp-hrsub -->
                         </li>
                         <li>
-                            <a href="/odkazy">odkazy</a>
+                            <a href="/<?php echo $app->lang; ?>/odkazy">odkazy</a>
                         </li>
                         <li>
-                            <a href="/na-stiahnutie">na stiahnutie</a>
+                            <a href="/<?php echo $app->lang; ?>/na-stiahnutie">na stiahnutie</a>
                         </li>
                         <li>
-                            <a href="/forum">fórum</a>
+                            <a href="/<?php echo $app->lang; ?>/forum">fórum</a>
                         </li>
                         <li>
                             <a href="http://fan2sqn.com/eshop/" class="last">fan shop</a>

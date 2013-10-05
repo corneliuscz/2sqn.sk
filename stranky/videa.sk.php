@@ -1,3 +1,5 @@
+<?php include ('includes/header.inc.php'); ?>
+<?php include ('includes/menu.inc.php'); ?>
 <div class="head-photo no-pic video">
     <section class="podklad">
         <div class="row">
@@ -26,3 +28,4 @@
         </div>
     </section>
 </article>
+<?php include ('includes/footer.inc.php');    ?>

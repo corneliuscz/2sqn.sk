@@ -1,5 +1,7 @@
+<?php include ('includes/header.inc.php'); ?>
+<?php include ('includes/menu.inc.php'); ?>
 <div class="head-photo nehody">
-    <img src="assets/img/slides/albatrosy-om.jpg" alt="L-39 Albatros">
+    <img src="/assets/img/slides/albatrosy-om.jpg" alt="L-39 Albatros">
     <section class="podklad">
         <div class="row">
             <div class="large-12 columns">
@@ -50,7 +52,7 @@
                     <td colspan="2">Jiří POSPÍŠIL</td>
                 </tr>
             </table>
-            <p>Pilot výskumného a skúšobného ústavu vykonával testovací let na skúšobnú katapultáž zadnej sedačky VS-2 s figurínou. Test vykonával štvrtýkrát so špeciálne upravenou L-39. Podľa nariadenia vedúceho skúšky vykonal vo výške 300 metrov, pri rýchlosti 350 km/h, skúšobnú katapultáž zadnej sedačky, následkom čoho mu vysadil motor. Pilot sa rozhodol pre núdzové pristátie do terénu z dôvodu blízkosti dediny. Pilot sa ťažko zranil. Príčina nie je doteraz riadne objasnená, celé vyšetrovanie bolo doposiaľ záhadne zahmlievané. <center><img alt="Nehoda L-39Z OK-186" src="assets/img/nehody/ok-186.jpg"></center></p>
+            <p>Pilot výskumného a skúšobného ústavu vykonával testovací let na skúšobnú katapultáž zadnej sedačky VS-2 s figurínou. Test vykonával štvrtýkrát so špeciálne upravenou L-39. Podľa nariadenia vedúceho skúšky vykonal vo výške 300 metrov, pri rýchlosti 350 km/h, skúšobnú katapultáž zadnej sedačky, následkom čoho mu vysadil motor. Pilot sa rozhodol pre núdzové pristátie do terénu z dôvodu blízkosti dediny. Pilot sa ťažko zranil. Príčina nie je doteraz riadne objasnená, celé vyšetrovanie bolo doposiaľ záhadne zahmlievané. <center><img alt="Nehoda L-39Z OK-186" src="/assets/img/nehody/ok-186.jpg"></center></p>
             <table>
                 <tr>
                     <td width="33%">ČSSR 17.08.1988</td>
@@ -75,8 +77,8 @@
                 </tr>
             </table>
             <p>Po vykonaní záletu počasia si pri Novom Meste nad Váhom posádka vyžiadala plnenie úlohy vyššej techniky pilotovania. Počas šiesteho vertikálneho prvku (v stúpavej fáze) došlo pri maximálnom režime motora k pumpáži. Na havarijnom table došlo k signalizácii výstražných tabiel a požiaru. Veliteľ posádky stiahol POM (páku ovládania motora) do polohy STOP, stlačil hasenie a rozhodol sa pre núdzové pristátie do terénu. Počas pristávacieho manévru sa podarilo vysunúť vztlakové klapky do polohy „pristátie“ až núdzovým postupom, čo zapríčinilo dotyk lietadla so zemou pri zvýšenej rýchlosti. Po dotyku došlo k opätovnému odpútaniu sa lietadla asi do dvoch metrov, pri ktorom predný pilot mjr. Vajda vykonal katapultáž. Zadný pilot pplk. Havner zostal v lietadle a dokončil núdzové pristátie. Lietadlo bolo vážne poškodené. Po tejto leteckej udalosti piloti 3. lšp. nazývali miesto núdzového pristátia ako Havnerfeld.<center>
-                <img alt="havner havaria" src="assets/img/nehody/0110_1.gif">
-                <img alt="havner havaria" src="assets/img/nehody/0110_2.gif">
+                <img alt="havner havaria" src="/assets/img/nehody/0110_1.gif">
+                <img alt="havner havaria" src="/assets/img/nehody/0110_2.gif">
             </center>
             </p>
             <table>
@@ -194,7 +196,7 @@
                     <td colspan="2">pplk. Marián SAKÁČ / kpt. Róbert ROZENBERGER<br />mjr. Peter FIANTA</td>
                 </tr>
             </table>
-            <p>Počas nácviku skupinovej zlietanosti akrobatickej skupiny Biele Albatrosy došlo vplyvom turbulencie k zrážke dvoch lietadiel. Piloti L-39C po vyhodnotení situácie namierili lietadlo do neobývaného priestoru a katapultovali sa. Lietadlo dopadlo do priemyselnej zóny mesta. K poraneniu osôb ani väčším škodám na majetku nedošlo. Pilot L-39V mjr. FIANTA napriek poškodeniu stabilizátora dokázal pristáť, lietadlo bolo neskôr opravené a pokračovalo v službách letectvu OS SR. <center><img alt="0745 nehoda" src="assets/img/nehody/0745crash.jpg"></center></p>
+            <p>Počas nácviku skupinovej zlietanosti akrobatickej skupiny Biele Albatrosy došlo vplyvom turbulencie k zrážke dvoch lietadiel. Piloti L-39C po vyhodnotení situácie namierili lietadlo do neobývaného priestoru a katapultovali sa. Lietadlo dopadlo do priemyselnej zóny mesta. K poraneniu osôb ani väčším škodám na majetku nedošlo. Pilot L-39V mjr. FIANTA napriek poškodeniu stabilizátora dokázal pristáť, lietadlo bolo neskôr opravené a pokračovalo v službách letectvu OS SR. <center><img alt="0745 nehoda" src="/assets/img/nehody/0745crash.jpg"></center></p>
             <table>
                 <tr>
                     <td width="33%">ČR 18.02.1998</td>
@@ -219,7 +221,7 @@
                     <td colspan="2">mjr. Luboš NOVÁK</td>
                 </tr>
             </table>
-            <p>Počas ukážky na verejnosti skupiny akrobatickej skupiny Biele Albatrosy (deň otvorených dverí letiska Sliač) začal pilot neskoro vyberať zostupnú fázu paralelného prvku pádu po chvoste, následne stroj narazil do rovinatého terénu. Pilot sa nepokúsil o katapultáž a zahynul.<center><img alt="Novak nehoda" src="assets/img/nehody/4355crash.jpg"></center></p>
+            <p>Počas ukážky na verejnosti skupiny akrobatickej skupiny Biele Albatrosy (deň otvorených dverí letiska Sliač) začal pilot neskoro vyberať zostupnú fázu paralelného prvku pádu po chvoste, následne stroj narazil do rovinatého terénu. Pilot sa nepokúsil o katapultáž a zahynul.<center><img alt="Novak nehoda" src="/assets/img/nehody/4355crash.jpg"></center></p>
 
             <table>
                 <tr>
@@ -247,10 +249,10 @@
             </table>
             <p>Pilot počas preletu z letiska Praha-Kbely do Náměšte nad Oslavou vykonával nad otočným bodom trate Pelhřimov prvky vyššej techniky pilotovania v malej výške (nebolo náplňou cvičenia). Pri vykonávaní výkrutu v malej výške sa z polohy na chrbte zrútil na zem, pričom tesne minul rodičovský dom. Vtedajší veliteľ letectva AČR generál Klíma prikázal priviesť autobusom pilotov zo základne Čáslav, aby na vlastné oči videli, akými fatálnymi následkami zvyčajne končí letecká nedisciplinovanosť.
                 <center>
-                    <img alt="albatros 5031 nehoda" src="assets/img/nehody/5013_havaria.jpg">
-                    <img alt="5031 havaria albatros" src="assets/img/nehody/5013_havaria1.jpg">
-                    <img alt="5031 crash albatros" src="assets/img/nehody/5013_havaria2.jpg">
-                    <img alt="5031 havaria L39" src="assets/img/nehody/5013_havaria3.jpg">
+                    <img alt="albatros 5031 nehoda" src="/assets/img/nehody/5013_havaria.jpg">
+                    <img alt="5031 havaria albatros" src="/assets/img/nehody/5013_havaria1.jpg">
+                    <img alt="5031 crash albatros" src="/assets/img/nehody/5013_havaria2.jpg">
+                    <img alt="5031 havaria L39" src="/assets/img/nehody/5013_havaria3.jpg">
                 </center>
             </p>
 
@@ -267,10 +269,10 @@
             </table>
             <p>Počas vykonávania vyššej techniky pilotovania v malej výške došlo k ustrnutiu otáčok motora, ktoré posádka lietadla nesprávne vyhodnotila ako vysadenie motora a vykonala katapultáž. Havária sa stala pri obci Kalša neďaleko Košíc. Lietadlo bolo pilotované maďarskými vojenskými pilotmi (výcvik zabezpečovalo Výcvikové stredisko letectva v Košiciach) a bolo zapožičané z Leteckej základne Sliač.
                 <center>
-                    <img alt="havaria" src="assets/img/nehody/4705crash1.jpg">
-                    <img alt="L39crash" src="assets/img/nehody/kalsacrash2.jpg">
-                    <img alt="havariaL39" src="assets/img/nehody/kalsacrash1.jpg">
-                    <img alt="L39crash" src="assets/img/nehody/kalsacrash3.jpg">
+                    <img alt="havaria" src="/assets/img/nehody/4705crash1.jpg">
+                    <img alt="L39crash" src="/assets/img/nehody/kalsacrash2.jpg">
+                    <img alt="havariaL39" src="/assets/img/nehody/kalsacrash1.jpg">
+                    <img alt="L39crash" src="/assets/img/nehody/kalsacrash3.jpg">
                 </center>
             </p>
 
@@ -287,8 +289,8 @@
             </table>
             <p>Po ukončení nácviku manévrového vzdušného boja zaznamenali piloti v priestore motora dve kovové rany. Následne sa rozsvietila hlavná signalizácia poruchy (Master alert), signalizácia teploty výstupných plynov 700°C a 730°C a signalizácia požiaru motora. Vedený pilot oznámil bielu dymovú stopu a lietajúce oranžové iskry z výstupnej trysky lietadla. Pilot na pokyn inštruktora stiahol páku ovládania motora do polohy STOP, uzavrel požiarny kohút a stlačil tlačidlo hasenia. Inštruktor nasmeroval lietadlo do neobývaného priestoru a taktiež stlačil tlačidlo hasenia v zadnej kabíne. Pilot na pokyn inštruktora vykonal katapultáž. Inštruktor po presvedčení sa, že lietadlo dopadne mimo obce vykonal tiež katapultáž. Hlavnou príčinou bol titánový požiar na labyrintovej upchávke medzi 3. a 4. stupňom vysokotlakého kompresora, ktorý vznikol následkom pumpáže motora po akcelerácii motora.
                 <center>
-                    <img alt="crash" src="assets/img/nehody/0440crash.jpg">
-                    <img alt="havaria" src="assets/img/nehody/0440crash1.jpg">
+                    <img alt="crash" src="/assets/img/nehody/0440crash.jpg">
+                    <img alt="havaria" src="/assets/img/nehody/0440crash1.jpg">
                 </center>
             </p>
 
@@ -305,11 +307,12 @@
             </table>
             <p>Počas záletu lietadla po výmene motora zaznamenala posádka 22 minút po vzlete štyri - päť zreteľných rán v zadnej časti lietadla. Následne došlo k prudkému poklesu otáčok a vysadeniu motora. Po štyroch neúspešných pokusoch o spustenie motora za letu vykonala posádka lietadla úspešnú katapultáž. Lietadlo dopadlo na okraj lesného porastu. Piloti dopadli na padákoch cca. 500 metrov od trosiek lietadla do zalesneného terénu. Príčinou leteckej nehody bol titánový požiar v priestore 3. stupňa vysokotlakého kompresoru.
                 <center>
-                    <img alt="Stojanik nehoda" src="assets/img/nehody/stojanikcrash.jpg">
-                    <img alt="albatros 2341 crash" src="assets/img/nehody/albatros2341_crash.jpg">
+                    <img alt="Stojanik nehoda" src="/assets/img/nehody/stojanikcrash.jpg">
+                    <img alt="albatros 2341 crash" src="/assets/img/nehody/albatros2341_crash.jpg">
                 </center>
             </p>
  </div>
  </div>
  </section>
 </article>
+<?php include ('includes/footer.inc.php');    ?>

@@ -1,3 +1,5 @@
+<?php include ('includes/header.inc.php'); ?>
+<?php include ('includes/menu.inc.php'); ?>
 <div class="head-photo no-pic forum">
     <section class="podklad">
         <div class="row">
@@ -45,4 +47,4 @@ else { ?>
     </div>
     <?php include ('includes/_loginform.inc.php'); ?>
 <?php } ?>
-
+<?php include ('includes/footer.inc.php');    ?>

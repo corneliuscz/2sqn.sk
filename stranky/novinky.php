@@ -1,3 +1,5 @@
+<?php include ('includes/header.inc.php'); ?>
+<?php include ('includes/menu.inc.php'); ?>
 <div class="head-photo no-pic novinky">
     <section class="podklad">
         <div class="row">
@@ -17,7 +19,7 @@ require "includes/_dba.php";
 $page = 0;
 $view_number = 30;
 $start = $page*$view_number;
-$message = MySQL_Query("SELECT * FROM board ORDER BY number DESC LIMIT $start,$view_number") or die($query_error);
+$message = MySQL_Query("SELECT * FROM board WHERE `subject-$app->lang` IS NOT NULL ORDER BY number DESC LIMIT $start,$view_number") or die($query_error);
 
 global $server_url;
 
@@ -29,7 +31,7 @@ while ($riadok = MySQL_Fetch_Array($message)):
         <div class="large-6 columns novinka-text">
         <?php } ?>
             <span class="datum"><?php echo date('d.m.Y', strtotime($riadok['from_date'])); ?></span>
-            <h2><a href="/novinky/<?php echo $riadok["number"]; ?>"><?php echo predlozky($riadok ["subject"]); ?></a></h2>
+            <h2><a href="/<?php echo $app->lang; ?>/novinky/<?php echo $riadok["number"]; ?>"><?php echo predlozky($riadok ["subject-".$app->lang]); ?></a></h2>
         <?php if (!empty($riadok["pict"])) { ?>
             <div class="row">
                 <div class="large-6 columns">
@@ -37,9 +39,9 @@ while ($riadok = MySQL_Fetch_Array($message)):
                 </div>
                 <div class="large-6 columns">
         <?php } ?>
-            <?php  echo predlozky($riadok ["head"]); ?>
-            <?php if (!empty($riadok ["body"])) { ?>
-                <?php  echo predlozky($riadok ["body"]); ?>
+            <?php  echo predlozky($riadok ["head-".$app->lang]); ?>
+            <?php if (!empty($riadok ["body-".$app->lang])) { ?>
+                <?php  echo predlozky($riadok ["body-".$app->lang]); ?>
             <?php } ?>
         <?php if (!empty($riadok["pict"])) { ?>
             </div></div>
@@ -51,3 +53,4 @@ mysql_close($db); // zavřeme spojení s databází
 ?>
     </div>
 </article>
+<?php include ('includes/footer.inc.php');    ?>

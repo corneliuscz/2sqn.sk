@@ -1,3 +1,6 @@
+<?php include ('includes/header.inc.php'); ?>
+<?php include ('includes/menu.inc.php'); ?>
+
 <?php
 /*
 MINIGAL NANO
@@ -425,3 +428,4 @@ $galleryname = trim($_GET['dir']);
             </div>
     <?php }
 ?>
+<?php include ('includes/footer.inc.php');    ?>

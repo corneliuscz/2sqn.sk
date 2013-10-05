@@ -7,16 +7,16 @@
     "packages": [
         {
             "name": "slim/slim",
-            "version": "2.3.1",
+            "version": "2.3.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/codeguy/Slim.git",
-                "reference": "2e540cc392644b9b5cdcc57e5576db5a92ca2149"
+                "reference": "a9abd36d53d9c1f7732f490f8e809e55045307b3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/codeguy/Slim/zipball/2e540cc392644b9b5cdcc57e5576db5a92ca2149",
-                "reference": "2e540cc392644b9b5cdcc57e5576db5a92ca2149",
+                "url": "https://api.github.com/repos/codeguy/Slim/zipball/a9abd36d53d9c1f7732f490f8e809e55045307b3",
+                "reference": "a9abd36d53d9c1f7732f490f8e809e55045307b3",
                 "shasum": ""
             },
             "require": {
@@ -47,20 +47,20 @@
                 "rest",
                 "router"
             ],
-            "time": "2013-07-20 18:38:05"
+            "time": "2013-09-29 19:46:31"
         },
         {
             "name": "sybio/image-workshop",
-            "version": "2.0.3",
+            "version": "2.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Sybio/ImageWorkshop.git",
-                "reference": "b4d47e075d9d7eee5dc7da210853becc76ca8b8b"
+                "reference": "d7dee538c1c8b7bf7b465922d2554d077903cb19"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Sybio/ImageWorkshop/zipball/b4d47e075d9d7eee5dc7da210853becc76ca8b8b",
-                "reference": "b4d47e075d9d7eee5dc7da210853becc76ca8b8b",
+                "url": "https://api.github.com/repos/Sybio/ImageWorkshop/zipball/d7dee538c1c8b7bf7b465922d2554d077903cb19",
+                "reference": "d7dee538c1c8b7bf7b465922d2554d077903cb19",
                 "shasum": ""
             },
             "require": {
@@ -96,7 +96,7 @@
                 "thumbnail",
                 "watermark"
             ],
-            "time": "2013-06-18 08:58:44"
+            "time": "2013-09-11 09:17:10"
         }
     ],
     "packages-dev": [

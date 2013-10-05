@@ -1,5 +1,7 @@
+<?php include ('includes/header.inc.php'); ?>
+<?php include ('includes/menu.inc.php'); ?>
 <div class="head-photo">
-    <img src="assets/img/slides/lzsl.jpg" alt="Letecký snímok letiska Sliač">
+    <img src="/assets/img/slides/lzsl.jpg" alt="Letecký snímok letiska Sliač">
     <section class="podklad">
         <div class="row">
             <div class="large-12 columns">
@@ -17,19 +19,19 @@
                 <h2>História</h2>
                 <p>Prvé záznamy o&nbsp;pristátí vojenských lietadiel v&nbsp;priestoroch letiska Tri Duby sa datujú na&nbsp;15.&nbsp;7.&nbsp;1935. V&nbsp;máji 1936 sa na&nbsp;letisku Tri&nbsp;Duby vytvorila letecká škola a&nbsp;1.&nbsp;septembra 1937 sa do&nbsp;priestoru letiska nasťahovala Letecká posádka. O&nbsp;rok neskôr sa začala výstavba kasární pre letcov. </p>
                 <figure class="right border">
-                    <img src="assets/img/lzsl_la-5fn.2cd.jpg">
+                    <img src="/assets/img/lzsl_la-5fn.2cd.jpg">
                     <figcaption class="text-center">La-5 na letisku Tri Duby</figcaption>
                 </figure>
                 <p>Významnú úlohu v&nbsp;histórii tunajšieho letectva zohrala už spomínaná letecká &ndash; vtedy pilotná škola, ktorú riadil Československý aeroklub pre stredné Slovensko, so sídlom vo Zvolene. V&nbsp;apríli 1936 dostal z&nbsp;národnej leteckej zbierky 3 školské lietadlá, čo bolo podnetom na&nbsp;vybudovanie prvého vlastného hangáru. V&nbsp;týchto rokoch tu predvádzali svoje akrobatické zručnosti aj najlepší československí piloti týchto čias, major Ambruš a&nbsp;poľný pilot, poručík Trnka. Ešte pred vypuknutím povstania sa v&nbsp;uzavretých hangároch opravovali vyradené stroje a&nbsp;pripravovali sa na&nbsp;bojové použitie.</p>
 
                 <p>Od začiatku SNP na&nbsp;letisku pôsobila kombinovaná letka. Veliteľom letiska Tri Duby bol kpt.&nbsp;Belo Kubica a&nbsp;veliteľom kombinovanej letky npor.&nbsp;Mikuláš Šinglovič. Letisko bolo niekoľkokrát bombardované, z&nbsp;toho dvakrát s&nbsp;ťažkými dôsledkami. Letisko na&nbsp;Sliači sa stalo pojmom najmä počas 2.&nbsp;svetovej vojny, a&nbsp;to aj vďaka vkladu letcov a&nbsp;letectva do povstaleckej histórie. Po oslobodení dňa 21.&nbsp;marca 1945 sa činnosť letiska obnovila a&nbsp;oficiálny názov letiska sa z&nbsp;pôvodného "Tri duby" zmenil na&nbsp;"Letisko SNP Sliač".</p>
                 <figure class="left border">
-                    <img src="assets/img/lzsl_sliac64_004.jpg">
+                    <img src="/assets/img/lzsl_sliac64_004.jpg">
                     <figcaption class="text-center">MiG-15 na letisku Tri Duby</figcaption>
                 </figure>
                 <p>Po skončení 2.&nbsp;svetovej vojny sa Československo, dostalo do vplyvu Sovietskeho zväzu. Letectvo prešlo na&nbsp;sovietsku výzbroj a&nbsp;len čiastočne sa zachoval vlastný letecký priemysel. V&nbsp;roku 1968 zabrala Letisko SNP Sliač so všetkými priľahlými priestormi Sovietska armáda, s&nbsp;výnimkou civilného sektora, ktorý zostal pod správou Československých aerolínií.</p>
                 <figure class="right border">
-                    <img src="assets/img/lzsl_sliac64_002.jpg">
+                    <img src="/assets/img/lzsl_sliac64_002.jpg">
                 </figure>
                 <p>V&nbsp;roku 1989, po tzv.&nbsp;nežnej revolúcii, museli sovietske vojská na&nbsp;základe medzinárodnej dohody v&nbsp;priebehu jedného roka opustiť aj letisko Sliač a&nbsp;jeho priestory. Po odchode sovietskych vojsk sa letisko vrátilo vojenskému letectvu bývalej Československej federatívnej republiky, a&nbsp;po rozdelení ČSFR na&nbsp;letisku ostali zložky letectva Slovenskej republiky. V&nbsp;súčasnosti na&nbsp;letisku pôsobí Zmiešané letecké krídlo Otta Smika, so svojou Bojovou (1.&nbsp;letka) a&nbsp;Výcvikovou letkou (2.&nbsp;letka).</p>
             </div>
@@ -40,7 +42,7 @@
             <div class="large-12 columns">
                 <h2>Rekonštrukcia letiska</h2>
                 <figure class="right border">
-                    <img src="assets/img/lzsl_sld21.jpg">
+                    <img src="/assets/img/lzsl_sld21.jpg">
                 </figure>
                 <p>Od 6.&nbsp;mája&nbsp;2009 prebiehala na&nbsp;letisku rekonštrukcia a&nbsp;predĺženie vzletovej a&nbsp;pristávacej dráhy, ktorá zabraňovala akýmkoľvek príletom a&nbsp;odletom vojenských aj civilných lietadiel. 2.&nbsp;letka počas tejto výluky pôsobila z&nbsp;letiska Malacky-Kuchyňa. Koncom mája 2010 boli rekonštrukčné a&nbsp;stavebné práce na&nbsp;vzletovej a&nbsp;pristávacej dráhe ukončené. Sťahovanie sa&nbsp;začalo preletom lietadiel L-39 z&nbsp;Kuchyne 15.&nbsp;júla 2010. Prvým pilotom, ktorý pristál na&nbsp;zrekonštruované letisko bol por.&nbsp;Mário Nedelka, najmladší pilot krídla, ako symbol svetlej budúcnosti&hellip; :-D Letisko bolo oficiálne odovzdané do používania Ozbrojeným silám SR 25.&nbsp;5.&nbsp;2010. Civilné lietadlá začali na&nbsp;letisku pristávať až 16.&nbsp;6.&nbsp;2011.</p>
             </div>
@@ -122,8 +124,9 @@
                 </table>
             </div>
             <div class="small-12 large-centered text-center columns">
-                <p><img src="assets/img/sliac_airport.jpg" class="border fullw" alt="Schéma letiska"></p>
+                <p><img src="/assets/img/sliac_airport.jpg" class="border fullw" alt="Schéma letiska"></p>
             </div>
         </div>
     </section>
 </article>
+<?php include ('includes/footer.inc.php');    ?>

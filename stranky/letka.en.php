@@ -1,5 +1,7 @@
+<?php include ('includes/header.inc.php'); ?>
+<?php include ('includes/menu.inc.php'); ?>
 <div class="head-photo">
-    <img src="assets/img/slides/letka.jpg" alt="Piloti 2. SQN">
+    <img src="/assets/img/slides/letka.jpg" alt="Piloti 2. SQN">
     <section class="podklad">
         <div class="row">
             <div class="large-12 columns">
@@ -22,7 +24,7 @@
             </div>
             <div class="large-4 columns">
             <figure class="">
-                <img src="assets/img/letka-historia-003.jpg">
+                <img src="/assets/img/letka-historia-003.jpg">
             </figure>
             </div>
         </div>
@@ -32,7 +34,7 @@
             </div>
             <div class="large-4 columns">
             <figure class="">
-                <img src="assets/img/letka-historia-004.jpg">
+                <img src="/assets/img/letka-historia-004.jpg">
             </figure>
             </div>
         </div>
@@ -42,7 +44,7 @@
             </div>
             <div class="large-4 columns">
                 <figure class="">
-                    <img src="assets/img/letka-historia-005.jpg">
+                    <img src="/assets/img/letka-historia-005.jpg">
                 </figure>
             </div>
         </div>
@@ -80,7 +82,7 @@
             <div class="large-12 columns">
                 <h2>Štábni piloti L-39 Sliač</h2>
                 <figure class="left border">
-                    <img src="assets/img/letka-piloti.jpg">
+                    <img src="/assets/img/letka-piloti.jpg">
                 </figure>
                 <p>BARÁNEK Juraj, BEDNÁR Miroslav, ČELKO Milan, DOBROTKA Jozef, DORČÁK Ivan, GLOS Drahomír, HAŠAN Ján, HRONEC Martin, KRAKOVSKÝ Jozef, LISÝ Vladimír, LOVAS Ľubomír, MIHALUS Igor, MIKULA Štefan, PALÍK Štefan, ŠVACHO Jaroslav, TAKÁCS Jozef.</p>
             </div>
@@ -92,10 +94,11 @@
             <div class="large-12 columns">
                 <h2>Technický a&nbsp;zabezpečujúci personál, 2. a bývalej 3. letky na&nbsp;L-39</h2>
                 <figure class="right border">
-                    <img src="assets/img/letka-technici.jpg">
+                    <img src="/assets/img/letka-technici.jpg">
                 </figure>
                 <p>ANDACKÝ Peter, BABIC Igor, BESKYD Miroslav, BLAŠKO Tomáš, BODZÁŇ Milan, BRTÁŇ Miloš, BRUNOVSKÝ Adrián, BRZUĽA Andrej, BÚZIK Michal, CEHLÁR Ladislav, CYPRICH Vladimír, ČERŇANSKÝ Anton, DOMSKÝ Juraj, ĎURICA Juraj, ELIZEUŠ Radoslav, FALTÝN František, GABĽASOVÁ Katarína, GAZDA Gabriel, GUŽMER Ján, HANZEL Jiří, HOFFMAN Marek, HRIECH Juraj, JACOLA Rastislav, JAŠO Peter, JURÁK Martin, KIRÁLY Marián, KIŠŠ Štefan, KOCOVÁ Anna, KOCHLIC Peter, KOLESÁR Peter, KOMARIK Peter, KONDŽEL Ján, KOŠČO Jozef, KOŠÍK Slavomír, MACHO Michal, MIČICA Branislav, MIKO Roman, MIŠKUF Maroš, MORAVČÍK Igor, OLEJÁR Martin, PAROBEK Milan, PAVLÍK Peter, PERŽEL Branislav, POLYÁK Štefan, POPIK Ján, REJKO Milan, SAFKO Vladimír, SALVA Jaroslav, SAS Matúš, SLOTÍK Tomáš, SÚČAN Andrej, SÚDIK Elemír, SZÁRAZ Vojtech, ŠKOLNÍKOVÁ Ľubica, ŠTEKLÁČ Erich, ŠTOSEL Roman, ŠURINA Ľubomír, TARAJČÁK Daniel, TEPLICKÝ Drahomír, TÓTH Jaroslav, UHLIAR Daniel, VALKOŠÁK Marek, VESELOVSKÁ-PIŠTEJOVÁ Silvia, ZETOCHA Dušan.</p>
             </div>
         </div>
     </section>
 </article>
+<?php include ('includes/footer.inc.php');    ?>

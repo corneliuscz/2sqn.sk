@@ -1,0 +1,9 @@
+Upravit tabulku Board na anglické novinky:
+
+ALTER TABLE  `board` CHANGE  `subject`  `subject-sk` VARCHAR( 250 ) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL ;
+ALTER TABLE  `board` CHANGE  `head`  `head-sk` TEXT CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL ;
+ALTER TABLE  `board` CHANGE  `body`  `body-sk` TEXT CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL ;
+
+ALTER TABLE  `board` ADD  `subject-en` VARCHAR( 250 ) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL AFTER  `subject-sk` ;
+ALTER TABLE  `board` ADD  `head-en` TEXT CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL AFTER `head-sk` ;
+ALTER TABLE  `board` ADD  `body-en` TEXT CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL AFTER `body-sk` ;

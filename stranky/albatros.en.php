@@ -1,5 +1,7 @@
+<?php include ('includes/header.inc.php'); ?>
+<?php include ('includes/menu.inc.php'); ?>
 <div class="head-photo">
-    <img src="assets/img/slides/albatrosy-om.jpg" alt="L-39 Albatros">
+    <img src="/assets/img/slides/albatrosy-om.jpg" alt="L-39 Albatros">
     <section class="podklad">
         <div class="row">
             <div class="large-12 columns">
@@ -25,7 +27,7 @@
             </div>
             <div class="large-4 columns">
                 <figure class="">
-                    <img src="assets/img/letka-historia-005.jpg">
+                    <img src="/assets/img/letka-historia-005.jpg">
                 </figure>
             </div>
         </div>
@@ -35,12 +37,12 @@
             </div>
             <div class="large-4 columns">
             <figure class="">
-                <img src="assets/img/letka-historia-004.jpg">
+                <img src="/assets/img/letka-historia-004.jpg">
             </figure>
             </div>
         </div>
     </section>
-    
+
     <section class="obsah mensi albatrosy"><a name="albatrosy" id="kotva"></a>
         <div class="row">
             <div class="large-12 columns">
@@ -54,7 +56,7 @@
             </div>
             <div class="large-4 columns">
                 <figure class="">
-                    <img alt="L-39 0101" src="assets/img/slovenske-albatrosy/0101.jpg">
+                    <img alt="L-39 0101" src="/assets/img/slovenske-albatrosy/0101.jpg">
                 </figure>
             </div>
         </div>
@@ -68,13 +70,13 @@
 a dňa 26.10.2012 bol preletený mjr. Labudíkom späť na Sliač.</strong></p>
                 <div class="row">
                     <div class="large-4 columns">
-                        <img alt="L-39 0102" src="assets/img/slovenske-albatrosy/0102.jpg">
+                        <img alt="L-39 0102" src="/assets/img/slovenske-albatrosy/0102.jpg">
                     </div>
                     <div class="large-4 columns">
-                        <img alt="l-39 5252" src="assets/img/slovenske-albatrosy/5252_1.jpg">
+                        <img alt="l-39 5252" src="/assets/img/slovenske-albatrosy/5252_1.jpg">
                     </div>
                     <div class="large-4 columns">
-                        <img alt="l-39 5252" src="assets/img/slovenske-albatrosy/5252_2.jpg">
+                        <img alt="l-39 5252" src="/assets/img/slovenske-albatrosy/5252_2.jpg">
                     </div>
                 </div>
             </div>
@@ -87,7 +89,7 @@ a dňa 26.10.2012 bol preletený mjr. Labudíkom späť na Sliač.</strong></p>
                 <p>Od 1.1.1993 bol pridelený k 1.letke 5.šlp Košice. Od roku 1992 lietal vo farbách Bielych albatrosov. V rokoch 1996-1997 absolvoval GO v LOTN s rovnakým priebehom úprav ako u ostatných albatrosov série 1 a 4. Rovnako došlo neskôr k zmene staršieho smerového kormidla za novší typ, na SOP modré číslo 5. V roku 2002 absolvoval ako prvý GO v LOTN, spojenú s modernizáciou prístrojového vybavenia, výmenou krídla, zadnej časti trupu a chvostových plôch. Okrem iného dostal aj novší typ SOP s vyšším krytom antény na vrchole, charakteristickým pre albatrosy série 50 a vyššie. 26.8. 2003 bol zalietaný a do apríla 2004 bol dislokovaný v Košiciach. 15.4. 2004 preletel na Sliač, tu však odvtedy prakticky nelietal, pretože všetky ďalšie L-39CM boli modernizované so zmenami vo vybavení oproti 0111. V súčasnosti nelieta, je odstavený, rovnako nedošlo ani k zmene trupového čísla na plánované 5251.</p>
             </div>
             <div class="large-4 columns">
-                <img alt="L-39 0111" src="assets/img/slovenske-albatrosy/0111.jpg">
+                <img alt="L-39 0111" src="/assets/img/slovenske-albatrosy/0111.jpg">
             </div>
         </div>
         <div class="row">
@@ -98,10 +100,10 @@ a dňa 26.10.2012 bol preletený mjr. Labudíkom späť na Sliač.</strong></p>
                 <p>Od 1.1.1993 pridelený k 1. letke 5.šlp v Košiciach. Dostal sfarbenie skupiny Biele albatrosy. V rokoch 1996-1997 sa podrobil GO v LOTN s výmenou trupových častí a predĺžením životnosti do roku 2002. Tiež mu bolo vymenené smerové kormidlo za novší typ koncom 90-tych rokov. Neskôr dostal na SOP modré číslo 1. Od roku 2002 bol na ďalšej GO v LOTN, kde prešiel modernizáciou na štandard L-39CM a zmenou trupového čísla na 5254. Od augusta 2006 lietala v zostave 2. letky na základni Sliač. Posledný let na nej vykonal dňa 06.10.2011 por. Dušan Tichý.</p>
                 <div class="row">
                     <div class="large-6 columns">
-                        <img alt="L-39 0112" src="assets/img/slovenske-albatrosy/0112.jpg">
+                        <img alt="L-39 0112" src="/assets/img/slovenske-albatrosy/0112.jpg">
                     </div>
                     <div class="large-6 columns">
-                        <img alt="5254" src="assets/img/slovenske-albatrosy/5254_1.jpg">
+                        <img alt="5254" src="/assets/img/slovenske-albatrosy/5254_1.jpg">
                     </div>
                 </div>
             </div>
@@ -116,13 +118,13 @@ a dňa 26.10.2012 bol preletený mjr. Labudíkom späť na Sliač.</strong></p>
 <p><strong>Nelietal od mája 2011 kedy bol dolietaný do GO a bol presunutý do LOTN na GO kde dostal novú šedú kamufláž. Dňa 26.09.2012 bol vykonaný fabrický zálet po GO a dňa 11.10.2012 bol preletený mjr. Kandom späť na Sliač.</strong></p>
                 <div class="row">
                     <div class="large-4 columns">
-                        <img alt="L-39 0442" src="assets/img/slovenske-albatrosy/0442.jpg">
+                        <img alt="L-39 0442" src="/assets/img/slovenske-albatrosy/0442.jpg">
                     </div>
                     <div class="large-4 columns">
-                        <img alt="5253" src="assets/img/slovenske-albatrosy/5253_1.jpg">
+                        <img alt="5253" src="/assets/img/slovenske-albatrosy/5253_1.jpg">
                     </div>
                     <div class="large-4 columns">
-                        <img alt="5253" src="assets/img/slovenske-albatrosy/5253_2.jpg">
+                        <img alt="5253" src="/assets/img/slovenske-albatrosy/5253_2.jpg">
                     </div>
                 </div>
             </div>
@@ -137,13 +139,13 @@ a dňa 26.10.2012 bol preletený mjr. Labudíkom späť na Sliač.</strong></p>
 <p><strong>Dňa 28.08.2012 bol zaletený po generálnej oprave. Dostal novú kamufláž zloženú z odtieňov šedej farby a na chvostovú plochu pribudol motív Otta Smika. Na leteckú základňu Sliač bol opäť preletený 31.08.2012 pplk. Poláčkom.</strong></p>
                 <div class="row">
                     <div class="large-4 columns">
-                        <img alt="L-39 0442" src="assets/img/slovenske-albatrosy/0443.jpg">
+                        <img alt="L-39 0442" src="/assets/img/slovenske-albatrosy/0443.jpg">
                     </div>
                     <div class="large-4 columns">
-                        <img alt="5301 l39" src="assets/img/slovenske-albatrosy/5301_1.jpg">
+                        <img alt="5301 l39" src="/assets/img/slovenske-albatrosy/5301_1.jpg">
                     </div>
                     <div class="large-4 columns">
-                        <img alt="5301 SMIK L39" src="assets/img/slovenske-albatrosy/5301_2.jpg">
+                        <img alt="5301 SMIK L39" src="/assets/img/slovenske-albatrosy/5301_2.jpg">
                     </div>
                 </div>
             </div>
@@ -157,7 +159,7 @@ a dňa 26.10.2012 bol preletený mjr. Labudíkom späť na Sliač.</strong></p>
                 <p>Od 1.1.1993 bol v stave 1. letky 5.šlp Košice. Od roku 1992 nosil farby Bielych albatrosov. Tento albatros už mal novší typ smerového kormidla. V druhej polovici 90-tych rokov mu pribudlo na SOP modré číslo 3. Od ostatných strojov Bielych albatrosov sa líšil aj prevedením trupového čísla, ktoré bolo delené, podobné prevedenie čísla mal aj L-39C trupového čísla 4357 a aj stroje série 46 v zostave skupiny pred rozdelením republík. V tomto stroji havaroval mjr. Luboš Novák 3. júna 2000 pri vystúpení skupiny na letisku Sliač, lietadlo bolo úplne zničené.</p>
             </div>
             <div class="large-4 columns">
-                <img alt="L-39 4355" src="assets/img/slovenske-albatrosy/4355.jpg">
+                <img alt="L-39 4355" src="/assets/img/slovenske-albatrosy/4355.jpg">
             </div>
         </div>
 
@@ -169,7 +171,7 @@ a dňa 26.10.2012 bol preletený mjr. Labudíkom späť na Sliač.</strong></p>
                 <p>Od 1.1.1993 pridelený k 1. letke 5.šlp Košice. Lietal vo farbách Bielych albatrosov od roku 1992. Trupové číslo bolo podobne ako u 4355 delené. Toto lietadlo bolo zničené po kolízii vo vzduchu s L-39V trupovým číslom 0745 počas nácviku skupiny dňa 17.7.1996, piloti pplk. Marián Sakáč a kpt. Róbert Rozenberg sa úspešne katapultovali.</p>
             </div>
             <div class="large-4 columns">
-                <img alt="L-39 4357" src="assets/img/slovenske-albatrosy/4357.jpg">
+                <img alt="L-39 4357" src="/assets/img/slovenske-albatrosy/4357.jpg">
             </div>
         </div>
 
@@ -181,7 +183,7 @@ a dňa 26.10.2012 bol preletený mjr. Labudíkom späť na Sliač.</strong></p>
                 <p>Od 1.1.1993 pridelený 1. letke 5.šlp Košice. Spočiatku lietal v pôvodnom sfarbení kombinácie bielej a žltej farby, typickom pre všetky L-39V, ktoré toto sfarbenie dostali pri výrobe. Neskôr bolo sfarbenie zmenené na štandard Bielych albatrosov. Rovnako mal aj starší typ smerového kormidla, typický pre prvé série L-39. Od roku 2001 pôsobil na základni Sliač, kde bol v roku 2006 vyradený pre vylietanie rezursov. Posledný let na ňom vykonal  31.08.2006 por. Peter LUKÁČIK, v súčasnosti sa nachádza uložený na letisku Sliač.</p>
             </div>
             <div class="large-4 columns">
-                <img alt="L-39 0730" src="assets/img/slovenske-albatrosy/0730.jpg">
+                <img alt="L-39 0730" src="/assets/img/slovenske-albatrosy/0730.jpg">
             </div>
         </div>
 
@@ -193,7 +195,7 @@ a dňa 26.10.2012 bol preletený mjr. Labudíkom späť na Sliač.</strong></p>
                 <p>Od 1.1.1993 v stave 1. letky 5.šlp Košice. Sfarbenie Bielych albatrosov dostal až neskôr, dovtedy lietal v štandardnej schéme pre vlečné L-39V, rovnako mal aj starší typ smerového kormidla, ktoré bolo po čase nahradené novším, nižším. Stroj 0745 bol poškodený 17.7.1996 po zrážke vo vzduchu s číslom 4357, pilotovi sa podarilo pristáť na letisku v Košiciach. Bol opravený v LOTN a do roku 2001 lietal v Košiciach. Od roku 2001 bol presunutý na Sliač. Tu v roku 2006 pre vyčerpanie rezursov, dolietal a zostal uložený. Posledný let bol 04.05.2007 a vykonal ho por. Tomáš KROPÁČEK.</p>
             </div>
             <div class="large-4 columns">
-                <img alt="L-39 0745" src="assets/img/slovenske-albatrosy/0745.jpg">
+                <img alt="L-39 0745" src="/assets/img/slovenske-albatrosy/0745.jpg">
             </div>
         </div>
 
@@ -205,10 +207,10 @@ a dňa 26.10.2012 bol preletený mjr. Labudíkom späť na Sliač.</strong></p>
                 <p>Od 1.1.1993 pridelený k 2.zmlp Trenčín. V septembri 1994 bol presunutý k 33.sblk Kuchyňa. Od roku 1995 lietal zo základne Sliač. Zo začiatku lietal v štandardnej kamufláži z dvoch odtieňov zelenej a šedomodrými spodnými plochami, neskôr dostal sfarbenie skupiny Biele albatrosy a bol mu odstránený kanón GŠ-23. V súčasnosti je modernizovaný na verziu L-39ZAM, sfarbenie Bielych albatrosov mu zostalo, pribudlo však púzdro s kanónom. Trupové čísla sa pri modernizácii nemenili ako u L-39CM.</p><p><strong> Lietal u 2. letky Sliač do roku 2010 kedy ukončil technický život a dňa 20.06.2010 na nej vykonal posledný let kpt. Labudík.</strong></p>
                 <div class="row">
                     <div class="large-6 columns">
-                        <img alt="L-39 1701" src="assets/img/slovenske-albatrosy/1701.jpg">
+                        <img alt="L-39 1701" src="/assets/img/slovenske-albatrosy/1701.jpg">
                     </div>
                     <div class="large-6 columns">
-                        <img alt="1701" src="assets/img/slovenske-albatrosy/1701_1.jpg">
+                        <img alt="1701" src="/assets/img/slovenske-albatrosy/1701_1.jpg">
                     </div>
                 </div>
             </div>
@@ -222,10 +224,10 @@ a dňa 26.10.2012 bol preletený mjr. Labudíkom späť na Sliač.</strong></p>
                 <p>Od 1.1.1993 pridelený 3.sbolp Kuchyňa, v marci prešiel k 2.zmlp Trenčín, odtiaľ v roku 1994 znovu na základňu Kuchyňa a nakoniec v roku 1995 k 31. slk Sliač. Lietal v štandardnej kamufláži verzie ZA, po GO v roku 2002 v LOTN dostal novú kamufláž s mierne odlišnými odtieňmi a iným tvarom číslic trupového čísla. Do roku 2006 lietal u 2. letky na Sliači. V súčasnosti je uložený, nelieta od prechodu letky na verzie L-39CM a ZAM. Posledný let vykonal dňa 17.05.2007 kpt. Slavomír KANDA.</p>
                 <div class="row">
                     <div class="large-6 columns">
-                        <img alt="L-39 1725" src="assets/img/slovenske-albatrosy/1725.jpg">
+                        <img alt="L-39 1725" src="/assets/img/slovenske-albatrosy/1725.jpg">
                     </div>
                     <div class="large-6 columns">
-                        <img alt="1725" src="assets/img/slovenske-albatrosy/1725_1.jpg">
+                        <img alt="1725" src="/assets/img/slovenske-albatrosy/1725_1.jpg">
                     </div>
                 </div>
             </div>
@@ -239,10 +241,10 @@ a dňa 26.10.2012 bol preletený mjr. Labudíkom späť na Sliač.</strong></p>
                 <p>Od roku 1993 absolvoval rovnakú anabázu ako trupové číslo 1725, od roku 1995 lieta na základni Sliač. Kamufláž má štandardnú pre verziu ZA. V roku 2005 absolvoval GO v LOTN spojenú s modernizáciou na verziu ZAM, dostal novú kamufláž z dvoch odtieňov zelenej a šedomodrú na spodné plochy. Trupové číslo zostalo nezmenené, zmenila sa len farba z bielej na čiernu. Lietal v stave 2. letky na Sliači do ukončenia technického života a posledný let na ňom vykonal por. Lukáčik dňa 01.06.2011.</p>
                 <div class="row">
                     <div class="large-6 columns">
-                        <img alt="L-39 1730" src="assets/img/slovenske-albatrosy/1730.jpg">
+                        <img alt="L-39 1730" src="/assets/img/slovenske-albatrosy/1730.jpg">
                     </div>
                     <div class="large-6 columns">
-                        <img alt="1730" src="assets/img/slovenske-albatrosy/1730_1.jpg">
+                        <img alt="1730" src="/assets/img/slovenske-albatrosy/1730_1.jpg">
                     </div>
                 </div>
             </div>
@@ -256,7 +258,7 @@ a dňa 26.10.2012 bol preletený mjr. Labudíkom späť na Sliač.</strong></p>
                 <p>Od 1.1.1993 bol v stave 3.sbolp Kuchyňa. Neskôr prešiel cez základňu Trenčín až zostal dislokovaný u 31. slk na letisku Sliač. Lietal v štandardnej kamufláži verzie ZA.</p><p>L-39ZA 3905 bol zničený 14.9.2000, keď ho katapultážou opustil npor. Pavol Serbín pre poruchu motora pri obci Ožďany.</p>
             </div>
             <div class="large-4 columns">
-                        <img alt="L-39 3905" src="assets/img/slovenske-albatrosy/3905.jpg">
+                        <img alt="L-39 3905" src="/assets/img/slovenske-albatrosy/3905.jpg">
             </div>
         </div>
 
@@ -268,10 +270,10 @@ a dňa 26.10.2012 bol preletený mjr. Labudíkom späť na Sliač.</strong></p>
                 <p>Od 1.1.1993 bol pridelený 1. slp Sliač. Lietal v štandardnej kamufláži verzie ZA. V druhej polovici 90-tych rokov dostal sfarbenie Bielych albatrosov a bol mu odstránený kanón GŠ-23.</p><p><strong>Od apríla 2011 prešiel do LOTN (generálna oprava + modernizácia) kde dostalo novú šedú kamufláž. Dňa 06.03.2013 bol vykonaný fabrický zálet po GO a dňa 08.04.2013 bol preletený mjr. Kandom späť na Sliač.</strong></p>
                 <div class="row">
                     <div class="large-6 columns">
-                        <img alt="L-39 4701" src="assets/img/slovenske-albatrosy/4701.jpg">
+                        <img alt="L-39 4701" src="/assets/img/slovenske-albatrosy/4701.jpg">
                     </div>
                     <div class="large-6 columns">
-                        <img alt="4701" src="assets/img/slovenske-albatrosy/4701-1.jpg">
+                        <img alt="4701" src="/assets/img/slovenske-albatrosy/4701-1.jpg">
                     </div>
                 </div>
             </div>
@@ -285,10 +287,10 @@ a dňa 26.10.2012 bol preletený mjr. Labudíkom späť na Sliač.</strong></p>
                 <p>Od začiatku roku 1993 bol pridelený k 1.slp na Sliači, spočiatku lietal v pôvodnej kamufláži. Na konci 90-tych rokov dostal sfarbenie Bielych albatrosov, dlhší čas však nelietal. V roku 2010 prišiel z GO spojenej s modernizáciou na verziu ZAM, kde dostal znovu kamufláž z dvoch odtieňov zelenej a šedomodrú na spodné plochy. V súčasnosti lieta v zostave 2. letky Sliač.</p>
                 <div class="row">
                     <div class="large-6 columns">
-                        <img alt="L-39 4703" src="assets/img/slovenske-albatrosy/4703.jpg">
+                        <img alt="L-39 4703" src="/assets/img/slovenske-albatrosy/4703.jpg">
                     </div>
                     <div class="large-6 columns">
-                        <img alt="4703" src="assets/img/slovenske-albatrosy/4703_1.jpg">
+                        <img alt="4703" src="/assets/img/slovenske-albatrosy/4703_1.jpg">
                     </div>
                 </div>
             </div>
@@ -302,7 +304,7 @@ a dňa 26.10.2012 bol preletený mjr. Labudíkom späť na Sliač.</strong></p>
                 <p>Od 1.1.1993 bol pridelený na základňu Sliač, v druhej polovici 90-tych rokov došlo u neho k zmene kamufláže zo štandardnej na sfarbenie Bielych albatrosov. Tiež mu bol odstránený kanón. L-39ZA číslo 4705 bol zničený pri havárii pre poruchu motora 29.10.2002 pri obci Kalša počas výcviku maďarských pilotov. Obaja piloti maďarského letectva sa katapultovali</p>
             </div>
             <div class="large-4 columns">
-                <img alt="L-39 4705" src="assets/img/slovenske-albatrosy/4705.jpg">
+                <img alt="L-39 4705" src="/assets/img/slovenske-albatrosy/4705.jpg">
             </div>
         </div>
 
@@ -314,10 +316,10 @@ a dňa 26.10.2012 bol preletený mjr. Labudíkom späť na Sliač.</strong></p>
                 <p>Od začiatku roku 1993 až do súčasnosti je dislokovaný na základni Sliač. Spočiatku lietal v štandardnej kamufláži verzie ZA, neskôr dostal farby Bielych albatrosov, ktorým býval zapožičiavaný spolu s ďalšími L-39ZA ako&nbsp; záloha. V roku 2006 prešiel GO v LOTN, pri ktorej bol modernizovaný na verziu ZAM. Dostal nové sfarbenie identické s modernizovaným ZAM číslo 1730.</p><p><strong>Lietal v stave 2.letky do roku 2012 kedy ukončil technický život a dňa 18.07.2012 na ňom vykonal posledný let por. Paľuv.</strong></p>
                 <div class="row">
                     <div class="large-6 columns">
-                        <img alt="L-39 4707" src="assets/img/slovenske-albatrosy/4707.jpg">
+                        <img alt="L-39 4707" src="/assets/img/slovenske-albatrosy/4707.jpg">
                     </div>
                     <div class="large-6 columns">
-                        <img alt="4707" src="assets/img/slovenske-albatrosy/4707_1.jpg">
+                        <img alt="4707" src="/assets/img/slovenske-albatrosy/4707_1.jpg">
                     </div>
                 </div>
             </div>
@@ -331,10 +333,10 @@ a dňa 26.10.2012 bol preletený mjr. Labudíkom späť na Sliač.</strong></p>
                 <p>Rovnako ako všetky ostatné L-39ZA série 47 slovenského letectva bol od roku 1993 umiestnený na základni Sliač. V druhej polovici 90-tych rokov bol prestriekaný do farieb Bielych albatrosov, pričom mu bol odstránený kanón. Po prechode 2. letky na verzie CM a ZAM bol odstavený z prevádzky, v súčasnosti je uložený na základni Sliač, nebol modernizovaný.</p><p><strong>Lietadlo bolo presunuté do LOTN (generálna oprava + modernizácia) kde dostalo novú šedú kamufláž. Dňa 06.03.2013 bol vykonaný fabrický zálet po GO a dňa 08.04.2013 bol preletený mjr. Kandom na Sliač.</strong></p>
                 <div class="row">
                     <div class="large-6 columns">
-                        <img alt="L-39 4711" src="assets/img/slovenske-albatrosy/4711.jpg">
+                        <img alt="L-39 4711" src="/assets/img/slovenske-albatrosy/4711.jpg">
                     </div>
                     <div class="large-6 columns">
-                        <img alt="4711" src="assets/img/slovenske-albatrosy/4711_1.jpg">
+                        <img alt="4711" src="/assets/img/slovenske-albatrosy/4711_1.jpg">
                     </div>
                 </div>
             </div>
@@ -356,3 +358,4 @@ a dňa 26.10.2012 bol preletený mjr. Labudíkom späť na Sliač.</strong></p>
         </div>
     </section>
 </article>
+<?php include ('includes/footer.inc.php');    ?>
