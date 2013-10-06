@@ -1,7 +1,7 @@
 <?php include ('includes/header.inc.php'); ?>
 <?php include ('includes/menu.inc.php'); ?>
 <div class="head-photo">
-    <img src="assets/img/slides/vanderende1.jpg" alt="L-39 ZAM Albatros by Cees-Jan van der Ende">
+    <img src="/assets/img/slides/vanderende1.jpg" alt="L-39 ZAM Albatros by Cees-Jan van der Ende">
 </div>
 
 <article>
@@ -14,14 +14,14 @@
                 <p>Letka je zložená z&nbsp;veliteľstva letky, štábu letky a&nbsp;dvoch rojov. Štáb letky tvorí náčelník štábu, výkonný poddôstojník a&nbsp;administratívny pracovník. Zástupcovi veliteľa pre ILS sú podriadení členovia skupín špecialistov pre výzbroj, rádio, elektrické systémy, skupiny opráv, technického zabezpečenia a&nbsp;obsluhy trenažéra. Roje letky tvoria velitelia rojov, kapitáni lietadiel, starší piloti, piloti lietadiel, technici roja, starší technici a&nbsp;technici.</p>
             </div>
             <div class="large-3 columns">
-                <img src="assets/img/logo-2sqn-full.png" class="hide-for-small" alt="logo 2SQN">
+                <img src="/assets/img/logo-2sqn-full.png" class="hide-for-small" alt="logo 2SQN">
             </div>
         </div>
     </section>
     <section class="uvodni-slovo">
         <div class="row">
             <div class="large-2 columns text-center">
-                <img src="assets/img/lolo.png" class="fig-image" alt="logo 2SQN">
+                <img src="/assets/img/lolo.png" class="fig-image" alt="logo 2SQN">
                 <p class="fig-caption text-center">pplk. Ing. Roman Poláček, veliteľ 2.&nbsp;letky</p>
             </div>
             <div class="large-10 columns">

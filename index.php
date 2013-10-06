@@ -43,6 +43,7 @@ $availableLangs = array('sk', 'en');
 
     // výchozí jazyk je první poli s jazyky
     $app->defaultLang = $lang = $availableLangs[0];
+    $app->availableLangs = $availableLangs;
 
     // pro homepage zkusíme nadetekovat správný jazyk automaticky
     if ($env['PATH_INFO'] == '/') {
@@ -148,7 +149,7 @@ $app->post('/login', function () use ($app, $req) {
                     $_SESSION['time'] = $casova_znacka; /* Nečinný uživatel vydrží přihlášený $ttl minut od tohoto času - místo CODE - viz kontrola.php */
 
                     if ($_POST['origin'] == '/login') {
-                        $errors .= '<div data-alert="" class="alert-box success">Prihlásenie bolo úspešné :-)</div>';
+                        $errors .= '<div data-alert="" class="alert-box success">'.$app->tr["login_success"].'</div>';
                         $login_success = true;
                     } else {
                         $app->redirect($_POST['origin']); /* a pošleme přihlášeného uživatele na původní stránku */
@@ -162,11 +163,11 @@ $app->post('/login', function () use ($app, $req) {
                     unset($_SESSION['regcas']);
                     unset($_SESSION['lastlog']);
                     session_destroy();
-                    $errors .= '<div data-alert="" class="alert-box alert">Použili ste zlé heslo!</div>'; /* Místo vypsání textu můžeme rovnou zobrazit úvodní stránku s hláškou o špatném hesle (header(index.php?hlaska="Zlé heslo, vyskúšaj znova");) pokud tu funkci na zobrazení hlášek do index.php doplníme :-) V takovém případě by pak bylo lepší se na hlášky odkazovat chybovým kódem (header(index.php?chyba=heslo);) než je předávat přes URL a na základě jej je zobrazovat přes switch(). Případně tomu udělat speciální stránku s výpisem chyb... */
+                    $errors .= '<div data-alert="" class="alert-box alert">'.$app->tr["login_wrongpass"].'</div>'; /* Místo vypsání textu můžeme rovnou zobrazit úvodní stránku s hláškou o špatném hesle (header(index.php?hlaska="Zlé heslo, vyskúšaj znova");) pokud tu funkci na zobrazení hlášek do index.php doplníme :-) V takovém případě by pak bylo lepší se na hlášky odkazovat chybovým kódem (header(index.php?chyba=heslo);) než je předávat přes URL a na základě jej je zobrazovat přes switch(). Případně tomu udělat speciální stránku s výpisem chyb... */
                 } // konec IF pokud heslo souhlasi
             }
             else {
-                $errors .= '<div data-alert="" class="alert-box alert">Je mi ľúto, takého užívateľa nepoznám!</div>';
+                $errors .= '<div data-alert="" class="alert-box alert">'.$app->tr["login_unknownuser"].'</div>';
             } // konec IF jestli existuje záznam o uživateli
             mysql_close($db); // zavřeme spojení s databází
             ?>
@@ -224,13 +225,13 @@ $app->post('/registracia', function () use ($app, $req) {
     if (isset($_POST['login']) && isset($_POST['heslo']) && isset($_POST['hesloover'])){
         // skontroluje ?~Mi su všetky poli?~Mka vyplnené
         if ($_POST['login'] == "" || $_POST['heslo'] == "" || $_POST['email'] == "" || $_POST['hesloover']== "") {
-            $errors .= '<div data-alert="" class="alert-box alert">Nevyplnili ste všetky povinné údaje!</div>';
+            $errors .= '<div data-alert="" class="alert-box alert">'.$app->tr["reg_incomplete"].'</div>';
             $errors_count++;
         }
 
         // skontroluje ?~Mi je heslo a overenie hesla rovnake
         if ($_POST['heslo'] != $_POST['hesloover']){
-            $errors .= '<div data-alert="" class="alert-box alert">Vložená hesla nesúhlasí!</div>';
+            $errors .= '<div data-alert="" class="alert-box alert">'.$app->tr["reg_diffpasswords"].'</div>';
             $errors_count++;
         }
 
@@ -243,7 +244,7 @@ $app->post('/registracia', function () use ($app, $req) {
         $num = mysql_num_rows($result);
 
         if ($num != 0){
-            $errors .= '<div data-alert="" class="alert-box alert">Takéto užívateľské meno už existuje, zvoľte iné.</div>';
+            $errors .= '<div data-alert="" class="alert-box alert">'.$app->tr["reg_usernametaken"].'</div>';
             $errors_count++;
             unset($_POST['login']);
         }
@@ -271,7 +272,7 @@ $app->post('/registracia', function () use ($app, $req) {
             unset($_POST['hesloover']);
 
             // Vypíšeme zprávu o úspěšné registraci
-            $errors .= '<div data-alert="" class="alert-box success">Registrácia bola úspešna! Prihláste sa :-)</div>';
+            $errors .= '<div data-alert="" class="alert-box success">'.$app->tr["reg_success"].'</div>';
         }
         mysql_close($db); // zavřeme spojení s databází
         ?>
@@ -361,16 +362,16 @@ $app->post('/upload_picture', function () use ($app, $req) {
                                                                    null);
                             $photoLayer->addLayerOnTop($textLayer, 0, 20, 'MB');
                             $photoLayer->save($cil, $rename_foto, false, null, 95);
-                            $errors .= '<div data-alert="" class="alert-box success">Obrázok bol úspešne uložený.</div><p><a href="/galeria?dir='.$dir.'"><strong>Pokračujte do albumu</strong></a>';
-                            // Tady chybí kontrola jeslti se ten obrázek uložil do správného adresáře!!!
+                            $errors .= '<div data-alert="" class="alert-box success">'.$app->tr["upload_success"].'</div><p><a href="/galeria?dir='.$dir.'"><strong>'.$app->tr["upload_successcont"].'</strong></a>';
+                            // Tady chybí kontrola jestli se ten obrázek uložil do správného adresáře!!!
                         } else {
-                            $errors .= '<div data-alert="" class="alert-box alert">Nahrávanie fotografie zlyhalo, súbor s rovnakým názvom už existuje.</div><p>Premenujte obrázok a skúste to znova.</p>';
+                            $errors .= '<div data-alert="" class="alert-box alert">'.$app->tr["upload_samename"].'</div><p>'.$app->tr["upload_samenamecont"].'</p>';
                         }
                     }   // Konotrola veliksoti nahrávaného obrázku
-                else { $errors .= '<div data-alert="" class="alert-box alert">Obrázok je príliš veľký! ('.$sirka.'x'.$vyska.'px)</div><p>Zmenšite ho na 1280px šírku maximálne a skúste to znova.</p>'; }
+                else { $errors .= '<div data-alert="" class="alert-box alert">'.$app->tr["upload_toobig"].' ('.$sirka.'x'.$vyska.'px)</div><p>'.$app->tr["upload_toobigcont"].'</p>'; }
             }   // kontrola jestli se jedna o uploadnuty soubor
         }   // kontrola jestli je to JPG
-        else { '<div data-alert="" class="alert-box alert">Nahrávať môžete len snímky vo formáte JPG!</div><p>Zkonvertujte obrázok a skúste to znova.</p>'; }
+        else { '<div data-alert="" class="alert-box alert">'.$app->tr["upload_wrongtype"].'</div><p>'.$app->tr["upload_wrongtypecont"].'</p>'; }
         // Následuje výpis chyb
         ?>
         <div class="errors">
@@ -405,10 +406,10 @@ $app->post('/forum', function () use ($app, $req) {
         $sprava_odoslat = gb_sprava_odoslat($_SESSION['login'], $_POST["sprava"], $_SERVER["REMOTE_ADDR"]);
         mysql_close($db); // zavřeme spojení s databází
 
-        if(!$sprava_odoslat) {  echo "Vyskytla sa chyba! Pravdepodobne ste nezadali všetky údaje správne.";  }
+        if(!$sprava_odoslat) {  echo $app->tr["forum_error_incomplete"];  }
         else { $app->redirect('/forum'); }
     } else {
-        echo "Pro odeslání zprávy musíte být přihlášení";
+        echo $app->tr["forum_error_notloggedin"];;
     }
 });
 

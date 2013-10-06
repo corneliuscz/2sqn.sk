@@ -71,7 +71,7 @@
 }
 
 .cbp-hrmenu > ul > li > a {
-    padding: 0.8em 0.7em 0.7em 0.7em;
+    padding: 0.6em 0.7em 0.65em 0.7em;
     color: $clouds;
     display: inline-block;
 }
@@ -83,6 +83,10 @@
 
     padding: 0;
     text-align: left;
+}
+
+.cbp-hrmenu > ul > li > a.language {
+    color: $concrete;
 }
 
 a.home-sec {
@@ -173,9 +177,9 @@ nav a#pull {
     display: none;
 }
 
-/* Změna menu pro displeje s šířkou menší 860px */
+/* Změna menu pro displeje s šířkou menší 910px */
 
-@media screen and (max-width: 53.75em) {
+@media screen and (max-width: 56.875em) {
 
     .cbp-hrmenu > ul {
         //text-align: center;
@@ -205,9 +209,9 @@ nav a#pull {
 
 //@media screen and (max-width: 37.5em) {
 
-/* Změna pro displeje s šířkou pod 752px */
+/* Změna pro displeje s šířkou pod 840px */
 
-@media screen and (max-width: 47em) {
+@media screen and (max-width: 52.5em) {
 
     .row nav.columns {
         padding: 0;
@@ -251,12 +255,12 @@ nav a#pull {
         font-size: 1.2em;
         padding-left: 0;
 
-        overflow: hidden;
+        //overflow: hidden;
 
         //background-position: 100% 50%;
 
         img {
-            vertical-align: middle;
+            vertical-align: top;
             margin-right: 0.5em;
         }
     }
@@ -277,7 +281,8 @@ nav a#pull {
         color: $clouds;
     }
 
-    .cbp-hrmenu > ul > li h4 a:hover , .cbp-hrsub h4 a:hover {
+    .cbp-hrmenu > ul > li h4 a:hover,
+    .cbp-hrsub h4 a:hover {
         color: $lightblue;
     }
 
@@ -370,7 +375,7 @@ nav[role=navigation].active {
     max-height: 99em;
 }
 
-@media screen and (min-width: 47em) {
+@media screen and (min-width: 52.5em) {
     a.menu-link {
         display: none;
     }

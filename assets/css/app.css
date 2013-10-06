@@ -4773,7 +4773,7 @@ strong {
 }
 
 .cbp-hrmenu > ul > li > a {
-  padding: 0.8em 0.7em 0.7em 0.7em;
+  padding: 0.6em 0.7em 0.65em 0.7em;
   color: #ecf0f1;
   display: inline-block;
 }
@@ -4784,6 +4784,10 @@ strong {
   left: -1em;
   padding: 0;
   text-align: left;
+}
+
+.cbp-hrmenu > ul > li > a.language {
+  color: #95a5a6;
 }
 
 a.home-sec {
@@ -4869,8 +4873,8 @@ nav a#pull {
   display: none;
 }
 
-/* Změna menu pro displeje s šířkou menší 860px */
-@media screen and (max-width: 53.75em) {
+/* Změna menu pro displeje s šířkou menší 910px */
+@media screen and (max-width: 56.875em) {
   .cbp-hrmenu .cbp-hrsub .inner {
     padding: 0 0.9375em;
   }
@@ -4886,8 +4890,8 @@ nav a#pull {
     display: none;
   }
 }
-/* Změna pro displeje s šířkou pod 752px */
-@media screen and (max-width: 47em) {
+/* Změna pro displeje s šířkou pod 840px */
+@media screen and (max-width: 52.5em) {
   .row nav.columns {
     padding: 0;
   }
@@ -4929,10 +4933,9 @@ nav a#pull {
     display: inline-block;
     font-size: 1.2em;
     padding-left: 0;
-    overflow: hidden;
   }
   a.home-sec img {
-    vertical-align: middle;
+    vertical-align: top;
     margin-right: 0.5em;
   }
 
@@ -4952,7 +4955,8 @@ nav a#pull {
     color: #ecf0f1;
   }
 
-  .cbp-hrmenu > ul > li h4 a:hover, .cbp-hrsub h4 a:hover {
+  .cbp-hrmenu > ul > li h4 a:hover,
+  .cbp-hrsub h4 a:hover {
     color: #afdefa;
   }
 
@@ -5038,7 +5042,7 @@ nav[role=navigation].active {
   max-height: 99em;
 }
 
-@media screen and (min-width: 47em) {
+@media screen and (min-width: 52.5em) {
   a.menu-link {
     display: none;
   }

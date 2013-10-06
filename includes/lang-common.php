@@ -1,2 +1,4 @@
 <?php
-$tr['klic'] = 'Pøeložený text';
+$tr['klic'] = 'PÅ™eloÅ¾enÃ½ text';
+
+$tr['news_nonews'] = 'We are sorry but there are no news for this language.';

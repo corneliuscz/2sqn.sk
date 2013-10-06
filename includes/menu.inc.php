@@ -6,45 +6,45 @@
                 <nav id="cbp-hrmenu" class="cbp-hrmenu large-12 columns" role="navigation">
                     <ul>
                         <li class="homelink">
-                            <a class="home" href="/"><img src="<?php echo $app->config('server_url'); ?>assets/img/logo-2sqn.png" alt=""></a>
+                            <a class="home" href="/<?php echo $app->lang; ?>/"><img src="<?php echo $app->config('server_url'); ?>assets/img/logo-2sqn.png" alt=""></a>
                         </li>
                         <li>
-                            <a href="/novinky"><?php echo $app->tr['news']; ?></a>
+                            <a href="/<?php echo $app->lang; ?>/novinky"><?php echo $app->tr['news']; ?></a>
                         </li>
                         <li>
-                            <a href="#" class="dropdown">o letke</a>
+                            <a href="#" class="dropdown"><?php echo $app->tr['sqn']; ?></a>
                             <div class="cbp-hrsub">
                                 <div class="row">
                                     <div class="large-4 small-12 columns">
                                         <div class="inner">
-                                        <h4><a href="/<?php echo $app->lang; ?>/o-letke">Výcviková letka</a></h4>
+                                        <h4><a href="/<?php echo $app->lang; ?>/o-letke"><?php echo $app->tr['trnsqn']; ?></a></h4>
                                         <ul>
-                                            <li><a href="/<?php echo $app->lang; ?>/o-letke#historia">História letky</a></li>
-                                            <li><a href="/<?php echo $app->lang; ?>/o-letke#velitelia">Velitelia letky</a></li>
-                                            <li><a href="/<?php echo $app->lang; ?>/o-letke#piloti">Lietajúci personál</a></li>
-                                            <li><a href="/<?php echo $app->lang; ?>/o-letke#stab">Štábni piloti</a></li>
-                                            <li><a href="/<?php echo $app->lang; ?>/o-letke#technici">Technický a&nbsp;zabezpečujúci personál</a></li>
+                                            <li><a href="/<?php echo $app->lang; ?>/o-letke#historia"><?php echo $app->tr['sqnhistory']; ?></a></li>
+                                            <li><a href="/<?php echo $app->lang; ?>/o-letke#velitelia"><?php echo $app->tr['CO']; ?></a></li>
+                                            <li><a href="/<?php echo $app->lang; ?>/o-letke#piloti"><?php echo $app->tr['fliers']; ?></a></li>
+                                            <li><a href="/<?php echo $app->lang; ?>/o-letke#stab"><?php echo $app->tr['staff']; ?></a></li>
+                                            <li><a href="/<?php echo $app->lang; ?>/o-letke#technici"><?php echo $app->tr['tech']; ?></a></li>
                                         </ul>
                                         </div>
                                     </div>
                                     <div class="large-4 small-12 columns">
                                         <div class="inner">
-                                        <h4><a href="/<?php echo $app->lang; ?>/albatros">L-39 albatros</a></h4>
+                                        <h4><a href="/<?php echo $app->lang; ?>/albatros"><?php echo $app->tr['l-39title']; ?></a></h4>
                                         <ul>
-                                            <li><a href="/<?php echo $app->lang; ?>/albatros#albatros">Stručný popis</a></li>
-                                            <li><a href="/<?php echo $app->lang; ?>/albatros#albatrosy">Slovenské Albatrosy</a></li>
-                                            <li><a href="/<?php echo $app->lang; ?>/walkaround">L-39CM/ZAM walkaround</a></li>
-                                            <li><a href="/<?php echo $app->lang; ?>/nehody">Nehody L-39</a></li>
+                                            <li><a href="/<?php echo $app->lang; ?>/albatros#albatros"><?php echo $app->tr['l-39intro']; ?></a></li>
+                                            <li><a href="/<?php echo $app->lang; ?>/albatros#albatrosy"><?php echo $app->tr['slovakl-39']; ?></a></li>
+                                            <li><a href="/<?php echo $app->lang; ?>/walkaround"><?php echo $app->tr['l-39walkaround']; ?></a></li>
+                                            <li><a href="/<?php echo $app->lang; ?>/nehody"><?php echo $app->tr['l-39accidents']; ?></a></li>
                                         </ul>
                                         </div>
                                     </div>
                                     <div class="large-4 small-12 columns">
                                         <div class="inner">
-                                        <h4><a href="/<?php echo $app->lang; ?>/lzsl">LZ Sliač</a></h4>
+                                        <h4><a href="/<?php echo $app->lang; ?>/lzsl"><?php echo $app->tr['lzsl']; ?></a></h4>
                                         <ul>
-                                            <li><a href="/<?php echo $app->lang; ?>/lzsl#historia">História</a></li>
-                                            <li><a href="/<?php echo $app->lang; ?>/lzsl#rekonstrukcia">Rekonštrukcia letiska</a></li>
-                                            <li><a href="/<?php echo $app->lang; ?>/lzsl#udaje">Údaje letiska</a></li>
+                                            <li><a href="/<?php echo $app->lang; ?>/lzsl#historia"><?php echo $app->tr['lzslhistory']; ?></a></li>
+                                            <li><a href="/<?php echo $app->lang; ?>/lzsl#rekonstrukcia"><?php echo $app->tr['lzslreconstruction']; ?></a></li>
+                                            <li><a href="/<?php echo $app->lang; ?>/lzsl#udaje"><?php echo $app->tr['lzsldata']; ?></a></li>
                                         </ul>
                                         </div>
                                     </div>
@@ -52,12 +52,12 @@
                             </div><!-- /cbp-hrsub -->
                         </li>
                         <li>
-                            <a href="#" class="dropdown">foto&amp;video</a>
+                            <a href="#" class="dropdown"><?php echo $app->tr['photovideo']; ?></a>
                             <div class="cbp-hrsub">
                                 <div class="row">
                                     <div class="large-4 small-12 columns">
                                         <div class="inner">
-                                            <h4><a href="/galeria">Fotky</a></h4>
+                                            <h4><a href="/galeria"><?php echo $app->tr['photos']; ?></a></h4>
                                             <ul>
                                                 <li><a href="/galeria?dir=2.SQN%20by%20cjvanderende.com">2.SQN by cjvanderende.com</a></li>
                                                 <li><a href="/galeria?dir=2.SQN%20by%20Ondrej%20Maliniak">2.SQN by Ondrej Maliniak</a></li>
@@ -75,21 +75,21 @@
                                         <div class="inner">
                                             <h4 class="hide-for-small">&nbsp;</h4>
                                             <ul>
-                                                <li><a href="/galeria?dir=Prvé%20sóla%20L-39">Prvé sóla L-39</a></li>
-                                                <li><a href="/galeria?dir=Posledný%20let%20na%20L-39">Posledný let na L-39</a></li>
+                                                <li><a href="/galeria?dir=Prvé%20sóla%20L-39"><?php echo $app->tr['photos_firstsolos']; ?></a></li>
+                                                <li><a href="/galeria?dir=Posledný%20let%20na%20L-39"></a><?php echo $app->tr['photos_lastflights']; ?></li>
                                                 <li><a href="/galeria?dir=L-39%205301%200tto%20Smik">L-39 5301 0tto Smik</a></li>
-                                                <li><a href="/galeria?dir=Rozlúčka%200730">Rozlúčka 0730</a></li>
-                                                <li><a href="/galeria?dir=Virtuálna%20letka">Virtuálna letka</a></li>
-                                                <li><a href="/galeria?dir=Vaše%20fotky">Vaše fotky</a></li>
+                                                <li><a href="/galeria?dir=Rozlúčka%200730"><?php echo $app->tr['photos_0730farewell']; ?></a></li>
+                                                <li><a href="/galeria?dir=Virtuálna%20letka"><?php echo $app->tr['photos_virtual']; ?></a></li>
+                                                <li><a href="/galeria?dir=Vaše%20fotky"><?php echo $app->tr['photos_your']; ?></a></li>
                                             </ul>
                                         </div>
                                     </div>
                                     <div class="large-4 small-12 columns">
                                         <div class="inner">
-                                            <h4><a href="/<?php echo $app->lang; ?>/videa">Videa</a></h4>
+                                            <h4><a href="/<?php echo $app->lang; ?>/videa"><?php echo $app->tr['videos']; ?></a></h4>
                                             <ul>
-                                                <li><a href="/<?php echo $app->lang; ?>/videa">Skupinové lietanie</a></li>
-                                                <li><a href="/<?php echo $app->lang; ?>/videa">Display promo video 2012</a></li>
+                                                <li><a href="/<?php echo $app->lang; ?>/videa"><?php echo $app->tr['videos_formations']; ?></a></li>
+                                                <li><a href="/<?php echo $app->lang; ?>/videa"><?php echo $app->tr['videos_display2012']; ?></a></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -97,16 +97,23 @@
                             </div><!-- /cbp-hrsub -->
                         </li>
                         <li>
-                            <a href="/<?php echo $app->lang; ?>/odkazy">odkazy</a>
+                            <a href="/<?php echo $app->lang; ?>/odkazy"><?php echo $app->tr['links']; ?></a>
                         </li>
                         <li>
-                            <a href="/<?php echo $app->lang; ?>/na-stiahnutie">na stiahnutie</a>
+                            <a href="/<?php echo $app->lang; ?>/na-stiahnutie"><?php echo $app->tr['downloads']; ?></a>
                         </li>
                         <li>
-                            <a href="/<?php echo $app->lang; ?>/forum">fórum</a>
+                            <a href="/<?php echo $app->lang; ?>/forum"><?php echo $app->tr['forum']; ?></a>
                         </li>
                         <li>
-                            <a href="http://fan2sqn.com/eshop/" class="last">fan shop</a>
+                            <a href="http://fan2sqn.com/eshop/">fan shop</a>
+                        </li>
+                        <li>
+                            <?php
+                                if ( $app->lang == $app->availableLangs[0] ) { $switchLang = $app->availableLangs[1]; }
+                                else { $switchLang = $app->availableLangs[0]; }
+                            ?>
+                            <a href="<?php echo $app->config('server_url').$switchLang.$app->environment['PATH_INFO']; ?>" class="language last" title="<?php echo $app->tr['langswitch']; ?>">| <?php echo $switchLang; ?></a>
                         </li>
                     </ul>
                     <a href="#" id="pull">Menu</a>
