@@ -57,17 +57,17 @@
                                 <div class="row">
                                     <div class="large-4 small-12 columns">
                                         <div class="inner">
-                                            <h4><a href="/galeria"><?php echo $app->tr['photos']; ?></a></h4>
+                                            <h4><a href="/<?php echo $app->lang; ?>/galeria"><?php echo $app->tr['photos']; ?></a></h4>
                                             <ul>
-                                                <li><a href="/galeria?dir=2.SQN%20by%20cjvanderende.com">2.SQN by cjvanderende.com</a></li>
-                                                <li><a href="/galeria?dir=2.SQN%20by%20Ondrej%20Maliniak">2.SQN by Ondrej Maliniak</a></li>
-                                                <li><a href="/galeria?dir=MACE%20XIII">MACE XIII</a></li>
-                                                <li><a href="/galeria?dir=Desert%20Thunder%202011">Desert Thunder 2011</a></li>
-                                                <li><a href="/galeria?dir=Serpentex%202011">Serpentex 2011</a></li>
-                                                <li><a href="/galeria?dir=Slovak%20Hawk%202007">Slovak Hawk 2007</a></li>
-                                                <li><a href="/galeria?dir=SIAF%202013">SIAF 2013</a></li>
-                                                <li><a href="/galeria?dir=SIAF%202012">SIAF 2012</a></li>
-                                                <li><a href="/galeria?dir=SIAF%202011">SIAF 2011</a></li>
+                                                <li><a href="/<?php echo $app->lang; ?>/galeria?dir=2.SQN%20by%20cjvanderende.com">2.SQN by cjvanderende.com</a></li>
+                                                <li><a href="/<?php echo $app->lang; ?>/galeria?dir=2.SQN%20by%20Ondrej%20Maliniak">2.SQN by Ondrej Maliniak</a></li>
+                                                <li><a href="/<?php echo $app->lang; ?>/galeria?dir=MACE%20XIII">MACE XIII</a></li>
+                                                <li><a href="/<?php echo $app->lang; ?>/galeria?dir=Desert%20Thunder%202011">Desert Thunder 2011</a></li>
+                                                <li><a href="/<?php echo $app->lang; ?>/galeria?dir=Serpentex%202011">Serpentex 2011</a></li>
+                                                <li><a href="/<?php echo $app->lang; ?>/galeria?dir=Slovak%20Hawk%202007">Slovak Hawk 2007</a></li>
+                                                <li><a href="/<?php echo $app->lang; ?>/galeria?dir=SIAF%202013">SIAF 2013</a></li>
+                                                <li><a href="/<?php echo $app->lang; ?>/galeria?dir=SIAF%202012">SIAF 2012</a></li>
+                                                <li><a href="/<?php echo $app->lang; ?>/galeria?dir=SIAF%202011">SIAF 2011</a></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -75,12 +75,12 @@
                                         <div class="inner">
                                             <h4 class="hide-for-small">&nbsp;</h4>
                                             <ul>
-                                                <li><a href="/galeria?dir=Prvé%20sóla%20L-39"><?php echo $app->tr['photos_firstsolos']; ?></a></li>
-                                                <li><a href="/galeria?dir=Posledný%20let%20na%20L-39"></a><?php echo $app->tr['photos_lastflights']; ?></li>
-                                                <li><a href="/galeria?dir=L-39%205301%200tto%20Smik">L-39 5301 0tto Smik</a></li>
-                                                <li><a href="/galeria?dir=Rozlúčka%200730"><?php echo $app->tr['photos_0730farewell']; ?></a></li>
-                                                <li><a href="/galeria?dir=Virtuálna%20letka"><?php echo $app->tr['photos_virtual']; ?></a></li>
-                                                <li><a href="/galeria?dir=Vaše%20fotky"><?php echo $app->tr['photos_your']; ?></a></li>
+                                                <li><a href="/<?php echo $app->lang; ?>/galeria?dir=Prvé%20sóla%20L-39"><?php echo $app->tr['photos_firstsolos']; ?></a></li>
+                                                <li><a href="/<?php echo $app->lang; ?>/galeria?dir=Posledný%20let%20na%20L-39"><?php echo $app->tr['photos_lastflights']; ?></a></li>
+                                                <li><a href="/<?php echo $app->lang; ?>/galeria?dir=L-39%205301%200tto%20Smik">L-39 5301 0tto Smik</a></li>
+                                                <li><a href="/<?php echo $app->lang; ?>/galeria?dir=Rozlúčka%200730"><?php echo $app->tr['photos_0730farewell']; ?></a></li>
+                                                <li><a href="/<?php echo $app->lang; ?>/galeria?dir=Virtuálna%20letka"><?php echo $app->tr['photos_virtual']; ?></a></li>
+                                                <li><a href="/<?php echo $app->lang; ?>/galeria?dir=Vaše%20fotky"><?php echo $app->tr['photos_your']; ?></a></li>
                                             </ul>
                                         </div>
                                     </div>

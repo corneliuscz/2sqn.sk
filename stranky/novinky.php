@@ -21,8 +21,6 @@ $view_number = 30;
 $start = $page*$view_number;
 $message = MySQL_Query("SELECT * FROM board WHERE `subject-$app->lang` IS NOT NULL ORDER BY number DESC LIMIT $start,$view_number") or die($query_error);
 
-global $server_url;
-
 while ($riadok = MySQL_Fetch_Array($message)):
  ?>
         <?php if (!empty($riadok["pict"])) { ?>
@@ -35,7 +33,7 @@ while ($riadok = MySQL_Fetch_Array($message)):
         <?php if (!empty($riadok["pict"])) { ?>
             <div class="row">
                 <div class="large-6 columns">
-                    <img src="<?php echo $server_url; ?>assets/img/novinky/<?php echo $riadok['pict']; ?>" class="novinka">
+                    <img src="<?php echo $app->config('server_url'); ?>assets/img/novinky/<?php echo $riadok['pict']; ?>" class="novinka">
                 </div>
                 <div class="large-6 columns">
         <?php } ?>

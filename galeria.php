@@ -162,7 +162,7 @@ $dirs = array();
                         $dirs[] = array(
                             "name" => $file,
                             "date" => filemtime($currentdir . "/" . $file . "/folder.jpg"),
-                            "html" => "<div class=\"img-container\"><a href='/galeria?dir=" .ltrim($_GET['dir'] . "/" . $file, "/") . "'><img src='" . GALLERY_ROOT . "createthumb.php?filename=$currentdir/" . $file . "/folder.jpg&amp;size=$thumb_size'  alt='$label_loading' /><em>" . padstring($file, $label_max_length) . "</em></a></div>");
+                            "html" => "<div class=\"img-container\"><a href='/".$app->lang."/galeria?dir=" .ltrim($_GET['dir'] . "/" . $file, "/") . "'><img src='/" . GALLERY_ROOT . "createthumb.php?filename=$currentdir/" . $file . "/folder.jpg&amp;size=$thumb_size'  alt='$label_loading' /><em>" . padstring($file, $label_max_length) . "</em></a></div>");
                     }  else
                     {
                     // Set thumbnail to first image found (if any):
@@ -172,13 +172,13 @@ $dirs = array();
                         $dirs[] = array(
                             "name" => $file,
                             "date" => filemtime($currentdir . "/" . $file),
-                            "html" => "<div class=\"img-container\"><a href='/galeria?dir=" . ltrim($_GET['dir'] . "/" . $file, "/") . "'><img src='" . GALLERY_ROOT . "createthumb.php?filename=$thumbdir/" . $file . "/" . $firstimage . "&amp;size=$thumb_size'  alt='$label_loading' /><em>" . padstring($file, $label_max_length) . "</em></a></div>");
+                            "html" => "<div class=\"img-container\"><a href='/".$app->lang."/galeria?dir=" . ltrim($_GET['dir'] . "/" . $file, "/") . "'><img src='/" . GALLERY_ROOT . "createthumb.php?filename=$thumbdir/" . $file . "/" . $firstimage . "&amp;size=$thumb_size'  alt='$label_loading' /><em>" . padstring($file, $label_max_length) . "</em></a></div>");
                         } else {
                         // If no folder.jpg or image is found, then display default icon:
                             $dirs[] = array(
                                 "name" => $file,
                                 "date" => filemtime($currentdir . "/" . $file),
-                                "html" => "<div class=\"img-container\"><a href='/galeria?dir=" . ltrim($_GET['dir'] . "/" . $file, "/") . "'><img src='" . GALLERY_ROOT . "assets/img/folder_" . strtolower($folder_color) . ".png' width='$thumb_size' height='$thumb_size' alt='$label_loading' /><em>" . padstring($file) . "</em></a></div>");
+                                "html" => "<div class=\"img-container\"><a href='/".$app->lang."/galeria?dir=" . ltrim($_GET['dir'] . "/" . $file, "/") . "'><img src='/" . GALLERY_ROOT . "assets/img/folder_" . strtolower($folder_color) . ".png' width='$thumb_size' height='$thumb_size' alt='$label_loading' /><em>" . padstring($file) . "</em></a></div>");
                         }
                     }
                 }
@@ -215,7 +215,7 @@ if (file_exists($currentdir ."/captions.txt"))
                             "name" => $file,
                             "date" => filemtime($currentdir . "/" . $file),
                             "size" => filesize($currentdir . "/" . $file),
-                            "html" => "<div class=\"img-container\"><a href='" . $currentdir . "/" . $file . "'  class='fancybox' rel='group' title='$img_captions[$file]'><img src='" . GALLERY_ROOT . "createthumb.php?filename=" . $thumbdir . "/" . $file . "&amp;size=$thumb_size' alt='$label_loading' /></a></div>");
+                            "html" => "<div class=\"img-container\"><a href='/" . $currentdir . "/" . $file . "'  class='fancybox' rel='group' title='$img_captions[$file]'><img src='/" . GALLERY_ROOT . "createthumb.php?filename=" . $thumbdir . "/" . $file . "&amp;size=$thumb_size' alt='$label_loading' /></a></div>");
                       }
                     // Other filetypes
                     $extension = "";
@@ -234,7 +234,7 @@ if (file_exists($currentdir ."/captions.txt"))
                               "name" => $file,
                             "date" => filemtime($currentdir . "/" . $file),
                             "size" => filesize($currentdir . "/" . $file),
-                              "html" => "<div class=\"img-container\"><a href='" . $currentdir . "/" . $file . "' title='$file'><em-pdf>" . padstring($file, 20) . "</em-pdf><img src='" . GALLERY_ROOT . "images/filetype_" . $extension . ".png' width='$thumb_size' height='$thumb_size' alt='$file' /></a></div>");
+                              "html" => "<div class=\"img-container\"><a href='/" . $currentdir . "/" . $file . "' title='$file'><em-pdf>" . padstring($file, 20) . "</em-pdf><img src='/" . GALLERY_ROOT . "images/filetype_" . $extension . ".png' width='$thumb_size' height='$thumb_size' alt='$file' /></a></div>");
                     }
                  }
     }
@@ -294,12 +294,12 @@ if (sizeof($dirs) + sizeof($files) > $thumbs_pr_page)
         if ($_GET["page"] == $i)
             $page_navigation .= "$i";
             else
-                $page_navigation .= "<a href='/galeria?dir=" . $_GET["dir"] . "&amp;page=" . ($i) . "'>" . $i . "</a>";
+                $page_navigation .= "<a href='/".$app->lang."/galeria?dir=" . $_GET["dir"] . "&amp;page=" . ($i) . "'>" . $i . "</a>";
         if ($i != ceil((sizeof($files) + sizeof($dirs)) / $thumbs_pr_page)) $page_navigation .= " | ";
     }
     //Insert link to view all images
     if ($_GET["page"] == "all") $page_navigation .= " | $label_all";
-    else $page_navigation .= " | <a href='/galeria?dir=" . $_GET["dir"] . "&amp;page=all'>$label_all</a>";
+    else $page_navigation .= " | <a href='/".$app->lang."/galeria?dir=" . $_GET["dir"] . "&amp;page=all'>$label_all</a>";
 }
 
 //-----------------------
@@ -307,7 +307,7 @@ if (sizeof($dirs) + sizeof($files) > $thumbs_pr_page)
 //-----------------------
 if ($_GET['dir'] != "")
 {
-    $breadcrumb_navigation .= "<li><a href='/galeria?dir='>" . $label_home . "</a></li>";
+    $breadcrumb_navigation .= "<li><a href='/".$app->lang."/galeria?dir='>" . $label_home . "</a></li>";
     $navitems = explode("/", $_REQUEST['dir']);
     $navitems_size = sizeof($navitems);
 
@@ -316,7 +316,7 @@ if ($_GET['dir'] != "")
         if ($i == $navitems_size-1) $breadcrumb_navigation .= '<li class="current"><a href="">'.$navitems[$i].'</a></li>';
         else
         {
-            $breadcrumb_navigation .= "<li><a href='/galeria?dir=";
+            $breadcrumb_navigation .= "<li><a href='/".$app->lang."/galeria?dir=";
             for ($x = 0; $x <= $i; $x++)
             {
                 $breadcrumb_navigation .= $navitems[$x];
@@ -428,4 +428,4 @@ $galleryname = trim($_GET['dir']);
             </div>
     <?php }
 ?>
-<?php include ('includes/footer.inc.php');    ?>
+<?php include ('includes/footer.inc.php'); ?>
