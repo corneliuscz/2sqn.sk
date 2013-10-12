@@ -14,8 +14,7 @@ if (mysql_num_rows($novinka)) { // Novinka existuje
     if (!empty($riadok ["head-".$app->lang]))       { $uvodnik = $riadok["head-".$app->lang]; } else { $uvodnik = $riadok["head-".$app->defaultLang]; }
     if (!empty($riadok ["body-".$app->lang]))       { $text = $riadok["body-".$app->lang]; } else { $text = $riadok["body-".$app->defaultLang]; }
 ?>
-    <div class="head-photo novinka-detail <?php if (empty($riadok["pict"])) echo 'no-pic'; ?>">
-        <?php if (!empty($riadok["pict"])) echo '<img src="'.$app->config('server_url').'assets/img/novinky/'.$riadok ['pict'].'" class="novinka">'; ?>
+    <div class="head-photo novinka-detail no-pic">
         <section class="podklad">
             <div class="row">
                 <div class="large-12 columns">
@@ -27,7 +26,13 @@ if (mysql_num_rows($novinka)) { // Novinka existuje
     </div>
     <article class="novinka-text">
         <div class="row">
-            <div class="large-12 columns">
+            <?php if (!empty($riadok["pict"])) { ?>
+            <div class="large-4 columns">
+                <?php echo '<img src="'.$app->config('server_url').'assets/img/novinky/'.$riadok ['pict'].'" class="novinka">'; ?>
+            </div>
+            <?php } /* zobrazi fotku pridelenou k novince */ ?>
+            <?php if (!empty($riadok["pict"])) { ?> <div class="large-8 columns"> <?php } /* Menší pravý blok pokud máme fotku */
+                    else { ?> <div class="large-12 columns"> <?php } /* Plná šířka pokud fotku nemáme */ ?>
                 <?php  echo predlozky($uvodnik); ?>
                 <?php if (!empty($text)) { ?>
                     <?php echo predlozky($text); ?>
