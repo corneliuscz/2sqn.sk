@@ -27,11 +27,11 @@ if (mysql_num_rows($novinka)) { // Novinka existuje
     <article class="novinka-text">
         <div class="row">
             <?php if (!empty($riadok["pict"])) { ?>
-            <div class="large-4 columns">
+            <div class="large-6 columns">
                 <?php echo '<img src="'.$app->config('server_url').'assets/img/novinky/'.$riadok ['pict'].'" class="novinka">'; ?>
             </div>
             <?php } /* zobrazi fotku pridelenou k novince */ ?>
-            <?php if (!empty($riadok["pict"])) { ?> <div class="large-8 columns"> <?php } /* Menší pravý blok pokud máme fotku */
+            <?php if (!empty($riadok["pict"])) { ?> <div class="large-6 columns"> <?php } /* Menší pravý blok pokud máme fotku */
                     else { ?> <div class="large-12 columns"> <?php } /* Plná šířka pokud fotku nemáme */ ?>
                 <?php  echo predlozky($uvodnik); ?>
                 <?php if (!empty($text)) { ?>
