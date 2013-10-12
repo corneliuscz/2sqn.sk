@@ -53,12 +53,33 @@ $tr['login_success'] = 'Prihlásenie bolo úspešné :-)';
 $tr['login_wrongpass'] = 'Použili ste zlé heslo!';
 $tr['login_unknownuser'] = 'Je mi ľúto, takého užívateľa nepoznám!';
 
+$tr['login_pagetitle'] = 'Prihlásenie';
+$tr['login_formtitle'] = 'Prihlásenie';
+
+$tr['login_formlogin'] = 'Login';
+$tr['login_formpassword'] = 'Heslo';
+$tr['login_formdologin'] = 'Prihlásenie';
+
+$tr['login_successmsg'] = 'Od teraz máte prístup do <a href="/forum">fóra</a> a sekcie <a href="/na-stiahnutie">na stiahnutie</a> alebo pre <a href="/galeria?dir=Vaše%20fotky">nahrávanie fotiek</a> do galérie Vaše fotky :-)';
+
 /* Registrace */
 
 $tr['reg_success'] = 'Registrácia bola úspešna! Prihláste sa :-)';
 $tr['reg_usernametaken'] = 'Takéto užívateľské meno už existuje, zvoľte iné.';
 $tr['reg_diffpasswords'] = 'Vložená hesla nesúhlasí!';
 $tr['reg_incomplete'] = 'Nevyplnili ste všetky povinné údaje!';
+
+$tr['reg_pagetitle'] = 'Registrácia nového užívateľa';
+$tr['reg_formtitle'] = 'Registrácia';
+
+$tr['reg_formname'] = 'Meno:';
+$tr['reg_formsurname'] = 'Priezvisko:';
+$tr['reg_formlogin'] = 'Login (povinné):';
+$tr['reg_formemail'] = 'E-Mail (povinné):';
+$tr['reg_formpassword'] = 'Heslo (povinné):';
+$tr['reg_formpasswordc'] = 'Potvrdiť heslo (povinné):';
+$tr['reg_formregister'] = 'Registruj';
+$tr['reg_formreset'] = 'Vymazať';
 
 /* Forum */
 
@@ -75,7 +96,14 @@ $tr['upload_toobigcont'] = 'Zmenšite ho na 1280px šírku maximálne a skúste 
 $tr['upload_wrongtype'] = 'Nahrávať môžete len snímky vo formáte JPG!';
 $tr['upload_wrongtypecont'] = 'Zkonvertujte obrázok a skúste to znova.';
 
+$tr['upload_pagetitle'] = 'Nahrávanie obrázkov';
+$tr['upload_formtitle'] = 'Upload obrázku';
+$tr['upload_uploadto'] = 'Nahrať do albumu:';
+$tr['upload_infotext'] = '<p>Maximálna šírka obrázku je 1280 px., väčší obrázok nie je možné uložiť. Uložiť je možné len obrázok vo formáte JPG. Obrázok sa uloží do albumu podľa Vášho výberu.</p><p>V názve obrázku nepoužívajte špeciálne znaky ani medzery!</p>';
+
 /* Galerie */
+
+$tr['gallery_infotext'] = '<a href="/sk/login">Zaregistrujte a prihlaste sa</a>, a môžete pridávať fotky do albumu "Vaše fotky".</p>';
 
 /* Walkaround */
 $tr['walkaround']['loading'] = 'Načítám data pro walkaround, čekejte prosím!';

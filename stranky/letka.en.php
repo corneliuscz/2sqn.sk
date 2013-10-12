@@ -1,7 +1,7 @@
 <?php include ('includes/header.inc.php'); ?>
 <?php include ('includes/menu.inc.php'); ?>
 <div class="head-photo">
-    <img src="/assets/img/slides/letka.jpg" alt="Piloti 2. SQN">
+    <img src="/assets/img/slides/letka-martin_kral.jpg" alt="Piloti 2. SQN">
     <section class="podklad">
         <div class="row">
             <div class="large-12 columns">

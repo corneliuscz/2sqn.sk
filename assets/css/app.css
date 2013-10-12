@@ -4929,6 +4929,10 @@ nav a#pull {
     display: none;
   }
 
+  .cbp-hrmenu > ul > li > a.language {
+    color: white;
+  }
+
   a.home-sec {
     display: inline-block;
     font-size: 1.2em;

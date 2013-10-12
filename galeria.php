@@ -423,7 +423,7 @@ $galleryname = trim($_GET['dir']);
         } else { ?>
             <div class="tips upload">
                 <div class="row">
-                    <div class="large-12 columns"><p><a href="/login">Zaregistrujte a prihlaste sa</a>, a môžete pridávať fotky do albumu "Vaše fotky".</p></div>
+                    <div class="large-12 columns"><p><?php echo $app->tr['gallery_infotext']; ?></div>
                 </div>
             </div>
     <?php }

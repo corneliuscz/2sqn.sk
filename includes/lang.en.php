@@ -53,12 +53,34 @@ $tr['login_success'] = 'Login was successful :-)';
 $tr['login_wrongpass'] = 'Wrong password!';
 $tr['login_unknownuser'] = 'I\'m afraid I don\'t know such user!';
 
+$tr['login_pagetitle'] = 'Sign in';
+$tr['login_formtitle'] = 'User login';
+
+$tr['login_formlogin'] = 'Login';
+$tr['login_formpassword'] = 'Password';
+$tr['login_formdologin'] = 'Sing in';
+
+$tr['login_successmsg'] = 'Since now you have access to <a href="/forum">forum</a> and <a href="/na-stiahnutie">downloads</a> section. Or you can now <a href="/galeria?dir=Vaše%20fotky">upload some photos</a> to Vaše fotky gallery :-)';
+
+
 /* Registrace */
 
 $tr['reg_success'] = 'You have been succesfully registered. Please log-in :-)';
 $tr['reg_usernametaken'] = 'This username is alreaddy taken, please choose different one.';
 $tr['reg_diffpasswords'] = 'Enterred passwords do not match!';
 $tr['reg_incomplete'] = 'You have not filled all required fields!';
+
+$tr['reg_pagetitle'] = 'New user registration';
+$tr['reg_formtitle'] = 'Registration';
+
+$tr['reg_formname'] = 'First name:';
+$tr['reg_formsurname'] = 'Surname:';
+$tr['reg_formlogin'] = 'Login (required):';
+$tr['reg_formemail'] = 'E-Mail (required):';
+$tr['reg_formpassword'] = 'Password (required):';
+$tr['reg_formpasswordc'] = 'Confirm password (required):';
+$tr['reg_formregister'] = 'Register';
+$tr['reg_formreset'] = 'Reset form';
 
 /* Forum */
 
@@ -75,7 +97,15 @@ $tr['upload_toobigcont'] = 'Resize it to maximum width of 1280px and try again p
 $tr['upload_wrongtype'] = 'Only JPG format is allowed for image upload!';
 $tr['upload_wrongtypecont'] = 'Convert the image and try again please!';
 
+
+$tr['upload_pagetitle'] = 'Uploading a photo';
+$tr['upload_formtitle'] = 'Photo upload';
+$tr['upload_uploadto'] = 'Upload to album:';
+$tr['upload_infotext'] = '<p>Maximum allowed width of an image is 1280 px., bigger images will not be uploaded. Images can be in JPEG format only and will be saved to the album of your choice.</p><p>Please, don\'t use special characters or spaces in filename!</p>';
+
 /* Galerie */
+
+$tr['gallery_infotext'] = 'You can upload photos to "Vaše fotky" photo album if you <a href="/en/login">sign up/sign in</a>.</p>';
 
 /* Walkaround */
 $tr['walkaround']['loading'] = 'Loading walkaround data, wait please!';
