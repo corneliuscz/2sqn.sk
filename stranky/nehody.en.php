@@ -5,120 +5,127 @@
     <section class="podklad">
         <div class="row">
             <div class="large-12 columns">
-                <h1>História leteckých nehôd L-39 letectiev ČSSR, ČSFR, ČR a SR</h1>
+                <h1>L-39 accidents in the aviation history of CSSR, CSFR, CR and SR</h1>
             </div>
         </div>
     </section>
 </div>
 
 <article>
+    <section class="uvod">
+        <div class="row">
+            <div class="large-12 columns">
+                <p><strong>Accidents involving L-39 Albatros in the aviation history of the Czechoslovak Socialist Republic (CSSR), Czechoslovak Federal Republic (CSFR), Czech Republic (CR) and Slovak Republic (SR)</strong></p>
+            </div>
+        </div>
+    </section>
     <section class="obsah mensi nehody"><a name="nehody"></a>
         <div class="row">
             <div class="large-12 columns">
             <table>
                 <tr>
-                    <td width="33%">ČSSR 12.02.1974</td>
+                    <td width="33%">ČSSR 12 Feb 1974</td>
                     <td width="33%">Košice</td>
-                    <td width="33%">2.lšp Košice</td>
+                    <td width="33%">2nd Aviation Fighter Regiment Košice</td>
                 </tr>
                 <tr>
-                    <td>Havária L-39C 0104</td>
-                    <td colspan="2">pplk. Oldřich VALEHRACH / pplk. Jiří HÁJEK</td>
+                    <td>L-39C 0104 accident</td>
+                    <td colspan="2">LtCol Oldřich VALEHRACH / LtCol Jiří HÁJEK </td>
                 </tr>
             </table>
-            <p>Počas nočného letu došlo v druhej okruhovej zákrute (výška cca. 250 m nad terénom) k vysadeniu motora. Po neúspešnom pokuse o opätovné spustenie motora vykonala posádka katapultáž. Pravdepodobnou príčinou vysadenia motora bola zámena „prepínača svetlometov“ s „prepínačom voľby režimu motora“ (prepnutý do polohy „studené pretočenie“). Lietadlo bolo úplne zničené.</p>
+            <p>During the night flight, more precisely at the downwind turn (at an altitude about 250 m above the earth´s surface), engine suddenly failed. After unsuccessful attempts to restart the engine, the aircrew ejected safely from the plane.  There is a presumption that the engine failed due to a pilot´s error who mistakenly pressed the engine mode switch (switching it to the “motoring run procedure” mode) instead of the landing light switch. The plane was completely destroyed.</p>
 
             <table>
                 <tr>
-                    <td width="33%">ČSSR 30.05.1980</td>
+                    <td width="33%">ČSSR 30 May 1980</td>
                     <td width="33%">Košice</td>
-                    <td width="33%">2.lšp Košice</td>
+                    <td width="33%">2nd Aviation Fighter Regiment Košice</td>
                 </tr>
                 <tr>
-                    <td>Katastrofa L-39C 0114</td>
-                    <td colspan="2">mjr. Zdeněk KREJČÍ</td>
+                    <td>L-39C 0114 accident</td>
+                    <td colspan="2">Maj Zdeněk KREJČÍ</td>
                 </tr>
             </table>
-            <p>Počas nácviku ukážky vystúpenia na verejnosti, v klesavom prvku s jeden a pol výkrutom, pilot opravoval smer, pričom nekontroloval výšku. Stratu výšky riešil energickým pritiahnutím riadiacej páky bez zrovnania náklonu. Následne pri preťažení 7,35g a v náklone priviedol lietadlo do pádu po krídle. Lietadlo pri rýchlosti 400 km/h zachytilo krídlo o zem. Pilot riadil lietadlo až po náraz do zeme. Hlavnou príčinou leteckej katastrofy bolo nezvládnutie náročnej akrobatickej zostavy, na ktorú pilot nebol dostatočne vycvičený a metodicky vedený.</p>
+            <p>During the aerobatic exhibition rehearsal, while performing a one-and-half-roll manoeuvre in the descending face, the pilot corrected the heading but failed in checking the altitude. He dealt with the altitude loss pulling vigorously a flight stick without turning the plane into a wings-level position. By the action of the pilot, flying at 7.35g overload, the aircraft stalled. The plane wing hit the ground at a speed of 400 km/h. The pilot tried to get the plane under his control until it crashed. The main cause of the aircraft crash was the pilot´s failure to carry out difficult aerobatic formation for which the pilot was not adequately trained and methodically prepared.</p>
 
             <table>
                 <tr>
-                    <td width="33%">ČSSR 08.04.1986</td>
-                    <td width="33%">Sazená u Kralup</td>
-                    <td width="33%">VZLÚ Letňany</td>
+                    <td width="33%">8 April 1986</td>
+                    <td width="30%">Sazená u Kralup</td>
+                    <td width="37%">Military Research and Testing Institute Letňany</td>
                 </tr>
                 <tr>
-                    <td>Havária L-39Z OK-186</td>
+                    <td>L-39Z OK-186 accident</td>
                     <td colspan="2">Jiří POSPÍŠIL</td>
                 </tr>
             </table>
-            <p>Pilot výskumného a skúšobného ústavu vykonával testovací let na skúšobnú katapultáž zadnej sedačky VS-2 s figurínou. Test vykonával štvrtýkrát so špeciálne upravenou L-39. Podľa nariadenia vedúceho skúšky vykonal vo výške 300 metrov, pri rýchlosti 350 km/h, skúšobnú katapultáž zadnej sedačky, následkom čoho mu vysadil motor. Pilot sa rozhodol pre núdzové pristátie do terénu z dôvodu blízkosti dediny. Pilot sa ťažko zranil. Príčina nie je doteraz riadne objasnená, celé vyšetrovanie bolo doposiaľ záhadne zahmlievané. <center><img alt="Nehoda L-39Z OK-186" src="/assets/img/nehody/ok-186.jpg"></center></p>
+            <p>A pilot working for the Military Research and Testing Institute carried out a test flight to test an ejection of the rear seat VS-2 using a test dummy. The fourth test was made with a specially modified L-39. Following the orders, the pilot performed the test at an altitude of 300 m above the earth´s surface and at a speed of 350 km/h. The engine failed after the ejection of the rear seat. The pilot decided to make an emergency landing in a field to keep away from a nearby village. The pilot suffered severe injuries. The cause of the failure has not been clarified yet and the whole investigation remains mysteriously veiled. <center><img alt="Nehoda L-39Z OK-186" src="/assets/img/nehody/ok-186.jpg"></center></p>
             <table>
                 <tr>
-                    <td width="33%">ČSSR 17.08.1988</td>
+                    <td width="33%">ČSSR 17 Aug 1988</td>
                     <td width="33%">Košice</td>
-                    <td width="33%">2.lšp Košice</td>
+                    <td width="33%">2nd Aviation Fighter Regiment Košice</td>
                 </tr>
                 <tr>
-                    <td>Poškodenie L-39C 0446</td>
-                    <td colspan="2">mjr. Miroslav PETRŮ</td>
+                    <td>Damage to L-39C 0446</td>
+                    <td colspan="2">Maj Miroslav PETRŮ</td>
                 </tr>
             </table>
-            <p>Počas vykonávania vyššej techniky pilotovania v malej výške, východne od letiska Košice (medzi Košickým letiskom a Krásnou nad Hornádom), došlo asi po 10 minútach letu k vysadeniu motora. Pilot obdržal pokyn vykonať katapultáž. Nakoľko bol v blízkosti letiska, rozhodol sa pre núdzové pristátie. Nasmeroval lietadlo medzi blížnu prívodnú rádiovú stanicu a prah dráhy 01, vysunul podvozok, klapky a vzápätí hlásil signalizáciu požiaru. Lietadlo pristálo cca 150-200 metrov pred prah dráhy 01 do svetelných návestidiel. Pilot utrpel zranenia chrbtice (poranený stavec). Lietadlo bolo poškodené a priestor motora vyhorený. Príčinou leteckej nehody bol prvý prípad titánového požiaru v histórii L-39.</p>
+            <p>During the aerobatic flight technique performance at a low altitude, eastward to the Airport Košice (precisely between the airport and Krásna nad Hornádom, one of Košice districts), and after 10 minutes of flight, the plane´s engine failed. Pilot received orders to eject. Being close to the airport, the pilot opted to make an emergency landing.  He steered the aircraft towards the area between a Non Direction Beacon (NDB)/Middle Marker (MM) and the runway 01 threshold, deployed the landing gear and flaps, and immediately reported the fire alarm. The aircraft hit the approach lighting system about 150-200 m from the runway 01 threshold. The pilot suffered a spinal injury (injured vertebra). The aircraft was damaged and the engine assembly totally burned out. The accident was caused by fire of the titanium components in aircraft engine. It was the first case of the titanium fire that had been ever recorded in the history of L-39. </p>
             <table>
                 <tr>
-                    <td width="33%">ČSSR 24.08.1988</td>
+                    <td width="33%">ČSSR 24 Aug 1988</td>
                     <td width="33%">Rakoľuby</td>
-                    <td width="33%">3.lšp Piešťany</td>
+                    <td width="33%">3rd Aviation School Regiment Piešťany</td>
                 </tr>
                 <tr>
-                    <td>Poškodenie L-39C 0110</td>
-                    <td colspan="2">pplk. Zdeněk HAVNER / mjr. Vladimír VAJDA</td>
+                    <td>Damage to L-39C 0110</td>
+                    <td colspan="2">LtCol Zdeněk HAVNER / Maj Vladimír VAJDA</td>
                 </tr>
             </table>
-            <p>Po vykonaní záletu počasia si pri Novom Meste nad Váhom posádka vyžiadala plnenie úlohy vyššej techniky pilotovania. Počas šiesteho vertikálneho prvku (v stúpavej fáze) došlo pri maximálnom režime motora k pumpáži. Na havarijnom table došlo k signalizácii výstražných tabiel a požiaru. Veliteľ posádky stiahol POM (páku ovládania motora) do polohy STOP, stlačil hasenie a rozhodol sa pre núdzové pristátie do terénu. Počas pristávacieho manévru sa podarilo vysunúť vztlakové klapky do polohy „pristátie“ až núdzovým postupom, čo zapríčinilo dotyk lietadla so zemou pri zvýšenej rýchlosti. Po dotyku došlo k opätovnému odpútaniu sa lietadla asi do dvoch metrov, pri ktorom predný pilot mjr. Vajda vykonal katapultáž. Zadný pilot pplk. Havner zostal v lietadle a dokončil núdzové pristátie. Lietadlo bolo vážne poškodené. Po tejto leteckej udalosti piloti 3. lšp. nazývali miesto núdzového pristátia ako Havnerfeld.<center>
+            <p>After the weather check flight near the town of Nové Mesto nad Váhom, the aircrew asked for permission to perform aerobatic manoeuvres. Right in the middle of the sixth vertical manoeuvre in the ascending phase, in maximum performance mode, the aircraft experienced a compressor stall and its engine failed. The information display panel indicated the emergency and fire alarm signals. The aircrew commander moved an engine control lever to a STOP position, pressed a fire extinguishment button and opted for an emergency landing in a field. During the landing manoeuvre he managed to deploy the flaps for “landing” position by emergency procedure what caused that the aircraft touched the ground at higher speed. When the aircraft lift off the ground again about two metres above the earth´s surface, the pilot Major Vajda safely ejected. The co-pilot LtCol Havner remained in the aircraft and accomplished the emergency landing. The aircraft was badly damaged. Since then on the pilots of the 3rd Aviation School Regiment called the emergency landing site the “Havnerfield”. <center>
                 <img alt="havner havaria" src="/assets/img/nehody/0110_1.gif">
                 <img alt="havner havaria" src="/assets/img/nehody/0110_2.gif">
             </center>
             </p>
             <table>
                 <tr>
-                    <td width="33%">ČSSR 11.04.1989</td>
+                    <td width="33%">ČSSR 11 Apr 1989</td>
                     <td width="33%">Trebišov</td>
-                    <td width="33%">2.lšp Košice</td>
+                    <td width="33%">2nd Aviation Fighter Regiment Košice</td>
                 </tr>
                 <tr>
-                    <td>Havária L-39C 0109</td>
-                    <td colspan="2">por. Ján KRAK</td>
+                    <td>L-39C 0109 accident</td>
+                    <td colspan="2">Lt Ján KRAK</td>
                 </tr>
             </table>
-            <p>Počas letu vyššej techniky pilotovania v malej výške došlo k vibráciám motora a k jeho následnému vysadeniu. Príčinou nehody bolo odtrhnutie lopatky rotoru – výrobná chyba. Pilot vykonal úspešnú katapultáž.</p><p></p>
+            <p>During the aerobatic manoeuvres at a low altitude, the aircraft experienced vibrations inside the engine what consequently led to its failure. The accident was caused by a manufacturing defect due to which a rotor blade ripped off. The pilot ejected safely from the plane.</p>
 
             <table>
                 <tr>
-                    <td width="33%">ČSSR 15.8.1989</td>
+                    <td width="33%">ČSSR 15 Aug 1989</td>
                     <td width="33%">Košice</td>
-                    <td width="33%">2.lšp Košice</td>
+                    <td width="33%">2nd Aviation Fighter Regiment Košice</td>
                 </tr>
                 <tr>
-                    <td>Katastrofa L-39C 4356</td>
-                    <td colspan="2">kpt. Zdeněk BEREZA / Ammar BAHLOUL</td>
+                    <td>L-39C 4356 disaster</td>
+                    <td colspan="2">Cpt Zdeněk BEREZA / Ammar BAHLOUL</td>
                 </tr>
             </table>
-            <p>Po vysunutí pristávacích klapiek lietadla L-39 v 3. okruhovej zákrute, riadiaci lietania povolil vzlet civilného lietadla L-410 v protismere (zámerom riadiaceho letov bolo vyhnúť civilné lietadlo L-410 skorším točením 1. zákruty a lietadlo L-39 nechať vyčkávať pravou zákrutou). Posádka lietadla L-39 v pristávacej konfigurácii počas točenia pravej zákruty priviedla lietadlo do 2. režimu letu, následného pádu a nárazu do zeme. Pravdepodobnou príčinou nehody bolo neporozumenie pokynu zahraničného pilota. Inštruktor v snahe zabrániť zblíženiu lietadiel neúmerne zasiahol do riadenia lietadla. Piloti sa tesne pred dopadom ešte pokúsili o katapultovať, ale pre nedostatok času nestihli previesť katapultáž. </p>
+            <p>As the L-39's landing flaps fully deployed during the base-leg turn, the air traffic controller gave permission to a civil aircraft L-410 to take off in the opposite direction (the ATC intended to keep the L-410 separated from the landing aircraft by earlier cross-wind turn, while the L-39 was supposed to hold in right-turn circles). The L-39 crew, while holding in the right-turn circles in the landing configuration, operated the aircraft on the back side of the power (drag) curve. The aircraft subsequently began falling and crashed. The problem probably arose from a misunderstanding on the part of the foreign pilot. Instructor in an attempt to prevent those two aircraft to get very close to each other intervened inappropriately in steering the aircraft. The pilots tried to eject before the aircraft hit the ground but did not manage to do so due to a lack of time. </p>
 
             <table>
                 <tr>
-                    <td width="33%">ČSFR 22.06.1990</td>
+                    <td width="33%">ČSFR 22 June 1990</td>
                     <td width="33%">Krajné</td>
-                    <td width="33%">3.lšp Piešťany</td>
+                    <td width="33%">3rd Aviation School Regiment Piešťany</td>
                 </tr>
                 <tr>
-                    <td>Katastrofa L-39ZA 4709</td>
-                    <td colspan="2">npor. Ondrej LÁMER</td>
+                    <td>L-39ZA 4709 disaster</td>
+                    <td colspan="2">1stLt Ondrej LÁMER</td>
                 </tr>
             </table>
-            <p>Hlavnou príčinou bolo nezvládnutie vyššej techniky pilotovania v malej výške pilotom 3. triedy. Katapultáž v malej výške nezaručila bezpečné opustenie lietadla.</p>
+            <p>The main cause of the accident was a 3rd class pilot´s failure in performance of aerobatic manoeuvres at a low altitude. Facing the low altitude ejection conditions, the pilot did not manage to leave the aircraft safely. </p>
 
             <table>
                 <tr>
@@ -150,7 +157,7 @@
                 <tr>
                     <td width="33%">ČSFR 22.08.1991</td>
                     <td width="33%">Kalša</td>
-                    <td width="33%">2.lšp Košice</td>
+                    <td width="33%">2nd Aviation Fighter Regiment Košice</td>
                 </tr>
                 <tr>
                     <td>Katastrofa L-39ZA 1735</td>
@@ -315,4 +322,4 @@
  </div>
  </section>
 </article>
-<?php include ('includes/footer.inc.php');    ?>
+<?php include ('includes/footer.inc.php'); ?>

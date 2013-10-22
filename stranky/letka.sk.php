@@ -6,7 +6,6 @@
         <div class="row">
             <div class="large-12 columns">
                 <h1>Výcviková letka</h1>
-
             </div>
         </div>
     </section>

@@ -6,13 +6,19 @@
         <div class="row">
             <div class="large-12 columns">
                 <h1>Letisko Sliač</h1>
-                <p>2.&nbsp;letka je dislokovaná na&nbsp;medzinárodnom letisku Sliač so zmiešanou vojenskou a&nbsp;civilnou prevádzkou, ktoré je známe aj pod historickým názvom z&nbsp;druhej svetovej vojny, „Tri Duby“. Nachádza sa na&nbsp;území Stredného Slovenska, priamo v&nbsp;strede medzi mestami Zvolen a&nbsp;Banská Bystrica.</p>
             </div>
         </div>
     </section>
 </div>
 
 <article>
+    <section class="uvod">
+        <div class="row">
+            <div class="large-12 columns">
+                <p><strong>2.&nbsp;letka je dislokovaná na&nbsp;medzinárodnom letisku Sliač so zmiešanou vojenskou a&nbsp;civilnou prevádzkou, ktoré je známe aj pod historickým názvom z&nbsp;druhej svetovej vojny, „Tri Duby“. Nachádza sa na&nbsp;území Stredného Slovenska, priamo v&nbsp;strede medzi mestami Zvolen a&nbsp;Banská Bystrica.</strong></p>
+            </div>
+        </div>
+    </section>
     <section class="obsah"><a name="historia" id="kotva"></a>
         <div class="row">
             <div class="large-12 columns">

@@ -5,86 +5,92 @@
     <section class="podklad">
         <div class="row">
             <div class="large-12 columns">
-                <h1>Letisko Sliač</h1>
-                <p>2.&nbsp;letka je dislokovaná na&nbsp;medzinárodnom letisku Sliač so zmiešanou vojenskou a&nbsp;civilnou prevádzkou, ktoré je známe aj pod historickým názvom z&nbsp;druhej svetovej vojny, „Tri Duby“. Nachádza sa na&nbsp;území Stredného Slovenska, priamo v&nbsp;strede medzi mestami Zvolen a&nbsp;Banská Bystrica.</p>
+                <h1>Air Base Sliač</h1>
             </div>
         </div>
     </section>
 </div>
 
 <article>
+    <section class="uvod">
+        <div class="row">
+            <div class="large-12 columns">
+                <p><strong>The 2nd Squadron is located at the joint-use (military and civilian) international airport Sliač. It is also known under its historical name „Three Oaks Airport“ that was given to it during the Second World War.  It is situated in the central part of Slovakia, right in the middle between the town of Zvolen and the town of Banská Bystrica. </strong></p>
+            </div>
+        </div>
+    </section>
     <section class="obsah"><a name="historia" id="kotva"></a>
         <div class="row">
             <div class="large-12 columns">
-                <h2>História</h2>
-                <p>Prvé záznamy o&nbsp;pristátí vojenských lietadiel v&nbsp;priestoroch letiska Tri Duby sa datujú na&nbsp;15.&nbsp;7.&nbsp;1935. V&nbsp;máji 1936 sa na&nbsp;letisku Tri&nbsp;Duby vytvorila letecká škola a&nbsp;1.&nbsp;septembra 1937 sa do&nbsp;priestoru letiska nasťahovala Letecká posádka. O&nbsp;rok neskôr sa začala výstavba kasární pre letcov. </p>
+                <h2>History</h2>
+                <p>The first reference to the military planes landing in the Three Oaks Airport dates back to 15 July 1935.  The aviation school was established in the Three Oaks Airport in May 1936. On 1 September 1937, the Air Force Garrison relocated to the airport. The construction of the barracks for pilots was launched one year later.</p>
                 <figure class="right border">
                     <img src="/assets/img/lzsl_la-5fn.2cd.jpg">
-                    <figcaption class="text-center">La-5 na letisku Tri Duby</figcaption>
+                    <figcaption class="text-center">La-5 at the Three Oaks airfield</figcaption>
                 </figure>
-                <p>Významnú úlohu v&nbsp;histórii tunajšieho letectva zohrala už spomínaná letecká &ndash; vtedy pilotná škola, ktorú riadil Československý aeroklub pre stredné Slovensko, so sídlom vo Zvolene. V&nbsp;apríli 1936 dostal z&nbsp;národnej leteckej zbierky 3 školské lietadlá, čo bolo podnetom na&nbsp;vybudovanie prvého vlastného hangáru. V&nbsp;týchto rokoch tu predvádzali svoje akrobatické zručnosti aj najlepší československí piloti týchto čias, major Ambruš a&nbsp;poľný pilot, poručík Trnka. Ešte pred vypuknutím povstania sa v&nbsp;uzavretých hangároch opravovali vyradené stroje a&nbsp;pripravovali sa na&nbsp;bojové použitie.</p>
+                <p>The above mentioned aviation school, then better known as a flight school for pilots, played a very important role in the history of flying. The school was operated by the Czechoslovak aero club for central Slovakia and the seat of the club was located in Zvolen. In April 1936, the national fund-raising campaign helped the aero club gain three training planes and give rise to the idea of building the first own hangar. Those years saw the mastery of aerobatic skills performed by the best Czechoslovak pilots of that time such as Major Ambruš and field pilot Lieutenant Trnka. Behind the closed doors of the hangars, just before the uprising broke out, many machines that had been put out of operation underwent major repairs and were prepared for use in combat. </p>
 
-                <p>Od začiatku SNP na&nbsp;letisku pôsobila kombinovaná letka. Veliteľom letiska Tri Duby bol kpt.&nbsp;Belo Kubica a&nbsp;veliteľom kombinovanej letky npor.&nbsp;Mikuláš Šinglovič. Letisko bolo niekoľkokrát bombardované, z&nbsp;toho dvakrát s&nbsp;ťažkými dôsledkami. Letisko na&nbsp;Sliači sa stalo pojmom najmä počas 2.&nbsp;svetovej vojny, a&nbsp;to aj vďaka vkladu letcov a&nbsp;letectva do povstaleckej histórie. Po oslobodení dňa 21.&nbsp;marca 1945 sa činnosť letiska obnovila a&nbsp;oficiálny názov letiska sa z&nbsp;pôvodného "Tri duby" zmenil na&nbsp;"Letisko SNP Sliač".</p>
+                <p>At the beginning of the Slovak National Uprising (SNU), the airport became home to a combined squadron. Captain Belo Kubica was a commander of the Three Oaks Airport and 1st Lieutenant Mikuláš Šinglovič was a commander of the combined squadron. The airport was bombed several times, twice with devastating consequences. The airport in Sliač became famous during WWII, particularly thanks to the contribution of pilots and aviation to the history of the uprising. The airport resumed its operation after the liberation on 21 March 1945, and its original name “Three Oaks Airport” was changed to a new official name the “SNU Airport Sliač”.</p>
                 <figure class="left border">
                     <img src="/assets/img/lzsl_sliac64_004.jpg">
-                    <figcaption class="text-center">MiG-15 na letisku Tri Duby</figcaption>
+                    <figcaption class="text-center">MiG-15 at the Three Oaks airfield</figcaption>
                 </figure>
-                <p>Po skončení 2.&nbsp;svetovej vojny sa Československo, dostalo do vplyvu Sovietskeho zväzu. Letectvo prešlo na&nbsp;sovietsku výzbroj a&nbsp;len čiastočne sa zachoval vlastný letecký priemysel. V&nbsp;roku 1968 zabrala Letisko SNP Sliač so všetkými priľahlými priestormi Sovietska armáda, s&nbsp;výnimkou civilného sektora, ktorý zostal pod správou Československých aerolínií.</p>
+                <p>After the end of the Second World War, Czechoslovakia fell under the influence of the Soviet Union. Such change brought on the introduction of the Soviet armament and military system into the national aviation structure. The Czechoslovak aviation industry thus remained preserved only partially. In 1968, the SNU Airport Sliač and adjacent areas were occupied by the Soviet troops, except civil sector which remained under control of the Czechoslovak airlines. </p>
                 <figure class="right border">
                     <img src="/assets/img/lzsl_sliac64_002.jpg">
                 </figure>
-                <p>V&nbsp;roku 1989, po tzv.&nbsp;nežnej revolúcii, museli sovietske vojská na&nbsp;základe medzinárodnej dohody v&nbsp;priebehu jedného roka opustiť aj letisko Sliač a&nbsp;jeho priestory. Po odchode sovietskych vojsk sa letisko vrátilo vojenskému letectvu bývalej Československej federatívnej republiky, a&nbsp;po rozdelení ČSFR na&nbsp;letisku ostali zložky letectva Slovenskej republiky. V&nbsp;súčasnosti na&nbsp;letisku pôsobí Zmiešané letecké krídlo Otta Smika, so svojou Bojovou (1.&nbsp;letka) a&nbsp;Výcvikovou letkou (2.&nbsp;letka).</p>
+                <p>In 1989, after the so-called “Gentle Revolution” (or “Velvet Revolution” in the Czech Republic), the Soviet troops, forced to act under international agreement, had to leave the Airport Sliač and its facilities within one year. After departure of the Soviet troops, the airport was returned to the Air Force Service of the former Czechoslovak Federal Republic. And after the split-up of the CSFR, the air force units of the Slovak Republic were the only remaining units in the airport. Currently, the airport is home to the Otto Smik Mixed Air Wing, the 1st Fighter Squadron and the 2nd Tactical Training Squadron. </p>
             </div>
         </div>
     </section>
     <section class="obsah"><a name="rekonstrukcia" id="kotva"></a>
         <div class="row">
             <div class="large-12 columns">
-                <h2>Rekonštrukcia letiska</h2>
+                <h2>Airport reconstruction</h2>
                 <figure class="right border">
                     <img src="/assets/img/lzsl_sld21.jpg">
                 </figure>
-                <p>Od 6.&nbsp;mája&nbsp;2009 prebiehala na&nbsp;letisku rekonštrukcia a&nbsp;predĺženie vzletovej a&nbsp;pristávacej dráhy, ktorá zabraňovala akýmkoľvek príletom a&nbsp;odletom vojenských aj civilných lietadiel. 2.&nbsp;letka počas tejto výluky pôsobila z&nbsp;letiska Malacky-Kuchyňa. Koncom mája 2010 boli rekonštrukčné a&nbsp;stavebné práce na&nbsp;vzletovej a&nbsp;pristávacej dráhe ukončené. Sťahovanie sa&nbsp;začalo preletom lietadiel L-39 z&nbsp;Kuchyne 15.&nbsp;júla 2010. Prvým pilotom, ktorý pristál na&nbsp;zrekonštruované letisko bol por.&nbsp;Mário Nedelka, najmladší pilot krídla, ako symbol svetlej budúcnosti&hellip; :-D Letisko bolo oficiálne odovzdané do používania Ozbrojeným silám SR 25.&nbsp;5.&nbsp;2010. Civilné lietadlá začali na&nbsp;letisku pristávať až 16.&nbsp;6.&nbsp;2011.</p>
+                <p>Reconstruction of the runway at the Airport Sliač began on 6 May 2009. Since the reconstruction included the extension of the runway, no military or civilian plane was allowed to land at or take off from the airport. During the closure, the 2nd Squadron temporarily relocated to the military airport at Malacky-Kuchyňa. The reconstruction and building works were completed at the end of May 2010. On 15 July 2010, L-39s were the first aircraft to move back from Kuchyňa. The first pilot who landed on the newly reconstructed airport was Lt Mário Nedelka. Being the youngest pilot in the wing he was chosen to represent a symbol of bright future.  The airport was officially handed over to the Armed Forces of the Slovak Republic on 25 May 2010. Civilian planes began using the airport on 16 June 2011.</p>
             </div>
         </div>
     </section>
     <section class="obsah"><a name="udaje" id="kotva"></a>
         <div class="row">
             <div class="large-12 columns">
-                <h2>Údaje letiska</h2>
+                <h2>Airfield data</h2>
             </div>
             <div class="large-8 columns">
                 <table>
                     <tr>
-                        <td>Zemepisné súradnice ARP a poloha na AD</td>
+                        <td>Geographical coordinates ARP and AD location</td>
                         <td>483817N 0190803E</td>
                     </tr>
                     <tr>
-                        <td>Nadmorská výška/Vzťažná teplota</td>
+                        <td>Altitude ASL/Reference temp.</td>
                         <td>1 044 ft (318 m)/ 26,8 ˚C (JUL)</td>
                     </tr>
                     <tr>
-                        <td>Magnetická deklinácia/Ročná zmena</td>
+                        <td>Magnetic declination/Annual change</td>
                         <td>4&deg;E (2010)/+6' E</td>
                     </tr>
                     <tr>
-                        <td>Povolený druh prevádzky</td>
-                        <td>IFR/VFR, deň/noc</td>
+                        <td>Approved types of operation</td>
+                        <td>IFR/VFR, day/night</td>
                     </tr>
                     <tr>
-                        <td>Dráha</td>
+                        <td>Runway</td>
                         <td>18/36</td>
                     </tr>
                     <tr>
-                        <td>Rozmer dráhy</td>
+                        <td>Runway dimensions</td>
                         <td>2&nbsp;400&times;57&nbsp;m</td>
                     </tr>
                     <tr>
-                        <td>Zemepisný a magnetický smer dráhy 18</td>
+                        <td>Geographical and magnetic heading of RWY18</td>
                         <td>181,94˚&nbsp;GEO,   178,02˚&nbsp;MAG</td>
                     </tr>
                     <tr>
-                        <td>Zemepisný a magnetický smer dráhy 36</td>
+                        <td>Geographical and magnetic heading of RWY36</td>
                         <td>001,94˚&nbsp;GEO,   358,02˚&nbsp;MAG</td>
                     </tr>
                 </table>
@@ -92,10 +98,10 @@
             <div class="large-4 columns">
                 <table>
                     <tr>
-                        <td colspan="2"><strong>Komunikačné zariadenia:</strong></td>
+                        <td colspan="2"><strong>Communication systems:</strong></td>
                     </tr>
                     <tr>
-                        <td>Sliač Veža</td>
+                        <td>Sliač Tower</td>
                         <td>122,900 MHz</td>
                     </tr>
                     <tr>
@@ -103,7 +109,7 @@
                         <td>119,150 MHz</td>
                     </tr>
                     <tr>
-                        <td colspan="2"><strong>Rádionavigačné zariadenia:</strong></td>
+                        <td colspan="2"><strong>Navigation systems:</strong></td>
                     </tr>
                     <tr>
                         <td>VOR SLC</td>

@@ -15,15 +15,15 @@
     <section class="obsah mensi"><a name="albatros" id="kotva"></a>
         <div class="row">
             <div class="large-12 columns">
-                <h2>Stručný popis lietadla</h2>
+                <h2>Brief description</h2>
             </div>
             <div class="large-12 columns">
-                <p>Lietadlo L-39 Albatros je dvojmiestne, prúdové, podzvukové, cvičné lietadlo, určené pre elementárny, pokračovací výcvik a&nbsp;pre vykonávanie ďalšieho výcviku pilotov, inak uskutočňovaného na&nbsp;bojových lietadlách. Na&nbsp;lietadle je možné uskutočňovať výcvik vyššej techniky pilotovania, nácvik prepadu vzdušných a pozemných cieľov. Prístrojové a&nbsp;rádiové vybavenie dovoľuje plniť letové úlohy za&nbsp;všetkých poveternostných podmienok,&nbsp;vo dne aj&nbsp;v&nbsp;noci. Letka disponuje 9 lietadlami L-39, z toho je 5 lietadiel vo variante CM a 4 lietadla vo variante ZAM.</p>
+                <p>L-39 is a tandem-seat, subsonic jet trainer aircraft. It is designed for basic, follow-on or for other levels of training at which pilots are trained to fly combat aircraft. The aircraft provides the capability to train pilots for advanced flying techniques, aerobatic manoeuvres or air attack training and destruction of air/ground targets. The instrument and radio communication equipment allow the aircraft to perform flight missions under all weather conditions, day and night. A total number of L-39 aircraft the squadron has in its inventory is 9:  5 L-39CM variants and 4 L-39ZAM variants. </p>
             </div>
         </div>
         <div class="row">
             <div class="large-8 columns">
-                <p>História lietadla L-39 Albatros siaha do roku 1963 kedy Ministerstvo národnej obrany ČSSR spracovalo rozbor podkladov pre stanovanie požiadaviek na nový výcvikový systém pilotov na prúdových lietadlách, ako náhradu za starší typ L-29 Delfín. Hlavným konštruktérom projektu bol Ing.&nbsp;Jan Vlček a&nbsp;vedúci projektu bol Ing.&nbsp;Karol Dlouhý. Prvý skutočný let ktorý trval 35 minút vykonal skúšobný pilot Ing. Rudolf Duchoň dňa 4&nbsp;Novembra 1968. Sériová výroba lietadla začala v roku 1971 v&nbsp;Aeru Vodochody a&nbsp;trvala až do roku 1997. Celkovo bolo vyrobených 2892 lietadiel v rôznych verziách a&nbsp;boli exportované do 17 krajín. Najväčším odberateľom bol vtedajší Sovietsky Zväz s&nbsp;počtom až 2081 lietadiel.</p>
+                <p>The history of the aircraft L-39 Albatros dates back to 1963 when the Ministry of National Defence of the Czechoslovak Socialist Republic drew up an analysis of the documents for setting the requirements on a new training system for jet pilots, as a replace for older type L-29 Delfín. The main project designer was Ing. Jan Vlček and the project head was Ing. Karol Dlouhý. The first real flight which lasted 35 minutes was made by test pilot Ing. Rudolf Duchoň on 4 November 1968. Series production was launched in 1971 in the Aero Vodochody and lasted until 1997. A total number of the aircraft was 2,892. They were produced in various versions and exported to 17 countries. The Soviet Union became the biggest customer of L-39 aircraft by placing an order for 2,081 aircraft.</p>
             </div>
             <div class="large-4 columns">
                 <figure class="">
@@ -33,7 +33,7 @@
         </div>
         <div class="row">
             <div class="large-8 columns">
-                <p>2.&nbsp;letka používa lietadlá L-39 vo verziách CM a&nbsp;ZAM ktoré boli v&nbsp;roku 2005 modernizované z&nbsp;pôvodných verzií C a&nbsp;ZA. Modernizácia sa dotkla najmä prístrojového vybavenia tak aby spĺňalo štandardy NATO a&nbsp;vyhovovalo normám ICAO.</p>
+                <p>The 2nd Squadron uses L-39CM and L-39ZAM, upgraded version of L-39C and L-39ZA. In 2005, in order to be able to meet NATO standards and comply with ICAO standards, the aircraft, particularly their instrument panels, had to undergo the upgrade.</p>
             </div>
             <div class="large-4 columns">
             <figure class="">
@@ -46,13 +46,13 @@
     <section class="obsah mensi albatrosy"><a name="albatrosy" id="kotva"></a>
         <div class="row">
             <div class="large-12 columns">
-                <h2>Slovenské albatrosy</h2>
+                <h2>Slovak Albatros</h2>
             </div>
             <div class="large-12 columns">
                 <h3>L-39C 0101</h3>
             </div>
             <div class="large-8 columns">
-                <p>Od 1.1.1993 bol pridelený 1. letke 5.šlp Košice. Bol zaradený do skupiny Biele albatrosy, pričom dostal aj ich farby. V rokoch 1996-1997 sa podrobil GO v LOTN (Letecké opravovne Trenčín) spojenej s výmenou trupovej škrupiny a predĺžením životnosti. Do druhej polovice 90-tych rokov  lietal so starším (vyšším) smerovým kormidlom. Neskôr nosil na SOP&nbsp;(zvislá chvostová plocha) modré číslo 4. V roku 2002 absolvoval ďalšiu GO (generálnu opravu) v LOTN spojenú s rozsiahlou modernizáciou, pri ktorej mu bolo zmenené trupové číslo z 0101 na súčasné 5302 a označenie na L-39CM. Od roku 2006 lietal na 2. letke na základni Sliač. Nelieta od mája 2011 – dolietaný do generálnej opravy.</p>
+                <p>On 1 January 1993 the aircraft was assigned to the 1st squadron of the 5th School Aviation Regiment Košice.  It was later operated by the Biele Albatrosy and also got the colours of this aerobatic display team. In 1996-1997, the aircraft underwent a general overhaul in the LOTN (Aircraft Repair Company Trenčín) that included both the replacement of the old fuselage shell with the new one and the life-cycle extension. By the late 1990s, the aircraft was operated with older (taller) type of the rudder. The aircraft was later labelled with No. 4, printed in blue and placed on its vertical tail area. In 2002, it underwent another complete overhaul in the LOTN and included extensive upgrade, the change of its serial number from 0101 to 5302 and its transformation into L-39CM. The 2nd Squadron in the AFB Sliač used the aircraft from 2006 to May 2011 when it was grounded for a thorough overhaul.</p>
             </div>
             <div class="large-4 columns">
                 <figure class="">
@@ -65,9 +65,8 @@
                 <h3>L-39C 0102</h3>
             </div>
             <div class="large-12 columns">
-                <p>Od roku 1993 bol pridelený 1. letke 5. šlp Košice. Dostal tiež sfarbenie Bielych albatrosov. V rokoch 1996-1997 absolvoval GO v LOTN pri ktorej mu bola vymenená trupová škrupina a predĺžená životnosť. Neskôr došlo k výmene staršieho typu smerového kormidla za novší typ. Po GO nosil na SOP modré číslo 6. V roku 2002 začala u neho prebiehať ďalšia GO v Leteckých opravovniach Trenčín po ktorej bol modernizovaný na štandard L-39CM so zmenou trupového čísla z 0102 na číslo 5252. Od roku 2006 lietal u 2. letky na letisku Sliač.</p>
-                <p><strong>Nelietal od 15.04.2011, kedy bol preletený do LOTN na ďalšiu generálnu opravu kde dostal novú šedú kamufláž. Dňa 11.08.2012 bol vykonaný fabrický zálet po GO
-a dňa 26.10.2012 bol preletený mjr. Labudíkom späť na Sliač.</strong></p>
+                <p>On 1 January 1993 the aircraft was assigned to the 1st squadron of the 5th School Aviation Regiment Košice. It also got the colours of the aerobatic display team Biele Albatrosy. In 1996-1997, the aircraft underwent a complete overhaul in the LOTN (Aircraft Repair Company Trenčín) that included both the replacement of the old fuselage shell for the new one and the life-cycle extension. Also the older type of the rudder was later replaced with the new type. Following the complete overhaul, the aircraft carried a/the blue number 6. In 2002, it underwent another complete overhaul in the LOTN that included an upgrade to L-39CM standard and the change of its serial number from 0102 to 5252 and its transformation into L-39CM. </p>
+                <p><strong>The 2nd Squadron in the AFB Sliač used the aircraft from 2006 to 15 April 2011 when it flew straight to the LOTN for a general overhaul.</strong></p>
                 <div class="row">
                     <div class="large-4 columns">
                         <img alt="L-39 0102" src="/assets/img/slovenske-albatrosy/0102.jpg">
@@ -86,7 +85,7 @@ a dňa 26.10.2012 bol preletený mjr. Labudíkom späť na Sliač.</strong></p>
                 <h3>L-39C 0111</h3>
             </div>
             <div class="large-8 columns">
-                <p>Od 1.1.1993 bol pridelený k 1.letke 5.šlp Košice. Od roku 1992 lietal vo farbách Bielych albatrosov. V rokoch 1996-1997 absolvoval GO v LOTN s rovnakým priebehom úprav ako u ostatných albatrosov série 1 a 4. Rovnako došlo neskôr k zmene staršieho smerového kormidla za novší typ, na SOP modré číslo 5. V roku 2002 absolvoval ako prvý GO v LOTN, spojenú s modernizáciou prístrojového vybavenia, výmenou krídla, zadnej časti trupu a chvostových plôch. Okrem iného dostal aj novší typ SOP s vyšším krytom antény na vrchole, charakteristickým pre albatrosy série 50 a vyššie. 26.8. 2003 bol zalietaný a do apríla 2004 bol dislokovaný v Košiciach. 15.4. 2004 preletel na Sliač, tu však odvtedy prakticky nelietal, pretože všetky ďalšie L-39CM boli modernizované so zmenami vo vybavení oproti 0111. V súčasnosti nelieta, je odstavený, rovnako nedošlo ani k zmene trupového čísla na plánované 5251.</p>
+                <p>On 1 January 1993 the aircraft was assigned to the 1st squadron of the 5th School Aviation Regiment Košice. Since 1992 it wore the colours of the aerobatic display team Biele Albatrosy. In 1996-1997, the aircraft underwent a complete overhaul in the LOTN and the same upgrade as the other Albatros aircraft of the series 1 and 4. Later, it got the new type of the rudder and a/the blue number 5 printed on the vertical tail area. In 2002, it was the first aircraft undergoing the general overhaul in the LOTN that included the upgrade of the aircraft instruments and the replacement of the wing, the rear part of the fuselage and the tails for the new ones. Besides, it got a newer model of the vertical tail area with a longer antenna cover atop, which is a typical feature for the Albatros of the series 50 and above. On 26 August 2003, the aircraft made test flight and by April 2004 it was relocated to Košice. On 15 April 2004, the aircraft flew to Sliač, where it was practically grounded because of its upgrade modifications, totally different from all other L-39CMs.  Currently, the aircraft is put out of operation and its serial number has not been changed to 5251 as it was first intended. </p>
             </div>
             <div class="large-4 columns">
                 <img alt="L-39 0111" src="/assets/img/slovenske-albatrosy/0111.jpg">
@@ -97,7 +96,7 @@ a dňa 26.10.2012 bol preletený mjr. Labudíkom späť na Sliač.</strong></p>
                 <h3>L-39C 0112</h3>
             </div>
             <div class="large-12 columns">
-                <p>Od 1.1.1993 pridelený k 1. letke 5.šlp v Košiciach. Dostal sfarbenie skupiny Biele albatrosy. V rokoch 1996-1997 sa podrobil GO v LOTN s výmenou trupových častí a predĺžením životnosti do roku 2002. Tiež mu bolo vymenené smerové kormidlo za novší typ koncom 90-tych rokov. Neskôr dostal na SOP modré číslo 1. Od roku 2002 bol na ďalšej GO v LOTN, kde prešiel modernizáciou na štandard L-39CM a zmenou trupového čísla na 5254. Od augusta 2006 lietala v zostave 2. letky na základni Sliač. Posledný let na nej vykonal dňa 06.10.2011 por. Dušan Tichý.</p>
+                <p>On 1 January 1993 the aircraft was assigned to the 1st squadron of the 5th School Aviation Regiment Košice. It got the colours of the aerobatic display team Biele Albatrosy. In 1996-1997, the aircraft underwent a general overhaul in the LOTN that included the replacement of the fuselage parts and the life-cycle extension until 2002, as well as the replacement of the rudder with a new model. Later, the aircraft was labelled with a/the blue number 1. Since 2002, it underwent another general overhaul in the LOTN that included an upgrade to L-39CM standard and the change of its serial number to 5254. The 2nd Squadron used the aircraft since 2006. The aircraft made its last flight on 6 October 2011. The aircraft was flown by Lt Dušan Tichý. </p>
                 <div class="row">
                     <div class="large-6 columns">
                         <img alt="L-39 0112" src="/assets/img/slovenske-albatrosy/0112.jpg">
@@ -114,8 +113,8 @@ a dňa 26.10.2012 bol preletený mjr. Labudíkom späť na Sliač.</strong></p>
                 <h3>L-39C 0442</h3>
             </div>
             <div class="large-12 columns">
-                <p>Od 1.1.1993 pridelený k 1. letke 5.šlp v Košiciach. Kamufláž bola zmenená na sfarbenie skupiny Biele albatrosy.  Rovnako ako ostatné albatrosy série 1 a 4 absolvoval GO v LOTN v rokoch 1996-1997. Tiež došlo k výmene smerového kormidla za novší typ. Neskôr lietal s modrým číslom 2 na SOP. Od roku 2002 u neho prebiehala ďalšia GO, pri ktorej bol modernizovaný do štandardu L-39CM, pričom dostal aj novší, vyšší typ SOP, rovnaký, aký má aj trup. číslo 0111. Trupové číslo sa zmenilo z 0442 na súčasné 5253. Od roku 2006 lietal v zostave 2. letky Sliač. </p>
-<p><strong>Nelietal od mája 2011 kedy bol dolietaný do GO a bol presunutý do LOTN na GO kde dostal novú šedú kamufláž. Dňa 26.09.2012 bol vykonaný fabrický zálet po GO a dňa 11.10.2012 bol preletený mjr. Kandom späť na Sliač.</strong></p>
+                <p>On 1 January 1993 the aircraft was assigned to the 1st squadron of the 5th School Aviation Regiment Košice. It was repainted in the colours of the aerobatic display team Biele Albatrosy. In 1996-1997, the aircraft underwent a general overhaul in the LOTN and the same upgrade as the other Albatros aircraft of the series 1 and 4. It also included the replacement of the rudder with the new model. The aircraft was labelled with a/the blue number 2 placed on its vertical tail area. Since 2002 it underwent another general overhaul that included an upgrade to L-39CM standard and the replacement of the old vertical tail area with the new, advanced model, equal to the model mounted in the aircraft No. 0111. Its original serial number 0442 was changed to 5253.</p>
+<p><strong>The 2nd Squadron used the aircraft from 2006 to May 2011 when it was grounded for the general overhaul. </strong></p>
                 <div class="row">
                     <div class="large-4 columns">
                         <img alt="L-39 0442" src="/assets/img/slovenske-albatrosy/0442.jpg">
@@ -135,8 +134,8 @@ a dňa 26.10.2012 bol preletený mjr. Labudíkom späť na Sliač.</strong></p>
                 <h3>L-39C 0443</h3>
             </div>
             <div class="large-12 columns">
-                <p>Od 1.1.1993 pridelený 1. letke 5.šlp Košice. V rokoch 1996-1997 už v sfarbení Bielych albatrosov prešiel GO v LOTN, rovnako mu bola predĺžená životnosť. Koncom 90-tych rokov dostal aj novší typ smerového kormidla. Na SOP pribudlo modré číslo 7. Od roku 2002 bol na ďalšej GO v LOTN, kde bol modernizovaný na štandard L-39CM a trupové číslo sa mu zmenilo z 0443 na súčasné 5301. Od augusta 2006 lietal u 2. letky na základni Sliač. Nelieta od 01.12.2010 kedy bol preletený do LOTN (generálna oprava). </p>
-<p><strong>Dňa 28.08.2012 bol zaletený po generálnej oprave. Dostal novú kamufláž zloženú z odtieňov šedej farby a na chvostovú plochu pribudol motív Otta Smika. Na leteckú základňu Sliač bol opäť preletený 31.08.2012 pplk. Poláčkom.</strong></p>
+                <p>On 1 January 1993 the aircraft was assigned to the 1st squadron of the 5th School Aviation Regiment Košice. In 1996-1997 the aircraft wore the Biele Albatrosy colours and underwent a general overhaul in the LOT that included the extension of its life-cycle. In the late 1990s the new model of the rudder replaced the older one.  The vertical tail area was labelled with a blue number 7. Since 2002 the aircraft underwent another general overhaul in the LOTN where it was upgraded to L-39CM standard and its serial number was changed from 0443 to 5301. </p>
+<p><strong>The 2nd Squadron used the aircraft from 2006 to 1 December 2010 when it was grounded for the general overhaul in the LOTN. </strong></p>
                 <div class="row">
                     <div class="large-4 columns">
                         <img alt="L-39 0442" src="/assets/img/slovenske-albatrosy/0443.jpg">
@@ -156,7 +155,7 @@ a dňa 26.10.2012 bol preletený mjr. Labudíkom späť na Sliač.</strong></p>
                 <h3>L-39C 4355</h3>
             </div>
             <div class="large-8 columns">
-                <p>Od 1.1.1993 bol v stave 1. letky 5.šlp Košice. Od roku 1992 nosil farby Bielych albatrosov. Tento albatros už mal novší typ smerového kormidla. V druhej polovici 90-tych rokov mu pribudlo na SOP modré číslo 3. Od ostatných strojov Bielych albatrosov sa líšil aj prevedením trupového čísla, ktoré bolo delené, podobné prevedenie čísla mal aj L-39C trupového čísla 4357 a aj stroje série 46 v zostave skupiny pred rozdelením republík. V tomto stroji havaroval mjr. Luboš Novák 3. júna 2000 pri vystúpení skupiny na letisku Sliač, lietadlo bolo úplne zničené.</p>
+                <p>On 1 January 1993 the aircraft was assigned to the 1st squadron of the 5th School Aviation Regiment Košice. Since 1992 the aircraft wore the Biele Albatrosy colours. This Albatros had already had the new model of the rudder. In the late 1990s its vertical tail area was labelled with a/the blue number 3.  It differed from the other Biele Albatrosy in its serial number. The number was stencilled, similar as in L-39 No. 4357 and the aircraft of the series 46 before the split-up of the republics. In June 2000, during the air show in Sliač, the aircraft was completely destroyed in the crash. It was piloted by Maj Ľuboš Novák. </p>
             </div>
             <div class="large-4 columns">
                 <img alt="L-39 4355" src="/assets/img/slovenske-albatrosy/4355.jpg">
@@ -168,7 +167,7 @@ a dňa 26.10.2012 bol preletený mjr. Labudíkom späť na Sliač.</strong></p>
                 <h3>L-39C 4357</h3>
             </div>
             <div class="large-8 columns">
-                <p>Od 1.1.1993 pridelený k 1. letke 5.šlp Košice. Lietal vo farbách Bielych albatrosov od roku 1992. Trupové číslo bolo podobne ako u 4355 delené. Toto lietadlo bolo zničené po kolízii vo vzduchu s L-39V trupovým číslom 0745 počas nácviku skupiny dňa 17.7.1996, piloti pplk. Marián Sakáč a kpt. Róbert Rozenberg sa úspešne katapultovali.</p>
+                <p>On 1 January 1993 the aircraft was assigned to the 1st squadron of the 5th School Aviation Regiment Košice. Since 1992 the aircraft wore the Biele Albatrosy colours. The serial number was stencilled, similar as in 4355. This aircraft was destroyed after the air collision with L-39V serial number 0745. It happened during the formation training on 17 July 1996. Pilots LtCol Marián Sakáš and Capt Róbert Rozenberg successfully ejected. </p>
             </div>
             <div class="large-4 columns">
                 <img alt="L-39 4357" src="/assets/img/slovenske-albatrosy/4357.jpg">
@@ -180,7 +179,7 @@ a dňa 26.10.2012 bol preletený mjr. Labudíkom späť na Sliač.</strong></p>
                 <h3>L-39V 0730</h3>
             </div>
             <div class="large-8 columns">
-                <p>Od 1.1.1993 pridelený 1. letke 5.šlp Košice. Spočiatku lietal v pôvodnom sfarbení kombinácie bielej a žltej farby, typickom pre všetky L-39V, ktoré toto sfarbenie dostali pri výrobe. Neskôr bolo sfarbenie zmenené na štandard Bielych albatrosov. Rovnako mal aj starší typ smerového kormidla, typický pre prvé série L-39. Od roku 2001 pôsobil na základni Sliač, kde bol v roku 2006 vyradený pre vylietanie rezursov. Posledný let na ňom vykonal  31.08.2006 por. Peter LUKÁČIK, v súčasnosti sa nachádza uložený na letisku Sliač.</p>
+                <p>On 1 January 1993 the aircraft was assigned to the 1st squadron of the 5th School Aviation Regiment Košice. First, the aircraft wore the original colours, white and yellow, typical for all L-39s. Later, it was repainted in the standard colours of Biele Albatrosy. It had the older type of the rudder, peculiar to the first series of L-39s. The Air Force Base Sliač operated the aircraft from 2001 to 2006 when it was put out of service because of the achieved number of flight hours.  The aircraft made its last flight on 31 August 2006, piloted by Lt Peter LUKÁČIK. Currently, the aircraft is stored at the AFB Sliač. </p>
             </div>
             <div class="large-4 columns">
                 <img alt="L-39 0730" src="/assets/img/slovenske-albatrosy/0730.jpg">
@@ -192,7 +191,7 @@ a dňa 26.10.2012 bol preletený mjr. Labudíkom späť na Sliač.</strong></p>
                 <h3>L-39V 0745</h3>
             </div>
             <div class="large-8 columns">
-                <p>Od 1.1.1993 v stave 1. letky 5.šlp Košice. Sfarbenie Bielych albatrosov dostal až neskôr, dovtedy lietal v štandardnej schéme pre vlečné L-39V, rovnako mal aj starší typ smerového kormidla, ktoré bolo po čase nahradené novším, nižším. Stroj 0745 bol poškodený 17.7.1996 po zrážke vo vzduchu s číslom 4357, pilotovi sa podarilo pristáť na letisku v Košiciach. Bol opravený v LOTN a do roku 2001 lietal v Košiciach. Od roku 2001 bol presunutý na Sliač. Tu v roku 2006 pre vyčerpanie rezursov, dolietal a zostal uložený. Posledný let bol 04.05.2007 a vykonal ho por. Tomáš KROPÁČEK.</p>
+                <p>On 1 January 1993 the aircraft was assigned to the 1st squadron of the 5th School Aviation Regiment Košice. Before it got the Biele Albatrosy colours, it had worn the standard L-39V camouflage. Its older type of the rudder was later replaced with the newer, shorter model.  The L-39V 0745 was damaged on 17 July 1996 after the air collision with 4357. The pilot managed to land at the airport in Košice. It was repaired in the LOTN and by 2001 the aircraft was operated in Košice. In 2006 the aircraft was put out of service due to the achieved number of flight hour and remained stored. It made its last flight on 4 May 2007, piloted by Lt. Tomáš KROPÁČEK. </p>
             </div>
             <div class="large-4 columns">
                 <img alt="L-39 0745" src="/assets/img/slovenske-albatrosy/0745.jpg">
@@ -204,7 +203,7 @@ a dňa 26.10.2012 bol preletený mjr. Labudíkom späť na Sliač.</strong></p>
                 <h3>L-39ZA (ZAM) 1701</h3>
             </div>
             <div class="large-12 columns">
-                <p>Od 1.1.1993 pridelený k 2.zmlp Trenčín. V septembri 1994 bol presunutý k 33.sblk Kuchyňa. Od roku 1995 lietal zo základne Sliač. Zo začiatku lietal v štandardnej kamufláži z dvoch odtieňov zelenej a šedomodrými spodnými plochami, neskôr dostal sfarbenie skupiny Biele albatrosy a bol mu odstránený kanón GŠ-23. V súčasnosti je modernizovaný na verziu L-39ZAM, sfarbenie Bielych albatrosov mu zostalo, pribudlo však púzdro s kanónom. Trupové čísla sa pri modernizácii nemenili ako u L-39CM.</p><p><strong> Lietal u 2. letky Sliač do roku 2010 kedy ukončil technický život a dňa 20.06.2010 na nej vykonal posledný let kpt. Labudík.</strong></p>
+                <p>On 1 January 1993 the aircraft was assigned to the 2nd Mixed Aviation Regiment Trenčín. In September 1994, it was relocated to the 33rd Fighter-Bomber Aviation Wing Kuchyňa. Since 1995, the aircraft has been operated by the AFB Sliač. At first, it wore the standard camouflage consisting of two shades of green and the belly painted blue-gray. Later, it got the Biele Albatrosy colours and its 23-mm Gryazev-Shipunov (GSh-23) automatic cannon was dismantled. The aircraft has been upgraded to the L-39ZAM version and equipped with a gun pod. Unlike L-39CMs, its serial number remained unchanged, as well as its colours.</p><p><strong>The 2nd Squadron used the aircraft until 2010 when the last flight was performed on 20th June 2010 by Capt. Labudík.</strong></p>
                 <div class="row">
                     <div class="large-6 columns">
                         <img alt="L-39 1701" src="/assets/img/slovenske-albatrosy/1701.jpg">
@@ -221,7 +220,7 @@ a dňa 26.10.2012 bol preletený mjr. Labudíkom späť na Sliač.</strong></p>
                 <h3>L-39ZA 1725</h3>
             </div>
             <div class="large-12 columns">
-                <p>Od 1.1.1993 pridelený 3.sbolp Kuchyňa, v marci prešiel k 2.zmlp Trenčín, odtiaľ v roku 1994 znovu na základňu Kuchyňa a nakoniec v roku 1995 k 31. slk Sliač. Lietal v štandardnej kamufláži verzie ZA, po GO v roku 2002 v LOTN dostal novú kamufláž s mierne odlišnými odtieňmi a iným tvarom číslic trupového čísla. Do roku 2006 lietal u 2. letky na Sliači. V súčasnosti je uložený, nelieta od prechodu letky na verzie L-39CM a ZAM. Posledný let vykonal dňa 17.05.2007 kpt. Slavomír KANDA.</p>
+                <p>On 1 January 1993 the aircraft was assigned to the 3rd Figther-Bomber Aviation Regiment Kuchyňa, in March it relocated to the 2nd Mixed Aviation Regiment Trenčín and in 1994 it returned to the AFB Kuchyňa. In 1995 the aircraft finally moved to the 31st Fighter Aviation Regiment Sliač. It had worn the standard camouflage of ZA version by 2002 when following the general overhaul in the LOTN it got the new camouflage with a slightly different colour shades and a differently shaped serial number.  By 2006 the aircraft was actively operated by the 2nd Squadron Sliač. The aircraft has been put out of service since the squadron began operating the L-39CM and ZAM versions. It made its last flight on 17 May 2007, piloted by Capt Slavomír KANDA. </p>
                 <div class="row">
                     <div class="large-6 columns">
                         <img alt="L-39 1725" src="/assets/img/slovenske-albatrosy/1725.jpg">
@@ -238,7 +237,7 @@ a dňa 26.10.2012 bol preletený mjr. Labudíkom späť na Sliač.</strong></p>
                 <h3>L-39ZA (ZAM) 1730</h3>
             </div>
             <div class="large-12 columns">
-                <p>Od roku 1993 absolvoval rovnakú anabázu ako trupové číslo 1725, od roku 1995 lieta na základni Sliač. Kamufláž má štandardnú pre verziu ZA. V roku 2005 absolvoval GO v LOTN spojenú s modernizáciou na verziu ZAM, dostal novú kamufláž z dvoch odtieňov zelenej a šedomodrú na spodné plochy. Trupové číslo zostalo nezmenené, zmenila sa len farba z bielej na čiernu. Lietal v stave 2. letky na Sliači do ukončenia technického života a posledný let na ňom vykonal por. Lukáčik dňa 01.06.2011.</p>
+                <p>Since 1993 the aircraft followed the tracks of No. 1725 and since 1995 has been operated within the AFB Sliač. It wears the camouflage standard for the ZA version. In 2005, it underwent the general overhaul in the LOTN that included the upgrade to the ZAM version. The aircraft also got the standard camouflage consisting of two shades of green and the belly painted blue-gray. The serial number remained intact but its white colour was changed to black.The aircraft is currently operated by the 2nd Squadron Sliač. </p>
                 <div class="row">
                     <div class="large-6 columns">
                         <img alt="L-39 1730" src="/assets/img/slovenske-albatrosy/1730.jpg">
@@ -255,7 +254,7 @@ a dňa 26.10.2012 bol preletený mjr. Labudíkom späť na Sliač.</strong></p>
                 <h3>L-39ZA 3905</h3>
             </div>
             <div class="large-8 columns">
-                <p>Od 1.1.1993 bol v stave 3.sbolp Kuchyňa. Neskôr prešiel cez základňu Trenčín až zostal dislokovaný u 31. slk na letisku Sliač. Lietal v štandardnej kamufláži verzie ZA.</p><p>L-39ZA 3905 bol zničený 14.9.2000, keď ho katapultážou opustil npor. Pavol Serbín pre poruchu motora pri obci Ožďany.</p>
+                <p>Since 1 January 1993 the aircraft was operated by the 3rd Fighter-Bomber Aviation Regiment Kuchyňa, the Air Base Trenčín and the 31st Fighter Aviation Wing Sliač, where it was operated until 2000. The aircraft wore the camouflage standard for ZA version.</p><p> L-39ZA No. 3905 was destroyed in the crash that was caused due to engine failure. It occurred near the village of Ožďany on 14 September 2000. The pilot ejected from the aircraft.</p>
             </div>
             <div class="large-4 columns">
                         <img alt="L-39 3905" src="/assets/img/slovenske-albatrosy/3905.jpg">
@@ -267,7 +266,7 @@ a dňa 26.10.2012 bol preletený mjr. Labudíkom späť na Sliač.</strong></p>
                 <h3>L-39ZA (ZAM) 4701</h3>
             </div>
             <div class="large-12 columns">
-                <p>Od 1.1.1993 bol pridelený 1. slp Sliač. Lietal v štandardnej kamufláži verzie ZA. V druhej polovici 90-tych rokov dostal sfarbenie Bielych albatrosov a bol mu odstránený kanón GŠ-23.</p><p><strong>Od apríla 2011 prešiel do LOTN (generálna oprava + modernizácia) kde dostalo novú šedú kamufláž. Dňa 06.03.2013 bol vykonaný fabrický zálet po GO a dňa 08.04.2013 bol preletený mjr. Kandom späť na Sliač.</strong></p>
+                <p>On 1 January 1993 the aircraft was assigned to the 1st Fighter Aviation Regiment Sliač. It wore the camouflage standard for ZA version. In the late 1990s it got the Biele Albatrosy colours and its GSh-23 cannon was dismantled.</p><p><strong>In April 2011 the aircraft was taken to the LOTN for a general overhaul and upgrade where it has received a low visibility livery. It is back in operational use since 8th April 2013 when Mjr. Kanda flew it back to Sliač.</strong></p>
                 <div class="row">
                     <div class="large-6 columns">
                         <img alt="L-39 4701" src="/assets/img/slovenske-albatrosy/4701.jpg">
@@ -284,7 +283,7 @@ a dňa 26.10.2012 bol preletený mjr. Labudíkom späť na Sliač.</strong></p>
                 <h3>L-39ZA (ZAM) 4703</h3>
             </div>
             <div class="large-12 columns">
-                <p>Od začiatku roku 1993 bol pridelený k 1.slp na Sliači, spočiatku lietal v pôvodnej kamufláži. Na konci 90-tych rokov dostal sfarbenie Bielych albatrosov, dlhší čas však nelietal. V roku 2010 prišiel z GO spojenej s modernizáciou na verziu ZAM, kde dostal znovu kamufláž z dvoch odtieňov zelenej a šedomodrú na spodné plochy. V súčasnosti lieta v zostave 2. letky Sliač.</p>
+                <p>Since the beginning of 1993 the aircraft was assigned to the 1st Fighter Aviation Regiment. At first, it wore the original camouflage. In the late 1990s it got the Biele Albatrosy colours. In 2010, the aircraft underwent a general overhaul that included the upgrade to the ZAM version. It got the camouflage consisting of the shades of green and the belly painted gray-blue. The aircraft is currently operated by the 2nd Squadron in Sliač. </p>
                 <div class="row">
                     <div class="large-6 columns">
                         <img alt="L-39 4703" src="/assets/img/slovenske-albatrosy/4703.jpg">
@@ -301,7 +300,7 @@ a dňa 26.10.2012 bol preletený mjr. Labudíkom späť na Sliač.</strong></p>
                 <h3>L-39ZA 4705</h3>
             </div>
             <div class="large-8 columns">
-                <p>Od 1.1.1993 bol pridelený na základňu Sliač, v druhej polovici 90-tych rokov došlo u neho k zmene kamufláže zo štandardnej na sfarbenie Bielych albatrosov. Tiež mu bol odstránený kanón. L-39ZA číslo 4705 bol zničený pri havárii pre poruchu motora 29.10.2002 pri obci Kalša počas výcviku maďarských pilotov. Obaja piloti maďarského letectva sa katapultovali</p>
+                <p>On 1 January 1993 the aircraft was assigned to the AFB Sliač. In the late 1990s its standard camouflage was changed to the Biele Albatrosy colours and its cannon was dismantled. L-39ZA No. 4705 was destroyed in the crash that was caused due to engine failure. It happened near the village of Kalša on 29 October 2002 during the training of Hungarian pilots. Both Hungarian pilots ejected successfully. </p>
             </div>
             <div class="large-4 columns">
                 <img alt="L-39 4705" src="/assets/img/slovenske-albatrosy/4705.jpg">
@@ -313,7 +312,7 @@ a dňa 26.10.2012 bol preletený mjr. Labudíkom späť na Sliač.</strong></p>
                 <h3>L-39ZA (ZAM) 4707</h3>
             </div>
             <div class="large-12 columns">
-                <p>Od začiatku roku 1993 až do súčasnosti je dislokovaný na základni Sliač. Spočiatku lietal v štandardnej kamufláži verzie ZA, neskôr dostal farby Bielych albatrosov, ktorým býval zapožičiavaný spolu s ďalšími L-39ZA ako&nbsp; záloha. V roku 2006 prešiel GO v LOTN, pri ktorej bol modernizovaný na verziu ZAM. Dostal nové sfarbenie identické s modernizovaným ZAM číslo 1730.</p><p><strong>Lietal v stave 2.letky do roku 2012 kedy ukončil technický život a dňa 18.07.2012 na ňom vykonal posledný let por. Paľuv.</strong></p>
+                <p>Since the beginning of 1993 the aircraft has been operated by the AFB Sliač. At first, it wore the standard ZA version camouflage. Later, it got the Biele Albatrosy colours and was used as a standby aircraft, together with other L-39ZAs, for the needs of this aerobatic team. In 2006, it underwent a general overhaul in the LOTN and was upgraded to the ZAM version. The aircraft got a new camouflage identical with the upgraded L-39ZAM No. 1730. </p><p><strong>The L-39ZAM No. 4707 is currently operated by the 2nd Squadron in Sliač.</strong></p>
                 <div class="row">
                     <div class="large-6 columns">
                         <img alt="L-39 4707" src="/assets/img/slovenske-albatrosy/4707.jpg">
@@ -330,7 +329,7 @@ a dňa 26.10.2012 bol preletený mjr. Labudíkom späť na Sliač.</strong></p>
                 <h3>L-39ZA (ZAM) 4711</h3>
             </div>
             <div class="large-12 columns">
-                <p>Rovnako ako všetky ostatné L-39ZA série 47 slovenského letectva bol od roku 1993 umiestnený na základni Sliač. V druhej polovici 90-tych rokov bol prestriekaný do farieb Bielych albatrosov, pričom mu bol odstránený kanón. Po prechode 2. letky na verzie CM a ZAM bol odstavený z prevádzky, v súčasnosti je uložený na základni Sliač, nebol modernizovaný.</p><p><strong>Lietadlo bolo presunuté do LOTN (generálna oprava + modernizácia) kde dostalo novú šedú kamufláž. Dňa 06.03.2013 bol vykonaný fabrický zálet po GO a dňa 08.04.2013 bol preletený mjr. Kandom na Sliač.</strong></p>
+                <p>The same as the other L-39ZAs of series 47, the aircraft was assigned to the AFB Sliač in 1993. In the late 1990s, it got the colours of the Biele Albatrosy group and its cannon was dismantled. When the 2nd Squadron began operating the L-39CM versions, this ZAM version was put out of operation.</p><p><strong>The plane had undergone a general overhaul and an upgrade in LOTN where it also was painted in new colours. The L-39ZAM No. 4711 is currently operated by the 2nd Squadron in Sliač.</strong></p>
                 <div class="row">
                     <div class="large-6 columns">
                         <img alt="L-39 4711" src="/assets/img/slovenske-albatrosy/4711.jpg">
@@ -343,7 +342,7 @@ a dňa 26.10.2012 bol preletený mjr. Labudíkom späť na Sliač.</strong></p>
         </div>
         <div class="row">
             <div class="large-12 columns">
-                <p>Všetky údaje o stave slovenských L-39 sú ku 01.05.2013. Do budúcnosti sa počíta s prevádzkovaním týchto lietadiel:
+                <p>All the data specifying the technical conditions of all L-39s are valid as of 1 June 2011.  The following numbers are those aircraft that are to be operated also in the future:
         <table cellspacing="0" cellpadding="0" align="center">
             <tr>
                 <td style="width: 117px" align="left">L-39 CM</td>
