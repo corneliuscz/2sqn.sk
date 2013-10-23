@@ -9,8 +9,8 @@
     <link href="<?php echo $app->config('server_url'); ?>assets/css/app.css" rel="stylesheet" type="text/css" media="all">
 
     <script>window.grunticon=function(e){if(e&&3===e.length){var t=window,n=!!t.document.createElementNS&&!!t.document.createElementNS("http://www.w3.org/2000/svg","svg").createSVGRect&&!!document.implementation.hasFeature("http://www.w3.org/TR/SVG11/feature#Image","1.1"),A=function(A){var o=t.document.createElement("link"),r=t.document.getElementsByTagName("script")[0];o.rel="stylesheet",o.href=e[A&&n?0:A?1:2],r.parentNode.insertBefore(o,r)},o=new t.Image;o.onerror=function(){A(!1)},o.onload=function(){A(1===o.width&&1===o.height)},o.src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw=="}};
-        grunticon( [ "<?php echo $app->config('server_url'); ?>assets/css/icons.data.svg.min.css", "<?php echo $app->config('server_url'); ?>assets/css/icons.data.png.min.css", "<?php echo $app->config('server_url'); ?>assets/css/icons.fallback.min.css" ] );</script>
-    <noscript><link href="<?php echo $app->config('server_url'); ?>assets/css/icons.fallback.min.css" rel="stylesheet"></noscript>
+        grunticon( [ "<?php echo $app->config('server_url'); ?>assets/css/icons.data.svg.css", "<?php echo $app->config('server_url'); ?>assets/css/icons.data.png.css", "<?php echo $app->config('server_url'); ?>assets/css/icons.fallback.css" ] );</script>
+    <noscript><link href="<?php echo $app->config('server_url'); ?>assets/css/icons.fallback.css" rel="stylesheet"></noscript>
 
     <meta name="keywords" content="lietadlá, letectvo, L-39, albatros, 2.letka, 2nd squadron">
     <meta name="description" lang="sk" content="Stránka pre priaznivcov vojenského letectva a 2. letky Sliač">
