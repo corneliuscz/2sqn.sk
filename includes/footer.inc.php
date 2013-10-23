@@ -210,11 +210,7 @@ $(document).ready(function(){
 });
 
 </script>
-
-<!--
-<script src="<?php echo $app->config('server_url'); ?>assets/js/360body.js"></script>
-<script src="<?php echo $app->config('server_url'); ?>assets/js/360detekce.js"></script>
--->
+<!-- <script src="<?php echo $app->config('server_url'); ?>assets/js/360detekce.js"></script> -->
 
 </body>
 </html>

@@ -24,13 +24,13 @@ $(document).ready(function() {
 
     $('#Tip')
       .show()
-      .css({'left': e.pageX+16, 'top': e.pageY+16})
-      .html('Position<br>Percent: '+percx+'%, '+percy+' %<br>Div: '+x+' px, '+y+' px');
+      .css({'left': e.pageY+16, 'top': e.pageX+16})
+      .html('Position<br>Percent: '+percy+'%, '+percx+' %<br>Div: '+x+' px, '+y+' px');
 
     $('.threesixty')
       .click( function () {
         $('#DivPosition')
-          .html('Coords: '+corX+'%, '+corY+' %');
+          .html('Coords: '+corY+'%, '+corX+' %');
         $('.spot')
           .css('margin', corY+'% 0 0 '+corX+'%' );
     });
