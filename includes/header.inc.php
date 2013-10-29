@@ -12,15 +12,38 @@
         grunticon( [ "<?php echo $app->config('server_url'); ?>assets/css/icons.data.svg.css", "<?php echo $app->config('server_url'); ?>assets/css/icons.data.png.css", "<?php echo $app->config('server_url'); ?>assets/css/icons.fallback.css" ] );</script>
     <noscript><link href="<?php echo $app->config('server_url'); ?>assets/css/icons.fallback.css" rel="stylesheet"></noscript>
 
-    <meta name="keywords" content="lietadlá, letectvo, L-39, albatros, 2.letka, 2nd squadron">
+    <meta name="keywords" content="lietadlá, letectvo, L-39, albatros, 2.letka, 2nd squadron, výcviková letka, training squadron, slovak air force, aircraft, airplanes, aviation">
     <meta name="description" lang="sk" content="Stránka pre priaznivcov vojenského letectva a 2. letky Sliač">
-    <meta name="author" content="2sqn">
-    <meta name="copyright" content="www.2sqn.sk">
-    <meta name="category" content="general"/>
+    <meta name="description" lang="en" content="Webpage for fans of 2nd Squadron of TFW Sliač and military aviation">
+    <meta name="author" content="2nd Squadron Sliač">
+    <meta name="copyright" content="2nd Squadron Sliač">
+    <meta name="category" content="aviation"/>
     <meta name="robots" content="index, follow">
+
+    <meta property="og:url" content="http://www.2sqn.sk">
+    <meta property="og:title" content="2nd SQN TFW Sliač">
+    <meta property="og:site_name" content="2nd SQN TFW Sliač">
+    <meta property="og:description" content="Stránka pre priaznivcov vojenského letectva a 2. letky Sliač">
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="<?php echo $app->config('server_url'); ?>assets/img/favicons/facebook-300x300.png">
 
     <title>2nd SQN Sliač</title>
 
+    <!-- favicons -->
+    <link rel="shortcut icon" href="<?php echo $app->config('server_url'); ?>assets/img/favicons/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon-precomposed" href="<?php echo $app->config('server_url'); ?>assets/img/favicons/apple-touch-icon.png">
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="<?php echo $app->config('server_url'); ?>assets/img/favicons/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="<?php echo $app->config('server_url'); ?>assets/img/favicons/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="<?php echo $app->config('server_url'); ?>assets/img/favicons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="<?php echo $app->config('server_url'); ?>assets/img/favicons/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="<?php echo $app->config('server_url'); ?>assets/img/favicons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="<?php echo $app->config('server_url'); ?>assets/img/favicons/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="<?php echo $app->config('server_url'); ?>assets/img/favicons/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="<?php echo $app->config('server_url'); ?>assets/img/favicons/apple-touch-icon-152x152.png">
+    <meta name="msapplication-TileColor" content="#FFFFFF">
+    <meta name="msapplication-TileImage" content="<?php echo $app->config('server_url'); ?>assets/img/favicons/apple-touch-icon-144x144.png">
+
+    <!-- custom scripts -->
     <script src="<?php echo $app->config('server_url'); ?>assets/js/vendor/custom.modernizr.min.js"></script>
 
     <div id="fb-root"></div>
