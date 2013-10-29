@@ -179,6 +179,7 @@ var scope,
             html += '<img class="threesixty-frame" style="display:' + display + ';" data-index="' + i + '" src="' + pathTemplate.replace('{index}', i) + '"/>';
         }
         $this.html(html);
+        $('.threesixty-frame-notes').css('display', 'block');   // display block with walkaround notes
 
         this.attachHandlers(objIndex);
     };

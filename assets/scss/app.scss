@@ -72,7 +72,7 @@ strong {
     height: 38px;  /* Height of image */
     width: 38px; /* Width of image */
     background: url(../img/top.png) no-repeat;
-    text-indent: -10000000px;
+    text-indent: -9999em;
 }
 
 /* ***************** */
@@ -452,6 +452,7 @@ table {
 
     .threesixty-frame-notes {
         z-index: 30;
+        display: none;
         //position: relative;
 
         a.icon {

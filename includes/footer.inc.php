@@ -74,15 +74,6 @@ if (mq.matches) {
 }
 </script>
 
-<script src="<?php echo $app->config('server_url'); ?>assets/js/jquery.easing.min.js"></script>
-<script src="<?php echo $app->config('server_url'); ?>assets/js/jquery.scrollUp.min.js"></script>
-<script>
-/* scrollUp Minimum setup */
-$(function () {
-    $.scrollUp();
-});
-</script>
-
 <script src="<?php echo $app->config('server_url'); ?>assets/js/cbpHorizontalMenu.min.js"></script>
 <script>
 /* Nahodíme menu */
@@ -198,15 +189,16 @@ $(document).ready(function(){
 
     // Příprava dat
     htmlNotes += '<div class="threesixty-frame-notes">';
-    /*htmlNotes += '<i class="icona spot"></i>';*/
-
-    for(j; j < sp; j++){
+    <?php   // Zakomentovat ať se to neobjeví v ostrém webu  /*htmlNotes += '<i class="icona spot"></i>';*/  ?>
+    for (j; j < sp; j++) {
         htmlNotes += '<a href="' + spots[j][2] + '" title="' + spots[j][3] + '" class="fancybox icon icon-i-w-spot '+ spots[j][0] +'" style="' + spots[j][1] + '"></a>';
     }
     htmlNotes += '</div>'
 
     // Přidáme body do HTML
-    $('.walkaround').prepend(htmlNotes);
+    $(function() {
+        $('.walkaround').prepend(htmlNotes);
+    });
 });
 
 </script>
