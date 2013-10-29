@@ -46,4 +46,5 @@ if (mysql_num_rows($novinka)) { // Novinka existuje
     header('Location: /novinky');
 }
 mysql_close($db);
+include ('includes/footer-news.inc.php');
 include ('includes/footer.inc.php');

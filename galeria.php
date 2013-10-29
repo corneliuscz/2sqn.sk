@@ -428,4 +428,5 @@ $galleryname = trim($_GET['dir']);
             </div>
     <?php }
 ?>
+<?php include ('includes/footer-news.inc.php'); ?>
 <?php include ('includes/footer.inc.php'); ?>

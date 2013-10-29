@@ -51,4 +51,6 @@ mysql_close($db); // zavřeme spojení s databází
 ?>
     </div>
 </article>
+<?php include ('includes/footer-news.inc.php'); ?>
+<?php include ('includes/_novinky-scripts.inc.php');    ?>
 <?php include ('includes/footer.inc.php');    ?>

@@ -47,4 +47,5 @@ else { ?>
     </div>
     <?php include ('includes/_loginform.inc.php'); ?>
 <?php } ?>
+<?php include ('includes/footer-news.inc.php'); ?>
 <?php include ('includes/footer.inc.php');    ?>

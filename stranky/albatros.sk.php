@@ -358,4 +358,5 @@ a dňa 26.10.2012 bol preletený mjr. Labudíkom späť na Sliač.</strong></p>
         </div>
     </section>
 </article>
+<?php include ('includes/footer-news.inc.php'); ?>
 <?php include ('includes/footer.inc.php');    ?>

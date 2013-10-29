@@ -14,4 +14,6 @@
             <p class="loading"><?php echo $app->tr['walkaround']['loading']; ?><br><br> <img src="<?php echo $app->config('server_url'); ?>assets/img/loading.gif"></p></div>
     </section>
 </div>
+<?php include ('includes/footer-news.inc.php'); ?>
+<?php include ('includes/_walkaround-scripts.inc.php'); ?>
 <?php include ('includes/footer.inc.php'); ?>
