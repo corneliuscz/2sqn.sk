@@ -108,7 +108,7 @@ function gb_sprava_zobrazit ($na_stranu, $rozsah)
 
     global $app;
     $default = $app->config('server_url')."assets/img/avatar-default.png";   // Vlastní ikona pro ty kteří gravatar nemají
-    $size = 80;
+    $size = 64;
     //$grav_url = "http://www.gravatar.com/avatar/" . md5( strtolower( trim( $grav_mail[0] ) ) ) . "?d=" . urlencode( $default ) . "&s=" . $size;
 
     $avatar = get_gravatar( $grav_mail[0], $size, $default, 'g', false );

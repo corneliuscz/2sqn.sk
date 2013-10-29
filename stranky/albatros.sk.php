@@ -26,7 +26,7 @@
                 <p>História lietadla L-39 Albatros siaha do roku 1963 kedy Ministerstvo národnej obrany ČSSR spracovalo rozbor podkladov pre stanovanie požiadaviek na nový výcvikový systém pilotov na prúdových lietadlách, ako náhradu za starší typ L-29 Delfín. Hlavným konštruktérom projektu bol Ing.&nbsp;Jan Vlček a&nbsp;vedúci projektu bol Ing.&nbsp;Karol Dlouhý. Prvý skutočný let ktorý trval 35 minút vykonal skúšobný pilot Ing. Rudolf Duchoň dňa 4&nbsp;Novembra 1968. Sériová výroba lietadla začala v roku 1971 v&nbsp;Aeru Vodochody a&nbsp;trvala až do roku 1997. Celkovo bolo vyrobených 2892 lietadiel v rôznych verziách a&nbsp;boli exportované do 17 krajín. Najväčším odberateľom bol vtedajší Sovietsky Zväz s&nbsp;počtom až 2081 lietadiel.</p>
             </div>
             <div class="large-4 columns">
-                <figure class="">
+                <figure class="border">
                     <img src="/assets/img/letka-historia-005.jpg">
                 </figure>
             </div>
@@ -36,7 +36,7 @@
                 <p>2.&nbsp;letka používa lietadlá L-39 vo verziách CM a&nbsp;ZAM ktoré boli v&nbsp;roku 2005 modernizované z&nbsp;pôvodných verzií C a&nbsp;ZA. Modernizácia sa dotkla najmä prístrojového vybavenia tak aby spĺňalo štandardy NATO a&nbsp;vyhovovalo normám ICAO.</p>
             </div>
             <div class="large-4 columns">
-            <figure class="">
+            <figure class="border">
                 <img src="/assets/img/letka-historia-004.jpg">
             </figure>
             </div>
@@ -55,7 +55,7 @@
                 <p>Od 1.1.1993 bol pridelený 1. letke 5.šlp Košice. Bol zaradený do skupiny Biele albatrosy, pričom dostal aj ich farby. V rokoch 1996-1997 sa podrobil GO v LOTN (Letecké opravovne Trenčín) spojenej s výmenou trupovej škrupiny a predĺžením životnosti. Do druhej polovice 90-tych rokov  lietal so starším (vyšším) smerovým kormidlom. Neskôr nosil na SOP&nbsp;(zvislá chvostová plocha) modré číslo 4. V roku 2002 absolvoval ďalšiu GO (generálnu opravu) v LOTN spojenú s rozsiahlou modernizáciou, pri ktorej mu bolo zmenené trupové číslo z 0101 na súčasné 5302 a označenie na L-39CM. Od roku 2006 lietal na 2. letke na základni Sliač. Nelieta od mája 2011 – dolietaný do generálnej opravy.</p>
             </div>
             <div class="large-4 columns">
-                <figure class="">
+                <figure class="border">
                     <img alt="L-39 0101" src="/assets/img/slovenske-albatrosy/0101.jpg">
                 </figure>
             </div>
@@ -70,13 +70,13 @@
 a dňa 26.10.2012 bol preletený mjr. Labudíkom späť na Sliač.</strong></p>
                 <div class="row">
                     <div class="large-4 columns">
-                        <img alt="L-39 0102" src="/assets/img/slovenske-albatrosy/0102.jpg">
+                        <img class="border" alt="L-39 0102" src="/assets/img/slovenske-albatrosy/0102.jpg">
                     </div>
                     <div class="large-4 columns">
-                        <img alt="l-39 5252" src="/assets/img/slovenske-albatrosy/5252_1.jpg">
+                        <img class="border" alt="l-39 5252" src="/assets/img/slovenske-albatrosy/5252_1.jpg">
                     </div>
                     <div class="large-4 columns">
-                        <img alt="l-39 5252" src="/assets/img/slovenske-albatrosy/5252_2.jpg">
+                        <img class="border" alt="l-39 5252" src="/assets/img/slovenske-albatrosy/5252_2.jpg">
                     </div>
                 </div>
             </div>

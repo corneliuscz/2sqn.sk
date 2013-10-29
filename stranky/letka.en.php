@@ -22,7 +22,7 @@
                 <p>L-39 began to write its new history on 7 May 1991, after the break-up of the 8th Fighter Regiment Brno in the Airport Sliač.  It was followed by the establishment of the 81st Independent Fighter Squadron that had MiG-29s and four L-39s in its military arsenal. Major Mechel was designated as the first commander and Captain Fülle was in command of the L-39 flight.  On 1 September 1991, the L-39s were integrated into the air defence Quick Reaction Alert system.  Following the division of the Czechoslovak Air Force, the Airport Sliač became home to MiG-29s and another MiG-21s. On 1 December 1992, the 1st Fighter Regiment was established and put under the command of LtCol Palík. The regiment was made up of the 1st squadron with MiG-29s, the 2nd squadron with MiG-21s and the 3rd “mixed” with L-39s and MiG-21s. The L-39 flight was commanded by Capt Masár, Maj Tovačovský and Maj Mano, respectively. </p>
             </div>
             <div class="large-4 columns">
-            <figure class="">
+            <figure class="border">
                 <img src="/assets/img/letka-historia-003.jpg">
             </figure>
             </div>
@@ -32,7 +32,7 @@
                 <p>Following the reorganization of the Military Aviation Academy in Košice as of 1 October 2001, the squadron´s aircraft inventory was enlarged with L-39V (aircraft version intended to tug air targets KT 04). All MiG-29 and MiG-21 pilots used L-39 as a complementary type. Among the regular squadron members were Maj Tovačovský, Capt Lacko, Capt Masár, Capt Eremiáš, Maj Mano, Capt Šerý, Capt Žbirka and 1st Lt Blahút.</p>
             </div>
             <div class="large-4 columns">
-            <figure class="">
+            <figure class="border">
                 <img src="/assets/img/letka-historia-004.jpg">
             </figure>
             </div>
@@ -42,7 +42,7 @@
                 <p>31 December 2002 marked the birth of the 2nd Tactical Training Squadron. When the Slovak Armed Force discarded the MiG-21 aircraft from the squadron´s inventory, the L-39 aircraft remained in use since then on.  In that time, following the reorganization of the Air Base Malacky, Capt Šmigovský, Capt Cingel, Capt Labudík, Capt Kanda and Capt Poláček joined the squadron. Maj Gloss, Capt Šerý, Capt Žbirka, Maj Poláček (active as a pilot to date), Capt Cingel (active as a pilot to date) and Maj Mano qualified as display pilots. After the disestablishment of the Military Aviation Academy Košice in 2004, the squadron´s inventory was enlarged with L-39C version that got the colours of the aerobatic display team Biele Albatrosy. </p>
             </div>
             <div class="large-4 columns">
-                <figure class="">
+                <figure class="border">
                     <img src="/assets/img/letka-historia-005.jpg">
                 </figure>
             </div>

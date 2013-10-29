@@ -22,7 +22,7 @@
                 <p>Rozdelením 8.&nbsp;stíhacieho pluku Brno sa na&nbsp;letisku Sliač 7.&nbsp;mája 1991 začína písať novodobá história lietadiel L-39. Vzniká 81.&nbsp;samostatná stíhacia letka, ktorá je tvorená lietadlami MiG-21 a&nbsp;štyrmi lietadlami L-39. Prvým veliteľom sa stáva mjr.&nbsp;Mechel a&nbsp;roju L-39 velí kpt.&nbsp;Fülle. Dňom 1.&nbsp;9. 1991 sú L-39 zaradené do pohotovostného systému PVO. Delením Československého letectva prilietavajú na&nbsp;letisko Sliač lietadlá MiG-29, ďalšie lietadlá MiG-21 a&nbsp;1.&nbsp;12. 1992 vzniká 1.&nbsp;Stíhací letecký pluk pod velením pplk.&nbsp;Palíka. Pluk tvorí 1.&nbsp;Letka s&nbsp;lietadlami MiG-29, 2.&nbsp;Letka s&nbsp;lietadlami MiG-21 a&nbsp;3.&nbsp;letka „zmiešaná“ s&nbsp;lietadlami L-39 a&nbsp;MiG-21. Veliteľmi rojov L-39 toho času sú kpt.&nbsp;Masár, mjr.&nbsp;Tovačovský a&nbsp;mjr.&nbsp;Mano.</p>
             </div>
             <div class="large-4 columns">
-            <figure class="">
+            <figure class="border">
                 <img src="/assets/img/letka-historia-003.jpg">
             </figure>
             </div>
@@ -32,7 +32,7 @@
                 <p>Reorganizáciou VLA Košice k&nbsp;1.&nbsp;10. 2001 je letka doplnená o&nbsp;verziu L-39&nbsp;V (verzia určená na&nbsp;ťahanie vzdušných terčov KT 04). Všetci piloti lietadiel MiG-29 a&nbsp;MiG-21 využívajú L-39 len ako doplnkový typ. Kmeňových príslušníkov letky predstavujú, mjr.&nbsp;Tovačovský, kpt.&nbsp;Lacko, kpt.&nbsp;Masár, kpt.&nbsp;Eremiáš, mjr.&nbsp;Mano, kpt.&nbsp;Šerý, kpt.&nbsp;Žbirka a&nbsp;npor.&nbsp;Blahút.</p>
             </div>
             <div class="large-4 columns">
-            <figure class="">
+            <figure class="border">
                 <img src="/assets/img/letka-historia-004.jpg">
             </figure>
             </div>
@@ -42,7 +42,7 @@
                 <p>Dňom 31.&nbsp;12. 2002 začína vlastná história 2.&nbsp;letky. Vyradením typu MiG-21 zo služby ASR, zostávajú vo výzbroji letky už len lietadlá L-39. V&nbsp;tomto období po reorganizácii Leteckej základne Malacky, prichádzajú k&nbsp;letke piloti kpt.&nbsp;Šmigovský, kpt.&nbsp;Cingel, kpt.&nbsp;Labudík, kpt.&nbsp;Kanda a&nbsp;kpt.&nbsp;Poláček. Display piloti na&nbsp;L-39: mjr.&nbsp;Gloss, kpt.&nbsp;Šerý, kpt.&nbsp;Žbirka, mjr.&nbsp;Poláček (aktívny), kpt.&nbsp;Cingel (aktívny) a&nbsp;mjr.&nbsp;Mano. Zrušením VLA Košice v&nbsp;r.&nbsp;2004 je letka doplnená o&nbsp;ďalšiu verziu L-39&nbsp;C v&nbsp;kamufláži skupiny Bielych Albatrosov.</p>
             </div>
             <div class="large-4 columns">
-                <figure class="">
+                <figure class="border">
                     <img src="/assets/img/letka-historia-005.jpg">
                 </figure>
             </div>

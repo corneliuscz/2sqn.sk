@@ -116,7 +116,8 @@ a#kotva {
 article {
     //margin-bottom: 2em;
 
-    .border {
+    //.border {
+    img {
             border: 1px solid $clouds;
             padding: 5px;
             vertical-align: bottom;
@@ -525,6 +526,8 @@ table {
     img {
         position: relative;
         vertical-align: bottom;
+        border: none;
+        padding: 0;
     }
 
     em {
