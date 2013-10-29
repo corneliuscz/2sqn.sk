@@ -137,3 +137,5 @@ $tr['walkaround']['seat'] = 'Sedadlo VS-1BRI';
 $tr['walkaround']['noseagr'] = 'Agregáty v špičke trupu';
 
 /* Ostatní */
+$tr['poll_thanks'] = 'Ďakujeme za váš hlas!';
+$tr['poll_total'] = 'Celkom hlasov:';

@@ -139,3 +139,5 @@ $tr['walkaround']['seat'] = 'VS-1BRI Ejection seat';
 $tr['walkaround']['noseagr'] = 'Instruments in the nose of the aircraft';
 
 /* Ostatní */
+$tr['poll_thanks'] = 'Thanks for voting!';
+$tr['poll_total'] = 'Total votes:';

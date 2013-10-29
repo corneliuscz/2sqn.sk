@@ -15,14 +15,13 @@ require "includes/_dba.php";
             <p class="otazka"><?php echo $Otazka; ?></p>
 
             <?php
-            /*
-            if ( isset ($_SESSION['anketaError']) ) {
-                $error = $_SESSION['anketaError'];
-            ?>
-                <div data-alert="" class="alert-box alert"><?php echo $error; ?></div>
-            <?php
-            }
-            */
+            $ip = $_SERVER["REMOTE_ADDR"]; // IP adresa návštěvníka
+            $ip_cele = gethostbyaddr($_SERVER['REMOTE_ADDR']); // cela IP adresa návštěvníka
+
+            $vysledekIP = mysql_query("SELECT COUNT(ip) FROM anketa WHERE `ip`= '$ip' AND `ip_cele`='$ip_cele' AND `anketa`='".$CisloAnkety."'"); //podivame se do databaze jestli uz se z IP navstevnika nehlasovalo
+            // pokud je v DB tak hlasoval
+            if (mysql_result($vysledekIP,0) != 0){ $hlasoval = 1; }
+            else { $hlasoval = 0; }
 
             $PocetOdpovedi=count($Odpovedi); // Spocitame kolik anketa ma odpovedi.
             $PocetHlasu=0; // Nastavime pocet celkovych hlasu na 0, postupne budeme pricitat s odpovedmi
@@ -37,7 +36,7 @@ require "includes/_dba.php";
                 }
                 ?>
                 <dl>
-                    <dt> <input type="radio" name="odp" value="<?php echo $i; ?>"> <?php echo $Odpovedi[$i-1]; ?></dt>
+                    <dt> <?php if (!$hlasoval) { ?><input type="radio" name="odp" value="<?php echo $i; ?>"><?php } ?> <?php echo $Odpovedi[$i-1]; ?></dt>
                     <dd> <i style="width: <?php echo $odpProcent; ?>%"><?php echo $odpProcent; ?> %</i></dd>
                 </dl>
             <?php
@@ -45,6 +44,6 @@ require "includes/_dba.php";
             ?>
         <input type="hidden" name="anketa" value="<?php echo $CisloAnkety ?>">
         <input type="hidden" name="origin" value="<?php echo $req->getResourceUri() ?>">
-        <input type="submit" value="HLASUJ!" class="button small secondary radius"><br>
-        Celkom hlasov: <?php echo $PocetHlasu; ?>
+        <?php if (!$hlasoval) { ?><input type="submit" value="HLASUJ!" class="button small secondary radius"><?php } else echo $app->tr['poll_thanks'];; ?> <br>
+        <?php echo $app->tr['poll_total']; ?> <?php echo $PocetHlasu; ?>
     </form>
