@@ -466,35 +466,30 @@ table {
             display: block;
         }
 
-        /* Vychozi pozice pro jednotlive body na albikach */
-        .l-agregaty-spicka {}
-        .snimac-namrazy {}
-        .predni-podvozek-sachta {}
-        .predni-podvozek-noha {}
-        .snimac-nabeh {}
-        .kanon-gs23 {}
-        .stupacky-kabiny {}
-        .p-kabina { margin: 26% 0 0 36%; }
-        .z-kabina { margin: 23.5% 0 0 43.5%; }
-        .brzdici-stity {}
-        .vstup-vzduchu {}
-        .hlavni-podvozek-noha {}
-        .zavesnik {}
-        .p-kontrolni-otvory {}
-        .zapisovac {}
-        .smerovka {}
-        .vyskovka {}
-        .tryska {}
-        .signalni-rakety {}
-        .agregat-motora {}
-        .agregat-klimatizace {}
-        .apu {}
-        .klapky {}
-        .hlavni-podvozek-sachta {}
-        .klapky {}
-        .pitotka {}
-        .sedadlo {}
-        .p-agregaty-spicka {}
+        /* Tip s ovládacími šipkami */
+        #tip {
+            position: absolute;
+            margin: 37% 0 0 90%;
+            text-align: center;
+
+            img {
+                border: 1px solid #959595;
+                padding: 0.5em;
+                -moz-border-radius: 15px;
+                border-radius: 50%;
+
+                &.sep {
+                    margin-right: 0.5em;
+                }
+            }
+
+            span {
+                font-size: 0.675em;
+                display: block;
+                line-height: 1.5em;
+                margin-top: 1em;
+            }
+        }
     }
 
     p.loading {
