@@ -135,7 +135,7 @@ $tr['walkaround']['mgearshaft'] = 'Šachta hlavnej podvozkovej nohy';
 $tr['walkaround']['pitot'] = 'Pitotova trubica';
 $tr['walkaround']['seat'] = 'Sedadlo VS-1BRI';
 $tr['walkaround']['noseagr'] = 'Agregáty v špičke trupu';
-$tr['walkaround']['controls'] = 'Letadlo otočíte ťahaním myšou alebo šípkami';
+$tr['walkaround']['controls'] = 'Lietadlo otočíte ťahaním myšou alebo šípkami';
 
 /* Ostatní */
 $tr['poll_thanks'] = 'Ďakujeme za váš hlas!';
