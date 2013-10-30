@@ -106,7 +106,7 @@ $tr['upload_infotext'] = '<p>Maximálna šírka obrázku je 1280 px., väčší 
 $tr['gallery_infotext'] = '<a href="/sk/login">Zaregistrujte a prihlaste sa</a>, a môžete pridávať fotky do albumu "Vaše fotky".</p>';
 
 /* Walkaround */
-$tr['walkaround']['loading'] = 'Načítám data pro walkaround, čekejte prosím!';
+$tr['walkaround']['loading'] = 'Načítavam dáta pre walkaround, čakajte prosím!';
 
 $tr['walkaround']['agr'] = 'Agregáty v špičke trupu';
 $tr['walkaround']['rio'] = 'Snímač intezity námrazy RIO-3';
