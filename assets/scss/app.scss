@@ -478,6 +478,11 @@ table {
                 -moz-border-radius: 15px;
                 border-radius: 50%;
 
+                &:hover {
+                    background-color: $turquoise;
+                    border: 1px solid $greensea;
+                }
+
                 &.sep {
                     margin-right: 0.5em;
                 }

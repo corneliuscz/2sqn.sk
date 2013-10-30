@@ -137,6 +137,7 @@ $tr['walkaround']['mgearshaft'] = 'Main gear shaft';
 $tr['walkaround']['pitot'] = 'Pitot tube';
 $tr['walkaround']['seat'] = 'VS-1BRI Ejection seat';
 $tr['walkaround']['noseagr'] = 'Instruments in the nose of the aircraft';
+$tr['walkaround']['controls'] = 'Drag with mouse or use arrow keys to rotate the aircraft';
 
 /* Ostatní */
 $tr['poll_thanks'] = 'Thanks for voting!';

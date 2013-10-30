@@ -47,7 +47,7 @@ $(document).ready(function(){
 
     // Příprava dat
     htmlNotes += '<div class="threesixty-frame-notes">';
-    htmlNotes += '<div id="tip"><img src="http://www.2sqn.sk/assets/img/w-leva.png" onclick="$(\'.threesixty\').prevFrame();" class="sep"><img src="http://www.2sqn.sk/assets/img/w-prava.png" onclick="$(\'.threesixty\').nextFrame();"><span>Model můžete otáčet myší i šipkami</span></div>';
+    htmlNotes += '<div id="tip"><img src="http://www.2sqn.sk/assets/img/w-leva.png" onclick="$(\'.threesixty\').prevFrame();" class="sep"><img src="http://www.2sqn.sk/assets/img/w-prava.png" onclick="$(\'.threesixty\').nextFrame();"><span><?php echo $app->tr['walkaround']['controls']; ?></span></div>';
     <?php   // Zakomentovat ať se to neobjeví v ostrém webu  /*htmlNotes += '<i class="icona spot"></i>';*/  ?>
     for (j; j < sp; j++) {
         htmlNotes += '<a href="' + spots[j][2] + '" title="' + spots[j][3] + '" class="fancybox icon icon-i-w-spot '+ spots[j][0] +'" style="' + spots[j][1] + '"></a>';
