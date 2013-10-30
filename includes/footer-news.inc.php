@@ -1,5 +1,30 @@
 <footer>
-
+    <section class="novinky"><a name="novinky"></a>
+        <div class="row">
+            <div class="large-12 columns">
+                <h2><?php echo $app->tr['news_title']; ?></h2>
+            </div>
+        </div>
+        <div class="row">
+        <?php
+        require "includes/_dba.php";
+        $query = "SELECT * FROM board WHERE `subject-$app->lang` IS NOT NULL ORDER BY from_date DESC LIMIT 6";
+        $message = MySQL_Query($query) or die("chyba SQL");
+        while ($riadok = MySQL_Fetch_Array($message)):
+        ?>
+            <div class="large-4 columns novinka-pata">
+                <article class="novinka icon-l39-m">
+                    <h3><a href="/<?php echo $app->lang; ?>/novinky/<?php echo $riadok["number"]; ?>"><?php echo $riadok ["subject-".$app->lang]; ?></a></h3>
+                    <span class="datum"><?php echo date('d.m.Y', strtotime($riadok['from_date'])); ?></span>
+                    <p><?php echo predlozky($riadok ["head-".$app->lang]); ?></p>
+                </article>
+            </div>
+        <?php
+        endwhile;
+        mysql_close($db);
+        ?>
+        </div>
+    </section>
     <section class="social">
         <div class="row">
             <div class="large-4 columns anketa">
