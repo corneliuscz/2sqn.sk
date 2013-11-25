@@ -5,6 +5,7 @@ $(function(){
     var $container = $('#masonry .row');
 
     $container.masonry({
+        columnWidth: '.large-6',
         itemSelector: '.novinka-text',
         isAnimated: true
     });
