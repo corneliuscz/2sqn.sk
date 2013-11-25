@@ -1,4 +1,4 @@
-<?php include ('includes/header.inc.php'); ?>
+﻿<?php include ('includes/header.inc.php'); ?>
 <?php include ('includes/menu.inc.php'); ?>
 <div class="head-photo no-pic odkazy">
     <section class="podklad">
@@ -43,9 +43,9 @@
                 <h3>Nezaradené</h3>
                 <ul>
                     <li><a target="_blank" href="http://www.okb01.eu/">Creative Military Graphics - Emiliano Guerra</a></li>
-                    <li><a target="_blank" href="http://www.stv.sk/online/archiv/profesional?date=2011-04-14&amp;id=44945">Magazín Profesionál s reportážou o osobnosti rezortu Dušovi :)</a></li>
                     <li><a target="_blank" href="http://www.lietadla.com">Fotogaléria lietadla.com</a></li>
                     <li><a target="_blank" href="http://www.modelshop.sk">Modelársky web-shop Malacky</a></li>
+					<li><a target="_blank" href="http://www.air-shop.cz/"><span class="label alert">NOVÉ</span> air-shop.cz Web shop s kvalitnou leteckou výstrojou</a></li>
                 </ul>
             </div>
         </div>

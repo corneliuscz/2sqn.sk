@@ -34,6 +34,7 @@ $tr['photos_your'] = 'Vaše fotky';
 $tr['videos'] = 'Videa';
 $tr['videos_formations'] = 'Skupinové lietanie';
 $tr['videos_display2012'] = 'Display promo video 2012';
+$tr['videos_displaylolo'] = 'Display video - Roman LOLO Poláček';
 
 $tr['links'] = 'odkazy';
 $tr['downloads'] = 'na stiahnutie';

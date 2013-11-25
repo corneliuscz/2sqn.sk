@@ -59,6 +59,7 @@
                                         <div class="inner">
                                             <h4><a href="/<?php echo $app->lang; ?>/galeria"><?php echo $app->tr['photos']; ?></a></h4>
                                             <ul>
+												<li><a href="/<?php echo $app->lang; ?>/galeria?dir=2.SQN%20by%20Martin%20Král">2.SQN by Martin Král</a></li>
                                                 <li><a href="/<?php echo $app->lang; ?>/galeria?dir=2.SQN%20by%20cjvanderende.com">2.SQN by cjvanderende.com</a></li>
                                                 <li><a href="/<?php echo $app->lang; ?>/galeria?dir=2.SQN%20by%20Ondrej%20Maliniak">2.SQN by Ondrej Maliniak</a></li>
                                                 <li><a href="/<?php echo $app->lang; ?>/galeria?dir=MACE%20XIII">MACE XIII</a></li>
@@ -90,6 +91,7 @@
                                             <ul>
                                                 <li><a href="/<?php echo $app->lang; ?>/videa"><?php echo $app->tr['videos_formations']; ?></a></li>
                                                 <li><a href="/<?php echo $app->lang; ?>/videa"><?php echo $app->tr['videos_display2012']; ?></a></li>
+                                                <li><a href="/<?php echo $app->lang; ?>/videa"><?php echo $app->tr['videos_displaylolo']; ?></a></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -130,7 +132,7 @@ if ($pokracuj == 1) { ?>
     <div class="userlogout">
         <div class="row">
             <div class="large-12 columns">
-                <span>Prihlásený ako: <?php echo $_SESSION['login']; ?> (<a href="/logout">Odhlásiť</a>)</span>
+                <span>PrihlÃ¡senÃ½ ako: <?php echo $_SESSION['login']; ?> (<a href="/logout">OdhlÃ¡siÅ¥</a>)</span>
             </div>
         </div>
     </div>

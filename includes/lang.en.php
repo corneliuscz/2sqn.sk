@@ -34,6 +34,7 @@ $tr['photos_your'] = 'Your photos';
 $tr['videos'] = 'Videos';
 $tr['videos_formations'] = 'Formation flying';
 $tr['videos_display2012'] = 'Display promo video 2012';
+$tr['videos_displaylolo'] = 'Display video - Roman LOLO Poláček';
 
 $tr['links'] = 'links';
 $tr['downloads'] = 'downloads';
