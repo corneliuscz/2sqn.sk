@@ -544,6 +544,8 @@ table {
     width: 33%;
     height: 33%;
 
+    border: 10px solid white;
+
     @media #{$small} {
         width: 25%;
         height: 25%;
@@ -571,6 +573,7 @@ table {
         padding: 1em;
         width: 100%;
         background: rgba(0, 0, 0, 0.4);
+        line-height: 1.3em;
     }
 
     .lt-ie9 em {
