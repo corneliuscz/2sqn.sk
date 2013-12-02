@@ -116,10 +116,9 @@ a#kotva {
 article {
     //margin-bottom: 2em;
 
-    //.border {
     img {
-            border: 1px solid $clouds;
-            padding: 5px;
+            //border: 1px solid $clouds;
+            //padding: 5px;
             vertical-align: bottom;
         }
 
@@ -544,7 +543,7 @@ table {
     width: 33%;
     height: 33%;
 
-    border: 10px solid white;
+    border: 5px solid white;
 
     @media #{$small} {
         width: 25%;
