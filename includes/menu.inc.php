@@ -110,7 +110,6 @@
                         <li>
                             <a href="http://fan2sqn.com/eshop/" target="_blank">fan shop</a>
                         </li>
-						<!--
                         <li>
                             <?php
                                 if ( $app->lang == $app->availableLangs[0] ) { $switchLang = $app->availableLangs[1]; }
@@ -118,7 +117,6 @@
                             ?>
                             <a href="<?php echo $app->config('server_url').$switchLang.$app->environment['PATH_INFO']; ?>" class="language last" title="<?php echo $app->tr['langswitch']; ?>"><?php echo $switchLang; ?></a>
                         </li>
-						-->
                     </ul>
                     <a href="#" id="pull">Menu</a>
                 </nav>

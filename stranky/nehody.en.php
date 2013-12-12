@@ -317,7 +317,99 @@
                     <img alt="Stojanik nehoda" src="/assets/img/nehody/stojanikcrash.jpg">
                     <img alt="albatros 2341 crash" src="/assets/img/nehody/albatros2341_crash.jpg">
                 </center>
+            </p>    
+            
+            <table>
+                <tr>
+                    <td width="33%">SR 14.09.2000</td>
+                    <td width="33%">Ožďany</td>
+                    <td width="33%">31. slk Sliač</td>
+                </tr>
+                <tr>
+                    <td>Aircraft accident L-39ZA 3905</td>
+                    <td colspan="2">1st Lt. Pavol SERBÍN</td>
+                </tr>
+            </table>
+            <p>During an aerial battle training mission, the engine experienced a flameout. Pilot tried to restart the engine, but with no success. Afterwards, he steered the plane towards an uninhabited area and safely ejected at an altitude of 800 m.  The plane crashed near the village of Ožďany and exploded.
+               
             </p>
+            
+              <table>
+                <tr>
+                    <td width="33%">ČR 01.08.2001</td>
+                    <td width="33%">Pelhřimov</td>
+                    <td width="33%">4.zTL Čáslav</td>
+                </tr>
+                <tr>
+                    <td>Air disaster L-39ZA 5013</td>
+                    <td colspan="2">1st Lt. Luděk BURDA</td>
+                </tr>
+            </table>
+            <p>During a navigation flight from Prague-Kbely to Náměšt nad Oslavou, over the turning point Pelhřimov, the pilot was performing aerobatic maneuvers at low altitude (not as a part of the training mission). The plane hit the ground in a half-roll maneuver while performing a roll at low altitude. It fortunately missed a family house. The commander of Czech Air Force General Klíma ordered to transport all pilots by bus from the Čáslav base to the crash site to let them see the fatal consequences of pilot´s reckless behaviour.
+                <center>
+                    <img alt="albatros 5031 nehoda" src="/assets/img/nehody/5013_havaria.jpg">
+                    <img alt="5031 havaria albatros" src="/assets/img/nehody/5013_havaria1.jpg">
+                    <img alt="5031 crash albatros" src="/assets/img/nehody/5013_havaria2.jpg">
+                    <img alt="5031 havaria L39" src="/assets/img/nehody/5013_havaria3.jpg">
+                </center>
+            </p>
+            
+               <table>
+                <tr>
+                    <td width="33%">SR 29.10.2002</td>
+                    <td width="33%">Kalša</td>
+                    <td width="33%">31. slk Sliač</td>
+                </tr>
+                <tr>
+                    <td>Aircraft accident L-39ZA 4705</td>
+                    <td colspan="2">Lt. Col. Jenö VADAS / 1st Lt. Tibor MOLNÁR</td>
+                </tr>
+            </table>
+            <p>In performing aerobatic manoeuvres at low altitude, the aircrew failed to recognize the engine stall, mistook it for the engine flameout and ejected. The plane crashed in the vicinity of the village of Kalša near Košice. The plane was flown by two Hungarian military pilots (the training was supported by the Kosice-based Air Force Training Centre) and it was borrowed from AFB Sliač.
+                <center>
+                    <img alt="havaria" src="/assets/img/nehody/4705crash1.jpg">
+                    <img alt="L39crash" src="/assets/img/nehody/kalsacrash2.jpg">
+                    <img alt="havariaL39" src="/assets/img/nehody/kalsacrash1.jpg">
+                    <img alt="L39crash" src="/assets/img/nehody/kalsacrash3.jpg">
+                </center>
+            </p>
+            
+                <table>
+                <tr>
+                    <td width="33%">ČR 12.07.2010</td>
+                    <td width="33%">Koudelka</td>
+                    <td width="33%">CLV Pardubice</td>
+                </tr>
+                <tr>
+                    <td>Aircraft accident L-39C  5306</td>
+                    <td colspan="2">Václav TYRYCHTR / David SOCHACKÝ</td>
+                </tr>
+            </table>
+            <p>After finishing the training of aerial battle manoeuvring, pilots heard a noise of two metal impacts. Immediately after that, the Master alert lit up, together with the alert of exhaust gas temperature 700°C and 730°C and the engine fire alert. The wingman reported a white smoke track and orange sparks coming out of the exhaust nozzle. Upon the instructor´s order, pilot pulled the engine control lever to the STOP position, shut off the fire valve and pushed the fire extinguishing button. The instructor steered the aircraft to an uninhabited area and pressed the fire extinguishing button in the rear cockpit. The pilot ejected upon the instructor´s order. After making sure that the aircraft would land outside of an inhabited area, the instructor ejected safely too. The main cause of the accident was a titanium fire in the area of the labyrinth stuffing box between the 3rd and 4th stages of the high pressure compressor. The fire was caused by the engine surge following the engine acceleration.
+                <center>
+                    <img alt="crash" src="/assets/img/nehody/0440crash.jpg">
+                    <img alt="havaria" src="/assets/img/nehody/0440crash1.jpg">
+                </center>
+            </p>
+            
+              <table>
+                <tr>
+                    <td width="33%">ČR 16.12.2010</td>
+                    <td width="33%">Biskupice</td>
+                    <td width="33%">C22. zl Náměšť nad Oslavou</td>
+                </tr>
+                <tr>
+                    <td>Aircraft accident L-39ZA 2341</td>
+                    <td colspan="2">Capt. Michal KUDYN / Capt. Stanislav STOJANÍK</td>
+                </tr>
+            </table>
+            <p>During the test flight of the aircraft with a replaced engine, twenty two minutes after take-off, the aircrew heard five distinct impacts in the rear part of the aircraft. Subsequently, there was a sharp drop in speed followed by the engine flameout. After four unsuccessful attempts to restart the engine in flight, the aircrew successfully ejected. The aircraft fell on the edge of forest stand. Pilots landed in the forest terrain, approximately 500 m from the plane wreckage. The accident was caused by a titanium fire in the 3rd stage of the high-pressure compressor.  
+                <center>
+                   <img alt="Stojanik nehoda" src="/assets/img/nehody/stojanikcrash.jpg">
+                    <img alt="albatros 2341 crash" src="/assets/img/nehody/albatros2341_crash.jpg">
+                </center>
+            </p>
+            
  </div>
  </div>
  </section>
