@@ -59,10 +59,12 @@ $tr['login_formtitle'] = 'User login';
 
 $tr['login_formlogin'] = 'Login';
 $tr['login_formpassword'] = 'Password';
-$tr['login_formdologin'] = 'Sing in';
+$tr['login_formdologin'] = 'Sign in';
 
 $tr['login_successmsg'] = 'Since now you have access to <a href="/forum">forum</a> and <a href="/na-stiahnutie">downloads</a> section. Or you can now <a href="/galeria?dir=Vaše%20fotky">upload some photos</a> to Vaše fotky gallery :-)';
 
+$tr['login_loggedinas'] = 'Logged in as: ';
+$tr['login_logout'] = 'Logout';
 
 /* Registrace */
 
@@ -84,9 +86,13 @@ $tr['reg_formregister'] = 'Register';
 $tr['reg_formreset'] = 'Reset form';
 
 /* Forum */
+$tr['forum_title'] = 'Forum';
+$tr['forum_your_msg'] = 'Your message';
+$tr['forum_btn_send'] = 'Send';
 
 $tr['forum_error_incomplete'] = 'An error occured. The information you entered might been incomplete. Try again please.';
 $tr['forum_error_notloggedin'] = "Please login to send a message.";
+$tr['forum_info_access'] = "Only registered users are allowed into this section.";
 
 /* Upload */
 $tr['upload_success'] = 'The image has been saved successfully.';
@@ -143,3 +149,5 @@ $tr['walkaround']['controls'] = 'Drag with mouse or use arrow keys to rotate the
 /* Ostatní */
 $tr['poll_thanks'] = 'Thanks for voting!';
 $tr['poll_total'] = 'Total votes:';
+
+$tr['title_downloads'] = 'Downloads';

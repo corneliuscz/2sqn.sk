@@ -4,7 +4,7 @@
     <section class="podklad">
         <div class="row">
             <div class="large-12 columns">
-                <h1>Na stiahnutie</h1>
+                <h1><?php echo $app->tr['title_downloads']; ?></h1>
             </div>
         </div>
     </section>

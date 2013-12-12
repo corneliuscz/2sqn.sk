@@ -4,7 +4,7 @@
     <section class="podklad">
         <div class="row">
             <div class="large-12 columns">
-                <h1>Fórum</h1>
+                <h1><?php echo $app->tr['forum_title']; ?></h1>
             </div>
         </div>
     </section>
@@ -21,10 +21,10 @@ if ($pokracuj == 1)
     <section class="obsah">
         <div class="row">
             <div class="large-12 columns">
-                <h3>Vaša správa</h3>
+                <h3><?php echo $app->tr['forum_your_msg']; ?></h3>
                 <form action="" method="post">
                     <textarea name="sprava"></textarea>
-                    <input type="submit" value="Odoslať" class="button success medium radius">
+                    <input type="submit" value="<?php echo $app->tr['forum_btn_send']; ?>" class="button success medium radius">
                 </form>
             </div>
             <div class="large-12 columns">
@@ -41,7 +41,7 @@ else { ?>
     <div class="warning">
         <div class="row">
             <div class="large-12 columns">
-                <p>Len registrovaní užívatelia majú povolenie pre vstup do sekcie Fórum!</p>
+                <p><?php echo $app->tr['forum_info_access']; ?></p>
             </div>
         </div>
     </div>

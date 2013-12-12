@@ -14,7 +14,7 @@
     <section class="obsah">
         <div class="row">
             <div class="large-6 columns">
-                <h3>Slovenské letectvo</h3>
+                <h3>Slovak Air Force</h3>
                 <ul>
                     <li><a target="_blank" href="http://www.vvzs.mil.sk/">Slovak Air Force Command</a></li>
                     <li><a target="_blank" href="http://www.mod.gov.sk/">Slovak Ministry of Defence</a></li>
@@ -32,7 +32,7 @@
         </div>
         <div class="row">
             <div class="large-6 columns">
-                <h3>Akrobatické skupiny</h3>
+                <h3>Aerobatic groups</h3>
                 <ul>
                     <li><a target="_blank" href="http://www.bielealbatrosy.sk">Biele Albatrosy aerobatic group</a></li>
                     <li><a target="_blank" href="http://www.breitling-jet-team.com">Breitling Jet Team aerobatic group</a></li>
@@ -40,7 +40,7 @@
                 </ul>
             </div>
             <div class="large-6 columns">
-                <h3>Nezaradené</h3>
+                <h3>Other</h3>
                 <ul>
                     <li><a target="_blank" href="http://www.okb01.eu/">Creative Military Graphics - Emiliano Guerra</a></li>
                     <li><a target="_blank" href="http://www.stv.sk/online/archiv/profesional?date=2011-04-14&amp;id=44945">TV Show Profesionál with report about Dušo :)</a></li>

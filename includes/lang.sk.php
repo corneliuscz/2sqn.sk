@@ -61,6 +61,9 @@ $tr['login_formlogin'] = 'Login';
 $tr['login_formpassword'] = 'Heslo';
 $tr['login_formdologin'] = 'Prihlásenie';
 
+$tr['login_loggedinas'] = 'Prihlásený ako: ';
+$tr['login_logout'] = 'Odhlásiť';
+
 $tr['login_successmsg'] = 'Od teraz máte prístup do <a href="/forum">fóra</a> a sekcie <a href="/na-stiahnutie">na stiahnutie</a> alebo pre <a href="/galeria?dir=Vaše%20fotky">nahrávanie fotiek</a> do galérie Vaše fotky :-)';
 
 /* Registrace */
@@ -83,9 +86,13 @@ $tr['reg_formregister'] = 'Registruj';
 $tr['reg_formreset'] = 'Vymazať';
 
 /* Forum */
+$tr['forum_title'] = 'Fórum';
+$tr['forum_your_msg'] = 'Vaša správa';
+$tr['forum_btn_send'] = 'Odoslať';
 
 $tr['forum_error_incomplete'] = 'Vyskytla sa chyba! Pravdepodobne ste nezadali všetky údaje správne.';
 $tr['forum_error_notloggedin'] = "Pro odeslání zprávy musíte být přihlášení";
+$tr['forum_info_access'] = "Len registrovaní užívatelia majú povolenie pre vstup do tejto sekcie!";
 
 /* Upload */
 $tr['upload_success'] = 'Obrázok bol úspešne uložený.';
@@ -141,3 +148,5 @@ $tr['walkaround']['controls'] = 'Lietadlo otočíte ťahaním myšou alebo šíp
 /* Ostatní */
 $tr['poll_thanks'] = 'Ďakujeme za váš hlas!';
 $tr['poll_total'] = 'Celkom hlasov:';
+
+$tr['title_downloads'] = 'Na stiahnutie';
