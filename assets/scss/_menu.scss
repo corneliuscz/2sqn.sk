@@ -351,11 +351,15 @@ a.menu-link.active {
     -moz-background-size: 100px 100px;
     -o-background-size: 100px 100px;
     background-size: 100px 100px;
-  }
+    }
 
   a.menu-link.active {
     background: $belizehole url("../img/hamburger-retina-invert.gif") no-repeat 50% 50%;
-  }
+    -webkit-background-size: 100px 100px;
+    -moz-background-size: 100px 100px;
+    -o-background-size: 100px 100px;
+    background-size: 100px 100px;
+    }
 }
 
 nav[role=navigation] {
